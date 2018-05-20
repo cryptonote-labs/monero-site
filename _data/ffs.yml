@@ -1,29 +1,32 @@
 - stage: Ideas
-  proposals:
-    - name: Fake. Nothing here yet. Check WiP and Completed Proposals.
-      url: #
-      summary: This is for the best ideas ever!
-      author: rehrar
+    - name: Electronero Bounty For HackerOne
+      url: /forum-funding-system/proposals/electronero-bounty-hackerone.html
+      summary: we need dedicated funds to satisfy bounty for Electronero and all Electronero sub-projects on hackerone.com/electronero
+      author: shopglobal
       
 - stage: Open Tasks
   proposals:
-    - name: Fake. Nothing here yet. Check WiP and Completed Proposals.
-      url: #
-      summary: This is for the best ideas ever!
-      author: rehrar
+    - name: Electronero Bounty For HackerOne
+      url: /forum-funding-system/proposals/electronero-bounty-hackerone.html
+      summary: we need dedicated funds to satisfy bounty for Electronero and all Electronero sub-projects on hackerone.com/electronero
+      author: shopglobal
       
 - stage: Funding Required
   proposals:
-    - name: Monero Bounty For HackerOne
-      url: /forum-funding-system/proposals/monero-bounty-hackerone.html
-      summary: we need dedicated funds to satisfy bounty for Monero and all Monero sub-projects on hackerone.com/monero
-      author: anonimal
+    - name: Electronero Bounty For HackerOne
+      url: /forum-funding-system/proposals/electronero-bounty-hackerone.html
+      summary: we need dedicated funds to satisfy bounty for Electronero and all Electronero sub-projects on hackerone.com/electronero
+      author: shopglobal
       
 - stage: Work in Progress
   proposals:
     
 - stage: Completed Proposals
   proposals:
+    - name: Monero Bounty For HackerOne
+      url: /forum-funding-system/proposals/monero-bounty-hackerone.html
+      summary: we need dedicated funds to satisfy bounty for Monero and all Monero sub-projects on hackerone.com/monero
+      author: anonimal
     - name: Documentation and cleanup of source code 
       url: /forum-funding-system/proposals/documentation-cleanup.html
       summary: Clean up and properly document (doxygen) the monero source code
@@ -84,3 +87,4 @@
       url: /forum-funding-system/proposals/monero-integrations.html
       summary: Make open-source payment gateways for Monero on popular web apps
       author: serhack
+
