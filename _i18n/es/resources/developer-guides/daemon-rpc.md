@@ -5,7 +5,7 @@ This is a list of the monerod daemon RPC calls, their inputs and outputs, and ex
 
 Many RPC calls use the daemon's JSON RPC interface while others use their own interfaces, as demonstrated below.
 
-Note: "atomic units" refer to the smallest fraction of 1 XMR according to the monerod implementation. **1 XMR = 1e12 atomic units.**
+Note: "@atomic-units" refer to the smallest fraction of 1 XMR according to the monerod implementation. **1 XMR = 1e12 @atomic-units.**
 
 ### [JSON RPC Methods](#json-rpc-methods):
 
@@ -171,7 +171,7 @@ Outputs:
   * *nonce* - unsigned int; a cryptographic random one-time number used in mining a Monero block.
   * *orphan_status* - boolean; Usually `false`. If `true`, this block is not part of the longest chain.
   * *prev_hash* - string; The hash of the block immediately preceding this block in the chain.
-  * *reward* - unsigned int; The amount of new atomic units generated in this block and rewarded to the miner. Note: 1 XMR = 1e12 atomic units.
+  * *reward* - unsigned int; The amount of new @atomic-units generated in this block and rewarded to the miner. Note: 1 XMR = 1e12 @atomic-units.
   * *timestamp* - unsigned int; The time the block was recorded into the blockchain.
 * *status* - string; General RPC error code. "OK" means everything looks good.
 
@@ -255,7 +255,7 @@ Outputs:
 
 * *block_header* - A structure containing block header information. See [getlastblockheader](#getlastblockheader).
 
-In this example, block 912345 is looked up by its height (notice that the returned information is the save as in the previous example):
+In this example, block 912345 is looked up by its height (notice that the returned information is the same as in the previous example):
 
 ```
 $ curl -X POST http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"getblockheaderbyheight","params":{"height":912345}}' -H 'Content-Type: application/json'
@@ -309,7 +309,7 @@ Outputs:
       * *gen* - Miner txs are coinbase txs, or "gen".
         * *height* - This block height, a.k.a. when the coinbase is generated.
     * *vout* - List of transaction outputs. Each output contains:
-      * *amount* - The amount of the output, in atomic units.
+      * *amount* - The amount of the output, in @atomic-units.
       * *target* - 
         * *key* - 
     * *extra* - Usually called the "transaction ID" but can be used to include any random 32 byte/64 character hex string.
@@ -400,7 +400,7 @@ Outputs:
   * *local_ip* - boolean
   * *localhost* - boolean
   * *peer_id* - string; The node's ID on the network.
-  * *port* - stringl The port that the node is using to connect to the network.
+  * *port* - string; The port that the node is using to connect to the network.
   * *recv_count* - unsigned int
   * *recv_idle_time* - unsigned int
   * *send_count* - unsigned int
@@ -462,7 +462,7 @@ Outputs:
 * *testnet* - boolean; States if the node is on the testnet (true) or mainnet (false).
 * *top_block_hash* - string; Hash of the highest block in the chain.
 * *tx_count* - unsigned int; Total number of non-coinbase transaction in the chain.
-* *tx_pool_siz* - unsigned int; Number of transactions that have been broadcast but not included in a block.
+* *tx_pool_size* - unsigned int; Number of transactions that have been broadcast but not included in a block.
 * *white_peerlist_size* - unsigned int; White Peerlist Size
 
 Following is an example `get_info` call and its return:
@@ -652,15 +652,15 @@ Outputs:
   * *unlock_time* - If not 0, this tells when a transaction output is spendable.
   * *vin* - List of inputs into transaction:
     * *key* - The public key of the previous output spent in this transaction.
-      * *amount* - The amount of the input, in atomic units.
+      * *amount* - The amount of the input, in @atomic-units.
       * *key_offsets* - A list of integer offets to the input.
       * *k_image* - The key image for the given input
   * *vout* - List of outputs from transaction:
-    * *amount* - Amount of transaction output, in atomic units.
+    * *amount* - Amount of transaction output, in @atomic-units.
     * *target* - Output destination information:
       * *key* - The stealth public key of the receiver. Whoever owns the private key associated with this key controls this transaction output.
   * *extra* - Usually called the "payment ID" but can be used to include any random 32 bytes.
-  * *signatures* - List of ignatures used in ring signature to hide the true origin of the transaction.
+  * *signatures* - List of signatures used in ring signature to hide the true origin of the transaction.
 Example 1: Return transaction information in binary format.
 
 ```
@@ -718,6 +718,7 @@ Broadcast a raw transaction to the network.
 Inputs:
 
 * *tx_as_hex* - string; Full transaction information as hexidecimal string.
+* *do_not_relay* - boolean; Stop relaying transaction to other nodes (default is `false` now; in versions 0.11.1 it was `true`).
 
 Outputs:
 
@@ -738,7 +739,7 @@ Example (No return information included here.):
 
 
 ```
-$ curl -X POST http://127.0.0.1:18081/sendrawtransaction -d '{"tx_as_hex":"de6a3..."}' -H 'Content-Type: application/json'
+$ curl -X POST http://127.0.0.1:18081/sendrawtransaction -d '{"tx_as_hex":"de6a3...", "do_not_relay":false}' -H 'Content-Type: application/json'
 ```
 
 
@@ -756,7 +757,7 @@ Outputs:
 * *status* - string; General RPC error code. "OK" means everything looks good.
 * *transactions* - List of transactions in the mempool that have not been included in a block:
   * *blob_size* - unsigned int; The size of the full transaction blob.
-  * *fee* - unsigned int; The amount of the mining fee included in the transaction, in atomic units.
+  * *fee* - unsigned int; The amount of the mining fee included in the transaction, in @atomic-units.
   * *id_hash* - string; The transaction ID hash.
   * *kept_by_block* - boolean; We do not accept transactions that timed out before, unless set `true`.
   * *last_failed_height* - unsigned int; If the transaction has previously timed out, this tells at what height that occured.
@@ -769,15 +770,15 @@ Outputs:
     * *unlock_time* - If not 0, this tells when a transaction output is spendable.
     * *vin* - List of inputs into transaction:
       * *key* - The public key of the previous output spent in this transaction.
-        * *amount* - The amount of the input, in atomic units.
+        * *amount* - The amount of the input, in @atomic-units.
         * *key_offsets* - A list of integer offets to the input.
         * *k_image* - The key image for the given input
     * *vout* - List of outputs from transaction:
-      * *amount* - Amount of transaction output, in atomic units.
+      * *amount* - Amount of transaction output, in @atomic-units.
       * *target* - Output destination information:
         * *key* - The stealth public key of the receiver. Whoever owns the private key associated with this key controls this transaction output.
     * *extra* - Usually called the "transaction ID" but can be used to include any random 32 bytes.
-    * *signatures* - List of ignatures used in ring signature to hide the true origin of the transaction.
+    * *signatures* - List of signatures used in ring signature to hide the true origin of the transaction.
 
 Example (Note: Some lists in the returned information have been truncated for display reasons):
 
