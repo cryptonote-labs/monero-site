@@ -1,4 +1,5 @@
 - stage: Ideas
+  proposals:
     - name: Electronero Bounty For HackerOne
       url: /forum-funding-system/proposals/electronero-bounty-hackerone.html
       summary: we need dedicated funds to satisfy bounty for Electronero and all Electronero sub-projects on hackerone.com/electronero
