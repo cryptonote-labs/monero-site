@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>
+    Laboratorio de investigación de Monero (MRL) | Monero - secure, private, untraceable
+    </title>
+	<meta name="description" content="titles.researchlab [on the home of Monero, a digital currency that is secure, private, and untraceable]">
+	<meta name="keywords" content="monero, xmr, bitmonero, cryptocurrency">
+
+    <meta property="og:title" content="Monero: titles.researchlab"/>
+    <meta property="og:description" content="titles.researchlab [on the home of Monero, a digital currency that is secure, private, and untraceable]">
+    <meta property="og:image" content="http://static.getmonero.org/images/opengraph/logo.png">
+    <meta property="og:site_name" content="getmonero.org, The Monero Project">
+    <meta property="og:url" content="https://getmonero.org/resources/research-lab/index.html">
+    <meta property="og:type" content="website">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/meta/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/meta/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/meta/favicon-16x16.png">
+        <link rel="manifest" href="/meta/manifest.json">
+        <link rel="mask-icon" href="/meta/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="theme-color" content="#ffffff">
+
+    <link href="/css/custom.css" rel="stylesheet">
+
+    
+    <meta name="msapplication-config" content="/ietemplates/ieconfig.xml">
+
+  </head>
+
+
+  <body>
+    <div class="page-wrapper">
+          
+<div class="mob-nav">
+              <input class="burger-check" id="mobile-burger" type="checkbox"><label for="mobile-burger" class="burger"></label>
+           
+        <div class="slide-in-nav">
+             <div class="container slide-in">
+                     
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                            
+                            <label for="drop1">Inicio<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="drop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                              <a href="/es/get-started/what-is-monero">¿Qué es Monero?</a>
+                                  
+                              <a href="/es/get-started/using">Usar Monero</a>
+                                  
+                              <a href="/es/get-started/accepting">Aceptar Monero</a>
+                                  
+                              <a href="/es/get-started/contributing">Contribuir a Monero</a>
+                                  
+                              <a href="/es/get-started/mining">Minar Monero</a>
+                                  
+                              <a href="/es/get-started/faq">FAQ</a>
+                                  
+                            </div>
+                            
+                     </div>
+                 </div>
+                  
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                               <a href="/es/downloads">Descargas</a>
+                            
+                     </div>
+                 </div>
+                  
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                            
+                            <label for="drop2">Noticias<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="drop2" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                              <a href="/es/blog">Todas publicaciones</a>
+                                  
+                              <a href="/es/blog/tags/monero%20missives.html">Misivas</a>
+                                  
+                              <a href="/es/blog/tags/dev%20diaries.html">Transcripciones de reuniones</a>
+                                  
+                              <a href="/es/blog/tags/releases.html">Lanzamientos</a>
+                                  
+                            </div>
+                            
+                     </div>
+                 </div>
+                  
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                            
+                            <label for="drop3">Comunidad<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="drop3" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                              <a href="/es/community/team">Equipo</a>
+                                  
+                              <a href="/es/community/hangouts">Canales de comunicación</a>
+                                  
+                              <a href="/es/community/sponsorships">Patrocinios</a>
+                                  
+                              <a href="/es/community/merchants">Comerciantes</a>
+                                  
+                            </div>
+                            
+                     </div>
+                 </div>
+                  
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                            
+                            <label for="drop4">Recursos<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="drop4" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                              <a href="/es/resources/about">Sobre Monero</a>
+                                  
+                              <a href="/es/resources/roadmap">Hoja de ruta</a>
+                                  
+                              <a href="/es/resources/research-lab">Laboratorio de investigación</a>
+                                  
+                              <a href="/es/resources/moneropedia">Moneropedia</a>
+                                  
+                              <a href="/es/resources/user-guides">Guías de usuario</a>
+                                  
+                              <a href="/es/resources/developer-guides">Guías de desarrolladores</a>
+                                  
+                              <a href="/es/technical-specs">Especificaciones técnicas</a>
+                                  
+                            </div>
+                            
+                     </div>
+                 </div>
+                 
+                 <div class="row">
+                     <div class="col-xs-12">
+                         <div class="text-center nav-item mob">
+                            <a href="https://forum.getmonero.org">Forum Funding System</a> 
+                         </div>
+                     </div>
+                 </div>
+                 <div class="row">
+                     <div class="col-xs-12">
+                         <div class="text-center nav-item mob">
+                            <a href="https://github.com/monero-project/meta/blob/master/VULNERABILITY_RESPONSE_PROCESS.md">Vulnerability Response</a>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="row">
+                     <div class="col-xs-12">
+                         <div class="text-center nav-item mob">
+                            <a href="/es/the-monero-project/">The Monero Project</a> 
+                         </div>
+                     </div>
+                 </div>            
+             </div>
+          
+        </div>
+       </div>
+       
+        <div class="desktop-nav">
+            <nav class="container">
+            <div class="topnav">
+              <div class="row middle-xs">
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <a href="
+                    
+                    /es
+                    
+                    "><img src="/img/monero-logo.png" alt="Monero Logo" class="monero-logo"></a>
+                  </div>
+                  <div class="col-lg-8 col-md-8 col-sm-8 topnav-list end-xs">
+                      <div class="row end-xs middle-xs">
+                         <div class="col-md-12">
+                          <a href="https://forum.getmonero.org" class="top-link">Forum Funding System</a>
+                          <a href="https://github.com/monero-project/meta/blob/master/VULNERABILITY_RESPONSE_PROCESS.md" class="top-link">Vulnerability Response</a>
+                          <a href="/es/the-monero-project/" class="top-link">The Monero Project</a>
+                          <div href="#" class="dropdown top-link language-change">
+                            <input class="burger-checkdropdown" id="langdrop" type="checkbox">
+                            <label for="langdrop">
+                            
+                                
+                            
+                            
+                            
+                                
+                            
+                                    Español
+                            
+                                
+                            
+                            
+                            
+                                
+                            
+                            
+                            
+                                
+                            
+                            
+                            
+                                
+                            
+                            <div class="arrow-down"></div></label>
+                            <div class="dropdown-content text-center">
+                                    
+                                
+                                  
+                                    <a href="/resources/research-lab/index.html" >English</a>
+                                  
+                                
+                              
+                                
+                              
+                                
+                                  
+                                    <a href="/it/resources/research-lab/index.html" >Italiano</a>
+                                  
+                                
+                              
+                                
+                                  
+                                    <a href="/pl/resources/research-lab/index.html" >Polski</a>
+                                  
+                                
+                              
+                                
+                                  
+                                    <a href="/fr/resources/research-lab/index.html" >Français</a>
+                                  
+                                
+                              
+                            </div>
+                          </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="botnav white-nav">
+                <input class="burger-check" id="burger-check" type="checkbox"><label for="burger-check" class="burger"></label>
+                <div class="row between-xs nav-items">
+                     
+                    <div class="col dropdown nav-item">
+                        
+                            <label for="desktopdrop1">Inicio<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="desktopdrop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                                  <a href="/es/get-started/what-is-monero">¿Qué es Monero?</a>
+                                
+                                  <a href="/es/get-started/using">Usar Monero</a>
+                                
+                                  <a href="/es/get-started/accepting">Aceptar Monero</a>
+                                
+                                  <a href="/es/get-started/contributing">Contribuir a Monero</a>
+                                
+                                  <a href="/es/get-started/mining">Minar Monero</a>
+                                
+                                  <a href="/es/get-started/faq">FAQ</a>
+                                
+                            </div>
+                            
+                    </div>
+                    
+                    <div class="col dropdown nav-item">
+                        
+                           <a href="/es/downloads">Descargas</a>
+                            
+                    </div>
+                    
+                    <div class="col dropdown nav-item">
+                        
+                            <label for="desktopdrop1">Noticias<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="desktopdrop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                                  <a href="/es/blog">Todas publicaciones</a>
+                                
+                                  <a href="/es/blog/tags/monero%20missives.html">Misivas</a>
+                                
+                                  <a href="/es/blog/tags/dev%20diaries.html">Transcripciones de reuniones</a>
+                                
+                                  <a href="/es/blog/tags/releases.html">Lanzamientos</a>
+                                
+                            </div>
+                            
+                    </div>
+                    
+                    <div class="col dropdown nav-item">
+                        
+                            <label for="desktopdrop1">Comunidad<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="desktopdrop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                                  <a href="/es/community/team">Equipo</a>
+                                
+                                  <a href="/es/community/hangouts">Canales de comunicación</a>
+                                
+                                  <a href="/es/community/sponsorships">Patrocinios</a>
+                                
+                                  <a href="/es/community/merchants">Comerciantes</a>
+                                
+                            </div>
+                            
+                    </div>
+                    
+                    <div class="col dropdown nav-item">
+                        
+                            <label for="desktopdrop1">Recursos<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="desktopdrop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                                  <a href="/es/resources/about">Sobre Monero</a>
+                                
+                                  <a href="/es/resources/roadmap">Hoja de ruta</a>
+                                
+                                  <a href="/es/resources/research-lab">Laboratorio de investigación</a>
+                                
+                                  <a href="/es/resources/moneropedia">Moneropedia</a>
+                                
+                                  <a href="/es/resources/user-guides">Guías de usuario</a>
+                                
+                                  <a href="/es/resources/developer-guides">Guías de desarrolladores</a>
+                                
+                                  <a href="/es/technical-specs">Especificaciones técnicas</a>
+                                
+                            </div>
+                            
+                    </div>
+                    
+                  </div>
+            </div>
+        </nav>
+        </div>
+        <div class="mob bot-nav white-nav">
+            <div class="row center-xs middle-xs">
+                <div class="col-xs-6">
+                    <a href="
+                    
+                    /es
+                    
+                    "><img src="/img/monero-logo.png" alt="Monero Logo" class="monero-logo"></a>
+                </div>
+                <div class="dropdown col-xs-6 text-center mob-language-change">
+                <input class="burger-checkdropdown" id="moblangdrop" type="checkbox">
+                 <label for="moblangdrop"><img src="/img/language.png" alt="Lang" class="icon-language"/><div class="arrow-down"></div></label>
+                               <div class="mob dropdown-content text-center">
+                               <p class="mob-lang-change mob-lang-selected">
+                                   
+                              
+                                
+                              
+                                
+                                 Español
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                   
+                               </p>
+                               
+                                
+                                  
+                                    <a class="mob-lang-change" href="/resources/research-lab/index.html" >English</a>
+                                  
+                                
+                              
+                                
+                              
+                                
+                                  
+                                    <a class="mob-lang-change" href="/it/resources/research-lab/index.html" >Italiano</a>
+                                  
+                                
+                              
+                                
+                                  
+                                    <a class="mob-lang-change" href="/pl/resources/research-lab/index.html" >Polski</a>
+                                  
+                                
+                              
+                                
+                                  
+                                    <a class="mob-lang-change" href="/fr/resources/research-lab/index.html" >Français</a>
+                                  
+                                
+                              
+                            </div>
+                          </div>
+            </div>     
+        </div>    
+
+        <h1 class="text-center">Laboratorio de investigación de Monero (MRL)</h1>
+    <div class="site-wrap">
+    <div class="untranslated">
+    <p>Esta pagina is not yet translated. If you would like to help translate it, please see the <a class="untranslated-link" href="https://github.com/monero-project/monero-site/blob/master/README.md">README</a>.</p>
+</div>
+<div class="container description">
+<p>Monero is not only committed to making a fungible currency, but also to continued research into the realm of financial privacy as it involves cryptocurrencies. Below you'll find the work of our very own Monero Research Lab, with more papers to come.</p>
+</div>
+
+<section class="container">
+            <div class="row">
+                <!-- left two-thirds block-->
+                <div class="left two-thirds col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                    <div class="info-block research-paper">
+                        <div class="row center-xs">
+                            <div class="col"><h2>Monero Research Lab Papers</h2></div>
+                        </div>
+                        <div class="tab">
+                              <input id="tab-one" type="checkbox" name="tabs" class="accordion" checked="checked" />
+                              <label for="tab-one" class="accordion">MRL-0001: A Note on Chain Reactions in Traceability in CryptoNote 2.0</label>
+                              <div class="tab-content">
+                                <p><strong>Abstract:</strong> This research bulletin describes a plausible attack on a ring-signature based
+                                    anonymity system. We use as motivation the cryptocurrency protocol CryptoNote
+                                    2.0 ostensibly published by Nicolas van Saberhagen in 2012. It has been
+                                    previously demonstrated that the untraceability obscuring a one-time key pair can
+                                    be dependent upon the untraceability of all of the keys used in composing that
+                                    ring signature. This allows for the possibility of chain reactions in traceability
+                                    between ring signatures, causing a critical loss in untraceability across the whole
+                                    network if parameters are poorly chosen and if an attacker owns a sufficient
+                                    percentage of the network. The signatures are still one-time, however, and any
+                                    such attack will still not necessarily violate the anonymity of users. However, such
+                                    an attack could plausibly weaken the resistance CryptoNote demonstrates against
+                                    blockchain analysis. This research bulletin has not undergone peer review, and
+                                    reflects only the results of internal investigation.
+                                    <br />
+                                    <br />
+                                    <a target="_blank" rel="noreferrer noopener" href="https://lab.getmonero.org/pubs/MRL-0001.pdf">Read Paper</a>
+                               </p>
+                              </div>
+                            </div>
+                            <div class="tab">
+                              <input id="tab-two" type="checkbox" name="tabs" class="accordion" />
+                              <label for="tab-two" class="accordion">MRL-0002: Counterfeiting via Merkle Tree Exploits within Virtual Currencies Employing the CryptoNote Protocol</label>
+                              <div class="tab-content">
+                                <p><strong>Abstract:</strong> On 4 September 2014, an unusual and novel attack was executed against the
+                                    Monero cryptocurrency network. This attack partitioned the network into two
+                                    distinct subsets which refused to accept the legitimacy of the other subset. This
+                                    had myriad effects, not all of which are yet known. The attacker had a short
+                                    window of time during which a sort of counterfeiting could occur, for example.
+                                    This research bulletin describes deficiencies in the CryptoNote reference code
+                                    allowing for this attack, describes the solution initially put forth by Rafal Freeman
+                                    from Tigusoft.pl and subsequently by the CryptoNote team, describes the current
+                                    fix in the Monero code base, and elaborates upon exactly what the offending
+                                    block did to the network. This research bulletin has not undergone peer review,
+                                    and reflects only the results of internal investigation.<br />
+                                    <br />
+                                    <a target="_blank" rel="noreferrer noopener" href="https://lab.getmonero.org/pubs/MRL-0002.pdf">Read Paper</a></p>
+                                    
+                              </div>
+                            </div>
+                            <div class="tab">
+                              <input id="tab-three" type="checkbox" name="tabs" class="accordion" />
+                              <label for="tab-three" class="accordion">MRL-0003: Monero is Not That Mysterious</label>
+                              <div class="tab-content">
+                                <p><strong>Introduction:</strong> Recently, there have been some vague fears about the CryptoNote source code and
+                                    protocol floating around the internet based on the fact that it is a more complicated
+                                    protocol than, for instance, Bitcoin. The purpose of this note is to try and clear
+                                    up some misconceptions, and hopefully remove some of the mystery surrounding
+                                    Monero Ring Signatures. I will start by comparing the mathematics involved in
+                                    CryptoNote ring signatures (as described in [CN]) to the mathematics in [FS], on
+                                    which CryptoNote is based. After this, I will compare the mathematics of the ring
+                                    signature to what is actually in the CryptoNote codebase.<br />
+                                    <br />
+                                    <a target="_blank" rel="noreferrer noopener" href="https://lab.getmonero.org/pubs/MRL-0003.pdf">Read Paper</a></p>
+                              </div>
+                            </div>
+                            <div class="tab">
+                              <input id="tab-four" type="checkbox" name="tabs" class="accordion" />
+                              <label for="tab-four" class="accordion">MRL-0004: Improving Obfuscation in the CryptoNote Protocol</label>
+                              <div class="tab-content">
+                                <p><strong>Abstract:</strong> We identify several blockchain analysis attacks available to degrade the
+untraceability of the CryptoNote 2.0 protocol. We analyze possible solutions,
+discuss the relative merits and drawbacks to those solutions, and recommend
+improvements to the Monero protocol that will hopefully provide long-term
+resistance of the cryptocurrency against blockchain analysis. Our recommended
+improvements to Monero include a protocol-level network-wide minimum mix-in
+policy of
+n
+= 2
+foreign outputs per ring signature, a protocol-level increase of this
+value to
+n
+= 4
+after two years, and a wallet-level default value of
+n
+= 4
+in the
+interim. We also recommend a torrent-style method of sending Monero output.
+We also discuss a non-uniform, age-dependent mix-in selection method to
+mitigate the other forms of blockchain analysis identified herein, but we make no
+formal recommendations on implementation for a variety of reasons. The
+ramifications following these improvements are also discussed in some detail.
+This research bulletin has not undergone peer review, and reflects only the
+results of internal investigation.<br />
+                                    <br />
+                                    <a target="_blank" rel="noreferrer noopener" href="https://lab.getmonero.org/pubs/MRL-0004.pdf">Read Paper</a></p>
+                              </div>
+                            </div>
+                            <div class="tab">
+                              <input id="tab-five" type="checkbox" name="tabs" class="accordion" />
+                              <label for="tab-five" class="accordion">MRL-0005: Ring Signature Confidential Transactions</label>
+                              <div class="tab-content">
+                                <p><strong>Abstract:</strong> This article introduces a method of hiding transaction amounts in the strongly
+decentralized anonymous cryptocurrency Monero. Similar to Bitcoin, Monero is a
+cryptocurrency which is distributed through a proof of work “mining” process.
+The original Monero protocol was based on CryptoNote, which uses ring
+signatures and one-time keys to hide the destination and origin of transactions.
+Recently the technique of using a commitment scheme to hide the amount of a
+transaction has been discussed and implemented by Bitcoin Core Developer
+Gregory Maxwell. In this article, a new type of ring signature, A Multi-layered
+Linkable Spontaneous Anonymous Group signature is described which allows for
+hidden amounts, origins and destinations of transactions with reasonable
+efficiency and verifiable, trustless coin generation. Some extensions of the
+protocol are provided, such as Aggregate Schnorr Range Proofs, and Ring
+Multisignature. The author would like to note that early drafts of this were
+publicized in the Monero Community and on the bitcoin research irc channel.
+Blockchain hashed drafts are available in [14] showing that this work was started
+in Summer 2015, and completed in early October 2015. An eprint is also
+available at
+http://eprint.iacr.org/2015/1098
+.<br />
+                                    <br />
+                                    <a href="https://lab.getmonero.org/pubs/MRL-0005.pdf" target="_blank" rel="noreferrer noopener">Read Paper</a></p>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                <!-- end left two-thirds block-->
+                
+                <!-- right one-third block-->
+                <div class="right one-third col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="info-block">
+                        <div class="row center-xs">
+                            <div class="col">
+                                <h2>Cryptonote Whitepapers</h2>
+                            </div>
+                            
+                        </div>
+<div>
+
+          <p><a href="https://cryptonote.org/whitepaper.pdf">Cryptonote Whitepaper</a></p>
+
+          <p>This is the original cryptonote paper written by the cryptonote team. Reading it will give an understanding about how the cryptonote algorithm works in general.</p>
+
+          <p><a href="https://downloads.getmonero.org/whitepaper_annotated.pdf">Annotated Whitepaper</a></p>
+
+          <p>The Monero Research Lab released an annotated version of the cryptonote whitepaper. This is sort of like an informal review of the claims that are made line-by-line of the whitepaper. It also explains some of the harder concepts in relatively easy to understand terms.</p>
+
+          <p><a href="https://downloads.getmonero.org/whitepaper_review.pdf">Brandon Goodell's Whitepaper Review</a></p>
+
+          <p>This paper is a formal review of the original cryptonote paper by MRL researcher Brandon Goodell. He takes an in-depth look at the claims and mathematics presented in the cryptonote paper.</p>
+
+        </div>
+                    </div>
+                </div>
+                <!-- end right one-third block-->
+            </div>
+</section>
+
+</div>
+    <footer class="container-fluid">
+            <div class="container">
+                <div class="row around-xs footer-wrapper">
+                   
+                     <div class="col-sm-3 col-xs-6">
+                     <h3>Recursos</h3>
+                         <ul class="list-unstyled">
+                            
+                             
+                                <li><a class="white" href="/es/resources/about/">Sobre Monero</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/es/resources/moneropedia/">Moneropedia</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/es/resources/developer-guides/">Guias de Desarrollo</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/es/resources/user-guides/">Guias de Usuario</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://getmonero.org/feed.xml">RSS Feed</a></li>
+                              
+                            
+                         </ul>
+                     </div>
+                  
+                     <div class="col-sm-3 col-xs-6">
+                     <h3>Canales IRC</h3>
+                         <ul class="list-unstyled">
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero">monero</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-dev">monero-dev</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-markets">monero-markets</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-pools">monero-pools</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-community">monero-community</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-translations">monero-translations</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-hardware">monero-hardware</a></li>
+                              
+                            
+                         </ul>
+                     </div>
+                  
+                     <div class="col-sm-3 col-xs-6">
+                     <h3>Comunidad</h3>
+                         <ul class="list-unstyled">
+                            
+                             
+                              <li><a class="white" href="https://reddit.com/r/monero">Reddit</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://monero.stackexchange.com/">Stack Exchange</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://bitcointalk.org/index.php?topic=583449.0">BitcoinTalk Thread</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://mattermost.getmonero.org/">Mattermost Chat</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://telegram.me/bitmonero">Telegram Chat</a></li>
+                              
+                            
+                         </ul>
+                     </div>
+                  
+                     <div class="col-sm-3 col-xs-6">
+                     <h3>El Proyecto Monero</h3>
+                         <ul class="list-unstyled">
+                            
+                             
+                              <li><a class="white" href="https://openalias.org/">Open Alias</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://getkovri.org/">Kovri</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/es/resources/research-lab/">Monero Research Lab</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/es/press-kit">Kit de Prensa</a></li>
+                              
+                            
+                         </ul>
+                     </div>
+                 
+                <div class="row center-xs">
+                    <div class="social-icons">
+                    </div>
+                    <div class="footer-links">
+                        <ul class="list-unstyled list-inline">
+                           
+                            
+                             <li><a href="/es/legal" class="white footer-link">Aviso Legal</a></li>
+                           
+                           
+                            
+                             <li><a href="https://github.com/monero-project" class="white footer-link">Código Fuente</a></li>
+                            
+                           
+                            
+                             <li><a href="/es/technical-specs/" class="white footer-link">Especificaciones Técnicas</a></li>
+                           
+                           
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
+</footer>
+<!-- Matomo -->
+<script type="text/javascript">
+    var _paq = _paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+        var u = "//analytics.getmonero.org/";
+        _paq.push(['setTrackerUrl', u + 'piwik.php']);
+        _paq.push(['setSiteId', '1']);
+        var d = document,
+            g = d.createElement('script'),
+            s = d.getElementsByTagName('script')[0];
+        g.type = 'text/javascript';
+        g.async = true;
+        g.defer = true;
+        g.src = u + 'piwik.js';
+        s.parentNode.insertBefore(g, s);
+    })();
+</script>
+<!-- End Matomo Code -->
+<!-- page served by server N -->
+    </div>
+  </body>
+</html>

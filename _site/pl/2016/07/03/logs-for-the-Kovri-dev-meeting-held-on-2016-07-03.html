@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>
+     Logs for the Kovri Dev Meeting Held on 2016-07-03 | Monero - bezpieczne, prywatne, niewykrywalne
+    </title>
+	<meta name="description" content="Logs for the Kovri Dev Meeting Held on 2016-07-03 [w domu Monero, cyfrowej waluty, która jest bezpieczna, prywatna i niewykrywalna]">
+	<meta name="keywords" content="monero, xmr, bitmonero, cryptocurrency">
+
+    <meta property="og:title" content="Monero: Logs for the Kovri Dev Meeting Held on 2016-07-03"/>
+    <meta property="og:description" content="Logs for the Kovri Dev Meeting Held on 2016-07-03 [w domu Monero, cyfrowej waluty, która jest bezpieczna, prywatna i niewykrywalna]">
+    <meta property="og:image" content="http://static.getmonero.org/images/opengraph/logo.png">
+    <meta property="og:site_name" content="getmonero.org, Projekt Monero">
+    <meta property="og:url" content="https://getmonero.org/2016/07/03/logs-for-the-Kovri-dev-meeting-held-on-2016-07-03.html">
+    <meta property="og:type" content="website">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/meta/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/meta/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/meta/favicon-16x16.png">
+        <link rel="manifest" href="/meta/manifest.json">
+        <link rel="mask-icon" href="/meta/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="theme-color" content="#ffffff">
+
+    <link href="/css/custom.css" rel="stylesheet">
+
+    
+    <meta name="msapplication-config" content="/ietemplates/ieconfig.xml">
+
+  </head>
+
+
+  <body>
+    <div class="page-wrapper">
+          
+<div class="mob-nav">
+              <input class="burger-check" id="mobile-burger" type="checkbox"><label for="mobile-burger" class="burger"></label>
+           
+        <div class="slide-in-nav">
+             <div class="container slide-in">
+                     
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                            
+                            <label for="drop1">Wstęp<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="drop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                              <a href="/pl/get-started/what-is-monero">Czym jest Monero?</a>
+                                  
+                              <a href="/pl/get-started/using">Używanie</a>
+                                  
+                              <a href="/pl/get-started/accepting">Akceptowanie</a>
+                                  
+                              <a href="/pl/get-started/contributing">Współpraca</a>
+                                  
+                              <a href="/pl/get-started/mining">Wydobywanie</a>
+                                  
+                              <a href="/pl/get-started/faq">FAQ</a>
+                                  
+                            </div>
+                            
+                     </div>
+                 </div>
+                  
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                               <a href="/pl/downloads/">Downloads</a>
+                            
+                     </div>
+                 </div>
+                  
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                            
+                            <label for="drop2">Najnowsze<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="drop2" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                              <a href="/pl/blog">Wszystkie wpisy</a>
+                                  
+                              <a href="/pl/blog/tags/monero%20missives.html">Postulaty</a>
+                                  
+                              <a href="/pl/blog/tags/dev%20diaries.html">Zapisy z czatów</a>
+                                  
+                              <a href="/pl/blog/tags/releases.html">Aktualizacje</a>
+                                  
+                            </div>
+                            
+                     </div>
+                 </div>
+                  
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                            
+                            <label for="drop3">Społeczność<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="drop3" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                              <a href="/pl/community/team">Zespół</a>
+                                  
+                              <a href="/pl/community/hangouts">Miejsca spotkań</a>
+                                  
+                              <a href="/pl/community/events">Wydarzenia</a>
+                                  
+                              <a href="/pl/community/sponsorships">Sponsoring</a>
+                                  
+                              <a href="/pl/community/merchants">Handel</a>
+                                  
+                            </div>
+                            
+                     </div>
+                 </div>
+                  
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                            
+                            <label for="drop4">Materiały<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="drop4" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                              <a href="/pl/resources/about">O Monero</a>
+                                  
+                              <a href="/pl/resources/roadmap">Oś czasu</a>
+                                  
+                              <a href="/pl/resources/research-lab">Laboratorium badawcze</a>
+                                  
+                              <a href="/pl/resources/moneropedia">Moneropedia</a>
+                                  
+                              <a href="/pl/resources/user-guides">Przewodniki dla użytkowników</a>
+                                  
+                              <a href="/pl/resources/developer-guides">Przewodniki dla deweloperów</a>
+                                  
+                              <a href="/pl/technical-specs">Właściwości techniczne</a>
+                                  
+                            </div>
+                            
+                     </div>
+                 </div>
+                 
+                 <div class="row">
+                     <div class="col-xs-12">
+                         <div class="text-center nav-item mob">
+                            <a href="https://forum.getmonero.org">Forum Funding System</a> 
+                         </div>
+                     </div>
+                 </div>
+                 <div class="row">
+                     <div class="col-xs-12">
+                         <div class="text-center nav-item mob">
+                            <a href="https://github.com/monero-project/meta/blob/master/VULNERABILITY_RESPONSE_PROCESS.md">Vulnerability Response</a>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="row">
+                     <div class="col-xs-12">
+                         <div class="text-center nav-item mob">
+                            <a href="/pl/the-monero-project/">The Monero Project</a> 
+                         </div>
+                     </div>
+                 </div>            
+             </div>
+          
+        </div>
+       </div>
+       
+        <div class="desktop-nav">
+            <nav class="container">
+            <div class="topnav">
+              <div class="row middle-xs">
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <a href="
+                    
+                    /pl
+                    
+                    "><img src="/img/monero-logo.png" alt="Monero Logo" class="monero-logo"></a>
+                  </div>
+                  <div class="col-lg-8 col-md-8 col-sm-8 topnav-list end-xs">
+                      <div class="row end-xs middle-xs">
+                         <div class="col-md-12">
+                          <a href="https://forum.getmonero.org" class="top-link">Forum Funding System</a>
+                          <a href="https://github.com/monero-project/meta/blob/master/VULNERABILITY_RESPONSE_PROCESS.md" class="top-link">Vulnerability Response</a>
+                          <a href="/pl/the-monero-project/" class="top-link">The Monero Project</a>
+                          <div href="#" class="dropdown top-link language-change">
+                            <input class="burger-checkdropdown" id="langdrop" type="checkbox">
+                            <label for="langdrop">
+                            
+                                
+                            
+                            
+                            
+                                
+                            
+                            
+                            
+                                
+                            
+                            
+                            
+                                
+                            
+                                    Polski
+                            
+                                
+                            
+                            
+                            
+                                
+                            
+                            <div class="arrow-down"></div></label>
+                            <div class="dropdown-content text-center">
+                                    
+                                
+                                  
+                                    <a href="/2016/07/03/logs-for-the-Kovri-dev-meeting-held-on-2016-07-03.html" >English</a>
+                                  
+                                
+                              
+                                
+                                  
+                                    <a href="/es/2016/07/03/logs-for-the-Kovri-dev-meeting-held-on-2016-07-03.html" >Español</a>
+                                  
+                                
+                              
+                                
+                                  
+                                    <a href="/it/2016/07/03/logs-for-the-Kovri-dev-meeting-held-on-2016-07-03.html" >Italian</a>
+                                  
+                                
+                              
+                                
+                              
+                                
+                                  
+                                    <a href="/fr/2016/07/03/logs-for-the-Kovri-dev-meeting-held-on-2016-07-03.html" >Français</a>
+                                  
+                                
+                              
+                            </div>
+                          </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="botnav white-nav">
+                <input class="burger-check" id="burger-check" type="checkbox"><label for="burger-check" class="burger"></label>
+                <div class="row between-xs nav-items">
+                     
+                    <div class="col dropdown nav-item">
+                        
+                            <label for="desktopdrop1">Wstęp<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="desktopdrop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                                  <a href="/pl/get-started/what-is-monero">Czym jest Monero?</a>
+                                
+                                  <a href="/pl/get-started/using">Używanie</a>
+                                
+                                  <a href="/pl/get-started/accepting">Akceptowanie</a>
+                                
+                                  <a href="/pl/get-started/contributing">Współpraca</a>
+                                
+                                  <a href="/pl/get-started/mining">Wydobywanie</a>
+                                
+                                  <a href="/pl/get-started/faq">FAQ</a>
+                                
+                            </div>
+                            
+                    </div>
+                    
+                    <div class="col dropdown nav-item">
+                        
+                           <a href="/pl/downloads/">Downloads</a>
+                            
+                    </div>
+                    
+                    <div class="col dropdown nav-item">
+                        
+                            <label for="desktopdrop1">Najnowsze<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="desktopdrop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                                  <a href="/pl/blog">Wszystkie wpisy</a>
+                                
+                                  <a href="/pl/blog/tags/monero%20missives.html">Postulaty</a>
+                                
+                                  <a href="/pl/blog/tags/dev%20diaries.html">Zapisy z czatów</a>
+                                
+                                  <a href="/pl/blog/tags/releases.html">Aktualizacje</a>
+                                
+                            </div>
+                            
+                    </div>
+                    
+                    <div class="col dropdown nav-item">
+                        
+                            <label for="desktopdrop1">Społeczność<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="desktopdrop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                                  <a href="/pl/community/team">Zespół</a>
+                                
+                                  <a href="/pl/community/hangouts">Miejsca spotkań</a>
+                                
+                                  <a href="/pl/community/events">Wydarzenia</a>
+                                
+                                  <a href="/pl/community/sponsorships">Sponsoring</a>
+                                
+                                  <a href="/pl/community/merchants">Handel</a>
+                                
+                            </div>
+                            
+                    </div>
+                    
+                    <div class="col dropdown nav-item">
+                        
+                            <label for="desktopdrop1">Materiały<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="desktopdrop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                                  <a href="/pl/resources/about">O Monero</a>
+                                
+                                  <a href="/pl/resources/roadmap">Oś czasu</a>
+                                
+                                  <a href="/pl/resources/research-lab">Laboratorium badawcze</a>
+                                
+                                  <a href="/pl/resources/moneropedia">Moneropedia</a>
+                                
+                                  <a href="/pl/resources/user-guides">Przewodniki dla użytkowników</a>
+                                
+                                  <a href="/pl/resources/developer-guides">Przewodniki dla deweloperów</a>
+                                
+                                  <a href="/pl/technical-specs">Właściwości techniczne</a>
+                                
+                            </div>
+                            
+                    </div>
+                    
+                  </div>
+            </div>
+        </nav>
+        </div>
+        <div class="mob bot-nav white-nav">
+            <div class="row center-xs middle-xs">
+                <div class="col-xs-6">
+                    <a href="
+                    
+                    /pl
+                    
+                    "><img src="/img/monero-logo.png" alt="Monero Logo" class="monero-logo"></a>
+                </div>
+                <div class="dropdown col-xs-6 text-center mob-language-change">
+                <input class="burger-checkdropdown" id="moblangdrop" type="checkbox">
+                 <label for="moblangdrop"><img src="/img/language.png" alt="Lang" class="icon-language"/><div class="arrow-down"></div></label>
+                               <div class="mob dropdown-content text-center">
+                               <p class="mob-lang-change mob-lang-selected">
+                                   
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                                 Polski
+                                
+                              
+                                
+                              
+                                   
+                               </p>
+                               
+                                
+                                  
+                                    <a class="mob-lang-change" href="/2016/07/03/logs-for-the-Kovri-dev-meeting-held-on-2016-07-03.html" >English</a>
+                                  
+                                
+                              
+                                
+                                  
+                                    <a class="mob-lang-change" href="/es/2016/07/03/logs-for-the-Kovri-dev-meeting-held-on-2016-07-03.html" >Español</a>
+                                  
+                                
+                              
+                                
+                                  
+                                    <a class="mob-lang-change" href="/it/2016/07/03/logs-for-the-Kovri-dev-meeting-held-on-2016-07-03.html" >Italian</a>
+                                  
+                                
+                              
+                                
+                              
+                                
+                                  
+                                    <a class="mob-lang-change" href="/fr/2016/07/03/logs-for-the-Kovri-dev-meeting-held-on-2016-07-03.html" >Français</a>
+                                  
+                                
+                              
+                            </div>
+                          </div>
+            </div>     
+        </div>    
+
+        
+
+<div class="site-wrap post">
+    
+    <section class="container">
+            <div class="row">
+                <!-- left two-thirds block-->
+                <div class="left two-thirds col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                    <div class="info-block">
+                        <div class="row">
+                            <div class="col">
+                               <h2>Logs for the Kovri Dev Meeting Held on 2016-07-03</h2> 
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p class="author">Opublikowane przez: dEBRUYNE / fluffypony</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p>July 03, 2016</p>
+                            </div>
+                        </div>
+                    <div>
+                        <h3 id="logs">Logs</h3>
+
+<p><strong>&lt;fluffypony&gt;</strong> ok I guess we move on to Kovri - anonimal, the floor is yours<br />
+<strong>* fluffypony:</strong> ding dings<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> Meeting Agenda: Sunday, July 3rd, 17:00 UTC<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> 1. Greetings<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> 2. Brief review of what's been completed since the previous meeting<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> 3. Discuss SSU: status of #140 and https://github.com/EinMByte/kovri/pull/1 (if applicable), ideas, problems, and solutions (note: ask if @EinMByte will allow issues tracking within his repo)<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> 4. Discuss commit message labeling, e.g., how to organize first line of commits. Touch-up on C4.<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> 5. Review open tickets (assigned and/or unassigned): status, code ideas (if applicable), etc.<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> 6. Discuss any pertinent TODO's<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> 7. Any additional meeting items<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> 8. Confirm next meeting date/time<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> – 1. Greetings<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> Hi<br />
+<strong>&lt;moneromooo&gt;</strong> hi<br />
+<strong>&lt;fluffypony&gt;</strong> hi<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> I know Ein is irc2p side waiting for me to move on :)<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> 2. Brief review of what's been completed since the previous meeting<br />
+<strong>&lt;meeting-bot&gt; [fluffypony]</strong> I'm on this side too<br />
+<strong>&lt;meeting-bot&gt; * anonimal</strong> wishes this was automated. /pulse only does so much<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> 28 commits (not including merges), 2 new issues open, 0 issues closed<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> All new commits in https://github.com/einmbyte/kovri/tree/ssu<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> I ended up diving into SSU with EinMByte this week. Much fun.<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> Teamwork-teamwork: within the past hour, we had figured out that the HMAC digest impl was segfaulting because GetHeader-&gt;GetMAC() was not initialized, so the segfault is fixed for now.<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> But that's just a small portion of what's been completed since previous meeting, and more issues abound. More to discuss in 3.<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> Anyone else re: completed work since previous meeting?<br />
+<strong>&lt;meeting-bot&gt; [fluffypony]</strong> I've been focused on the OTF funding stuff, so I haven't had a chance to finish the website work<br />
+<strong>&lt;meeting-bot&gt; [fluffypony]</strong> pushing that out till the next meeting, unless we have to prepare more stuff for the OTF<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> Ok. Any new issues re: OTF?<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> Seems like they've had a few lately.<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> i.e., did we get confirmation that they received our request?<br />
+<strong>&lt;meeting-bot&gt; [fluffypony]</strong> no I think the next step is we'll receive a pass / fail on the concept note<br />
+<strong>&lt;meeting-bot&gt; [fluffypony]</strong> yes we did<br />
+<strong>&lt;meeting-bot&gt; [_trump2016]</strong> OTF will make kovri great again!<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> Confirmation, good.<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> Anyone freenode-side? Is xmrpromotions there?<br />
+<strong>&lt;meeting-bot&gt; [fluffypony]</strong> so if we receive a pass we have to prepare an actual proposal<br />
+<strong>&lt;meeting-bot&gt; [fluffypony]</strong> but let's see when we get there<br />
+<strong>&lt;meeting-bot&gt; [fluffypony]</strong> (if)<br />
+<strong>&lt;meeting-bot&gt; [fluffypony]</strong> they were on Reddit the other day, they seem to be busy at the moment<br />
+<strong>&lt;meeting-bot&gt; [fluffypony]</strong> they've asked for assistance on the gnu-social thing<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> Link? What kind of assistance? I'd be happy to help.<br />
+<strong>&lt;meeting-bot&gt; [fluffypony]</strong> I'll have to find it and send it to you post-meeting<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> Ok. Anything else on 2.?<br />
+<strong>&lt;meeting-bot&gt; [fluffypony]</strong> oh found it, nevermind: https://www.reddit.com/r/Monero/comments/4qywbx/what_are_moneros_pain_points_marketing_design/d4x34p3<br />
+<strong>&lt;meeting-bot&gt; [fluffypony]</strong> nein<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> fluffypony: Thanks, I'll look into it later.<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> Moving on,<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> 3. Discuss SSU: status of #140 and https://github.com/EinMByte/kovri/pull/1 (if applicable), ideas, problems, and solutions (note: ask if @EinMByte will allow issues tracking within his repo)<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> So, https://github.com/EinMByte/kovri/pull/1 has been merged<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> EinMByte: will you allow issues tracking within your repo? It would help with this bug we're hunting.<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> Oops, old paste, we fixed the bug,<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> but are still dealing with related issues.<br />
+<strong>&lt;meeting-bot&gt; * anonimal</strong> knows Ein is somewhere, we were chatting elsewhere during the bitmonero meeting<br />
+<strong>&lt;meeting-bot&gt; [EinMByte]</strong> Hi<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> Maybe he still thinks its the previous meeting…<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> Hi<br />
+<strong>&lt;meeting-bot&gt; [EinMByte]</strong> Yes, I will allow all contributions to my repo<br />
+<strong>&lt;meeting-bot&gt; [EinMByte]</strong> Latest issue is: we are sending out broken packets<br />
+<strong>&lt;meeting-bot&gt; [fluffypony]</strong> issue tracking has to be explicitly enabled for the repo, EinMByte<br />
+<strong>&lt;meeting-bot&gt; [EinMByte]</strong> (but at least the segfault is fixed)<br />
+<strong>&lt;meeting-bot&gt; [fluffypony]</strong> it's a setting in github somewhere<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> ^ what fluffypony said<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> EinMByte: are we in a committable stage for the segfault fix? So I can see where we stand?<br />
+<strong>&lt;meeting-bot&gt; [EinMByte]</strong> anonimal: Already committed<br />
+<strong>&lt;meeting-bot&gt; [EinMByte]</strong> fluffypony: somewhere where<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> I imagine we're sending bogus packets in SessionRequest<br />
+<strong>&lt;meeting-bot&gt; [fluffypony]</strong> I'll check<br />
+<strong>&lt;meeting-bot&gt; * anonimal</strong> fetching<br />
+<strong>&lt;meeting-bot&gt; [EinMByte]</strong> fluffypony: Never mind, I think I got it<br />
+<strong>&lt;meeting-bot&gt; [fluffypony]</strong> if there's time, anonimal, can you please explain what SSU is for those who are observing the meeting ?<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> Ok, latest commit makes sense.<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> Yes,<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> tl;dr, in plain english,<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> it is one of two transport mechanisms closest to the IP layer:<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> NTCP is for TCP, SSU is for UDP.<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> SSU essentially takes care of encryption and negotiation with peers at the UDP level.<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> Does that make sense, or should I explain more?<br />
+<strong>&lt;meeting-bot&gt; * anonimal</strong> fetches link<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> Specification here: https://geti2p.net/spec/ssu<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> Overview here: https://geti2p.net/en/docs/transport/ssu<br />
+<strong>&lt;meeting-bot&gt; [EinMByte]</strong> In case anyone is really listening: we are rewriting the SSU implementation because<br />
+<strong>&lt;meeting-bot&gt; [EinMByte]</strong> 1) It doesn't allow for unit tests<br />
+<strong>&lt;__uguu__&gt;</strong> i2p needs a better udp transport<br />
+<strong>&lt;meeting-bot&gt; [EinMByte]</strong> 2) The design is bad, because separate concepts are not separated in code (packet parsing was done in the same functions as dealing with networking etc)<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> X) it was an unmaintainable nightmare, like much of the codebase that we have yet to refactor.<br />
+<strong>&lt;meeting-bot&gt; [EinMByte]</strong> <strong>uguu</strong>: It probably does, so let's hope SSU2 will be better<br />
+<strong>&lt;meeting-bot&gt; [EinMByte]</strong> (I'm not sure what the satus on SSU2 is, AFAIK there's not even a spec yet)<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> I had some ideas/problems/solutions when working on everything this week,<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> but I need more time to flesh out tangible thought.<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> I think we're on the right track, as we discussed earlier.<br />
+<strong>&lt;meeting-bot&gt; [EinMByte]</strong> Ok, no problem. Maybe write everything down on github?<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> Sure, I'll comment more in #140 or open an issue in your repo.<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> Essentially, I want to take a closer look at design this week as I said I would stay away when we last spoke.<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> e.g., what we discussed earlier about MAC buffer, etc.<br />
+<strong>&lt;meeting-bot&gt; [EinMByte]</strong> Yes, in terms of design many things are currently undecided<br />
+<strong>&lt;meeting-bot&gt; [EinMByte]</strong> I've mentioned before that this is more of a refactoring than a rewrite<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> Hmm… maybe I have a different vision of end-result then.<br />
+<strong>&lt;meeting-bot&gt; [EinMByte]</strong> At least for now, I do want design changes in the end<br />
+<strong>&lt;meeting-bot&gt; [EinMByte]</strong> But I wanted to make it less crappy first, and then make it good<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> I think I need to get my hands dirty and get more intimate with your new changes.<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> I understand, as I said in #1 I completely understand and agree.<br />
+<strong>&lt;meeting-bot&gt; * anonimal</strong> no complaints here<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> So, long story short, I'd like to get more involved. Any objections EinMByte?<br />
+<strong>&lt;meeting-bot&gt; [EinMByte]</strong> Of course not, I can use all help<br />
+<strong>&lt;meeting-bot&gt; * anonimal</strong> could work in another branch, but I think our conflicts result in better code<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> Ok, I'll comment more in #140, etc. as things progress.<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> Anything else on 3.?<br />
+<strong>&lt;meeting-bot&gt; [EinMByte]</strong> Not from me<br />
+<strong>&lt;meeting-bot&gt; * anonimal</strong> prepares for more pasting<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> Anyone here have more SSU questions?<br />
+<strong>&lt;meeting-bot&gt; * anonimal</strong> will work on refining better responses to such questions<br />
+<strong>&lt;meeting-bot&gt; [fluffypony]</strong> no that's perfect, thanks<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> Ok, moving on<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> 4. Discuss commit message labeling, e.g., how to organize first line of commits. Touch-up on C4.<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> To preface, before discussing commit titles, none of this can really be enforced at the moment because there is no payout hanging over anyone's head.<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> But our guide does ask to reference applicable ticket numbers in commit bodies - and its incredibly helpful.<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> I'm trying to be better about doing this and I hope EinMByte would also consider doing this too.<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> It should be noted that there is no mention in the guide or C4 about commit title.<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> I've been using a rough system of prepending titles with class or aspect of project worked on.<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> It does help for quick git-log searches. Again, not enforceable, but it does help IMHO.<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> Thoughts? Objections to adding to guide?<br />
+<strong>&lt;meeting-bot&gt; [fluffypony]</strong> can you give me an example of the prepending?<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> Yes, one moment.<br />
+<strong>&lt;meeting-bot&gt; [EinMByte]</strong> anonimal: I've noticed that you tend to include a longer summary<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> fluffypony: Basically what's before the colon https://github.com/EinMByte/kovri/pull/1<br />
+<strong>&lt;meeting-bot&gt; [EinMByte]</strong> I currently don't do that, but if you think it's worth it, I can start doing that<br />
+<strong>&lt;meeting-bot&gt; [EinMByte]</strong> Other than that, the main thing should be that it should be reasonably clear what the commit is about<br />
+<strong>&lt;meeting-bot&gt; [fluffypony]</strong> oh yeah that's cool<br />
+<strong>&lt;meeting-bot&gt; [EinMByte]</strong> But we all do that already<br />
+<strong>&lt;meeting-bot&gt; [EinMByte]</strong> I'm fine with stricter rules, just don't shout at me too much when I forget about them :p<br />
+<strong>&lt;meeting-bot&gt; [fluffypony]</strong> I tend to do short summaries too, but I like the prepending thing<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> EinMByte: I agree. If I were to ask of anything, it would be to references issues that commit addresses.<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> Other than that, I personally couldn't ask you to write longer summaries. Honestly, most of what you commit I understand anyway because its well-written IMHO - but that's just me.<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> So, as usual, I think about everyone else who isn't knee-deep in our mess.<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> And maybe longer summaries would help?<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> But 4. for me was more about commit title.<br />
+<strong>&lt;meeting-bot&gt; [EinMByte]</strong> Ok, I'll try to reference issues more often<br />
+<strong>&lt;meeting-bot&gt; [fluffypony]</strong> I don't think longer summaries are massively necessary as long as the commits show the route taken to get there, referencing issues is definitely helpful<br />
+<strong>&lt;meeting-bot&gt; [EinMByte]</strong> (not in the title, though)<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> Ok. So shall we take a vote on adding 'prepend class or project aspect into title of commit' into contributing guide?<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> (again, at this time not enforceable - just helpful)<br />
+<strong>&lt;meeting-bot&gt; [fluffypony]</strong> I'm fine with it<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> + me = 2 yes. Anyone else?<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> As fluffypony pointed out long ago, its not like anyone reads contributing guides anyway ;)<br />
+<strong>&lt;meeting-bot&gt; [fluffypony]</strong> hah hah yeah<br />
+<strong>&lt;meeting-bot&gt; [EinMByte]</strong> Sure<br />
+<strong>&lt;meeting-bot&gt; [fluffypony]</strong> but at least it's there and we can encourage it<br />
+<strong>&lt;meeting-bot&gt; [EinMByte]</strong> ^<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> Ok, good point on the encouragement.<br />
+<strong>&lt;meeting-bot&gt; [fluffypony]</strong> hey - we managed to get most Monero contributors to GPG sign commits, so it is doable :)<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> Great, done.<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> While we're on 4., this is off-the-cuff,<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> but bitmonero is working with only 1 branch now.<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> And, C4 kind of dictates that (IIRC).<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> So, do we scrap branch development and work solely in master?<br />
+<strong>&lt;meeting-bot&gt; [fluffypony]</strong> note that we have a use-case for moving back to the dev branch setup, because people just pull and compile<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> I've also used arguments for two branches. I'm curious to hear EinMByte's opinion.<br />
+<strong>&lt;meeting-bot&gt; * anonimal</strong> sigh, I2P lag<br />
+<strong>&lt;meeting-bot&gt; * anonimal</strong> doesn't want to move on yet, running out of time though<br />
+<strong>&lt;meeting-bot&gt; [EinMByte]</strong> anonimal: Not sure, I think it's good to have a stable branch<br />
+<strong>&lt;meeting-bot&gt; [EinMByte]</strong> also, it doesn't hurt anyone? (I think)<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> The argument is to instead warn users that anything that is built outside of a tagged version is… well, unpredictable.<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> But, since we don't have any releases yet…<br />
+<strong>&lt;meeting-bot&gt; [EinMByte]</strong> There's "unpredictable" and there's "possibly broken"<br />
+<strong>&lt;meeting-bot&gt; [EinMByte]</strong> In my opinion those are not really the same<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> Good point. I imagine though that broken branches would stay in forks and then, when fleshed out, could be sent to 1 branch master.<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> But then that would require more work maintainer-side.<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> Ay, too many options.<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> I vote to keep two branches for now.<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> Yea or Nay?<br />
+<strong>&lt;meeting-bot&gt; [EinMByte]</strong> ok, let's keep the branches and move on :)<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> Ok, moving on.<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> 5. Review open tickets (assigned and/or unassigned): status, code ideas (if applicable), etc.<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> My hands have been tied to SSU as we've discussed. I did hack a fix for the massive leak in #191.<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> It appears to be related to LogPrint and possibly GetFormattedSessionInfo(). I need more time with it and to produce a smoother fix.<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> But it doesn't address a few smaller leaks related to #191.<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> So, between now and next meeting, I'm somewhat sure I'll focus on SSU, #191, and getting a windows build in working order.<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> And in that order.<br />
+<strong>&lt;meeting-bot&gt; [EinMByte]</strong> Ok<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> <em>but</em> I also may start drafting a FFS proposal for a chunk of that time (I said I would last meeting). We'll see.<br />
+<strong>&lt;meeting-bot&gt; [fluffypony]</strong> +1, FFS proposals are welcome<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> EinMByte: do you think you'll be around sometime this coming week or the following week? Or are weekends better?<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> fluffypony: would you please refresh my memory on the zoho/fastmail decision (my brain is scattered at the moment)?<br />
+<strong>&lt;meeting-bot&gt; [EinMByte]</strong> I'll be around a few hours a day, but more actively in weekends<br />
+<strong>&lt;meeting-bot&gt; [fluffypony]</strong> started the process a few days ago, we're doing Zoho<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> EinMByte: sounds great.<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> fluffypony: sounds great.<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> Many great sounds!<br />
+<strong>&lt;meeting-bot&gt; [fluffypony]</strong> everyone can independently forward their mails to tutanota or i2pmail, or just use the Zoho mailbox<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> I'm looking forward to zoho's /projects, especially time-management.<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> Kimai is a horrid <em>#()</em>@#)$@#$#@<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> If anyone has experience using it…<br />
+<strong>&lt;meeting-bot&gt; [fluffypony]</strong> never heard of it, will take a look<br />
+<strong>&lt;meeting-bot&gt; [fluffypony]</strong> or not if it's horrible<br />
+<strong>&lt;meeting-bot&gt; * anonimal</strong> surprised at the lack of free, personal, opensource, time-management/billable hours solutions out there<br />
+<strong>&lt;meeting-bot&gt; [fluffypony]</strong> MS Project<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> IMHO you should, it may be humorous.<br />
+<strong>&lt;meeting-bot&gt; [fluffypony]</strong> :-P<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> I can't knock their work though, I applaud what they're doing, I just wish I had more time to contribute to their project.<br />
+<strong>&lt;meeting-bot&gt; [fluffypony]</strong> is it meeting.end time?<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> Eek, one more thing.<br />
+<strong>&lt;meeting-bot&gt; * anonimal</strong> one more paste coming<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> 6. Discuss any pertinent TODO's<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> In SSU: we're closer to resolving #119 with our new design. I've noted a few spots of missing implementation that I think will be resolved during the refactor.<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> I had mentioned in the most recent PR my interest in more sanity tests, and EinMByte did note a few overflow checks.<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> I think we're still discussing design though, so that would come a little later.<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> Thoughts?<br />
+<strong>&lt;meeting-bot&gt; [EinMByte]</strong> Yes, we have many places where we need more checks<br />
+<strong>&lt;meeting-bot&gt; [EinMByte]</strong> at least we won't leak if we throw errors etc due smart pointer usage<br />
+<strong>&lt;meeting-bot&gt; [EinMByte]</strong> Eventually I want to rely on exception for error handling, and I want to use the error information for peer profiling<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> Ooooooooooooooo, I like that……<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> I like that ALOT.<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> Yes, smart pointers: something the previous project had very little interest in;<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> despite the standard having been out for years.<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> Anyway, I won't start bashing as we're out of time (I love a good bashing).<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> Anything else on 6.?<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> If not, then 7.?<br />
+<strong>&lt;meeting-bot&gt; [fluffypony]</strong> nothing else from my side<br />
+<strong>&lt;meeting-bot&gt; [fluffypony]</strong> next meeting same time, same place, two weeks?<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> Works for me.<br />
+<strong>&lt;meeting-bot&gt; [EinMByte]</strong> Should be fine<br />
+<strong>&lt;meeting-bot&gt; [fluffypony]</strong> sehr gut<br />
+<strong>&lt;meeting-bot&gt; [zzz]</strong> will we see any kovri ppl at HOPE in 3 weeks?<br />
+<strong>&lt;meeting-bot&gt; [fluffypony]</strong> zzz: unfortunately not me, need to do no travelling for a little bit<br />
+<strong>&lt;meeting-bot&gt; [fluffypony]</strong> got too much work to do, lol<br />
+<strong>&lt;meeting-bot&gt; [EinMByte]</strong> not me either<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> I had planned late last year but things took a completely different turn so, nope, not this time around.<br />
+<strong>&lt;meeting-bot&gt; [zzz]</strong> ok, I believe echelon still has a ticket to sell, if anybody needs it<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> Thanks zzz. That echelon, quite the organizer :)<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> Anything else? Meeting?<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> I want to also thank fluffypony and dEBRUYNE and anyone else for their work on getting these logs up on the site.<br />
+<strong>&lt;meeting-bot&gt; [fluffypony]</strong> it's mostly dEBRUYNE, I just add spaces in at the end<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> lol, nice.<br />
+<strong>&lt;meeting-bot&gt; [anonimal]</strong> Ok, thanks everyone for the great meeting.<br />
+<strong>&lt;meeting-bot&gt; [fluffypony]</strong> thanks everyone<br />
+<strong>&lt;meeting-bot&gt; [fluffypony]</strong> meeting-bot going offline</p>
+
+                    </div>
+                    <hr>
+                    <p id="post-meta">Post tags <i class="fa fa-tags"></i>: <a href="/blog/tags/dev diaries.html">Dev Diaries</a>, <a href="/blog/tags/i2p.html">Kovri I2P Router</a>, <a href="/blog/tags/crypto.html">Cryptography</a></p>
+                    </div>
+                </div>
+                <!-- end left two-thirds block-->
+                
+                <!-- right one-third block-->
+                <div class="right one-third col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <div class="sidebar col-sm-12 col-xs-12">   
+                            <div class="info-block">
+                                <div class="row center-xs">
+                                    <div class="col"><h2>Recent Posts</h2></div>
+                                </div>
+                                
+                                <div class="row start-xs info-block-row">
+                                    <div class="col">
+                                         <p><a href="/2018/03/29/response-to-an-empirical-analysis-of-traceability.html">Response to "An Empirical Analysis of Traceability in the Monero Blockchain", Version 2</a></p>
+                                     </div>
+                                </div>
+                                
+                                <div class="row start-xs info-block-row">
+                                    <div class="col">
+                                         <p><a href="/2018/03/29/monero-0.12.0.0-released.html">Monero 0.12.0.0 "Lithium Luna" Release</a></p>
+                                     </div>
+                                </div>
+                                
+                                <div class="row start-xs info-block-row">
+                                    <div class="col">
+                                         <p><a href="/2018/03/28/a-scheduled-protocol-upgrade-is-planned-for-April-6-2018-03-28.html">A Scheduled Network Upgrade is Planned for April 6</a></p>
+                                     </div>
+                                </div>
+                                
+                                <div class="row start-xs info-block-row">
+                                    <div class="col">
+                                         <p><a href="/2018/03/01/core-team-announcement.html">Core Team Announcement</a></p>
+                                     </div>
+                                </div>
+                                
+                            </div>
+                            <div class="info-block">
+                                <div class="row center-xs">
+                                    <div class="col">
+                                        <h2>Popular Tags</h2>
+                                    </div>
+                                </div>
+                                    
+                                    <div class="row start-xs">
+                                        <div class="col">
+                                             <p><a href="/blog/tags/monero missives.html">Monero Missives</a></p>
+                                         </div>
+                                     </div>
+                                     
+                                    <div class="row start-xs">
+                                        <div class="col">
+                                             <p><a href="/blog/tags/conferences.html">Conferences</a></p>
+                                         </div>
+                                     </div>
+                                     
+                                    <div class="row start-xs">
+                                        <div class="col">
+                                             <p><a href="/blog/tags/exchanges.html">Exchanges</a></p>
+                                         </div>
+                                     </div>
+                                     
+                                    <div class="row start-xs">
+                                        <div class="col">
+                                             <p><a href="/blog/tags/gui.html">Monero Core GUI</a></p>
+                                         </div>
+                                     </div>
+                                     
+
+
+                            </div>
+                        </div> 
+                </div>
+                <!-- end right one-third block-->
+            </div>
+        </section>
+    </div>
+
+    <footer class="container-fluid">
+            <div class="container">
+                <div class="row around-xs footer-wrapper">
+                   
+                     <div class="col-sm-3 col-xs-6">
+                     <h3>Materiały</h3>
+                         <ul class="list-unstyled">
+                            
+                             
+                                <li><a class="white" href="/pl/resources/about/">O Monero</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/pl/resources/moneropedia/">Moneropedia</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/pl/resources/developer-guides/">Przewodniki dla deweloperów</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/pl/resources/user-guides/">Przewodniki dla użytkowników</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://getmonero.org/feed.xml">Kanał RSS</a></li>
+                              
+                            
+                         </ul>
+                     </div>
+                  
+                     <div class="col-sm-3 col-xs-6">
+                     <h3>Kanały IRC</h3>
+                         <ul class="list-unstyled">
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero">monero</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-dev">monero-dev</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-markets">monero-markets</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-pools">monero-pools</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-community">monero-community</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-translations">monero-translations</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-hardware">monero-hardware</a></li>
+                              
+                            
+                         </ul>
+                     </div>
+                  
+                     <div class="col-sm-3 col-xs-6">
+                     <h3>Społeczność</h3>
+                         <ul class="list-unstyled">
+                            
+                             
+                              <li><a class="white" href="https://reddit.com/r/monero">Reddit</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://monero.stackexchange.com/">Stack Exchange</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://bitcointalk.org/index.php?topic=583449.0">BitcoinTalk Thread</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://mattermost.getmonero.org/">Mattermost Chat</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://telegram.me/bitmonero">Telegram Chat</a></li>
+                              
+                            
+                         </ul>
+                     </div>
+                  
+                     <div class="col-sm-3 col-xs-6">
+                     <h3>Projekt Monero</h3>
+                         <ul class="list-unstyled">
+                            
+                             
+                              <li><a class="white" href="https://openalias.org/">Open Alias</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://getkovri.org/">Kovri</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/pl/resources/research-lab/">Laboratorium Badawcze Monero</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/pl/press-kit">Monero Press Kit</a></li>
+                              
+                            
+                         </ul>
+                     </div>
+                 
+                <div class="row center-xs">
+                    <div class="social-icons">
+                    </div>
+                    <div class="footer-links">
+                        <ul class="list-unstyled list-inline">
+                           
+                            
+                             <li><a href="/pl/legal" class="white footer-link">Informacje prawne</a></li>
+                           
+                           
+                            
+                             <li><a href="https://github.com/monero-project" class="white footer-link">Kod źródłowy</a></li>
+                            
+                           
+                            
+                             <li><a href="/pl/technical-specs/" class="white footer-link">Właściwości techniczne</a></li>
+                           
+                           
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
+</footer>
+<!-- Matomo -->
+<script type="text/javascript">
+    var _paq = _paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+        var u = "//analytics.getmonero.org/";
+        _paq.push(['setTrackerUrl', u + 'piwik.php']);
+        _paq.push(['setSiteId', '1']);
+        var d = document,
+            g = d.createElement('script'),
+            s = d.getElementsByTagName('script')[0];
+        g.type = 'text/javascript';
+        g.async = true;
+        g.defer = true;
+        g.src = u + 'piwik.js';
+        s.parentNode.insertBefore(g, s);
+    })();
+</script>
+<!-- End Matomo Code -->
+<!-- page served by server N -->
+    </div>
+  </body>
+</html>

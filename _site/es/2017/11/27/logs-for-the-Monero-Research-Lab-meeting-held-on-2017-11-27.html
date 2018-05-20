@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>
+     Logs for the Monero Research Lab Meeting Held on 2017-11-27 | Monero - secure, private, untraceable
+    </title>
+	<meta name="description" content="Logs for the Monero Research Lab Meeting Held on 2017-11-27 [on the home of Monero, a digital currency that is secure, private, and untraceable]">
+	<meta name="keywords" content="monero, xmr, bitmonero, cryptocurrency">
+
+    <meta property="og:title" content="Monero: Logs for the Monero Research Lab Meeting Held on 2017-11-27"/>
+    <meta property="og:description" content="Logs for the Monero Research Lab Meeting Held on 2017-11-27 [on the home of Monero, a digital currency that is secure, private, and untraceable]">
+    <meta property="og:image" content="http://static.getmonero.org/images/opengraph/logo.png">
+    <meta property="og:site_name" content="getmonero.org, The Monero Project">
+    <meta property="og:url" content="https://getmonero.org/2017/11/27/logs-for-the-Monero-Research-Lab-meeting-held-on-2017-11-27.html">
+    <meta property="og:type" content="website">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/meta/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/meta/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/meta/favicon-16x16.png">
+        <link rel="manifest" href="/meta/manifest.json">
+        <link rel="mask-icon" href="/meta/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="theme-color" content="#ffffff">
+
+    <link href="/css/custom.css" rel="stylesheet">
+
+    
+    <meta name="msapplication-config" content="/ietemplates/ieconfig.xml">
+
+  </head>
+
+
+  <body>
+    <div class="page-wrapper">
+          
+<div class="mob-nav">
+              <input class="burger-check" id="mobile-burger" type="checkbox"><label for="mobile-burger" class="burger"></label>
+           
+        <div class="slide-in-nav">
+             <div class="container slide-in">
+                     
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                            
+                            <label for="drop1">Inicio<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="drop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                              <a href="/es/get-started/what-is-monero">¿Qué es Monero?</a>
+                                  
+                              <a href="/es/get-started/using">Usar Monero</a>
+                                  
+                              <a href="/es/get-started/accepting">Aceptar Monero</a>
+                                  
+                              <a href="/es/get-started/contributing">Contribuir a Monero</a>
+                                  
+                              <a href="/es/get-started/mining">Minar Monero</a>
+                                  
+                              <a href="/es/get-started/faq">FAQ</a>
+                                  
+                            </div>
+                            
+                     </div>
+                 </div>
+                  
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                               <a href="/es/downloads">Descargas</a>
+                            
+                     </div>
+                 </div>
+                  
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                            
+                            <label for="drop2">Noticias<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="drop2" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                              <a href="/es/blog">Todas publicaciones</a>
+                                  
+                              <a href="/es/blog/tags/monero%20missives.html">Misivas</a>
+                                  
+                              <a href="/es/blog/tags/dev%20diaries.html">Transcripciones de reuniones</a>
+                                  
+                              <a href="/es/blog/tags/releases.html">Lanzamientos</a>
+                                  
+                            </div>
+                            
+                     </div>
+                 </div>
+                  
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                            
+                            <label for="drop3">Comunidad<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="drop3" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                              <a href="/es/community/team">Equipo</a>
+                                  
+                              <a href="/es/community/hangouts">Canales de comunicación</a>
+                                  
+                              <a href="/es/community/sponsorships">Patrocinios</a>
+                                  
+                              <a href="/es/community/merchants">Comerciantes</a>
+                                  
+                            </div>
+                            
+                     </div>
+                 </div>
+                  
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                            
+                            <label for="drop4">Recursos<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="drop4" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                              <a href="/es/resources/about">Sobre Monero</a>
+                                  
+                              <a href="/es/resources/roadmap">Hoja de ruta</a>
+                                  
+                              <a href="/es/resources/research-lab">Laboratorio de investigación</a>
+                                  
+                              <a href="/es/resources/moneropedia">Moneropedia</a>
+                                  
+                              <a href="/es/resources/user-guides">Guías de usuario</a>
+                                  
+                              <a href="/es/resources/developer-guides">Guías de desarrolladores</a>
+                                  
+                              <a href="/es/technical-specs">Especificaciones técnicas</a>
+                                  
+                            </div>
+                            
+                     </div>
+                 </div>
+                 
+                 <div class="row">
+                     <div class="col-xs-12">
+                         <div class="text-center nav-item mob">
+                            <a href="https://forum.getmonero.org">Forum Funding System</a> 
+                         </div>
+                     </div>
+                 </div>
+                 <div class="row">
+                     <div class="col-xs-12">
+                         <div class="text-center nav-item mob">
+                            <a href="https://github.com/monero-project/meta/blob/master/VULNERABILITY_RESPONSE_PROCESS.md">Vulnerability Response</a>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="row">
+                     <div class="col-xs-12">
+                         <div class="text-center nav-item mob">
+                            <a href="/es/the-monero-project/">The Monero Project</a> 
+                         </div>
+                     </div>
+                 </div>            
+             </div>
+          
+        </div>
+       </div>
+       
+        <div class="desktop-nav">
+            <nav class="container">
+            <div class="topnav">
+              <div class="row middle-xs">
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <a href="
+                    
+                    /es
+                    
+                    "><img src="/img/monero-logo.png" alt="Monero Logo" class="monero-logo"></a>
+                  </div>
+                  <div class="col-lg-8 col-md-8 col-sm-8 topnav-list end-xs">
+                      <div class="row end-xs middle-xs">
+                         <div class="col-md-12">
+                          <a href="https://forum.getmonero.org" class="top-link">Forum Funding System</a>
+                          <a href="https://github.com/monero-project/meta/blob/master/VULNERABILITY_RESPONSE_PROCESS.md" class="top-link">Vulnerability Response</a>
+                          <a href="/es/the-monero-project/" class="top-link">The Monero Project</a>
+                          <div href="#" class="dropdown top-link language-change">
+                            <input class="burger-checkdropdown" id="langdrop" type="checkbox">
+                            <label for="langdrop">
+                            
+                                
+                            
+                            
+                            
+                                
+                            
+                                    Español
+                            
+                                
+                            
+                            
+                            
+                                
+                            
+                            
+                            
+                                
+                            
+                            
+                            
+                                
+                            
+                            <div class="arrow-down"></div></label>
+                            <div class="dropdown-content text-center">
+                                    
+                                
+                                  
+                                    <a href="/2017/11/27/logs-for-the-Monero-Research-Lab-meeting-held-on-2017-11-27.html" >English</a>
+                                  
+                                
+                              
+                                
+                              
+                                
+                                  
+                                    <a href="/it/2017/11/27/logs-for-the-Monero-Research-Lab-meeting-held-on-2017-11-27.html" >Italiano</a>
+                                  
+                                
+                              
+                                
+                                  
+                                    <a href="/pl/2017/11/27/logs-for-the-Monero-Research-Lab-meeting-held-on-2017-11-27.html" >Polski</a>
+                                  
+                                
+                              
+                                
+                                  
+                                    <a href="/fr/2017/11/27/logs-for-the-Monero-Research-Lab-meeting-held-on-2017-11-27.html" >Français</a>
+                                  
+                                
+                              
+                            </div>
+                          </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="botnav white-nav">
+                <input class="burger-check" id="burger-check" type="checkbox"><label for="burger-check" class="burger"></label>
+                <div class="row between-xs nav-items">
+                     
+                    <div class="col dropdown nav-item">
+                        
+                            <label for="desktopdrop1">Inicio<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="desktopdrop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                                  <a href="/es/get-started/what-is-monero">¿Qué es Monero?</a>
+                                
+                                  <a href="/es/get-started/using">Usar Monero</a>
+                                
+                                  <a href="/es/get-started/accepting">Aceptar Monero</a>
+                                
+                                  <a href="/es/get-started/contributing">Contribuir a Monero</a>
+                                
+                                  <a href="/es/get-started/mining">Minar Monero</a>
+                                
+                                  <a href="/es/get-started/faq">FAQ</a>
+                                
+                            </div>
+                            
+                    </div>
+                    
+                    <div class="col dropdown nav-item">
+                        
+                           <a href="/es/downloads">Descargas</a>
+                            
+                    </div>
+                    
+                    <div class="col dropdown nav-item">
+                        
+                            <label for="desktopdrop1">Noticias<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="desktopdrop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                                  <a href="/es/blog">Todas publicaciones</a>
+                                
+                                  <a href="/es/blog/tags/monero%20missives.html">Misivas</a>
+                                
+                                  <a href="/es/blog/tags/dev%20diaries.html">Transcripciones de reuniones</a>
+                                
+                                  <a href="/es/blog/tags/releases.html">Lanzamientos</a>
+                                
+                            </div>
+                            
+                    </div>
+                    
+                    <div class="col dropdown nav-item">
+                        
+                            <label for="desktopdrop1">Comunidad<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="desktopdrop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                                  <a href="/es/community/team">Equipo</a>
+                                
+                                  <a href="/es/community/hangouts">Canales de comunicación</a>
+                                
+                                  <a href="/es/community/sponsorships">Patrocinios</a>
+                                
+                                  <a href="/es/community/merchants">Comerciantes</a>
+                                
+                            </div>
+                            
+                    </div>
+                    
+                    <div class="col dropdown nav-item">
+                        
+                            <label for="desktopdrop1">Recursos<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="desktopdrop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                                  <a href="/es/resources/about">Sobre Monero</a>
+                                
+                                  <a href="/es/resources/roadmap">Hoja de ruta</a>
+                                
+                                  <a href="/es/resources/research-lab">Laboratorio de investigación</a>
+                                
+                                  <a href="/es/resources/moneropedia">Moneropedia</a>
+                                
+                                  <a href="/es/resources/user-guides">Guías de usuario</a>
+                                
+                                  <a href="/es/resources/developer-guides">Guías de desarrolladores</a>
+                                
+                                  <a href="/es/technical-specs">Especificaciones técnicas</a>
+                                
+                            </div>
+                            
+                    </div>
+                    
+                  </div>
+            </div>
+        </nav>
+        </div>
+        <div class="mob bot-nav white-nav">
+            <div class="row center-xs middle-xs">
+                <div class="col-xs-6">
+                    <a href="
+                    
+                    /es
+                    
+                    "><img src="/img/monero-logo.png" alt="Monero Logo" class="monero-logo"></a>
+                </div>
+                <div class="dropdown col-xs-6 text-center mob-language-change">
+                <input class="burger-checkdropdown" id="moblangdrop" type="checkbox">
+                 <label for="moblangdrop"><img src="/img/language.png" alt="Lang" class="icon-language"/><div class="arrow-down"></div></label>
+                               <div class="mob dropdown-content text-center">
+                               <p class="mob-lang-change mob-lang-selected">
+                                   
+                              
+                                
+                              
+                                
+                                 Español
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                   
+                               </p>
+                               
+                                
+                                  
+                                    <a class="mob-lang-change" href="/2017/11/27/logs-for-the-Monero-Research-Lab-meeting-held-on-2017-11-27.html" >English</a>
+                                  
+                                
+                              
+                                
+                              
+                                
+                                  
+                                    <a class="mob-lang-change" href="/it/2017/11/27/logs-for-the-Monero-Research-Lab-meeting-held-on-2017-11-27.html" >Italiano</a>
+                                  
+                                
+                              
+                                
+                                  
+                                    <a class="mob-lang-change" href="/pl/2017/11/27/logs-for-the-Monero-Research-Lab-meeting-held-on-2017-11-27.html" >Polski</a>
+                                  
+                                
+                              
+                                
+                                  
+                                    <a class="mob-lang-change" href="/fr/2017/11/27/logs-for-the-Monero-Research-Lab-meeting-held-on-2017-11-27.html" >Français</a>
+                                  
+                                
+                              
+                            </div>
+                          </div>
+            </div>     
+        </div>    
+
+        
+
+<div class="site-wrap post">
+    
+    <section class="container">
+            <div class="row">
+                <!-- left two-thirds block-->
+                <div class="left two-thirds col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                    <div class="info-block">
+                        <div class="row">
+                            <div class="col">
+                               <h2>Logs for the Monero Research Lab Meeting Held on 2017-11-27</h2> 
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p class="author">Posted by: dEBRUYNE / fluffypony</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p>November 27, 2017</p>
+                            </div>
+                        </div>
+                    <div>
+                        <h1 id="logs">Logs</h1>
+
+<p><strong>&lt;suraeNoether&gt;</strong> anyway, agenda for the day: 1) Greetings, 2) Sarang's work 3)  my work 4) open discussion. The new zksnark paper will presumably take up some of 4. :P<br />
+<strong>&lt;suraeNoether&gt;</strong> 1) is done i guess. :\<br />
+<strong>&lt;suraeNoether&gt;</strong> 2) Sarang want to bring us up to speed?<br />
+<strong>&lt;sarang&gt;</strong> roger<br />
+<strong>&lt;sarang&gt;</strong> I have working code for both linear and logarithmic bulletproofs that tests correctly<br />
+<strong>&lt;sarang&gt;</strong> I'm finishing up a few small optimizations to reduce the curve op count<br />
+<strong>&lt;suraeNoether&gt;</strong> nice<br />
+<strong>&lt;sarang&gt;</strong> and then it'll be ready for C++<br />
+<strong>&lt;sarang&gt;</strong> moneromooo already has the linear version up and running<br />
+<strong>&lt;suraeNoether&gt;</strong> fantastic!<br />
+<strong>&lt;sarang&gt;</strong> That's been my big project<br />
+<strong>&lt;suraeNoether&gt;</strong> page 8 of the new zksnark paper talks about dot product proof protocols<br />
+<strong>&lt;sarang&gt;</strong> orly<br />
+<strong>&lt;sarang&gt;</strong> That's the big shiny toy of bulletproofs<br />
+<strong>&lt;suraeNoether&gt;</strong> literally caught my eye<br />
+<strong>&lt;suraeNoether&gt;</strong> or rather<br />
+<strong>&lt;suraeNoether&gt;</strong> metaphorically? well<br />
+<strong>&lt;suraeNoether&gt;</strong> anyway, my point is i have done nothing but skim the paper (in the past 10 minutes) and that popped out at me<br />
+<strong>&lt;suraeNoether&gt;</strong> you have also been helping me on multisig, as well, don't discount that<br />
+<strong>&lt;sarang&gt;</strong> I shan't<br />
+<strong>&lt;suraeNoether&gt;</strong> anything else?<br />
+<strong>&lt;suraeNoether&gt;</strong> gratz on getting it working<br />
+<strong>&lt;sarang&gt;</strong> Thanks to everyone who offered support in the most recent fund drive<br />
+<strong>&lt;sarang&gt;</strong> I remain humbled<br />
+<strong>&lt;suraeNoether&gt;</strong> thank you, sarang! thanks again<br />
+<strong>* sarang</strong> takes a small bow<br />
+<strong>&lt;suraeNoether&gt;</strong> As for my work, I've been working on the multisig paper, which is intended to 1) present a formal model of our threshold ringct, and 2) show how our current implementation compares to that formal model. there are differences that i'm hunting down one by one<br />
+<strong>&lt;suraeNoether&gt;</strong> JollyMort[m] has found several already, and we've been having discussions about it the past few days<br />
+<strong>&lt;suraeNoether&gt;</strong> That has represented the vast majority of my time<br />
+<strong>&lt;suraeNoether&gt;</strong> In addition to that, I believe I may have a problematic example case of SPECTRE. the original authors sweep my concern aside, but i wanted to bring it up and see if anyone had any thoughts<br />
+<strong>&lt;sarang&gt;</strong> I'm intrigued<br />
+<strong>&lt;suraeNoether&gt;</strong> if two transactions using the same input are relayed nearly simultaneously, they will find their way into two separate blocks. they will appear as conflicting transactions until the spectre algorithm arranges one block to precede the other<br />
+<strong>&lt;suraeNoether&gt;</strong> or stay conflicting forever if spectre can never linearly order them<br />
+<strong>&lt;suraeNoether&gt;</strong> this can happen with a simple example of a "mostly linear" blockchain, except with a single block in the chain replaced with a pair of blocks like a diamond shape:<br />
+<strong>&lt;suraeNoether&gt;</strong> ___\/\___<br />
+<strong>&lt;suraeNoether&gt;</strong>    \/<br />
+<strong>&lt;suraeNoether&gt;</strong> something that looks like that<br />
+<strong>&lt;suraeNoether&gt;</strong> then any transactions that conflict in the pair of non-linearly-ordered blocks will appear to conflict forever<br />
+<strong>&lt;suraeNoether&gt;</strong> this allows a clumsy user who re-sends a transaction twice becuase he's foolish to lose his funds.<br />
+<strong>&lt;sarang&gt;</strong> Can we back this up with a simulation?<br />
+<strong>&lt;suraeNoether&gt;</strong> i mean, we could, but there's a solid chain of lemmas that lead to a theorem i can write up later if you like<br />
+<strong>&lt;suraeNoether&gt;</strong> using the theorems about how rapidly sets in spectre get finalized<br />
+<strong>&lt;sarang&gt;</strong> Even better<br />
+<strong>&lt;sarang&gt;</strong> *lemmata<br />
+<strong>&lt;suraeNoether&gt;</strong> now, the spectre authors said "the only reason someone would relay two transactions like this is to attempt a double spend, so it's okay that the funds are lost."<br />
+<strong>&lt;sarang&gt;</strong> lolwut<br />
+<strong>&lt;suraeNoether&gt;</strong> well<br />
+<strong>&lt;suraeNoether&gt;</strong> the idea is that htey are <em>two</em> transactions with valid signatures using the same input<br />
+<strong>&lt;suraeNoether&gt;</strong> or rather, using at least one of the same inputs<br />
+<strong>&lt;suraeNoether&gt;</strong> so by definition, it's a double spend<br />
+<strong>&lt;suraeNoether&gt;</strong> and i can't really think of a scenario where someone would compute two signatures separately like that, then relay them nearly simultaneously like that… on accident<br />
+<strong>&lt;suraeNoether&gt;</strong> BUT<br />
+<strong>&lt;suraeNoether&gt;</strong> it's enough of a leap for me to be concerned<br />
+<strong>&lt;suraeNoether&gt;</strong> moreover<br />
+<strong>&lt;suraeNoether&gt;</strong> i'm not sure if that sort of "double spend implies money lost forever instead of "eventually one of the two spends is accepted."<br />
+<strong>&lt;suraeNoether&gt;</strong> and what's really crazy<br />
+<strong>&lt;suraeNoether&gt;</strong> is that if block arrival times are very fast, like 10/s as in the original spectre paper… this problem is solved <em>with high probability</em><br />
+<strong>&lt;suraeNoether&gt;</strong> so, that's where SPECTRE is sitting.<br />
+<strong>&lt;suraeNoether&gt;</strong> and lastly, my viewkey proposal<br />
+<strong>&lt;suraeNoether&gt;</strong> s/lost forever/lost forever" philosophy instead of…<br />
+<strong>&lt;scoobybejesus&gt;</strong> I own address A, B, and C.  I simultaneously send the same output as an input in txns A -&gt;** B and A -&gt;** C.  Free coins?  Or B and C each now have unspendable outputs?<br />
+<strong>&lt;suraeNoether&gt;</strong> a miner would see two conflicting transactions, so neither would be considered valid<br />
+<strong>&lt;suraeNoether&gt;</strong> and constructing another transaction later A-&gt;<strong>D will also be considered invalid<br />
+**&lt;scoobybejesus&gt;</strong> Ah.  Thanks.<br />
+<strong>&lt;suraeNoether&gt;</strong> so until spectre re-orgs the block-DAG so that the transaction A-&gt;<strong>B precedes A-&gt;</strong>C or vice versa, it's locked forever<br />
+<strong>&lt;gingeropolous&gt;</strong> right, i was wondering that… i though eventually it resolves to a bloclchain<br />
+<strong>&lt;gingeropolous&gt;</strong> or blockchain<br />
+<strong>&lt;suraeNoether&gt;</strong> actually, that's the problem: if block arrival rate is slow and you have a fork<br />
+<strong>&lt;suraeNoether&gt;</strong> the next block to arrive will point to both blocks as parents<br />
+<strong>&lt;sarang&gt;</strong> yeah<br />
+<strong>&lt;suraeNoether&gt;</strong> and if all blocks from there on out point to that common child block, those two blocks will never be linearly ordered<br />
+<strong>&lt;suraeNoether&gt;</strong> so, this would also be solved by simply telling people to try to avoid making more than 1 transaction per target block arrival rate <em>personally</em><br />
+<strong>&lt;suraeNoether&gt;</strong> otherwise they are burning their own money, in a sense<br />
+<strong>&lt;sarang&gt;</strong> that's quite the kludge<br />
+<strong>&lt;gingeropolous&gt;</strong> so dbl spends are punished… kinda<br />
+<strong>&lt;suraeNoether&gt;</strong> gingeropolous: yes, it provides a strong incentive against making a double spend attack<br />
+<strong>&lt;suraeNoether&gt;</strong> which is nice<br />
+<strong>&lt;suraeNoether&gt;</strong> i just don't want to make it so that badly informed users of Monero don't accidentally burn their money<br />
+<strong>&lt;gingeropolous&gt;</strong> i wonder if we could protocolize an incubate function, where a tx has to sit in the txpool for n blocks<br />
+<strong>&lt;suraeNoether&gt;</strong> sarang it's not too much of a kludge, if our block arrival rate is 1/second or something<br />
+<strong>&lt;sarang&gt;</strong> hmm<br />
+<strong>&lt;suraeNoether&gt;</strong> gingeropolous: ooooh<br />
+<strong>&lt;gingeropolous&gt;</strong> kind of a bitch because timestamping and all..<br />
+<strong>&lt;suraeNoether&gt;</strong> it's worth thinking about though!<br />
+<strong>&lt;suraeNoether&gt;</strong> that's a good idea<br />
+<strong>&lt;suraeNoether&gt;</strong> okay, so does anyone else have anything they want to share about their work?<br />
+<strong>&lt;sarang&gt;</strong> I could add that I've posted my monthly report: https://www.reddit.com/r/Monero/comments/7frn7i/november_monthly_report_from_sarang_noether/<br />
+<strong>&lt;sarang&gt;</strong> Comments welcome<br />
+<strong>&lt;suraeNoether&gt;</strong> Also, I'd like to thank the community for funding me as well<br />
+<strong>&lt;suraeNoether&gt;</strong> It's astonishing<br />
+<strong>&lt;suraeNoether&gt;</strong> In other announcements….<br />
+<strong>&lt;suraeNoether&gt;</strong> rehrar is working on the next Monero Revuo<br />
+<strong>&lt;suraeNoether&gt;</strong> I'm not sure what the publication timeline on that is supposed to be<br />
+<strong>&lt;suraeNoether&gt;</strong> but it's the quarterly newsletter wherein he sort of interviews the teams at MRL in charge of various projects<br />
+<strong>&lt;sarang&gt;</strong> Any other discussion items?<br />
+<strong>&lt;suraeNoether&gt;</strong> he and Sarang and I are going to have a sit-down and talk about the direction MRL is heading. I am interested in writing up current standards for Monero, I know Sarang is also, and I want to start on that as soon as Multisig is done.<br />
+<strong>&lt;sarang&gt;</strong> ah yes<br />
+<strong>&lt;suraeNoether&gt;</strong> For each Monero standard, I also want to write up at least one proposal for replacing the standard in the case that the security of that standard is compromised<br />
+<strong>&lt;suraeNoether&gt;</strong> I also want to compile arguments for and against replacing certain standards sooner rather than later, for example, our "nonstandard" hash function<br />
+<strong>&lt;suraeNoether&gt;</strong> oh man, i should ping andytoshi too<br />
+<strong>&lt;suraeNoether&gt;</strong> this includes our proof of work standard<br />
+<strong>&lt;sarang&gt;</strong> That strikes me as our least-standard "thing"<br />
+<strong>&lt;suraeNoether&gt;</strong> cryptonight has some value, but it's as homebrew as can be<br />
+<strong>&lt;suraeNoether&gt;</strong> yeah<br />
+<strong>&lt;suraeNoether&gt;</strong> i wouldn't mind putting up a portion of my funding for this period toward a Proof of Work contest for Monero's replacement proof of work scheme<br />
+<strong>&lt;suraeNoether&gt;</strong> hmm<br />
+<strong>* iDunk</strong> reaches for a pitchfork<br />
+<strong>&lt;suraeNoether&gt;</strong> ?<br />
+<strong>&lt;suraeNoether&gt;</strong> cryptonight has value because of asic resistance. i'm okay with asics if they are commoditized. i'm not married to cryptonight in any way<br />
+<strong>&lt;suraeNoether&gt;</strong> i'm in a non-monogamous relationship with cryptonight<br />
+<strong>&lt;suraeNoether&gt;</strong> ok, well<br />
+<strong>&lt;suraeNoether&gt;</strong> anything else to discuss?<br />
+<strong>&lt;dEBRUYNE&gt;</strong> suraeNoether: i wouldn't mind putting up a portion of my funding for this period toward a Proof of Work contest for Monero's replacement proof of work scheme &lt;= I think othe already has some back up plans<br />
+<strong>&lt;silur&gt;</strong> apparently V wants ringCT in EVM2<br />
+<strong>&lt;dEBRUYNE&gt;</strong> You might want to talk to him about it<br />
+<strong>&lt;suraeNoether&gt;</strong> othe are you around?<br />
+<strong>&lt;othe&gt;</strong> Yes<br />
+<strong>&lt;suraeNoether&gt;</strong> silur V = vitalik?<br />
+<strong>&lt;silur&gt;</strong> yep<br />
+<strong>&lt;suraeNoether&gt;</strong> othe you've been thinking about POW?<br />
+<strong>&lt;othe&gt;</strong> Yea<br />
+<strong>&lt;othe&gt;</strong> Slight changes we can implement will break all asics<br />
+<strong>&lt;silur&gt;</strong> I introduced stringCT/ruffCT PoC code in our research channel hope it will go somewhere<br />
+<strong>&lt;othe&gt;</strong> Trivial to implement in cpu and gpu<br />
+<strong>&lt;suraeNoether&gt;</strong> oooh, that's fantastic! fluffypony sent me at least one recommendation for that a few weeks ago<br />
+<strong>&lt;suraeNoether&gt;</strong> but i haven't had time to look into it<br />
+<strong>&lt;othe&gt;</strong> Yeah that one is an example<br />
+<strong>&lt;silur&gt;</strong> what is this new POW?<br />
+<strong>&lt;suraeNoether&gt;</strong> ok, but you aren't talking about <em>replacing cryptonight</em> but modifying it<br />
+<strong>&lt;suraeNoether&gt;</strong> silur othe has apparently been looking at the cryptonight code very closely and determining how to swap bits around or mess with the implementation to improve asic resistance without harming gpu or cpu performance<br />
+<strong>&lt;othe&gt;</strong> Just modifying it randomly<br />
+<strong>&lt;silur&gt;</strong> I thought cryptonight is asic resistant by design O.o<br />
+<strong>&lt;othe&gt;</strong> Takes like 5 lines of code in gpu miner<br />
+<strong>&lt;silur&gt;</strong> I knew that it's not like… cuckoo cycle hard but still<br />
+<strong>&lt;othe&gt;</strong> Cuckoo is not hard at all<br />
+<strong>&lt;suraeNoether&gt;</strong> yeah cuckoo isn't asic resistant at all<br />
+<strong>&lt;suraeNoether&gt;</strong> i have a paper around here about it<br />
+<strong>&lt;silur&gt;</strong> dayum<br />
+<strong>&lt;suraeNoether&gt;</strong> silur cryptonight takes up L3 cache like crazy, so the asic resistance comes from forcing it through a bottleneck<br />
+<strong>&lt;suraeNoether&gt;</strong> but you could still have an asic on the back end of the bottleneck<br />
+<strong>&lt;othe&gt;</strong> There's really nothing asic resistant if u hsve money<br />
+<strong>&lt;suraeNoether&gt;</strong> so if someone creatively designed a computer with a huge L3 cache or something like that…<br />
+<strong>&lt;suraeNoether&gt;</strong> which normally you wouldn't have to worry about for something like SHA256<br />
+<strong>&lt;suraeNoether&gt;</strong> then the asic is still technically possible, we're just… resistant to it<br />
+<strong>&lt;suraeNoether&gt;</strong> because it requires novel computer architecture and design<br />
+<strong>&lt;suraeNoether&gt;</strong> othe i'm very glad to hear you have been working on this<br />
+<strong>&lt;suraeNoether&gt;</strong> ended the meeting a little too early, sarang. :\<br />
+<strong>&lt;sarang&gt;</strong> I'm following along on the bus<br />
+<strong>&lt;sarang&gt;</strong> The bus smells like ass today<br />
+<strong>&lt;suraeNoether&gt;</strong> http://www.cs.cmu.edu/~dga/crypto/cuckoo/analysis.pdf<br />
+<strong>&lt;othe&gt;</strong> Well i don't have a problem with asics but sth like shitmain has to be killed of when trying<br />
+<strong>&lt;suraeNoether&gt;</strong> nope, that's not the paper i was looking at<br />
+<strong>&lt;suraeNoether&gt;</strong> othe my primary concern is decentralization, whether it's through asic resistance or asic commoditization. the idea of cpu mining is great in some ways, but i like andytoshi's paper on the thermodynamic minimum <em>a whole lot.</em><br />
+<strong>&lt;suraeNoether&gt;</strong> like, his paper made me realize that proof-of-storage or something like that? the universal minimum will be determined by the speed of light<br />
+<strong>&lt;suraeNoether&gt;</strong> so instead of commoditized hardware mining, you would see massive massive data centers all with fiber optic cables of <em>exactly the same length</em> to avoid time effects from light speed, etc etc<br />
+<strong>&lt;suraeNoether&gt;</strong> so anyway<br />
+<strong>&lt;unknownids&gt;</strong> this is probably useless info at this point as its all rumors, but https://rmc.one/ has said they are working on a cryptonight asic<br />
+<strong>&lt;suraeNoether&gt;</strong> oh yes, that is the paper. :P http://www.cs.cmu.edu/~dga/crypto/cuckoo/analysis.pdf<br />
+<strong>&lt;suraeNoether&gt;</strong> unknownids: eh, the minute they blow a million on taping out a few asics, we'll implement the first of othe's list of changes. :P they'll have to retape, best case scenario… and then we do it again…<br />
+<strong>&lt;othe&gt;</strong> Rmc one are idiots but rwal companies might be<br />
+<strong>&lt;suraeNoether&gt;</strong> it's easier for us to change the algo than it is for them to pump out asics<br />
+<strong>&lt;suraeNoether&gt;</strong> tbh if i were in the asic business i wouldn't make a move without blessings and guidance from the developers of the coin<br />
+<strong>&lt;unknownids&gt;</strong> good to know othe<br />
+<strong>&lt;suraeNoether&gt;</strong> because they'll just change their code if they don't like what you are doing<br />
+<strong>&lt;silur&gt;</strong> ^<br />
+<strong>&lt;suraeNoether&gt;</strong> whoever is designing asics for monero are preparing to burn their fiat. but hey, they probably have fiat to burn<br />
+<strong>&lt;suraeNoether&gt;</strong> joker.jpg<br />
+<strong>&lt;suraeNoether&gt;</strong> ok guys<br />
+<strong>&lt;suraeNoether&gt;</strong> i'll be back later today<br />
+<strong>&lt;JollyMort[m]&gt;</strong> entrepreneurs will always find a way to get above others; be it ASIC or botnets or webminers; what's important is that there's no barrier to entry for new players so that nobody's position is forever assured</p>
+
+                    </div>
+                    <hr>
+                    <p id="post-meta">Post tags <i class="fa fa-tags"></i>: <a href="/blog/tags/crypto.html">Cryptography</a>, <a href="/blog/tags/research.html">Monero Research Lab</a></p>
+                    </div>
+                </div>
+                <!-- end left two-thirds block-->
+                
+                <!-- right one-third block-->
+                <div class="right one-third col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <div class="sidebar col-sm-12 col-xs-12">   
+                            <div class="info-block">
+                                <div class="row center-xs">
+                                    <div class="col"><h2>Recent Posts</h2></div>
+                                </div>
+                                
+                                <div class="row start-xs info-block-row">
+                                    <div class="col">
+                                         <p><a href="/2018/03/29/response-to-an-empirical-analysis-of-traceability.html">Response to "An Empirical Analysis of Traceability in the Monero Blockchain", Version 2</a></p>
+                                     </div>
+                                </div>
+                                
+                                <div class="row start-xs info-block-row">
+                                    <div class="col">
+                                         <p><a href="/2018/03/29/monero-0.12.0.0-released.html">Monero 0.12.0.0 "Lithium Luna" Release</a></p>
+                                     </div>
+                                </div>
+                                
+                                <div class="row start-xs info-block-row">
+                                    <div class="col">
+                                         <p><a href="/2018/03/28/a-scheduled-protocol-upgrade-is-planned-for-April-6-2018-03-28.html">A Scheduled Network Upgrade is Planned for April 6</a></p>
+                                     </div>
+                                </div>
+                                
+                                <div class="row start-xs info-block-row">
+                                    <div class="col">
+                                         <p><a href="/2018/03/01/core-team-announcement.html">Core Team Announcement</a></p>
+                                     </div>
+                                </div>
+                                
+                            </div>
+                            <div class="info-block">
+                                <div class="row center-xs">
+                                    <div class="col">
+                                        <h2>Popular Tags</h2>
+                                    </div>
+                                </div>
+                                    
+                                    <div class="row start-xs">
+                                        <div class="col">
+                                             <p><a href="/blog/tags/monero missives.html">Monero Missives</a></p>
+                                         </div>
+                                     </div>
+                                     
+                                    <div class="row start-xs">
+                                        <div class="col">
+                                             <p><a href="/blog/tags/conferences.html">Conferences</a></p>
+                                         </div>
+                                     </div>
+                                     
+                                    <div class="row start-xs">
+                                        <div class="col">
+                                             <p><a href="/blog/tags/exchanges.html">Exchanges</a></p>
+                                         </div>
+                                     </div>
+                                     
+                                    <div class="row start-xs">
+                                        <div class="col">
+                                             <p><a href="/blog/tags/gui.html">Monero Core GUI</a></p>
+                                         </div>
+                                     </div>
+                                     
+
+
+                            </div>
+                        </div> 
+                </div>
+                <!-- end right one-third block-->
+            </div>
+        </section>
+    </div>
+
+    <footer class="container-fluid">
+            <div class="container">
+                <div class="row around-xs footer-wrapper">
+                   
+                     <div class="col-sm-3 col-xs-6">
+                     <h3>Recursos</h3>
+                         <ul class="list-unstyled">
+                            
+                             
+                                <li><a class="white" href="/es/resources/about/">Sobre Monero</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/es/resources/moneropedia/">Moneropedia</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/es/resources/developer-guides/">Guias de Desarrollo</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/es/resources/user-guides/">Guias de Usuario</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://getmonero.org/feed.xml">RSS Feed</a></li>
+                              
+                            
+                         </ul>
+                     </div>
+                  
+                     <div class="col-sm-3 col-xs-6">
+                     <h3>Canales IRC</h3>
+                         <ul class="list-unstyled">
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero">monero</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-dev">monero-dev</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-markets">monero-markets</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-pools">monero-pools</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-community">monero-community</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-translations">monero-translations</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-hardware">monero-hardware</a></li>
+                              
+                            
+                         </ul>
+                     </div>
+                  
+                     <div class="col-sm-3 col-xs-6">
+                     <h3>Comunidad</h3>
+                         <ul class="list-unstyled">
+                            
+                             
+                              <li><a class="white" href="https://reddit.com/r/monero">Reddit</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://monero.stackexchange.com/">Stack Exchange</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://bitcointalk.org/index.php?topic=583449.0">BitcoinTalk Thread</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://mattermost.getmonero.org/">Mattermost Chat</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://telegram.me/bitmonero">Telegram Chat</a></li>
+                              
+                            
+                         </ul>
+                     </div>
+                  
+                     <div class="col-sm-3 col-xs-6">
+                     <h3>El Proyecto Monero</h3>
+                         <ul class="list-unstyled">
+                            
+                             
+                              <li><a class="white" href="https://openalias.org/">Open Alias</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://getkovri.org/">Kovri</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/es/resources/research-lab/">Monero Research Lab</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/es/press-kit">Kit de Prensa</a></li>
+                              
+                            
+                         </ul>
+                     </div>
+                 
+                <div class="row center-xs">
+                    <div class="social-icons">
+                    </div>
+                    <div class="footer-links">
+                        <ul class="list-unstyled list-inline">
+                           
+                            
+                             <li><a href="/es/legal" class="white footer-link">Aviso Legal</a></li>
+                           
+                           
+                            
+                             <li><a href="https://github.com/monero-project" class="white footer-link">Código Fuente</a></li>
+                            
+                           
+                            
+                             <li><a href="/es/technical-specs/" class="white footer-link">Especificaciones Técnicas</a></li>
+                           
+                           
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
+</footer>
+<!-- Matomo -->
+<script type="text/javascript">
+    var _paq = _paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+        var u = "//analytics.getmonero.org/";
+        _paq.push(['setTrackerUrl', u + 'piwik.php']);
+        _paq.push(['setSiteId', '1']);
+        var d = document,
+            g = d.createElement('script'),
+            s = d.getElementsByTagName('script')[0];
+        g.type = 'text/javascript';
+        g.async = true;
+        g.defer = true;
+        g.src = u + 'piwik.js';
+        s.parentNode.insertBefore(g, s);
+    })();
+</script>
+<!-- End Matomo Code -->
+<!-- page served by server N -->
+    </div>
+  </body>
+</html>

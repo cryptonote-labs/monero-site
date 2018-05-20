@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>
+     Logs for the Monero Research Lab Meeting Held on 2018-02-19 | Monero - secure, private, untraceable
+    </title>
+	<meta name="description" content="Logs for the Monero Research Lab Meeting Held on 2018-02-19 [on the home of Monero, a digital currency that is secure, private, and untraceable]">
+	<meta name="keywords" content="monero, xmr, bitmonero, cryptocurrency">
+
+    <meta property="og:title" content="Monero: Logs for the Monero Research Lab Meeting Held on 2018-02-19"/>
+    <meta property="og:description" content="Logs for the Monero Research Lab Meeting Held on 2018-02-19 [on the home of Monero, a digital currency that is secure, private, and untraceable]">
+    <meta property="og:image" content="http://static.getmonero.org/images/opengraph/logo.png">
+    <meta property="og:site_name" content="getmonero.org, The Monero Project">
+    <meta property="og:url" content="https://getmonero.org/2018/02/19/logs-for-the-Monero-Research-Lab-meeting-held-on-2018-02-19.html">
+    <meta property="og:type" content="website">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/meta/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/meta/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/meta/favicon-16x16.png">
+        <link rel="manifest" href="/meta/manifest.json">
+        <link rel="mask-icon" href="/meta/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="theme-color" content="#ffffff">
+
+    <link href="/css/custom.css" rel="stylesheet">
+
+    
+    <meta name="msapplication-config" content="/ietemplates/ieconfig.xml">
+
+  </head>
+
+
+  <body>
+    <div class="page-wrapper">
+          
+<div class="mob-nav">
+              <input class="burger-check" id="mobile-burger" type="checkbox"><label for="mobile-burger" class="burger"></label>
+           
+        <div class="slide-in-nav">
+             <div class="container slide-in">
+                     
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                            
+                            <label for="drop1">Get Started<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="drop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                              <a href="/get-started/what-is-monero">What is Monero?</a>
+                                  
+                              <a href="/get-started/using">Using</a>
+                                  
+                              <a href="/get-started/accepting">Accepting</a>
+                                  
+                              <a href="/get-started/contributing">Contributing</a>
+                                  
+                              <a href="/get-started/mining">Mining</a>
+                                  
+                              <a href="/get-started/faq">FAQ</a>
+                                  
+                            </div>
+                            
+                     </div>
+                 </div>
+                  
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                               <a href="/downloads/">Downloads</a>
+                            
+                     </div>
+                 </div>
+                  
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                            
+                            <label for="drop2">Recent News<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="drop2" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                              <a href="/blog">All Posts</a>
+                                  
+                              <a href="/blog/tags/monero%20missives.html">Missives</a>
+                                  
+                              <a href="/blog/tags/dev%20diaries.html">Meeting Logs</a>
+                                  
+                              <a href="/blog/tags/releases.html">Releases</a>
+                                  
+                            </div>
+                            
+                     </div>
+                 </div>
+                  
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                            
+                            <label for="drop3">Community<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="drop3" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                              <a href="/community/team">Team</a>
+                                  
+                              <a href="/community/hangouts">Hangouts</a>
+                                  
+                              <a href="/community/sponsorships">Sponsorships</a>
+                                  
+                              <a href="/community/merchants">Merchants</a>
+                                  
+                            </div>
+                            
+                     </div>
+                 </div>
+                  
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                            
+                            <label for="drop4">Resources<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="drop4" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                              <a href="/resources/about">About</a>
+                                  
+                              <a href="/resources/roadmap">Roadmap</a>
+                                  
+                              <a href="/resources/research-lab">Research Lab</a>
+                                  
+                              <a href="/resources/moneropedia">Moneropedia</a>
+                                  
+                              <a href="/resources/user-guides">User Guides</a>
+                                  
+                              <a href="/resources/developer-guides">Developer Guides</a>
+                                  
+                              <a href="/technical-specs">Technical Specs</a>
+                                  
+                            </div>
+                            
+                     </div>
+                 </div>
+                 
+                 <div class="row">
+                     <div class="col-xs-12">
+                         <div class="text-center nav-item mob">
+                            <a href="https://forum.getmonero.org">Forum Funding System</a> 
+                         </div>
+                     </div>
+                 </div>
+                 <div class="row">
+                     <div class="col-xs-12">
+                         <div class="text-center nav-item mob">
+                            <a href="https://github.com/monero-project/meta/blob/master/VULNERABILITY_RESPONSE_PROCESS.md">Vulnerability Response</a>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="row">
+                     <div class="col-xs-12">
+                         <div class="text-center nav-item mob">
+                            <a href="/the-monero-project/">The Monero Project</a> 
+                         </div>
+                     </div>
+                 </div>            
+             </div>
+          
+        </div>
+       </div>
+       
+        <div class="desktop-nav">
+            <nav class="container">
+            <div class="topnav">
+              <div class="row middle-xs">
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <a href="
+                    
+                    /
+                    
+                    "><img src="/img/monero-logo.png" alt="Monero Logo" class="monero-logo"></a>
+                  </div>
+                  <div class="col-lg-8 col-md-8 col-sm-8 topnav-list end-xs">
+                      <div class="row end-xs middle-xs">
+                         <div class="col-md-12">
+                          <a href="https://forum.getmonero.org" class="top-link">Forum Funding System</a>
+                          <a href="https://github.com/monero-project/meta/blob/master/VULNERABILITY_RESPONSE_PROCESS.md" class="top-link">Vulnerability Response</a>
+                          <a href="/the-monero-project/" class="top-link">The Monero Project</a>
+                          <div href="#" class="dropdown top-link language-change">
+                            <input class="burger-checkdropdown" id="langdrop" type="checkbox">
+                            <label for="langdrop">
+                            
+                                
+                            
+                                    English
+                            
+                                
+                            
+                            
+                            
+                                
+                            
+                            
+                            
+                                
+                            
+                            
+                            
+                                
+                            
+                            
+                            
+                                
+                            
+                            <div class="arrow-down"></div></label>
+                            <div class="dropdown-content text-center">
+                                    
+                                
+                              
+                                
+                                  
+                                    <a href="/es/2018/02/19/logs-for-the-Monero-Research-Lab-meeting-held-on-2018-02-19.html" >Español</a>
+                                  
+                                
+                              
+                                
+                                  
+                                    <a href="/it/2018/02/19/logs-for-the-Monero-Research-Lab-meeting-held-on-2018-02-19.html" >Italiano</a>
+                                  
+                                
+                              
+                                
+                                  
+                                    <a href="/pl/2018/02/19/logs-for-the-Monero-Research-Lab-meeting-held-on-2018-02-19.html" >Polski</a>
+                                  
+                                
+                              
+                                
+                                  
+                                    <a href="/fr/2018/02/19/logs-for-the-Monero-Research-Lab-meeting-held-on-2018-02-19.html" >Français</a>
+                                  
+                                
+                              
+                            </div>
+                          </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="botnav white-nav">
+                <input class="burger-check" id="burger-check" type="checkbox"><label for="burger-check" class="burger"></label>
+                <div class="row between-xs nav-items">
+                     
+                    <div class="col dropdown nav-item">
+                        
+                            <label for="desktopdrop1">Get Started<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="desktopdrop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                                  <a href="/get-started/what-is-monero">What is Monero?</a>
+                                
+                                  <a href="/get-started/using">Using</a>
+                                
+                                  <a href="/get-started/accepting">Accepting</a>
+                                
+                                  <a href="/get-started/contributing">Contributing</a>
+                                
+                                  <a href="/get-started/mining">Mining</a>
+                                
+                                  <a href="/get-started/faq">FAQ</a>
+                                
+                            </div>
+                            
+                    </div>
+                    
+                    <div class="col dropdown nav-item">
+                        
+                           <a href="/downloads/">Downloads</a>
+                            
+                    </div>
+                    
+                    <div class="col dropdown nav-item">
+                        
+                            <label for="desktopdrop1">Recent News<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="desktopdrop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                                  <a href="/blog">All Posts</a>
+                                
+                                  <a href="/blog/tags/monero%20missives.html">Missives</a>
+                                
+                                  <a href="/blog/tags/dev%20diaries.html">Meeting Logs</a>
+                                
+                                  <a href="/blog/tags/releases.html">Releases</a>
+                                
+                            </div>
+                            
+                    </div>
+                    
+                    <div class="col dropdown nav-item">
+                        
+                            <label for="desktopdrop1">Community<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="desktopdrop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                                  <a href="/community/team">Team</a>
+                                
+                                  <a href="/community/hangouts">Hangouts</a>
+                                
+                                  <a href="/community/sponsorships">Sponsorships</a>
+                                
+                                  <a href="/community/merchants">Merchants</a>
+                                
+                            </div>
+                            
+                    </div>
+                    
+                    <div class="col dropdown nav-item">
+                        
+                            <label for="desktopdrop1">Resources<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="desktopdrop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                                  <a href="/resources/about">About</a>
+                                
+                                  <a href="/resources/roadmap">Roadmap</a>
+                                
+                                  <a href="/resources/research-lab">Research Lab</a>
+                                
+                                  <a href="/resources/moneropedia">Moneropedia</a>
+                                
+                                  <a href="/resources/user-guides">User Guides</a>
+                                
+                                  <a href="/resources/developer-guides">Developer Guides</a>
+                                
+                                  <a href="/technical-specs">Technical Specs</a>
+                                
+                            </div>
+                            
+                    </div>
+                    
+                  </div>
+            </div>
+        </nav>
+        </div>
+        <div class="mob bot-nav white-nav">
+            <div class="row center-xs middle-xs">
+                <div class="col-xs-6">
+                    <a href="
+                    
+                    /
+                    
+                    "><img src="/img/monero-logo.png" alt="Monero Logo" class="monero-logo"></a>
+                </div>
+                <div class="dropdown col-xs-6 text-center mob-language-change">
+                <input class="burger-checkdropdown" id="moblangdrop" type="checkbox">
+                 <label for="moblangdrop"><img src="/img/language.png" alt="Lang" class="icon-language"/><div class="arrow-down"></div></label>
+                               <div class="mob dropdown-content text-center">
+                               <p class="mob-lang-change mob-lang-selected">
+                                   
+                              
+                                
+                                 English
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                   
+                               </p>
+                               
+                                
+                              
+                                
+                                  
+                                    <a class="mob-lang-change" href="/es/2018/02/19/logs-for-the-Monero-Research-Lab-meeting-held-on-2018-02-19.html" >Español</a>
+                                  
+                                
+                              
+                                
+                                  
+                                    <a class="mob-lang-change" href="/it/2018/02/19/logs-for-the-Monero-Research-Lab-meeting-held-on-2018-02-19.html" >Italiano</a>
+                                  
+                                
+                              
+                                
+                                  
+                                    <a class="mob-lang-change" href="/pl/2018/02/19/logs-for-the-Monero-Research-Lab-meeting-held-on-2018-02-19.html" >Polski</a>
+                                  
+                                
+                              
+                                
+                                  
+                                    <a class="mob-lang-change" href="/fr/2018/02/19/logs-for-the-Monero-Research-Lab-meeting-held-on-2018-02-19.html" >Français</a>
+                                  
+                                
+                              
+                            </div>
+                          </div>
+            </div>     
+        </div>    
+
+        
+
+<div class="site-wrap post">
+    
+    <section class="container">
+            <div class="row">
+                <!-- left two-thirds block-->
+                <div class="left two-thirds col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                    <div class="info-block">
+                        <div class="row">
+                            <div class="col">
+                               <h2>Logs for the Monero Research Lab Meeting Held on 2018-02-19</h2> 
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p class="author">Posted by: dEBRUYNE / fluffypony</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p>February 19, 2018</p>
+                            </div>
+                        </div>
+                    <div>
+                        <h1 id="logs">Logs</h1>
+
+<p><strong>&lt;suraeNoether&gt;</strong> allrighty, howdy everyone<br />
+<strong>&lt;suraeNoether&gt;</strong> topic Research meeting now<br />
+<strong>&lt;suraeNoether&gt;</strong> awww<br />
+<strong>&lt;sarang&gt;</strong> hullo<br />
+<strong>&lt;rehrar&gt;</strong> yeah!<br />
+<strong>&lt;suraeNoether&gt;</strong> so<br />
+<strong>&lt;sarang&gt;</strong> indeed<br />
+<strong>&lt;suraeNoether&gt;</strong> before we get going, does anyone have any questions?<br />
+<strong>&lt;rehrar&gt;</strong> pertaining to?<br />
+<strong>&lt;suraeNoether&gt;</strong> anything, really. :P<br />
+<strong>&lt;rehrar&gt;</strong> Are pancakes better with or without chocolate chips?<br />
+<strong>&lt;sarang&gt;</strong> Well, I see the two big topics right now are output identification (a la MoneroV) and PoW change<br />
+<strong>&lt;sarang&gt;</strong> at least for immediacy<br />
+<strong>&lt;rehrar&gt;</strong> <em>shuts up to let smart people talk</em><br />
+<strong>&lt;suraeNoether&gt;</strong> oh, i think blueberries are better<br />
+<strong>&lt;suraeNoether&gt;</strong> but that's none of my business<br />
+<strong>&lt;suraeNoether&gt;</strong> yeah, i imagine at least some people have questions about how to keep their outputs safe with MoneroV and our PoW change discussion<br />
+<strong>&lt;sarang&gt;</strong> I think a related question that's valid is "what do we plan to do about this?"<br />
+<strong>&lt;suraeNoether&gt;</strong> but we can maybe hold that until the end of the discussion: basically, "what i've done this week" has been multisig. i have the paper down to low 20s pages, and i have one security proof left to complete, and i need to clean up the appendix describing our code.<br />
+<strong>&lt;suraeNoether&gt;</strong> sarang before we move onto the more obvious stuff, want to give us a brief review of your week?<br />
+<strong>&lt;sarang&gt;</strong> Sure, some course planning for the summer, reviewing SoWs and discussing with Benedikt, some paper reading<br />
+<strong>&lt;rehrar&gt;</strong> Sorry, couple questions on multisig paper. 1. ETA? 2. Submit for peer review?<br />
+<strong>&lt;sarang&gt;</strong> A lighter week than last<br />
+<strong>&lt;sarang&gt;</strong> Oh, and writing up a talk on privacy coins for next month<br />
+<strong>&lt;sarang&gt;</strong> (due this week)<br />
+<strong>&lt;suraeNoether&gt;</strong> 1) ETA … i am hoping to finish it today. so quadruple that and maybe i'll be 10% correct. :P<br />
+<strong>&lt;suraeNoether&gt;</strong> we are definitely submitting it for peer review<br />
+<strong>&lt;rehrar&gt;</strong> Nice! It will be 'White' no more<br />
+<strong>&lt;suraeNoether&gt;</strong> i'm so close to finishign this thing, i'm hoping for mid-week to release the whitepaper version of it to the community and upload it (perhaps) to arxiv or something, after i get a brief review by sarang<br />
+<strong>&lt;sarang&gt;</strong> Yeah, BPASE work threw a temporary wrench at it<br />
+<strong>&lt;suraeNoether&gt;</strong> does anyone want to describe their work this week? I know chachasmooth has been learning about elliptic curves<br />
+<strong>&lt;sarang&gt;</strong> but that's the nature of research<br />
+<strong>&lt;sarang&gt;</strong> Well I am finalizing my privacy talk, which focuses on some definitions of privacy and compares privacy techologies used in coins today<br />
+<strong>&lt;sarang&gt;</strong> It focuses heavily on Monero but tries to do a fair assessment of the playing field<br />
+<strong>&lt;suraeNoether&gt;</strong> nice, i want to actually talk about a simplification of the EABE attack that is concerning to me<br />
+<strong>&lt;sarang&gt;</strong> I was also asked to lead a one-day short course on data analysis at the SciPy conference this year, so I'm using blockchain data as the project<br />
+<strong>&lt;sarang&gt;</strong> Some good PR and hopefully some interesting analysis we hadn't thought of before<br />
+<strong>&lt;sarang&gt;</strong> Anyway, go ahead suraeNoether<br />
+<strong>&lt;suraeNoether&gt;</strong> I'm thinking perhaps we need to put out a statement, because there is at least one very common scenario in which people think Monero is protecting them with signer ambiguity, but it really isn't<br />
+<strong>&lt;suraeNoether&gt;</strong> and it's the EAE attack, actually, where someone buying something from you is colluding with a KYC exchange<br />
+<strong>&lt;suraeNoether&gt;</strong> in this case, it should be obvious: Alice is surrounded by the KYC exchange, who knows her personal identity, address, etc, and also knows the one-time destination keys being used by Alice for these purchases they are making from you<br />
+<strong>&lt;suraeNoether&gt;</strong> once the KYC exchange has collected a sample size of deposits from Alice, that KYC exchange can look into the history of these deposits and identify one-time keys that were flagged from earlier.<br />
+<strong>&lt;sarang&gt;</strong> right<br />
+<strong>&lt;suraeNoether&gt;</strong> unless alice makes an extremely expensive churn, the appearance of these flagged outputs will occur in the history of these deposits more often than chance would dictate if the ring signatures were being randomly created by other users<br />
+<strong>&lt;suraeNoether&gt;</strong> there isn't a quick and easy solution to this, and users who are very concerned about their privacy should not send their monero to KYC exchanges<br />
+<strong>&lt;sarang&gt;</strong> I think it brings us back to the nature of ring signatures in general<br />
+<strong>&lt;sarang&gt;</strong> They're to offer plausible deniability<br />
+<strong>&lt;sarang&gt;</strong> but statistics will always be a problem unless ring sizes are very large<br />
+<strong>&lt;suraeNoether&gt;</strong> yes. it's objectively better than using something like bitcoin due to plausible deniability, but it's still concerning<br />
+<strong>&lt;rehrar&gt;</strong> does this potentially point to, somewhere down the line in the future, moving to a more bullet proof (pardon the pun) scheme?<br />
+<strong>&lt;sarang&gt;</strong> I think it has to<br />
+<strong>&lt;suraeNoether&gt;</strong> yeah<br />
+<strong>&lt;sarang&gt;</strong> Full anonymity set is the only guaranteed way to thwart statistical analysis<br />
+<strong>&lt;sarang&gt;</strong> This, the MoneroV thing, they all tie in to ring intersections and statistics<br />
+<strong>&lt;rehrar&gt;</strong> does STARKS also have full anonymity set?<br />
+<strong>&lt;suraeNoether&gt;</strong> one of the things fluffypony asked me to look into when i first began this was looking into things like zk-snark sidechains, so we have been considering this for awhile<br />
+<strong>&lt;suraeNoether&gt;</strong> they allegedly do, yes<br />
+<strong>&lt;andytoshi&gt;</strong> rehrar: STARKs is just a tech<br />
+<strong>&lt;sarang&gt;</strong> yes<br />
+<strong>&lt;suraeNoether&gt;</strong> ?<br />
+<strong>&lt;andytoshi&gt;</strong> it's for zero knowledge proofs<br />
+<strong>&lt;sarang&gt;</strong> The goal is just to prove the output is valid<br />
+<strong>&lt;andytoshi&gt;</strong> "full anonymity set" applies to some specific system<br />
+<strong>&lt;sarang&gt;</strong> right<br />
+<strong>&lt;rehrar&gt;</strong> ah, apologies<br />
+<strong>&lt;suraeNoether&gt;</strong> yeah, the implicit quesiton is "would we be using starks to implement a full anon set"<br />
+<strong>&lt;andytoshi&gt;</strong> the answer to that is no, it's not feasible. bulletproofs would be faster for that<br />
+<strong>&lt;andytoshi&gt;</strong> and smaller<br />
+<strong>&lt;andytoshi&gt;</strong> and BPs aren't quite there i think<br />
+<strong>&lt;sarang&gt;</strong> I mean, this problem isn't limited to us<br />
+<strong>&lt;suraeNoether&gt;</strong> starks is new, but so are BPs. i think BPs will allow us to get some impressively large anonymity sets<br />
+<strong>&lt;sarang&gt;</strong> There is not a good, efficient way to handle it… zcash has the same problem with different sacrifices<br />
+<strong>&lt;andytoshi&gt;</strong> yeah..pretty sure BPs have a faster prover than SNARKs<br />
+<strong>&lt;suraeNoether&gt;</strong> sarang \^ this is also correct, most users who use zcash make transactions they wish to be kept private as a z-transaction, but they end up depositing to KYC exchanges as t-transactions<br />
+<strong>&lt;rehrar&gt;</strong> so the answer is almost a social one, wherein people don't need to trade to KYC exchange, because they can purchase whatever they want in Monero<br />
+<strong>&lt;rehrar&gt;</strong> *one of the answers<br />
+<strong>&lt;suraeNoether&gt;</strong> so, this is an <em>open problem</em> in some senses, but my point is this: the current wisdom about best practices is to churn a lot and you're good. but that's not the case without impractically large churns, and the best practice is merely to avoid KYC exchanges<br />
+<strong>&lt;andytoshi&gt;</strong> KYC has nothing to do with whether you publish your transaction data on a blockchain, think exchanges are just too lazy to implement z-transaction support<br />
+<strong>&lt;sarang&gt;</strong> Part of the social problem is an identification of what exactly you're trying to accomplish with hiding transactions<br />
+<strong>&lt;sarang&gt;</strong> At what point does "plausible deniability" fall apart in the face of ring statistics?<br />
+<strong>&lt;suraeNoether&gt;</strong> in general, if a business is a KYC business (say a local coffee shop who happens to know you), you still have a similar problem while using Monero. really the best advice is: if you like your privacy in Monero, don't send Monero to people who know your name<br />
+<strong>&lt;sarang&gt;</strong> that's not clear<br />
+<strong>&lt;suraeNoether&gt;</strong> sarang with a sufficiently large sample size, after the "attacker" has made a sufficiently large number of controlled purchass<br />
+<strong>&lt;rehrar&gt;</strong> I guess it may be more of a economics question, but is plausible deniability enough for fungibility than absolute anonymity? Because to answer sarang's question: for the common folk, fungibility would be what they're after<br />
+<strong>&lt;suraeNoether&gt;</strong> purchass = purchases, but purchass sounds like a really great stripper name<br />
+<strong>&lt;sarang&gt;</strong> rehrar: sure, but an exchange or police or whatever can decide when their analysis reveals a "probably bad" output<br />
+<strong>&lt;rehrar&gt;</strong> even if they don't know the word fungiblity :P No merchant or individual wants to go through the headache of checking each received coin for 'taintedness'<br />
+<strong>&lt;sarang&gt;</strong> it's the same issue with burden of proof in the court system, IMHO<br />
+<strong>&lt;suraeNoether&gt;</strong> rehrar: I believe plausible deniability with a large enough scope is fine.<br />
+<strong>&lt;sarang&gt;</strong> Right, but there is not a definition of "large enough"<br />
+<strong>&lt;sarang&gt;</strong> depends on the context<br />
+<strong>&lt;sarang&gt;</strong> nor is there a good definition of "plausible deniability"<br />
+<strong>&lt;gsee&gt;</strong> When Fluffy spoke at Coinbase, he suggested that maybe they would be more comfortable listing monero and meeting their KYC/AML requirements if they required users to provide their view keys.  Would that damage privacy of others?<br />
+<strong>&lt;suraeNoether&gt;</strong> gsee not at all, and in fact that's what the view key is sort of for<br />
+<strong>&lt;gsee&gt;</strong> what if they also required users to provide key images so to prove a wallet balance?<br />
+<strong>&lt;suraeNoether&gt;</strong> that would have pretty nasty consequences: coinbase would have a list of proven-spent transactions, reducing the effective ring sizes of all outputs<br />
+<strong>&lt;rehrar&gt;</strong> What would it take to get some good research done on 'large enough' and 'plausible deniability' definitions, or at least try to get ballpark stuff?<br />
+<strong>&lt;rehrar&gt;</strong> I think that's some pretty important stuff to be able to define within reason<br />
+<strong>&lt;suraeNoether&gt;</strong> well, my working definition of "large enough" works like this<br />
+<strong>&lt;gsee&gt;</strong> thanks suraeNoether, that's what I was thinking.  Just wanted to doublecheck.<br />
+<strong>&lt;suraeNoether&gt;</strong> let's say you churn N times with ring size R<br />
+<strong>&lt;gsee&gt;</strong> On a similar note, I have to prove our balances to auditors once a year.  Showing them view keys and key images might be a bad idea then.<br />
+<strong>&lt;suraeNoether&gt;</strong> this means you have R\^(N-1) independent ring signatures, each with R members. and the question is: if Eve knows Alice has A different outputs on the whole blockchain, whcih has B outputs, and if all outputs are selected for ring signatures at uniform randomly, <em>how likely is it that we see one of Alice's suspicious one-time keys appear in one of these R\^(N-1) ring signatures?</em><br />
+<strong>&lt;suraeNoether&gt;</strong> how hard is it to <em>look like a random sequence of transactions?</em><br />
+<strong>&lt;suraeNoether&gt;</strong> anyway rehrar, i've been looking into it for awhile<br />
+<strong>&lt;suraeNoether&gt;</strong> but for now i think we need to put out a statement that monero user keys interested in privacy should not be shared with a KYC exchange in any way<br />
+<strong>&lt;rehrar&gt;</strong> logistics question for me, the website guy: Do we want to put this and any future bulletins under the MRL page on the website?<br />
+<strong>&lt;rehrar&gt;</strong> Or just the repo is good enough with a link to it?<br />
+<strong>&lt;scoobybejesus&gt;</strong> When is it time for MoneroV talk?  I have a question.  Sort of a two-parter.<br />
+<strong>&lt;sarang&gt;</strong> Well, MoneroV is related<br />
+<strong>&lt;suraeNoether&gt;</strong> essentially, if we want like… concrete cryptographic security, we would need to churn… a lot<br />
+<strong>&lt;scoobybejesus&gt;</strong> Question: MoneroV key images. Let's say the MoneroV team chooses to acquiesce and change their key image by hashing another parameter (or something)…<br />
+<strong>&lt;scoobybejesus&gt;</strong> If their key images are a Monero-key-image-hashed-with-something-else, does that mean there is no way (discrete log-wise) to "tie" pre-fork Monero key images to their respective key images in MoneroV?<br />
+<strong>&lt;scoobybejesus&gt;</strong> Or - maybe a better way to ask - is there even a way to take an existing Monero key image, do something to it, have it be useful on the MoneroV chain as double-spend prevention, while still not being "tied" to the Monero key image from whence it came?<br />
+<strong>&lt;suraeNoether&gt;</strong> rehrar I'm unsure on that<br />
+<strong>&lt;suraeNoether&gt;</strong> scoobybejesus: we thought at first monerov could compute key images differently, but the algebra doesn't appear to work out without allowing double spends<br />
+<strong>&lt;suraeNoether&gt;</strong> without some sort of wizardry anyway<br />
+<strong>&lt;sarang&gt;</strong> Well with a hash scheme there would be no way to link them, no<br />
+<strong>&lt;sarang&gt;</strong> But \^ to what suraeNoether sez<br />
+<strong>&lt;suraeNoether&gt;</strong> the only way i know of to safely claim your monerov is to try to fashion the same ring on both chains<br />
+<strong>&lt;suraeNoether&gt;</strong> hmm, what about doubly hashing the point P?<br />
+<strong>&lt;suraeNoether&gt;</strong> nope, still have the double spend problem<br />
+<strong>&lt;sarang&gt;</strong> yup<br />
+<strong>&lt;sgp&gt;</strong> \^ assuming no chain reactions<br />
+<strong>&lt;andytoshi&gt;</strong> you can hash every known key image with a per-chain salt, then require users reveal only the hashed key image for future spends (and BP that they hashed the key image correctly)<br />
+<strong>&lt;andytoshi&gt;</strong> but that's waay more work than we can expect scammers to do<br />
+<strong>&lt;suraeNoether&gt;</strong> oh yeah, i suppose you are also assuming your fellow ring members are also computing identical rings on both chains<br />
+<strong>&lt;sarang&gt;</strong> oh andytoshi so you mean go back and retroactively update the used image list?<br />
+<strong>&lt;sarang&gt;</strong> interesting<br />
+<strong>&lt;suraeNoether&gt;</strong> andytoshi i almost feel like we should make it an easy to use utility so we can point to unsafe projects and say "how come they aren't using our safe-to-use BP utility to ensure they don't shit in the punchbowl"?<br />
+<strong>&lt;sarang&gt;</strong> suraeNoether: I don't think you can shame them like that<br />
+<strong>&lt;gsee&gt;</strong> should users consolidate outputs before the fork? just in case they're going to try to create the same ring on both chain, it would be easier to do with fewer outputs, right?<br />
+<strong>&lt;suraeNoether&gt;</strong> feels like an easy public relations way to deal with malicious shit in the future like this<br />
+<strong>&lt;suraeNoether&gt;</strong> gsee: sure, but you are (see above) relying on any ring members to do the same as you<br />
+<strong>&lt;sgp&gt;</strong> Perhaps, it is a social attack after all<br />
+<strong>&lt;suraeNoether&gt;</strong> if half of your ring members don't know what to do and spend their shit on both forks in a sloppy way, then your effective ring size shrinks in a chain reaction<br />
+<strong>&lt;suraeNoether&gt;</strong> because their output is now provably spent and can be removed from any rings referencing it<br />
+<strong>&lt;sgp&gt;</strong> And with ringsize 5, you would have to expect ~2/3 of transactions on MoneroV to use that tool<br />
+<strong>&lt;suraeNoether&gt;</strong> sounds about correct. seems like a real easy way to part fools from their money. fluffypony don't we have a public relations firm now?<br />
+<strong>&lt;suraeNoether&gt;</strong> monerov is a pretty brilliant social attack. probably not state actors because the result is a public de-anonymization instead of secretly gathering intel, but pretty brilliant<br />
+<strong>&lt;suraeNoether&gt;</strong> i could be convinced its the cryptonote guys<br />
+<strong>&lt;suraeNoether&gt;</strong> anyway, it is unsafe to use your key images on another chain, period<br />
+<strong>&lt;suraeNoether&gt;</strong> if you broadcast your key images in general, you are also opening yourself up to transaction censorship<br />
+<strong>&lt;gsee&gt;</strong> MoneroV might not be state sponsored, but the next one might be.  Or a state may decide to bid up the price of moneroV in order to entice people to spend their moneroV<br />
+<strong>&lt;suraeNoether&gt;</strong> yeah, maybe<br />
+<strong>&lt;suraeNoether&gt;</strong> it's just, in general, key images are sort of like commitments to a transaction. Opening the commitment, sharing the key image, is part of broadcasting a transaction. it shouldn't be seen as a standalone piece that can be treated separately like a view key<br />
+<strong>&lt;suraeNoether&gt;</strong> okay, so today we've spoken about my and sarang's work from this past week briefly, and we discussed the EAE attack (rehrar, pm me, don't make any changes until we've chatted with fluffypony and luigi1111  and moneromooo and others), and the MoneroV airdrop<br />
+<strong>&lt;rehrar&gt;</strong> no changes will be made<br />
+<strong>&lt;sgp&gt;</strong> I suppose now's a good time for me to ask if you think it's prudent to increase the ringsize to mitigate the damage of a chain split attack. If the costs are minimal compared to the benefits<br />
+<strong>&lt;sarang&gt;</strong> any other updates or questions about other non-pants-on-fire things?<br />
+<strong>&lt;suraeNoether&gt;</strong> I believe we can summarize the EAE attack as: don't use private money with non-private businesses (KYC exchanges in particular). in the meantime, I'm going to think about a threat model. and we can summarize the MoneroV airdrop as: don't use your Monero key images on the MoneroV blockchain. period.<br />
+<strong>&lt;andytoshi&gt;</strong> sgp: to increase the ringsize dramatically will require new tech (RTRS or BPs)<br />
+<strong>&lt;andytoshi&gt;</strong> just doubling it or something won't really help i think<br />
+<strong>&lt;suraeNoether&gt;</strong> to increase the ringsize moderately will not be a sufficient protection against the EAE problem<br />
+<strong>&lt;suraeNoether&gt;</strong> \^<br />
+<strong>&lt;gsee&gt;</strong> i have a question. Not sure if this is the best place/time to ask, so we can take it offline if necessary.  Is there any way to prove what my wallet's balance was on Dec 31st to an auditor if I have made transactions since then?<br />
+<strong>&lt;suraeNoether&gt;</strong> i believe we don't see a lot of benefit until we get ring sizes in the 20s, last time I ran computations, but don't quote me<br />
+<strong>&lt;sgp&gt;</strong> Won't help EAE, but would help chain split issue<br />
+<strong>&lt;andytoshi&gt;</strong> gsee: yes but you'll need provisions or something<br />
+<strong>&lt;andytoshi&gt;</strong> oh, no, just a view key + the public blockchain will be enough<br />
+<strong>&lt;suraeNoether&gt;</strong> it would probably be sufficient to reveal to an auditor the private transaction key for each transaction, but that reveals a lot more information to the auditor than if you reveal the key images that you've spent<br />
+<strong>&lt;moneromooo&gt;</strong> You see all incoming monero along with block heights, and you can scan the chain for the height a key image was spent, if any. So yes. The DB has no index for key image -&gt; height-or-tx though, so slow.<br />
+<strong>&lt;iDunk&gt;</strong> If he spent from tha wallet, then change would appear as new income.<br />
+<strong>&lt;suraeNoether&gt;</strong> i imagine in most <em>legal</em> situations gsee, you could merely present a screenshot of your wallet balance<br />
+<strong>&lt;suraeNoether&gt;</strong> tbh<br />
+<strong>&lt;gsee&gt;</strong> that's what we're leaning towards right now. Actually having someone stand over my shoulder while I show the balance<br />
+<strong>&lt;suraeNoether&gt;</strong> but if you reveal your key images, again, you are proving some outputs as spent to an auditor, which reduces the effective ring size of any other signatures depending on your keys<br />
+<strong>&lt;suraeNoether&gt;</strong> gsee if that's an option, do it that way<br />
+<strong>&lt;suraeNoether&gt;</strong> requires no cryptographic trickery<br />
+<strong>&lt;suraeNoether&gt;</strong> meatspace is like… the best at keeping secrets<br />
+<strong>&lt;suraeNoether&gt;</strong> in practice,  most cryptographic protocols can be broken with a hammer or a 4 dollar wrench in a rather nasty sidechannel attack. :P<br />
+<strong>&lt;sarang&gt;</strong> So, what's everyone's priorities for the next week?<br />
+<strong>&lt;gsee&gt;</strong> ok. would be great if we could create better tools for the future that would let them verify independently.  Maybe that's not possible without leaking too much info; especially if one auditor becomes widely used.<br />
+<strong>&lt;sarang&gt;</strong> Since it's 18:00 now<br />
+<strong>&lt;suraeNoether&gt;</strong> mmmultisig brother. talking with a few venues for the monero conference this week.<br />
+<strong>&lt;suraeNoether&gt;</strong> oh i have an idea<br />
+<strong>&lt;sarang&gt;</strong> Does anyone see any immediate action items regarding MoneroV etc?<br />
+<strong>&lt;suraeNoether&gt;</strong> i feel like we need to put out a formal announcement on reddit or something<br />
+<strong>&lt;sarang&gt;</strong> So we have no formal suggestion on ringsize re: monerov?<br />
+<strong>&lt;suraeNoether&gt;</strong> ring size isn't going to help the monerov airdrop problem<br />
+<strong>&lt;sarang&gt;</strong> Yes just confirming<br />
+<strong>&lt;sarang&gt;</strong> So our messaging is consistent<br />
+<strong>&lt;suraeNoether&gt;</strong> i know we just put out a joint statement on PoW and key re-use<br />
+<strong>&lt;suraeNoether&gt;</strong> but i feel like MRL could write a reddit post like "Here's how to claim your Monerov safely: DON'T."<br />
+<strong>&lt;sarang&gt;</strong> But I'll get 10x the money!!111!!!<br />
+<strong>&lt;sarang&gt;</strong> While we're at it, I'll give you two shiny new nickels for that quarter you've got there<br />
+<strong>&lt;suraeNoether&gt;</strong> gsee: to prove to an auditor you have spent some transactions you can (in terms of easy and insecure to hard and secure): 1) hand them your view and spend private keys. after the audit is over, send yourself money to a new pair of keys so you don't have to worry about the old ones being used to spend. rely on meatspace legal structure to protect you from theft by the auditor.  this degrades not only<br />
+<strong>&lt;suraeNoether&gt;</strong> your security but the security of all ring signatures dependent on your outputs. 2) hand them the key images of your spent outputs. you don't need to worry about the auditor spending your money, but this still degrades both your security and other folks' security. 3) ??<br />
+<strong>&lt;scoobybejesus&gt;</strong> If there were a tool to produce identical rings… I haven't decided whether I'd take advantage.  Without that tool, I'm definitely not interested.<br />
+<strong>&lt;suraeNoether&gt;</strong> scoobybejesus: even then, if your other ring members go cash in and <em>don't</em> use that tool, your ring size just shrunk brother<br />
+<strong>&lt;scoobybejesus&gt;</strong> true that  ;)<br />
+<strong>&lt;suraeNoether&gt;</strong> okay, until next week</p>
+
+                    </div>
+                    <hr>
+                    <p id="post-meta">Post tags <i class="fa fa-tags"></i>: <a href="/blog/tags/crypto.html">Cryptography</a>, <a href="/blog/tags/research.html">Monero Research Lab</a></p>
+                    </div>
+                </div>
+                <!-- end left two-thirds block-->
+                
+                <!-- right one-third block-->
+                <div class="right one-third col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <div class="sidebar col-sm-12 col-xs-12">   
+                            <div class="info-block">
+                                <div class="row center-xs">
+                                    <div class="col"><h2>Recent Posts</h2></div>
+                                </div>
+                                
+                                <div class="row start-xs info-block-row">
+                                    <div class="col">
+                                         <p><a href="/2018/03/29/response-to-an-empirical-analysis-of-traceability.html">Response to "An Empirical Analysis of Traceability in the Monero Blockchain", Version 2</a></p>
+                                     </div>
+                                </div>
+                                
+                                <div class="row start-xs info-block-row">
+                                    <div class="col">
+                                         <p><a href="/2018/03/29/monero-0.12.0.0-released.html">Monero 0.12.0.0 "Lithium Luna" Release</a></p>
+                                     </div>
+                                </div>
+                                
+                                <div class="row start-xs info-block-row">
+                                    <div class="col">
+                                         <p><a href="/2018/03/28/a-scheduled-protocol-upgrade-is-planned-for-April-6-2018-03-28.html">A Scheduled Network Upgrade is Planned for April 6</a></p>
+                                     </div>
+                                </div>
+                                
+                                <div class="row start-xs info-block-row">
+                                    <div class="col">
+                                         <p><a href="/2018/03/01/core-team-announcement.html">Core Team Announcement</a></p>
+                                     </div>
+                                </div>
+                                
+                            </div>
+                            <div class="info-block">
+                                <div class="row center-xs">
+                                    <div class="col">
+                                        <h2>Popular Tags</h2>
+                                    </div>
+                                </div>
+                                    
+                                    <div class="row start-xs">
+                                        <div class="col">
+                                             <p><a href="/blog/tags/monero missives.html">Monero Missives</a></p>
+                                         </div>
+                                     </div>
+                                     
+                                    <div class="row start-xs">
+                                        <div class="col">
+                                             <p><a href="/blog/tags/conferences.html">Conferences</a></p>
+                                         </div>
+                                     </div>
+                                     
+                                    <div class="row start-xs">
+                                        <div class="col">
+                                             <p><a href="/blog/tags/exchanges.html">Exchanges</a></p>
+                                         </div>
+                                     </div>
+                                     
+                                    <div class="row start-xs">
+                                        <div class="col">
+                                             <p><a href="/blog/tags/gui.html">Monero Core GUI</a></p>
+                                         </div>
+                                     </div>
+                                     
+
+
+                            </div>
+                        </div> 
+                </div>
+                <!-- end right one-third block-->
+            </div>
+        </section>
+    </div>
+
+    <footer class="container-fluid">
+            <div class="container">
+                <div class="row around-xs footer-wrapper">
+                   
+                     <div class="col-sm-3 col-xs-6">
+                     <h3>Resources</h3>
+                         <ul class="list-unstyled">
+                            
+                             
+                                <li><a class="white" href="/resources/about/">About Monero</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/resources/moneropedia/">Moneropedia</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/resources/developer-guides/">Developer Guides</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/resources/user-guides/">User Guides</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://getmonero.org/feed.xml">RSS Feed</a></li>
+                              
+                            
+                         </ul>
+                     </div>
+                  
+                     <div class="col-sm-3 col-xs-6">
+                     <h3>IRC Channels</h3>
+                         <ul class="list-unstyled">
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero">monero</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-dev">monero-dev</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-markets">monero-markets</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-pools">monero-pools</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-community">monero-community</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-translations">monero-translations</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-hardware">monero-hardware</a></li>
+                              
+                            
+                         </ul>
+                     </div>
+                  
+                     <div class="col-sm-3 col-xs-6">
+                     <h3>Community</h3>
+                         <ul class="list-unstyled">
+                            
+                             
+                              <li><a class="white" href="https://reddit.com/r/monero">Reddit</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://monero.stackexchange.com/">Stack Exchange</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://bitcointalk.org/index.php?topic=583449.0">BitcoinTalk Thread</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://mattermost.getmonero.org/">Mattermost Chat</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://telegram.me/bitmonero">Telegram Chat</a></li>
+                              
+                            
+                         </ul>
+                     </div>
+                  
+                     <div class="col-sm-3 col-xs-6">
+                     <h3>The Monero Project</h3>
+                         <ul class="list-unstyled">
+                            
+                             
+                              <li><a class="white" href="https://openalias.org/">Open Alias</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://getkovri.org/">Kovri</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/resources/research-lab/">Monero Research Lab</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/press-kit">Monero Press Kit</a></li>
+                              
+                            
+                         </ul>
+                     </div>
+                 
+                <div class="row center-xs">
+                    <div class="social-icons">
+                    </div>
+                    <div class="footer-links">
+                        <ul class="list-unstyled list-inline">
+                           
+                            
+                             <li><a href="/legal" class="white footer-link">Legal</a></li>
+                           
+                           
+                            
+                             <li><a href="https://github.com/monero-project" class="white footer-link">Source Code</a></li>
+                            
+                           
+                            
+                             <li><a href="/technical-specs/" class="white footer-link">Technical Specs</a></li>
+                           
+                           
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
+</footer>
+<!-- Matomo -->
+<script type="text/javascript">
+    var _paq = _paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+        var u = "//analytics.getmonero.org/";
+        _paq.push(['setTrackerUrl', u + 'piwik.php']);
+        _paq.push(['setSiteId', '1']);
+        var d = document,
+            g = d.createElement('script'),
+            s = d.getElementsByTagName('script')[0];
+        g.type = 'text/javascript';
+        g.async = true;
+        g.defer = true;
+        g.src = u + 'piwik.js';
+        s.parentNode.insertBefore(g, s);
+    })();
+</script>
+<!-- End Matomo Code -->
+<!-- page served by server N -->
+    </div>
+  </body>
+</html>

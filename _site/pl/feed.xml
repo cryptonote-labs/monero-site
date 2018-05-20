@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+	<channel>
+		<title>Monero</title>
+		<description>Monero is a digital currency that is secure, private, and untraceable.</description>		
+		<link>http://localhost:4000</link>
+		<atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+		
+			<item>
+				<title>Response to &quot;An Empirical Analysis of Traceability in the Monero Blockchain&quot;, Version 2</title>
+				        
+				
+					<description>A response to Malte Möser, et al.</description>
+				
+				<pubDate>Thu, 29 Mar 2018 00:00:00 +0000</pubDate>
+				<link>http://localhost:4000/2018/03/29/response-to-an-empirical-analysis-of-traceability.html</link>
+				<guid isPermaLink="true">http://localhost:4000/2018/03/29/response-to-an-empirical-analysis-of-traceability.html</guid>
+			</item>
+		
+			<item>
+				<title>Monero 0.12.0.0 &quot;Lithium Luna&quot; Release</title>
+				        
+				
+					<description>A major update that is ready for the April 5th network upgrade</description>
+				
+				<pubDate>Thu, 29 Mar 2018 00:00:00 +0000</pubDate>
+				<link>http://localhost:4000/2018/03/29/monero-0.12.0.0-released.html</link>
+				<guid isPermaLink="true">http://localhost:4000/2018/03/29/monero-0.12.0.0-released.html</guid>
+			</item>
+		
+			<item>
+				<title>A Scheduled Network Upgrade is Planned for April 6</title>
+				        
+				
+					<description>A scheduled network upgrade is planned for April 6. To be sufficiently prepared, please run CLI v0.12.0.0 or GUI v0.12.0.0</description>
+				
+				<pubDate>Wed, 28 Mar 2018 00:00:00 +0000</pubDate>
+				<link>http://localhost:4000/2018/03/28/a-scheduled-protocol-upgrade-is-planned-for-April-6-2018-03-28.html</link>
+				<guid isPermaLink="true">http://localhost:4000/2018/03/28/a-scheduled-protocol-upgrade-is-planned-for-April-6-2018-03-28.html</guid>
+			</item>
+		
+			<item>
+				<title>Core Team Announcement</title>
+				        
+				
+					<description>Small elaboration on the Core Team's role and an announcement on its membership</description>
+				
+				<pubDate>Thu, 01 Mar 2018 00:00:00 +0000</pubDate>
+				<link>http://localhost:4000/2018/03/01/core-team-announcement.html</link>
+				<guid isPermaLink="true">http://localhost:4000/2018/03/01/core-team-announcement.html</guid>
+			</item>
+		
+			<item>
+				<title>Logs for the Monero Research Lab Meeting Held on 2018-02-19</title>
+				        
+				
+					<description>Multisig (paper), chain split (e.g. MoneroV), anonymity set, auditing options, and miscellaneous</description>
+				
+				<pubDate>Mon, 19 Feb 2018 00:00:00 +0000</pubDate>
+				<link>http://localhost:4000/2018/02/19/logs-for-the-Monero-Research-Lab-meeting-held-on-2018-02-19.html</link>
+				<guid isPermaLink="true">http://localhost:4000/2018/02/19/logs-for-the-Monero-Research-Lab-meeting-held-on-2018-02-19.html</guid>
+			</item>
+		
+			<item>
+				<title>Logs for the Community Meeting Held on 2018-02-17</title>
+				        
+				
+					<description>Community highlights, Forum Funding System updates, RFC-HWALLET-1, Localization workgroup, March HF, chain split discussion (e.g. MoneroV), and miscellaneous</description>
+				
+				<pubDate>Sat, 17 Feb 2018 00:00:00 +0000</pubDate>
+				<link>http://localhost:4000/2018/02/17/logs-for-the-Community-meeting-held-on-2018-02-17.html</link>
+				<guid isPermaLink="true">http://localhost:4000/2018/02/17/logs-for-the-Community-meeting-held-on-2018-02-17.html</guid>
+			</item>
+		
+			<item>
+				<title>Logs for the Monero Research Lab Meeting Held on 2018-02-12</title>
+				        
+				
+					<description>Bulletproofs, auditing Bulletproofs, dedicated Monero conference, and miscellaneous</description>
+				
+				<pubDate>Mon, 12 Feb 2018 00:00:00 +0000</pubDate>
+				<link>http://localhost:4000/2018/02/12/logs-for-the-Monero-Research-Lab-meeting-held-on-2018-02-12.html</link>
+				<guid isPermaLink="true">http://localhost:4000/2018/02/12/logs-for-the-Monero-Research-Lab-meeting-held-on-2018-02-12.html</guid>
+			</item>
+		
+			<item>
+				<title>Overview and Logs for the Dev Meeting Held on 2018-01-28</title>
+				        
+				
+					<description>Discussion of open PRs and issues, Bulletproofs and auditing, March HF, slight PoW tweak, dedicated Monero hardware wallet, and miscellaneous</description>
+				
+				<pubDate>Sun, 11 Feb 2018 00:00:00 +0000</pubDate>
+				<link>http://localhost:4000/2018/02/11/logs-for-the-dev-meeting-held-on-2018-02-11.html</link>
+				<guid isPermaLink="true">http://localhost:4000/2018/02/11/logs-for-the-dev-meeting-held-on-2018-02-11.html</guid>
+			</item>
+		
+			<item>
+				<title>PoW change and key reuse</title>
+				        
+				
+					<description>Monero will tweak Cryptonight, and how key reuse can compromise your privacy</description>
+				
+				<pubDate>Sun, 11 Feb 2018 00:00:00 +0000</pubDate>
+				<link>http://localhost:4000/2018/02/11/PoW-change-and-key-reuse.html</link>
+				<guid isPermaLink="true">http://localhost:4000/2018/02/11/PoW-change-and-key-reuse.html</guid>
+			</item>
+		
+			<item>
+				<title>Logs for the Monero Research Lab Meeting Held on 2018-02-05</title>
+				        
+				
+					<description>Bulletproofs, dedicated Monero conference, increasing minimum ring size, making ring size static, and miscellaneous</description>
+				
+				<pubDate>Mon, 05 Feb 2018 00:00:00 +0000</pubDate>
+				<link>http://localhost:4000/2018/02/05/logs-for-the-Monero-Research-Lab-meeting-held-on-2018-02-05.html</link>
+				<guid isPermaLink="true">http://localhost:4000/2018/02/05/logs-for-the-Monero-Research-Lab-meeting-held-on-2018-02-05.html</guid>
+			</item>
+		
+	</channel>
+</rss>

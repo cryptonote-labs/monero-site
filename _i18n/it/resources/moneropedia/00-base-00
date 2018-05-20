@@ -1,0 +1,10 @@
+---
+layout: moneropedia
+entry: ""
+terms: ["", ""]
+summary: ""
+---
+
+### Le Basi
+
+{{ page.summary | capitalize }}.

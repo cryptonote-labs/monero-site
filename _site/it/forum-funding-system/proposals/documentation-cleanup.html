@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>
+     Documentation and cleanup of source code | Monero - sicuro, privato, non tracciabile
+    </title>
+	<meta name="description" content="Documentation and cleanup of source code [sulla home di Monero, la moneta digitale sicura, privata e non tracciabile]">
+	<meta name="keywords" content="monero, xmr, bitmonero, cryptocurrency">
+
+    <meta property="og:title" content="Monero: Documentation and cleanup of source code"/>
+    <meta property="og:description" content="Documentation and cleanup of source code [sulla home di Monero, la moneta digitale sicura, privata e non tracciabile]">
+    <meta property="og:image" content="http://static.getmonero.org/images/opengraph/logo.png">
+    <meta property="og:site_name" content="getmonero.org, The Monero Project">
+    <meta property="og:url" content="https://getmonero.org/forum-funding-system/proposals/documentation-cleanup.html">
+    <meta property="og:type" content="website">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/meta/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/meta/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/meta/favicon-16x16.png">
+        <link rel="manifest" href="/meta/manifest.json">
+        <link rel="mask-icon" href="/meta/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="theme-color" content="#ffffff">
+
+    <link href="/css/custom.css" rel="stylesheet">
+
+    
+    <meta name="msapplication-config" content="/ietemplates/ieconfig.xml">
+
+  </head>
+
+
+  <body>
+    <div class="page-wrapper">
+          
+<div class="mob-nav">
+              <input class="burger-check" id="mobile-burger" type="checkbox"><label for="mobile-burger" class="burger"></label>
+           
+        <div class="slide-in-nav">
+             <div class="container slide-in">
+                     
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                            
+                            <label for="drop1">Inizia da Qui<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="drop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                              <a href="/it/get-started/what-is-monero">cos'è Monero?</a>
+                                  
+                              <a href="/it/get-started/using">Utilizzo</a>
+                                  
+                              <a href="/it/get-started/accepting">Adozione</a>
+                                  
+                              <a href="/it/get-started/contributing">Contribuire</a>
+                                  
+                              <a href="/it/get-started/mining">Mining</a>
+                                  
+                              <a href="/it/get-started/faq">FAQ</a>
+                                  
+                            </div>
+                            
+                     </div>
+                 </div>
+                  
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                               <a href="/it/downloads/">Downloads</a>
+                            
+                     </div>
+                 </div>
+                  
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                            
+                            <label for="drop2">Notizie Recenti<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="drop2" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                              <a href="/it/blog">Tutti i Post</a>
+                                  
+                              <a href="/it/blog/tags/monero%20missives.html">Missive</a>
+                                  
+                              <a href="/it/blog/tags/dev%20diaries.html">Logs dei Meetings</a>
+                                  
+                              <a href="/it/blog/tags/releases.html">Uscite</a>
+                                  
+                            </div>
+                            
+                     </div>
+                 </div>
+                  
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                            
+                            <label for="drop3">Community<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="drop3" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                              <a href="/it/community/team">Team</a>
+                                  
+                              <a href="/it/community/hangouts">Hangouts</a>
+                                  
+                              <a href="/it/community/sponsorships">Sponsorships</a>
+                                  
+                              <a href="/it/community/merchants">Mercanti</a>
+                                  
+                            </div>
+                            
+                     </div>
+                 </div>
+                  
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                            
+                            <label for="drop4">Risorse<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="drop4" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                              <a href="/it/resources/about">About</a>
+                                  
+                              <a href="/it/resources/roadmap">Roadmap</a>
+                                  
+                              <a href="/it/resources/research-lab">Research Lab</a>
+                                  
+                              <a href="/it/resources/moneropedia">Moneropedia</a>
+                                  
+                              <a href="/it/resources/user-guides">Guide per Utenti</a>
+                                  
+                              <a href="/it/resources/developer-guides">Guide per sviluppatori</a>
+                                  
+                              <a href="/it/technical-specs">Specifiche Tecniche</a>
+                                  
+                            </div>
+                            
+                     </div>
+                 </div>
+                 
+                 <div class="row">
+                     <div class="col-xs-12">
+                         <div class="text-center nav-item mob">
+                            <a href="https://forum.getmonero.org">Forum Funding System</a> 
+                         </div>
+                     </div>
+                 </div>
+                 <div class="row">
+                     <div class="col-xs-12">
+                         <div class="text-center nav-item mob">
+                            <a href="https://github.com/monero-project/meta/blob/master/VULNERABILITY_RESPONSE_PROCESS.md">Vulnerability Response</a>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="row">
+                     <div class="col-xs-12">
+                         <div class="text-center nav-item mob">
+                            <a href="/it/the-monero-project/">The Monero Project</a> 
+                         </div>
+                     </div>
+                 </div>            
+             </div>
+          
+        </div>
+       </div>
+       
+        <div class="desktop-nav">
+            <nav class="container">
+            <div class="topnav">
+              <div class="row middle-xs">
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <a href="
+                    
+                    /it
+                    
+                    "><img src="/img/monero-logo.png" alt="Monero Logo" class="monero-logo"></a>
+                  </div>
+                  <div class="col-lg-8 col-md-8 col-sm-8 topnav-list end-xs">
+                      <div class="row end-xs middle-xs">
+                         <div class="col-md-12">
+                          <a href="https://forum.getmonero.org" class="top-link">Forum Funding System</a>
+                          <a href="https://github.com/monero-project/meta/blob/master/VULNERABILITY_RESPONSE_PROCESS.md" class="top-link">Vulnerability Response</a>
+                          <a href="/it/the-monero-project/" class="top-link">The Monero Project</a>
+                          <div href="#" class="dropdown top-link language-change">
+                            <input class="burger-checkdropdown" id="langdrop" type="checkbox">
+                            <label for="langdrop">
+                            
+                                
+                            
+                            
+                            
+                                
+                            
+                            
+                            
+                                
+                            
+                                    Italiano
+                            
+                                
+                            
+                            
+                            
+                                
+                            
+                            
+                            
+                                
+                            
+                            <div class="arrow-down"></div></label>
+                            <div class="dropdown-content text-center">
+                                    
+                                
+                                  
+                                    <a href="/forum-funding-system/proposals/documentation-cleanup.html" >English</a>
+                                  
+                                
+                              
+                                
+                                  
+                                    <a href="/es/forum-funding-system/proposals/documentation-cleanup.html" >Español</a>
+                                  
+                                
+                              
+                                
+                              
+                                
+                                  
+                                    <a href="/pl/forum-funding-system/proposals/documentation-cleanup.html" >Polski</a>
+                                  
+                                
+                              
+                                
+                                  
+                                    <a href="/fr/forum-funding-system/proposals/documentation-cleanup.html" >Français</a>
+                                  
+                                
+                              
+                            </div>
+                          </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="botnav white-nav">
+                <input class="burger-check" id="burger-check" type="checkbox"><label for="burger-check" class="burger"></label>
+                <div class="row between-xs nav-items">
+                     
+                    <div class="col dropdown nav-item">
+                        
+                            <label for="desktopdrop1">Inizia da Qui<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="desktopdrop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                                  <a href="/it/get-started/what-is-monero">cos'è Monero?</a>
+                                
+                                  <a href="/it/get-started/using">Utilizzo</a>
+                                
+                                  <a href="/it/get-started/accepting">Adozione</a>
+                                
+                                  <a href="/it/get-started/contributing">Contribuire</a>
+                                
+                                  <a href="/it/get-started/mining">Mining</a>
+                                
+                                  <a href="/it/get-started/faq">FAQ</a>
+                                
+                            </div>
+                            
+                    </div>
+                    
+                    <div class="col dropdown nav-item">
+                        
+                           <a href="/it/downloads/">Downloads</a>
+                            
+                    </div>
+                    
+                    <div class="col dropdown nav-item">
+                        
+                            <label for="desktopdrop1">Notizie Recenti<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="desktopdrop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                                  <a href="/it/blog">Tutti i Post</a>
+                                
+                                  <a href="/it/blog/tags/monero%20missives.html">Missive</a>
+                                
+                                  <a href="/it/blog/tags/dev%20diaries.html">Logs dei Meetings</a>
+                                
+                                  <a href="/it/blog/tags/releases.html">Uscite</a>
+                                
+                            </div>
+                            
+                    </div>
+                    
+                    <div class="col dropdown nav-item">
+                        
+                            <label for="desktopdrop1">Community<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="desktopdrop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                                  <a href="/it/community/team">Team</a>
+                                
+                                  <a href="/it/community/hangouts">Hangouts</a>
+                                
+                                  <a href="/it/community/sponsorships">Sponsorships</a>
+                                
+                                  <a href="/it/community/merchants">Mercanti</a>
+                                
+                            </div>
+                            
+                    </div>
+                    
+                    <div class="col dropdown nav-item">
+                        
+                            <label for="desktopdrop1">Risorse<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="desktopdrop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                                  <a href="/it/resources/about">About</a>
+                                
+                                  <a href="/it/resources/roadmap">Roadmap</a>
+                                
+                                  <a href="/it/resources/research-lab">Research Lab</a>
+                                
+                                  <a href="/it/resources/moneropedia">Moneropedia</a>
+                                
+                                  <a href="/it/resources/user-guides">Guide per Utenti</a>
+                                
+                                  <a href="/it/resources/developer-guides">Guide per sviluppatori</a>
+                                
+                                  <a href="/it/technical-specs">Specifiche Tecniche</a>
+                                
+                            </div>
+                            
+                    </div>
+                    
+                  </div>
+            </div>
+        </nav>
+        </div>
+        <div class="mob bot-nav white-nav">
+            <div class="row center-xs middle-xs">
+                <div class="col-xs-6">
+                    <a href="
+                    
+                    /it
+                    
+                    "><img src="/img/monero-logo.png" alt="Monero Logo" class="monero-logo"></a>
+                </div>
+                <div class="dropdown col-xs-6 text-center mob-language-change">
+                <input class="burger-checkdropdown" id="moblangdrop" type="checkbox">
+                 <label for="moblangdrop"><img src="/img/language.png" alt="Lang" class="icon-language"/><div class="arrow-down"></div></label>
+                               <div class="mob dropdown-content text-center">
+                               <p class="mob-lang-change mob-lang-selected">
+                                   
+                              
+                                
+                              
+                                
+                              
+                                
+                                 Italiano
+                                
+                              
+                                
+                              
+                                
+                              
+                                   
+                               </p>
+                               
+                                
+                                  
+                                    <a class="mob-lang-change" href="/forum-funding-system/proposals/documentation-cleanup.html" >English</a>
+                                  
+                                
+                              
+                                
+                                  
+                                    <a class="mob-lang-change" href="/es/forum-funding-system/proposals/documentation-cleanup.html" >Español</a>
+                                  
+                                
+                              
+                                
+                              
+                                
+                                  
+                                    <a class="mob-lang-change" href="/pl/forum-funding-system/proposals/documentation-cleanup.html" >Polski</a>
+                                  
+                                
+                              
+                                
+                                  
+                                    <a class="mob-lang-change" href="/fr/forum-funding-system/proposals/documentation-cleanup.html" >Français</a>
+                                  
+                                
+                              
+                            </div>
+                          </div>
+            </div>     
+        </div>    
+
+        <div class="site-wrap">
+<div class="container ffs-breadcrumbs">
+
+<p><a href="/forum-funding-system/">Forum Funding System</a> > <a href="/forum-funding-system/completed-proposals/">Completed Proposals</a> > Documentation and cleanup of source code</p>
+
+</div>
+    <!-- FULL WIDTH BLOCK -->
+        <section class="container full">
+                <div class="info-block text-adapt complete">
+                   <div class="row center">
+                       <div class="col-xs-12">
+                           <h2>Progress</h2>
+                       </div>
+                   </div>
+                   <div class="row center-xs">
+                       <div class="col-xs-12 progress-numbers">
+                           <p class="progress-number-funded">3600 XMR</p><span> /</span>
+                           <p class="progress-number-goal">3600 XMR</p>
+                       </div>
+                   </div>
+                   <div class="row">
+                       <div class="col-xs-12">
+                           <div class="progress-bar">
+                               <span style="width: 100%"></span>
+                           </div>
+                       </div>
+                       <div class="col-xs-12 ffs-status">
+                            <p>This project has been completed. The proposal is kept here both to celebrate the achievements of the Monero community, and for historical accuracy about what was accomplished.</p>
+                       </div>
+                   </div>
+                   
+                </div>
+                <div class="info-block text-adapt">
+                   <div class="row center-xs">
+                        <div class="col">
+                            <h2>Documentation and cleanup of source code</h2>
+                            <p>by <strong>tewinget</strong></p>
+                            <p><em>September 11, 2015</em></p>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 id="what">What</h3>
+<p>Clean up and properly document (doxygen) the monero source code, and handle any merges necessary to do so seamlessly with other concurrent development efforts.</p>
+
+<h3 id="who">Who</h3>
+<p>I'm Thomas Winget, and I've been contributing to the Monero codebase since around June 2014. My largest contribution is the migration from storing the blockchain in a static, binary format to storing the blockchain using a database API, as well as two BlockchainDB implementations (LMDB and BerkeleyDB). Other contributions of mine can be found via the network graph on github or simply looking at my fork.</p>
+
+<p>As a side effect of the work I've done already on Monero, I'm rather familiar with most of the codebase. This puts me in a good position to write down how everything works and fits together, as I've had to sort that out already for many parts.</p>
+
+<p>As a side effect of this effort, I will further cement the knowledge I have of the codebase and gain knowledge in areas I'm less familiar with, enabling me to efficiently implement new features in the future and guide others who may have questions regarding a specific module. In addition, documenting the code will function as a sort of code review, allowing the possibility of spotting any bugs (minor or otherwise).</p>
+
+<h3 id="why">Why</h3>
+<p>In my time developing on Monero, there have been countless instances where I need to reference what another piece of code does in order to work with it, and having all the code documented properly in an easily accessible manner (doxygen) would be helpful for that for anyone working in Monero's codebase. I have also come across areas where the code could be made more efficient or clear without changing any functionality, as well as many typographical errors (though these are minor, I think we can all agree they're annoying if nothing else).</p>
+
+<p>Documentation is by far not a glamorous task (probably why it's a bit sparse in Monero), but every development effort benefits immensely from properly documented code.</p>
+
+<h3 id="proposals-and-milestones">Proposals and Milestones</h3>
+<p>I would like to spend about 20 hours per week working on the above, at a rate of 45 XMR per hour (just over $20/hr USD at the time of writing this), paid out every week. I am unsure whether or not 80 hours of work will be enough to cover the entire codebase. There are over 70,000 lines of source in the src/ folder alone, and there is code in other folders that brings the total to over 100k, so this is no small task!</p>
+
+<p>Milestones would be as follows:</p>
+
+<ul>
+  <li>First 20 hours (900/3600 XMR)</li>
+  <li>Second 20 hours (1800/3600 XMR)</li>
+  <li>Third 20 hours (2700/3600 XMR)</li>
+  <li>Fourth 20 hours (3600/3600 XMR)</li>
+</ul>
+
+<p>After each milestone (and during), I will be available for comment, so anything that seems unclear in my documentation can be addressed and dealt with accordingly.</p>
+
+                    </div>
+                </div>
+        </section>
+    <!-- END FULL WIDTH BLOCK -->
+    <section class="container full comments">
+        <div class="info-block">
+          <div class="row center">
+             <div class="col-xs-12">
+               <h2>Comments</h2>
+             </div>
+          </div>
+           <div class="row">
+               <div class="col-xs-12">
+                   <!-- SPACE RESERVED FOR COMMENT SYSTEM -->
+               </div>
+           </div>
+        </div>
+    </section>
+    </div>
+    <footer class="container-fluid">
+            <div class="container">
+                <div class="row around-xs footer-wrapper">
+                   
+                     <div class="col-sm-3 col-xs-6">
+                     <h3>Risorse</h3>
+                         <ul class="list-unstyled">
+                            
+                             
+                                <li><a class="white" href="/it/resources/about/">Informazioni su Monero</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/it/resources/moneropedia/">Moneropedia</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/it/resources/developer-guides/">Guide per Sviluppatori</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/it/resources/user-guides/">Guide per l'utente</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://getmonero.org/feed.xml">RSS Feed</a></li>
+                              
+                            
+                         </ul>
+                     </div>
+                  
+                     <div class="col-sm-3 col-xs-6">
+                     <h3>IRC Chats</h3>
+                         <ul class="list-unstyled">
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero">monero</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-dev">monero-dev</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-markets">monero-markets</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-pools">monero-pools</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-community">monero-community</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-translations">monero-translations</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-hardware">monero-hardware</a></li>
+                              
+                            
+                         </ul>
+                     </div>
+                  
+                     <div class="col-sm-3 col-xs-6">
+                     <h3>Community</h3>
+                         <ul class="list-unstyled">
+                            
+                             
+                              <li><a class="white" href="https://reddit.com/r/monero">Reddit</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://monero.stackexchange.com/">Stack Exchange</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://bitcointalk.org/index.php?topic=583449.0">BitcoinTalk Thread</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://mattermost.getmonero.org/">Mattermost Chat</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://telegram.me/bitmonero">Telegram Chat</a></li>
+                              
+                            
+                         </ul>
+                     </div>
+                  
+                     <div class="col-sm-3 col-xs-6">
+                     <h3>The Monero Project</h3>
+                         <ul class="list-unstyled">
+                            
+                             
+                              <li><a class="white" href="https://openalias.org/">Open Alias</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://getkovri.org/">Kovri</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/it/resources/research-lab/">Monero Research Lab</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/it/press-kit">Monero Press Kit</a></li>
+                              
+                            
+                         </ul>
+                     </div>
+                 
+                <div class="row center-xs">
+                    <div class="social-icons">
+                    </div>
+                    <div class="footer-links">
+                        <ul class="list-unstyled list-inline">
+                           
+                            
+                             <li><a href="/it/legal" class="white footer-link">Legale</a></li>
+                           
+                           
+                            
+                             <li><a href="https://github.com/monero-project" class="white footer-link">Codice Sorgente</a></li>
+                            
+                           
+                            
+                             <li><a href="/it/technical-specs/" class="white footer-link">Specifiche Tecniche</a></li>
+                           
+                           
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
+</footer>
+<!-- Matomo -->
+<script type="text/javascript">
+    var _paq = _paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+        var u = "//analytics.getmonero.org/";
+        _paq.push(['setTrackerUrl', u + 'piwik.php']);
+        _paq.push(['setSiteId', '1']);
+        var d = document,
+            g = d.createElement('script'),
+            s = d.getElementsByTagName('script')[0];
+        g.type = 'text/javascript';
+        g.async = true;
+        g.defer = true;
+        g.src = u + 'piwik.js';
+        s.parentNode.insertBefore(g, s);
+    })();
+</script>
+<!-- End Matomo Code -->
+<!-- page served by server N -->
+    </div>
+  </body>
+</html>

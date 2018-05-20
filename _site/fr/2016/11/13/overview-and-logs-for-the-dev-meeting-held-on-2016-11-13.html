@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>
+     Overview and Logs for the Dev Meeting Held on 2016-11-13 | Monero - sécurisé, confidentiel, intracable
+    </title>
+	<meta name="description" content="Overview and Logs for the Dev Meeting Held on 2016-11-13 [accueil de Monero, une monnaie digitale qui est sécurisée, confidentielle, et intracable]">
+	<meta name="keywords" content="monero, xmr, bitmonero, cryptocurrency">
+
+    <meta property="og:title" content="Monero: Overview and Logs for the Dev Meeting Held on 2016-11-13"/>
+    <meta property="og:description" content="Overview and Logs for the Dev Meeting Held on 2016-11-13 [accueil de Monero, une monnaie digitale qui est sécurisée, confidentielle, et intracable]">
+    <meta property="og:image" content="http://static.getmonero.org/images/opengraph/logo.png">
+    <meta property="og:site_name" content="getmonero.org, Le Projet Monero">
+    <meta property="og:url" content="https://getmonero.org/2016/11/13/overview-and-logs-for-the-dev-meeting-held-on-2016-11-13.html">
+    <meta property="og:type" content="website">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/meta/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/meta/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/meta/favicon-16x16.png">
+        <link rel="manifest" href="/meta/manifest.json">
+        <link rel="mask-icon" href="/meta/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="theme-color" content="#ffffff">
+
+    <link href="/css/custom.css" rel="stylesheet">
+
+    
+    <meta name="msapplication-config" content="/ietemplates/ieconfig.xml">
+
+  </head>
+
+
+  <body>
+    <div class="page-wrapper">
+          
+<div class="mob-nav">
+              <input class="burger-check" id="mobile-burger" type="checkbox"><label for="mobile-burger" class="burger"></label>
+           
+        <div class="slide-in-nav">
+             <div class="container slide-in">
+                     
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                            
+                            <label for="drop1">Commencer<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="drop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                              <a href="/fr/get-started/what-is-monero">Qu'est-ce que Monero ?</a>
+                                  
+                              <a href="/fr/get-started/using">Utiliser</a>
+                                  
+                              <a href="/fr/get-started/accepting">Accepter</a>
+                                  
+                              <a href="/fr/get-started/contributing">Contribuer</a>
+                                  
+                              <a href="/fr/get-started/mining">Miner</a>
+                                  
+                              <a href="/fr/get-started/faq">FAQ</a>
+                                  
+                            </div>
+                            
+                     </div>
+                 </div>
+                  
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                               <a href="/fr/downloads/">Téléchargements</a>
+                            
+                     </div>
+                 </div>
+                  
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                            
+                            <label for="drop2">Actualités<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="drop2" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                              <a href="/fr/blog">Toutes</a>
+                                  
+                              <a href="/fr/blog/tags/monero%20missives.html">Missives</a>
+                                  
+                              <a href="/fr/blog/tags/dev%20diaries.html">Comptes-rendus de Réunions</a>
+                                  
+                              <a href="/fr/blog/tags/releases.html">Versions</a>
+                                  
+                            </div>
+                            
+                     </div>
+                 </div>
+                  
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                            
+                            <label for="drop3">Communauté<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="drop3" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                              <a href="/fr/community/team">Équipe</a>
+                                  
+                              <a href="/fr/community/hangouts">Rencontres</a>
+                                  
+                              <a href="/fr/community/sponsorships">Parrainages</a>
+                                  
+                              <a href="/fr/community/merchants">Commerçants</a>
+                                  
+                            </div>
+                            
+                     </div>
+                 </div>
+                  
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                            
+                            <label for="drop4">Ressources<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="drop4" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                              <a href="/fr/resources/about">À propos</a>
+                                  
+                              <a href="/fr/resources/roadmap">Feuille de route</a>
+                                  
+                              <a href="/fr/resources/research-lab">Laboratoire de Recherche</a>
+                                  
+                              <a href="/fr/resources/moneropedia">Moneropedia</a>
+                                  
+                              <a href="/fr/resources/user-guides">Guides Utilisateur</a>
+                                  
+                              <a href="/fr/resources/developer-guides">Guides du Dévelopeur</a>
+                                  
+                              <a href="/fr/technical-specs">Spécifications Techniques</a>
+                                  
+                            </div>
+                            
+                     </div>
+                 </div>
+                 
+                 <div class="row">
+                     <div class="col-xs-12">
+                         <div class="text-center nav-item mob">
+                            <a href="https://forum.getmonero.org">Forum Funding System</a> 
+                         </div>
+                     </div>
+                 </div>
+                 <div class="row">
+                     <div class="col-xs-12">
+                         <div class="text-center nav-item mob">
+                            <a href="https://github.com/monero-project/meta/blob/master/VULNERABILITY_RESPONSE_PROCESS.md">Vulnerability Response</a>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="row">
+                     <div class="col-xs-12">
+                         <div class="text-center nav-item mob">
+                            <a href="/fr/the-monero-project/">The Monero Project</a> 
+                         </div>
+                     </div>
+                 </div>            
+             </div>
+          
+        </div>
+       </div>
+       
+        <div class="desktop-nav">
+            <nav class="container">
+            <div class="topnav">
+              <div class="row middle-xs">
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <a href="
+                    
+                    /fr
+                    
+                    "><img src="/img/monero-logo.png" alt="Monero Logo" class="monero-logo"></a>
+                  </div>
+                  <div class="col-lg-8 col-md-8 col-sm-8 topnav-list end-xs">
+                      <div class="row end-xs middle-xs">
+                         <div class="col-md-12">
+                          <a href="https://forum.getmonero.org" class="top-link">Forum Funding System</a>
+                          <a href="https://github.com/monero-project/meta/blob/master/VULNERABILITY_RESPONSE_PROCESS.md" class="top-link">Vulnerability Response</a>
+                          <a href="/fr/the-monero-project/" class="top-link">The Monero Project</a>
+                          <div href="#" class="dropdown top-link language-change">
+                            <input class="burger-checkdropdown" id="langdrop" type="checkbox">
+                            <label for="langdrop">
+                            
+                                
+                            
+                            
+                            
+                                
+                            
+                            
+                            
+                                
+                            
+                            
+                            
+                                
+                            
+                            
+                            
+                                
+                            
+                                    Français
+                            
+                                
+                            
+                            <div class="arrow-down"></div></label>
+                            <div class="dropdown-content text-center">
+                                    
+                                
+                                  
+                                    <a href="/2016/11/13/overview-and-logs-for-the-dev-meeting-held-on-2016-11-13.html" >English</a>
+                                  
+                                
+                              
+                                
+                                  
+                                    <a href="/es/2016/11/13/overview-and-logs-for-the-dev-meeting-held-on-2016-11-13.html" >Español</a>
+                                  
+                                
+                              
+                                
+                                  
+                                    <a href="/it/2016/11/13/overview-and-logs-for-the-dev-meeting-held-on-2016-11-13.html" >Italiano</a>
+                                  
+                                
+                              
+                                
+                                  
+                                    <a href="/pl/2016/11/13/overview-and-logs-for-the-dev-meeting-held-on-2016-11-13.html" >Polski</a>
+                                  
+                                
+                              
+                                
+                              
+                            </div>
+                          </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="botnav white-nav">
+                <input class="burger-check" id="burger-check" type="checkbox"><label for="burger-check" class="burger"></label>
+                <div class="row between-xs nav-items">
+                     
+                    <div class="col dropdown nav-item">
+                        
+                            <label for="desktopdrop1">Commencer<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="desktopdrop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                                  <a href="/fr/get-started/what-is-monero">Qu'est-ce que Monero ?</a>
+                                
+                                  <a href="/fr/get-started/using">Utiliser</a>
+                                
+                                  <a href="/fr/get-started/accepting">Accepter</a>
+                                
+                                  <a href="/fr/get-started/contributing">Contribuer</a>
+                                
+                                  <a href="/fr/get-started/mining">Miner</a>
+                                
+                                  <a href="/fr/get-started/faq">FAQ</a>
+                                
+                            </div>
+                            
+                    </div>
+                    
+                    <div class="col dropdown nav-item">
+                        
+                           <a href="/fr/downloads/">Téléchargements</a>
+                            
+                    </div>
+                    
+                    <div class="col dropdown nav-item">
+                        
+                            <label for="desktopdrop1">Actualités<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="desktopdrop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                                  <a href="/fr/blog">Toutes</a>
+                                
+                                  <a href="/fr/blog/tags/monero%20missives.html">Missives</a>
+                                
+                                  <a href="/fr/blog/tags/dev%20diaries.html">Comptes-rendus de Réunions</a>
+                                
+                                  <a href="/fr/blog/tags/releases.html">Versions</a>
+                                
+                            </div>
+                            
+                    </div>
+                    
+                    <div class="col dropdown nav-item">
+                        
+                            <label for="desktopdrop1">Communauté<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="desktopdrop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                                  <a href="/fr/community/team">Équipe</a>
+                                
+                                  <a href="/fr/community/hangouts">Rencontres</a>
+                                
+                                  <a href="/fr/community/sponsorships">Parrainages</a>
+                                
+                                  <a href="/fr/community/merchants">Commerçants</a>
+                                
+                            </div>
+                            
+                    </div>
+                    
+                    <div class="col dropdown nav-item">
+                        
+                            <label for="desktopdrop1">Ressources<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="desktopdrop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                                  <a href="/fr/resources/about">À propos</a>
+                                
+                                  <a href="/fr/resources/roadmap">Feuille de route</a>
+                                
+                                  <a href="/fr/resources/research-lab">Laboratoire de Recherche</a>
+                                
+                                  <a href="/fr/resources/moneropedia">Moneropedia</a>
+                                
+                                  <a href="/fr/resources/user-guides">Guides Utilisateur</a>
+                                
+                                  <a href="/fr/resources/developer-guides">Guides du Dévelopeur</a>
+                                
+                                  <a href="/fr/technical-specs">Spécifications Techniques</a>
+                                
+                            </div>
+                            
+                    </div>
+                    
+                  </div>
+            </div>
+        </nav>
+        </div>
+        <div class="mob bot-nav white-nav">
+            <div class="row center-xs middle-xs">
+                <div class="col-xs-6">
+                    <a href="
+                    
+                    /fr
+                    
+                    "><img src="/img/monero-logo.png" alt="Monero Logo" class="monero-logo"></a>
+                </div>
+                <div class="dropdown col-xs-6 text-center mob-language-change">
+                <input class="burger-checkdropdown" id="moblangdrop" type="checkbox">
+                 <label for="moblangdrop"><img src="/img/language.png" alt="Lang" class="icon-language"/><div class="arrow-down"></div></label>
+                               <div class="mob dropdown-content text-center">
+                               <p class="mob-lang-change mob-lang-selected">
+                                   
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                                 Français
+                                
+                              
+                                   
+                               </p>
+                               
+                                
+                                  
+                                    <a class="mob-lang-change" href="/2016/11/13/overview-and-logs-for-the-dev-meeting-held-on-2016-11-13.html" >English</a>
+                                  
+                                
+                              
+                                
+                                  
+                                    <a class="mob-lang-change" href="/es/2016/11/13/overview-and-logs-for-the-dev-meeting-held-on-2016-11-13.html" >Español</a>
+                                  
+                                
+                              
+                                
+                                  
+                                    <a class="mob-lang-change" href="/it/2016/11/13/overview-and-logs-for-the-dev-meeting-held-on-2016-11-13.html" >Italiano</a>
+                                  
+                                
+                              
+                                
+                                  
+                                    <a class="mob-lang-change" href="/pl/2016/11/13/overview-and-logs-for-the-dev-meeting-held-on-2016-11-13.html" >Polski</a>
+                                  
+                                
+                              
+                                
+                              
+                            </div>
+                          </div>
+            </div>     
+        </div>    
+
+        
+
+<div class="site-wrap post">
+    
+    <section class="container">
+            <div class="row">
+                <!-- left two-thirds block-->
+                <div class="left two-thirds col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                    <div class="info-block">
+                        <div class="row">
+                            <div class="col">
+                               <h2>Overview and Logs for the Dev Meeting Held on 2016-11-13</h2> 
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p class="author">Publiés par: dEBRUYNE / fluffypony</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p>November 13, 2016</p>
+                            </div>
+                        </div>
+                    <div>
+                        <h3 id="overview">Overview</h3>
+
+<p>An overview <a href="https://hellomonero.com/article/monero-dev-meeting-note-highlights-2016-11-13">can be found on Hello Monero</a>.</p>
+
+<h3 id="logs">Logs</h3>
+
+<p><strong>&lt;@ArticMine&gt;</strong> Hi<br />
+<strong>&lt;+moneromooo&gt;</strong> Oh hi<br />
+<strong>&lt;@fluffypony&gt;</strong> oh and pigeons<br />
+<strong>&lt;Softich&gt;</strong> allright boys, get it started :P<br />
+<strong>&lt;@fluffypony&gt;</strong> and tewinget<br />
+<strong>&lt;medusa_&gt;</strong> Jaquee ping too<br />
+<strong>&lt;pigeons&gt;</strong> hi<br />
+<strong>&lt;@fluffypony&gt;</strong> ok so let's start with an infrastructure update<br />
+<strong>&lt;Jaquee&gt;</strong> hi!<br />
+<strong>&lt;@fluffypony&gt;</strong> pigeons: how goes it<br />
+<strong>&lt;pigeons&gt;</strong> good<br />
+<strong>&lt;@fluffypony&gt;</strong> pigeons: do you want to tell people about the new repo we're using for issues?<br />
+<strong>&lt;pigeons&gt;</strong> github.com/monero-project/meta<br />
+<strong>&lt;Softich&gt;</strong> https://github.com/monero-project/meta<br />
+<strong>&lt;<em>Slack&gt; &lt;nanoakron&gt;** Please explain?<br />
+**&lt;Softich&gt;** for the lazy<br />
+**&lt;pigeons&gt;** for stuff realted to build machines, build infrastructure, etc<br />
+**&lt;pigeons&gt;** anonimal has been using it some to get things setup for kovri needs<br />
+**&lt;pigeons&gt;** so feel free<br />
+**&lt;luigi1112&gt;** I got some emails about issues<br />
+**&lt;luigi1112&gt;** I was like cool<br />
+**&lt;@fluffypony&gt;** ok so<br />
+**&lt;@fluffypony&gt;** please use /meta for organisational issues <br />
+**&lt;@fluffypony&gt;** "organisational" as in something that isn't project specific<br />
+**&lt;_Slack&gt; &lt;nanoakron&gt;** Roger<br />
+**&lt;pigeons&gt;** there is also an empty repo there now, i'll check in some build infrastructure settings there and vm templates<br />
+**&lt;i2p-relay&gt; {-anonimal}** pigeons: can I PM you on Irc2p or are you AFK from that instance?<br />
+**&lt;pigeons&gt;** yes i'm online there<br />
+**&lt;i2p-relay&gt; {-anonimal}** * has to leave soon<br />
+**&lt;@fluffypony&gt;** ok so<br />
+**&lt;_Slack&gt; &lt;nanoakron&gt;** Ha<br />
+**&lt;_Slack&gt; &lt;nanoakron&gt;** Ja<br />
+**&lt;@fluffypony&gt;** we've had quite a few PRs merged in the last 2 weeks<br />
+**&lt;@fluffypony&gt;** some big things like "fluffy blocks" that need testing and fiddling to check for edge cases<br />
+**&lt;_Slack&gt; &lt;nanoakron&gt;** Can I run a testnet client in parallel with my main net one from the same box?<br />
+**&lt;@fluffypony&gt;** yes I do<br />
+**&lt;@fluffypony&gt;** on my laptop <br />
+**&lt;iDunk&gt;** i also do<br />
+**&lt;_Slack&gt; &lt;nanoakron&gt;** Could you make some details public, maybe in the readme?<br />
+**&lt;_Slack&gt; &lt;nanoakron&gt;** I mean instructions<br />
+**&lt;iDunk&gt;** what details?<br />
+**&lt;@fluffypony&gt;** @NanoAkron for running testnet and mainnet?<br />
+**&lt;_Slack&gt; &lt;nanoakron&gt;** Yes please<br />
+**&lt;@fluffypony&gt;** ./monerod –testnet <br />
+**&lt;@fluffypony&gt;** ./monerod<br />
+**&lt;iDunk&gt;** start moderod normally for mainnet<br />
+**&lt;@fluffypony&gt;** in two different windows<br />
+**&lt;_Slack&gt; &lt;nanoakron&gt;** And they're happy to play together?<br />
+**&lt;iDunk&gt;** and monerod –testnet for testnet<br />
+**&lt;medusa</em>&gt;</strong> yes very happy<br />
+<strong>&lt;pero&gt;</strong> needs annotated screenshots imho<br />
+<strong>&lt;luigi1112&gt;</strong> they play separately<br />
+<strong>&lt;medusa_&gt;</strong> like 2 small pupies<br />
+<strong>&lt;<em>Slack&gt; &lt;nanoakron&gt;** Ok cool.<br />
+**&lt;_Slack&gt; &lt;nanoakron&gt;** Will get that up and running when I'm home next week.<br />
+**&lt;iDunk&gt;** you also need to start monero-wallet-cli –testnet<br />
+**&lt;iDunk&gt;** for a testnet wallet<br />
+**&lt;_Slack&gt; &lt;nanoakron&gt;** Are there any decisions on making the whole network fluffy at the next hardfork?<br />
+**&lt;+moneromooo&gt;** Veto.<br />
+**&lt;@fluffypony&gt;** I think they're already enabled by anyone running a node that supports it<br />
+**&lt;iDunk&gt;** it is not necessary<br />
+**&lt;luigi1112&gt;** not next like jan<br />
+**&lt;luigi1112&gt;** and it doesn't need a fork?<br />
+**&lt;gingeropolous&gt;** right. it doesn't need a fork.<br />
+**&lt;@fluffypony&gt;** the fork would only have been done to avoid old nodes showing weird error messages<br />
+**&lt;iDunk&gt;** client that support fluffy blocks talk fluffy<br />
+**&lt;@fluffypony&gt;** but honestly it's not a big deal<br />
+**&lt;iDunk&gt;** and those that don't, don't afaik<br />
+**&lt;_Slack&gt; &lt;nanoakron&gt;** But to make it compulsory. Reducing block sizes would also help obfuscation.<br />
+**&lt;+moneromooo&gt;** It kind of is. If there's a nasty bug once close to 100% of the nodes switched, boom.<br />
+**&lt;iDunk&gt;** there is no block size reduction<br />
+**&lt;dEBRUYNE&gt;** &lt;pero&gt; #58 is not fixed &lt;= apologies, should be reopened then<br />
+**&lt;_Slack&gt; &lt;nanoakron&gt;** There's no block size reduction? I think you're mistaken<br />
+**&lt;@fluffypony&gt;** @NanoAkron it doesn't reduce block size, just reduces traffic <br />
+**&lt;+moneromooo&gt;** He is not.<br />
+**&lt;iDunk&gt;** nonaoakron: i am nitz<br />
+**&lt;iDunk&gt;** not*<br />
+**&lt;iDunk&gt;** lol<br />
+**&lt;@fluffypony&gt;** ie. you have the transactions already in the mempool, so no need to re-send them<br />
+**&lt;@fluffypony&gt;** but the block size stays the same<br />
+**&lt;+moneromooo&gt;** Hi nitz.<br />
+**&lt;_Slack&gt; &lt;nanoakron&gt;** Yes ok I wasn't precise enough<br />
+**&lt;iDunk&gt;** :)<br />
+**&lt;+moneromooo&gt;** hi<br />
+**&lt;_Slack&gt; &lt;nanoakron&gt;** It reduces block transmission and reduplication, reducing overall network traffic and 'burstiness'<br />
+**&lt;@fluffypony&gt;** yes<br />
+**&lt;_Slack&gt; &lt;nanoakron&gt;** Thereby improving obfuscation efforts ;)<br />
+**&lt;@fluffypony&gt;** ok <br />
+**&lt;_Slack&gt; &lt;nanoakron&gt;** And kovri<br />
+**&lt;_Slack&gt; &lt;nanoakron&gt;** Should also benefit<br />
+**&lt;+moneromooo&gt;** Can we leave that till after we're done with the meeting though ?<br />
+**&lt;_Slack&gt; &lt;nanoakron&gt;** Due to packet size reduction and traffic reduction. Good reasons to make it compulsory at some point in the future.<br />
+**&lt;gingeropolous&gt;** ^^<br />
+**&lt;_Slack&gt; &lt;nanoakron&gt;** Ok will leave it now.<br />
+**&lt;@fluffypony&gt;** @NanoAkron it *is* compulsory <br />
+**&lt;@fluffypony&gt;** ok so<br />
+**&lt;_Slack&gt; &lt;nanoakron&gt;** Ja<br />
+**&lt;@fluffypony&gt;** Jaquee / medusa</em> could you give us a GUI update, based on the stuff that's been done in the past 2 weeks ?<br />
+**&lt;Jaquee&gt;</strong> yeah<br />
+<strong>&lt;Jaquee&gt;</strong> We've made great progress last couple of weeks. A lot of great contributions and inputs from new people. Great to see!<br />
+<strong>&lt;Jaquee&gt;</strong> All critical issues i know of are fixed and we have a very good looking, working gui with all basic functionality in place.<br />
+<strong>&lt;Jaquee&gt;</strong> I believe next step is building binaries to make it possible for more people to test it<br />
+<strong>&lt;@fluffypony&gt;</strong> ok<br />
+<strong>&lt;Jaquee&gt;</strong> Since the 0.10 daemon isnt compatible with gui we also need to make sure we have a working monerod build to release with the gui.<br />
+<strong>&lt;@fluffypony&gt;</strong> we'll try couple that with a new 0.10 point release<br />
+<strong>&lt;Softich&gt;</strong> nice, can you give us an ETA for the download? :)<br />
+<strong>&lt;Jaquee&gt;</strong> sounds good<br />
+<strong>&lt;@fluffypony&gt;</strong> so it will take a couple of days to wrap up a point release too<br />
+<strong>&lt;Jaquee&gt;</strong> ok. makes sense<br />
+<strong>&lt;<em>Slack&gt; &lt;nanoakron&gt;** Can I ask about translations/localisation?<br />
+**&lt;Jaquee&gt;** yes<br />
+**&lt;@fluffypony&gt;** sure<br />
+**&lt;Jaquee&gt;** i haven't worked on those parts very much though. but i can try to answer your questions.<br />
+**&lt;_Slack&gt; &lt;nanoakron&gt;** Is there an easy way I could try to translate some stuff for you - I speak a bit of Malay. Is there a transifex or maybe a way to scan the transifex of another coin (ahem) and pull in their translations?<br />
+**&lt;Jaquee&gt;** i think dEBRUYNE is planning to publish the translation files somewhere.<br />
+**&lt;dEBRUYNE&gt;** I've been intending to put the strings up on transifex, but I have spent the time that I had on testing in the last few weeks<br />
+**&lt;dEBRUYNE&gt;** And it's a bit of a pita to get the strings out<br />
+**&lt;_Slack&gt; &lt;nanoakron&gt;** Makes more sense to test right now anyway<br />
+**&lt;maitscha&gt;** today I tried to update german translations, but there seems to be a bug choosing the language (at least under macos)<br />
+**&lt;Jaquee&gt;** maitscha: i'm not sure if translations are fully implemented yet<br />
+**&lt;medusa</em>&gt;</strong> yes we took them out basically<br />
+<strong>&lt;<em>Slack&gt; &lt;nanoakron&gt;** Some wizard could probably whip up a way to pull translations from another coin… ;)<br />
+**&lt;medusa</em>&gt;</strong> to get it as stable a spossible for now<br />
+<strong>&lt;maitscha&gt;</strong> ok, I think the translation stuff needs some fixes to get it working. should we open a ticket?<br />
+<strong>&lt;Jaquee&gt;</strong> maitscha: yes please<br />
+<strong>&lt;Jaquee&gt;</strong> speaking of issues…<br />
+<strong>&lt;Jaquee&gt;</strong> the issue page is hard to grasp sometimes. Labels would help out alot. is that possible somehow?<br />
+<strong>&lt;@fluffypony&gt;</strong> yes<br />
+<strong>&lt;@fluffypony&gt;</strong> we have a small issue with that in that only collaborators can add labels<br />
+<strong>&lt;@fluffypony&gt;</strong> and GitHub aren't adding fine-grained permissions for non-collaborators <br />
+<strong>&lt;Jaquee&gt;</strong> ok. and collaborator = write access right?<br />
+<strong>&lt;@fluffypony&gt;</strong> yes<br />
+<strong>&lt;@fluffypony&gt;</strong> so it's too much of a security risk to hand out<br />
+<strong>&lt;Jaquee&gt;</strong> yes. ofc<br />
+<strong>&lt;@fluffypony&gt;</strong> my suggestion is that we have a Google Docs spreadsheet<br />
+<strong>&lt;@fluffypony&gt;</strong> with a column for each label<br />
+<strong>&lt;@fluffypony&gt;</strong> and then issue number -&gt; mark the appropriate columns <br />
+<strong>&lt;@fluffypony&gt;</strong> and I'll go and add labels <br />
+<strong>&lt;medusa_&gt;</strong> personally i think we should increase the circel of caloborators by at least 1<br />
+<strong>&lt;@fluffypony&gt;</strong> medusa_: the entire Core Team have access<br />
+<strong>&lt;medusa_&gt;</strong> it seemed to me it is hard to keep track, at least this week<br />
+<strong>&lt;medusa_&gt;</strong> also for core?<br />
+<strong>&lt;@fluffypony&gt;</strong> the issue is that the people that can manage issues != the people that can be responsible for merging code<br />
+<strong>&lt;Jaquee&gt;</strong> yeah. how is your work load currently fluffypony? would it make sense to have more ppl doing merges in the future?<br />
+<strong>&lt;@fluffypony&gt;</strong> (most of the time anyway)<br />
+<strong>&lt;medusa_&gt;</strong> im fine with that, just make sure those people capable can also merge to monero-core in case we have a small "merge jam"<br />
+<strong>&lt;@fluffypony&gt;</strong> Jaquee: my work load is fine when the in-laws aren't visiting <br />
+<strong>&lt;medusa_&gt;</strong> haha<br />
+<strong>&lt;Jaquee&gt;</strong> fluffypony: lol ok<br />
+<strong>&lt;<em>Slack&gt; &lt;nanoakron&gt;** I think it would be reasonable to give mooo merge access as a paid major contributor who has demonstrated talents<br />
+**&lt;_Slack&gt; &lt;nanoakron&gt;** Lol FP…I know the feeling<br />
+**&lt;@fluffypony&gt;** I'm trying to let PRs sit for a while so that other people review them besides me<br />
+**&lt;medusa</em>&gt;</strong> yes but sometimes if we are active that causes issues<br />
+<strong>&lt;Jaquee&gt;</strong> makes sense. there were a lot of code conflicts last week that could have been avoided<br />
+<strong>&lt;medusa_&gt;</strong> or can cause issues<br />
+<strong>&lt;@fluffypony&gt;</strong> medusa_: merging stuff rapidly is a bad idea, we need eyes on code <br />
+<strong>&lt;Jaquee&gt;</strong> *merge conflicts<br />
+<strong>&lt;+moneromooo&gt;</strong> I asked for PRs to stay open for a while so I have a change to see htem and review (monero repo anyway).<br />
+<strong>&lt;@fluffypony&gt;</strong> which means small PRs, that multiple people have looked at<br />
+<strong>&lt;@fluffypony&gt;</strong> I know it means that some PRs have to be rebased 3 times (sorry moneromooo)<br />
+<strong>&lt;medusa_&gt;</strong> i agree the right balance isnt easy, im sure we get the balance again<br />
+<strong>&lt;@fluffypony&gt;</strong> but it's better than stuff slipping in to the code<br />
+<strong>&lt;medusa_&gt;</strong> normally it also wroks well<br />
+<strong>&lt;+moneromooo&gt;</strong> No worries, it's less work than making them in the first place usually :)<br />
+<strong>&lt;medusa_&gt;</strong> this week was pretty extreme in all forms<br />
+<strong>&lt;@fluffypony&gt;</strong> medusa_: the QML stuff is pretty rough in terms of merge conflicts too<br />
+<strong>&lt;endogenic&gt;</strong> maybe there can be a structure where the required reviewers are identified by the master maintainer, notified, and must sign off before the thing can be merged ?<br />
+<strong>&lt;<em>Slack&gt; &lt;nanoakron&gt;** I agree that issues should sit and ferment  for a while, but sometimes there are hotfixes required like with fluffy blocks<br />
+**&lt;@fluffypony&gt;** endogenic: too structured; has a bus factor<br />
+**&lt;gingeropolous&gt;** is dev branch happening?<br />
+**&lt;@fluffypony&gt;** gingeropolous: no not atm<br />
+**&lt;Jaquee&gt;** ok. security first. i'm sure it works ok most of the time. 2 last weeks was extreme.<br />
+**&lt;@fluffypony&gt;** indeed<br />
+**&lt;Jaquee&gt;** but we could keep this in mind and evaluate further on?<br />
+**&lt;medusa</em>&gt;</strong> yes you stay on watch ;-)<br />
+<strong>&lt;Jaquee&gt;</strong> :D<br />
+<strong>&lt;@fluffypony&gt;</strong> Jaquee: yes absolutely <br />
+<strong>&lt;gingeropolous&gt;</strong> would the dev branch approach be a way to get around the merge "bottleneck" ? i assume its still complicated b/c of zeromq..<br />
+<strong>&lt;gingeropolous&gt;</strong> or are u talking about core. (i will shut up now)<br />
+<strong>&lt;<em>Slack&gt; &lt;nanoakron&gt;** What's the plan if something horrible happens to you FP, like going on holiday for a month without internet access?<br />
+**&lt;proxmr&gt;** Hello guys<br />
+**&lt;@fluffypony&gt;** gingeropolous: no, you still can't have fine-grained collaborators on a per-branch basis<br />
+**&lt;endogenic&gt;** nanoakron: dead pony switch?<br />
+**&lt;_Slack&gt; &lt;nanoakron&gt;** Lol. Yeah :) (also :( )<br />
+**&lt;endogenic&gt;** yeah<br />
+**&lt;endogenic&gt;** :’(<br />
+**&lt;Jaquee&gt;** but you can have branch specific permissions right?<br />
+**&lt;Jaquee&gt;** not sure if it would help though.<br />
+**&lt;maitscha&gt;** "protected branches"<br />
+**&lt;@fluffypony&gt;** Jaquee: you can, and it might be worth fiddling with later on<br />
+**&lt;Jaquee&gt;** all right<br />
+**&lt;Jaquee&gt;** imo we can leave this subject for now.<br />
+**&lt;Jaquee&gt;** any more questions regarding the gui?<br />
+**&lt;asdef&gt;** irc logs anywhere? for people who came too late<br />
+**&lt;proxmr&gt;** Is the gui coming in 2 days ?<br />
+**&lt;maitscha&gt;** Jaquee: how can I start the GUI under MacOS and get the console output?<br />
+**&lt;@fluffypony&gt;** proxmr: no, that's not how software development works<br />
+**&lt;Jaquee&gt;** maitscha: one sec<br />
+**&lt;maitscha&gt;** Jaquee: that would help debugging …<br />
+**&lt;Jaquee&gt;** maitscha: build/release/bin/monero-core.app/Contents/MacOS/monero-core<br />
+**&lt;asdef&gt;** any screenshots already existing? so we can see an be happy?<br />
+**&lt;Jaquee&gt;** in monero-core dir<br />
+**&lt;proxmr&gt;** Sorry, some guy just told me on some forum, so i came to check. i appologize<br />
+**&lt;maitscha&gt;** ah ok<br />
+**&lt;iDunk&gt;** maitscha: doesn't it give outout when started from the command line like on linux?<br />
+**&lt;medusa</em>&gt;</strong> asdef: check reddit<br />
+<strong>&lt;<em>Slack&gt; &lt;nanoakron&gt;** No worries.<br />
+**&lt;maitscha&gt;** I always started it with the finder<br />
+**&lt;dEBRUYNE&gt;** Please don't interrupt the dev meeting<br />
+**&lt;Jaquee&gt;** iDunk: yes. but it's not that easy to find the binary<br />
+**&lt;Jaquee&gt;** it's in the .app package<br />
+**&lt;iDunk&gt;** ok<br />
+**&lt;maitscha&gt;** Jaquee: works, thanks<br />
+**&lt;Jaquee&gt;** yw<br />
+**&lt;Jaquee&gt;** all right.<br />
+**&lt;Jaquee&gt;** more gui related?<br />
+**&lt;_Slack&gt; &lt;nanoakron&gt;** None here<br />
+**&lt;maitscha&gt;** there are at least 2 people who would like to make a style guide<br />
+**&lt;_Slack&gt; &lt;nanoakron&gt;** That's a good idea<br />
+**&lt;maitscha&gt;** should this be coordinated?<br />
+**&lt;medusa</em>&gt;</strong> i think the best place to discuss specific stuff is either on github or here in the channel<br />
+<strong>&lt;Jaquee&gt;</strong> yes. that would be good. not sure how. but i can ask them to get in contact with each other to start<br />
+<strong>&lt;vertp&gt;</strong> Can we discuss an issue freeze for the beta release? I think we have all the features we need for an "MVP" and there doesnt seem to be any major outstanding bugs.<br />
+<strong>&lt;maitscha&gt;</strong> or at least a place where people can post design/ux-related improvements?<br />
+<strong>&lt;@fluffypony&gt;</strong> github<br />
+<strong>&lt;Guest5849&gt;</strong> Confused … ? Quote: &lt;@fluffypony&gt; so it will take a couple of days to wrap up a point release too. Does that not relate to the GUI being released?<br />
+<strong>&lt;<em>Slack&gt;** **&lt;tfi_charmers&gt;** Yes, styleguide, one was me. I’m still able to help.<br />
+**&lt;@fluffypony&gt;** Guest5849: a beta, yes<br />
+**&lt;medusa</em>&gt;</strong> vertp: the features are basically freezed, we just change what we think is worth changing (and the treshold for that goes up each day)<br />
+<strong>&lt;@fluffypony&gt;</strong> vertp: "freezing" things doesn't really work for a fluid open-source project<br />
+<strong>&lt;<em>Slack&gt; &lt;nanoakron&gt;** Where's the best place to coordinate a style guide? A new Git repo or a wiki?<br />
+**&lt;medusa</em>&gt;</strong> always considering risk reward ofc<br />
+<strong>&lt;@fluffypony&gt;</strong> people open issues, they get fixed, eventually you hit enough milestones / new features for a new release<br />
+<strong>&lt;vertp&gt;</strong> I mean freeze in the sense that of course you allow new issues to be open, but the work is prioritized based on existing issues and bugs<br />
+<strong>&lt;@fluffypony&gt;</strong> vertp: can't really force someone to work on anything<br />
+<strong>&lt;maitscha&gt;</strong> vertp: you can't stop people from working on features ;)<br />
+<strong>&lt;@fluffypony&gt;</strong> so if people want to work on new features instead of tackling bugs that's their prerogative <br />
+<strong>&lt;vertp&gt;</strong> I agree, I mean more for illya and jaquee<br />
+<strong>&lt;pero&gt;</strong> generally an 'issue freeze' is a bad idea<br />
+<strong>&lt;@fluffypony&gt;</strong> can't force them either ;)<br />
+<strong>&lt;medusa_&gt;</strong> vertp: we have to always allow people opening issues. their feedback is very valuable<br />
+<strong>&lt;pero&gt;</strong> a feature freeze is an entirely different thing and is already somewhat implemented<br />
+<strong>&lt;vertp&gt;</strong> I agree medusa_<br />
+<strong>&lt;Jaquee&gt;</strong> vertp: me and ilya are more or less frozen for the moment. :P<br />
+<strong>&lt;@fluffypony&gt;</strong> yes<br />
+<strong>&lt;Jaquee&gt;</strong> as in agreed on that current version can be released as beta<br />
+<strong>&lt;<em>Slack&gt; &lt;nanoakron&gt;** Vertp: we just follow a simple alpha -&gt; beta -&gt; release methodology, keeping in mind that even point releases are beta software under constant development<br />
+**&lt;vertp&gt;** Awesome, thats what I was going for Jaquee<br />
+**&lt;vertp&gt;** I just feel that its stable enough at this point to justify a beta without doing any additional feature dev. Thats what I meant by issue freeze<br />
+**&lt;vertp&gt;** Which I think we all agree on<br />
+**&lt;Jaquee&gt;** yes<br />
+**&lt;vertp&gt;** great!<br />
+**&lt;medusa</em>&gt;</strong> yes wa try to be very pragmatic<br />
+<strong>&lt;_Slack&gt; &lt;nanoakron&gt;</strong> This has side tracked us slightly. Where's the best place to coordinate a style document?<br />
+• moneromooo: eyes this suspiciously<br />
+<strong>&lt;@fluffypony&gt;</strong> Github has this new thing called Projects<br />
+<strong>&lt;iDunk&gt;</strong> wat<br />
+<strong>&lt;Jaquee&gt;</strong> nanoakron. not sure. github best place for the moment<br />
+<strong>&lt;@fluffypony&gt;</strong> aI want to play with it and see if it's suitable for that<br />
+<strong>&lt;_Slack&gt; &lt;nanoakron&gt;</strong> Cool<br />
+<strong>&lt;Jaquee&gt;</strong> fluffypony: sounds interesting.<br />
+<strong>&lt;Jaquee&gt;</strong> tfi_charmers: can you sync with that other ux guy?<br />
+<strong>&lt;_Slack&gt; &lt;nanoakron&gt;</strong> Does sound interesting<br />
+<strong>&lt;Jaquee&gt;</strong> so you don't end up working on the same issues<br />
+<strong>&lt;@fluffypony&gt;</strong> ok - can we call this meeting done?<br />
+<strong>&lt;_Slack&gt;</strong> <strong>&lt;tfi_charmers&gt;</strong> @jaquee can do.<br />
+<strong>&lt;Jaquee&gt;</strong> great<br />
+<strong>&lt;Jaquee&gt;</strong> fluffypony: yes<br />
+<strong>&lt;@fluffypony&gt;</strong> ok tks<br />
+<strong>&lt;+moneromooo&gt;</strong> Just one thing before: when does someone else do the builds ?<br />
+<strong>&lt;_Slack&gt; &lt;nanoakron&gt;</strong> I was going to raise the issue of databases if hyc, fp and mooo are in the same room<br />
+<strong>&lt;iDunk&gt;</strong> hyc is roaming belfast<br />
+<strong>&lt;_Slack&gt; &lt;nanoakron&gt;</strong> A veritable vipers nest of opinions ;)<br />
+<strong>&lt;iDunk&gt;</strong> anyway, i'm with fluffypony and moneromooo on the db issue<br />
+<strong>&lt;_Slack&gt; &lt;nanoakron&gt;</strong> Why do we need the ability to iterate and test the database back end in production code?<br />
+<strong>&lt;_Slack&gt; &lt;nanoakron&gt;</strong> And aren't we effectively overruling our resident database expert, hyc?<br />
+• moneromooo: facepalms<br />
+<strong>&lt;iDunk&gt;</strong> ^<br />
+<strong>&lt;gingeropolous&gt;</strong> where's this discussion? i totally missed this one. not that I can do anything.<br />
+<strong>&lt;_Slack&gt; &lt;nanoakron&gt;</strong> It's a PR of mine<br />
+<strong>&lt;_Slack&gt; &lt;nanoakron&gt;</strong> Mooo, why the facepalm? When or where are we going to need to change the database away from LMDB in the future in such a way that we need the selection code?<br />
+<strong>&lt;_Slack&gt; &lt;nanoakron&gt;</strong> As it stands we're shipping code thats never run, with requirements that are never used.<br />
+<strong>&lt;+moneromooo&gt;</strong> Because being an expert in databases does not extend to having an expert opinion on whether a selection system in a particular project is best or not.<br />
+<strong>&lt;+moneromooo&gt;</strong> And not knowing the particulars of a future db implementation does not by itself imply any groundworks should be dismantled at once.<br />
+<strong>&lt;gingeropolous&gt;</strong> and the prebuild binaries are all LMDB, right? so its not like anything's being shipped…<br />
+<strong>&lt;gingeropolous&gt;</strong> *prebuilt<br />
+<strong>&lt;+moneromooo&gt;</strong> The current ones all are, yes.<br />
+<strong>&lt;dogecoinsarefun&gt;</strong> fluffyblocks still LMDB too right?<br />
+<strong>&lt;+moneromooo&gt;</strong> Unrelated.<br />
+<strong>&lt;dogecoinsarefun&gt;</strong> ok sorry<br />
+<strong>&lt;+moneromooo&gt;</strong> I mean, this was an obvious appeal to authority, in a context where the authority is only tangential.<br />
+<strong>&lt;+moneromooo&gt;</strong> I find it counterproductive to remove a useful thing, if its removal will make it a lot easier to break the ability to add another db. It's not like it's a lot of code I think.<br />
+<strong>&lt;iDunk&gt;</strong> agreed<br />
+<strong>&lt;+moneromooo&gt;</strong> There was a all RAM db being worked on, though I'm not sure it still is.<br />
+<strong>&lt;_Slack&gt; &lt;nanoakron&gt;</strong> So has the compiler been smart enough to strip the selection stuff or is there still bloat and overhead that could be trimmed?<br />
+<strong>&lt;_Slack&gt; &lt;nanoakron&gt;</strong> Appeal to authority is only a fallacy when the authority is not relevant to the issue at hand<br />
+<strong>&lt;@ArticMine&gt;</strong> There was at one point the idea that Monero could use different databases in the future.<br />
+<strong>&lt;+moneromooo&gt;</strong> You actually might make a good argument by removing it all and see whether performance figures support you bloat claim.<br />
+<strong>&lt;_Slack&gt; &lt;nanoakron&gt;</strong> I'll try that<br />
+<strong>&lt;+moneromooo&gt;</strong> Now, the threshold where an improvement becomes larger than the loss of generality is pretty subjective too.<br />
+<strong>&lt;_Slack&gt; &lt;nanoakron&gt;</strong> As for the PR - would you reject it for stripping out the Berkeley DB selection in CMakeLists.txt, or is that acceptable because we're not going back to BDB?<br />
+<strong>&lt;gingeropolous&gt;</strong> is it just for compiling performance?<br />
+<strong>&lt;+moneromooo&gt;</strong> IIRC, I said keep the selcetion code, just remove the bdb option.<br />
+<strong>&lt;_Slack&gt; &lt;nanoakron&gt;</strong> I'm happy to keep the selection code in the main body, but are you happy with the structure of the current PR wrt stripping BDB from CMakelists.txt? There wasn't a selector in there afaik<br />
+<strong>&lt;+moneromooo&gt;</strong> Basically, you should be able to add another db by duplicating the lmdb bits. Anything that's shared needs to stay for this to be useful.<br />
+<strong>&lt;_Slack&gt; &lt;nanoakron&gt;</strong> I'm happy to leave the selector alone in the main code<br />
+<strong>&lt;+moneromooo&gt;</strong> In the details ? I'll have to go read the code to know for sure.<br />
+<strong>&lt;+moneromooo&gt;</strong> And I'm busy debugging some cold signing stuff now, so that'll be later.<br />
+<strong>&lt;_Slack&gt; &lt;nanoakron&gt;</strong> Understood. Please have a look at the PR and what's been stripped wrt BDB when you can. If that's still to much then I'll close and amend. By the time we get to using additional databases the CMakeLists file will have been changed many more times anyway.<br />
+<strong>&lt;_Slack&gt; &lt;nanoakron&gt;</strong> And the final thing I wanted to ask today was whether FP could keep killing cold issues ;)<br />
+<strong>&lt;_Slack&gt; &lt;nanoakron&gt;</strong> Tis all from me</p>
+
+                    </div>
+                    <hr>
+                    <p id="post-meta">Post tags <i class="fa fa-tags"></i>: <a href="/blog/tags/dev diaries.html">Dev Diaries</a>, <a href="/blog/tags/core.html">Monero Core</a>, <a href="/blog/tags/crypto.html">Cryptography</a>, <a href="/blog/tags/0mq.html">ZeroMQ</a></p>
+                    </div>
+                </div>
+                <!-- end left two-thirds block-->
+                
+                <!-- right one-third block-->
+                <div class="right one-third col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <div class="sidebar col-sm-12 col-xs-12">   
+                            <div class="info-block">
+                                <div class="row center-xs">
+                                    <div class="col"><h2>Recent Posts</h2></div>
+                                </div>
+                                
+                                <div class="row start-xs info-block-row">
+                                    <div class="col">
+                                         <p><a href="/2018/03/29/response-to-an-empirical-analysis-of-traceability.html">Response to "An Empirical Analysis of Traceability in the Monero Blockchain", Version 2</a></p>
+                                     </div>
+                                </div>
+                                
+                                <div class="row start-xs info-block-row">
+                                    <div class="col">
+                                         <p><a href="/2018/03/29/monero-0.12.0.0-released.html">Monero 0.12.0.0 "Lithium Luna" Release</a></p>
+                                     </div>
+                                </div>
+                                
+                                <div class="row start-xs info-block-row">
+                                    <div class="col">
+                                         <p><a href="/2018/03/28/a-scheduled-protocol-upgrade-is-planned-for-April-6-2018-03-28.html">A Scheduled Network Upgrade is Planned for April 6</a></p>
+                                     </div>
+                                </div>
+                                
+                                <div class="row start-xs info-block-row">
+                                    <div class="col">
+                                         <p><a href="/2018/03/01/core-team-announcement.html">Core Team Announcement</a></p>
+                                     </div>
+                                </div>
+                                
+                            </div>
+                            <div class="info-block">
+                                <div class="row center-xs">
+                                    <div class="col">
+                                        <h2>Popular Tags</h2>
+                                    </div>
+                                </div>
+                                    
+                                    <div class="row start-xs">
+                                        <div class="col">
+                                             <p><a href="/blog/tags/monero missives.html">Monero Missives</a></p>
+                                         </div>
+                                     </div>
+                                     
+                                    <div class="row start-xs">
+                                        <div class="col">
+                                             <p><a href="/blog/tags/conferences.html">Conferences</a></p>
+                                         </div>
+                                     </div>
+                                     
+                                    <div class="row start-xs">
+                                        <div class="col">
+                                             <p><a href="/blog/tags/exchanges.html">Exchanges</a></p>
+                                         </div>
+                                     </div>
+                                     
+                                    <div class="row start-xs">
+                                        <div class="col">
+                                             <p><a href="/blog/tags/gui.html">Monero Core GUI</a></p>
+                                         </div>
+                                     </div>
+                                     
+
+
+                            </div>
+                        </div> 
+                </div>
+                <!-- end right one-third block-->
+            </div>
+        </section>
+    </div>
+
+    <footer class="container-fluid">
+            <div class="container">
+                <div class="row around-xs footer-wrapper">
+                   
+                     <div class="col-sm-3 col-xs-6">
+                     <h3>Resources</h3>
+                         <ul class="list-unstyled">
+                            
+                             
+                                <li><a class="white" href="/fr/resources/about/">À propos de Monero</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/fr/resources/moneropedia/">Moneropedia</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/fr/resources/developer-guides/">Guides du Dévelopeur</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/fr/resources/user-guides/">Guides Utilisateur</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://getmonero.org/feed.xml">Flux RSS</a></li>
+                              
+                            
+                         </ul>
+                     </div>
+                  
+                     <div class="col-sm-3 col-xs-6">
+                     <h3>Canaux IRC</h3>
+                         <ul class="list-unstyled">
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero">monero</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-dev">monero-dev</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-markets">monero-markets</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-pools">monero-pools</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-community">monero-community</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-translations">monero-translations</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-hardware">monero-hardware</a></li>
+                              
+                            
+                         </ul>
+                     </div>
+                  
+                     <div class="col-sm-3 col-xs-6">
+                     <h3>Communauté</h3>
+                         <ul class="list-unstyled">
+                            
+                             
+                              <li><a class="white" href="https://reddit.com/r/monero">Reddit</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://monero.stackexchange.com/">Stack Exchange</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://bitcointalk.org/index.php?topic=583449.0">Fil BitcoinTalk</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://mattermost.getmonero.org/">Discussion Mattermost</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://telegram.me/bitmonero">Discussion Telegram</a></li>
+                              
+                            
+                         </ul>
+                     </div>
+                  
+                     <div class="col-sm-3 col-xs-6">
+                     <h3>Le Projet Monero</h3>
+                         <ul class="list-unstyled">
+                            
+                             
+                              <li><a class="white" href="https://openalias.org/">Open Alias</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://getkovri.org/">Kovri</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/fr/resources/research-lab/">Laboratoire de Recherche Monero</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/fr/press-kit">Dossier de Presse Monero</a></li>
+                              
+                            
+                         </ul>
+                     </div>
+                 
+                <div class="row center-xs">
+                    <div class="social-icons">
+                    </div>
+                    <div class="footer-links">
+                        <ul class="list-unstyled list-inline">
+                           
+                            
+                             <li><a href="/fr/legal" class="white footer-link">Juridique</a></li>
+                           
+                           
+                            
+                             <li><a href="https://github.com/monero-project" class="white footer-link">Code Source</a></li>
+                            
+                           
+                            
+                             <li><a href="/fr/technical-specs/" class="white footer-link">Spécifications Techniques</a></li>
+                           
+                           
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
+</footer>
+<!-- Matomo -->
+<script type="text/javascript">
+    var _paq = _paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+        var u = "//analytics.getmonero.org/";
+        _paq.push(['setTrackerUrl', u + 'piwik.php']);
+        _paq.push(['setSiteId', '1']);
+        var d = document,
+            g = d.createElement('script'),
+            s = d.getElementsByTagName('script')[0];
+        g.type = 'text/javascript';
+        g.async = true;
+        g.defer = true;
+        g.src = u + 'piwik.js';
+        s.parentNode.insertBefore(g, s);
+    })();
+</script>
+<!-- End Matomo Code -->
+<!-- page served by server N -->
+    </div>
+  </body>
+</html>

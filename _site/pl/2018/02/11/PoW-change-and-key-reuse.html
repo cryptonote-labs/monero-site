@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>
+     PoW change and key reuse | Monero - bezpieczne, prywatne, niewykrywalne
+    </title>
+	<meta name="description" content="PoW change and key reuse [w domu Monero, cyfrowej waluty, która jest bezpieczna, prywatna i niewykrywalna]">
+	<meta name="keywords" content="monero, xmr, bitmonero, cryptocurrency">
+
+    <meta property="og:title" content="Monero: PoW change and key reuse"/>
+    <meta property="og:description" content="PoW change and key reuse [w domu Monero, cyfrowej waluty, która jest bezpieczna, prywatna i niewykrywalna]">
+    <meta property="og:image" content="http://static.getmonero.org/images/opengraph/logo.png">
+    <meta property="og:site_name" content="getmonero.org, Projekt Monero">
+    <meta property="og:url" content="https://getmonero.org/2018/02/11/PoW-change-and-key-reuse.html">
+    <meta property="og:type" content="website">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/meta/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/meta/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/meta/favicon-16x16.png">
+        <link rel="manifest" href="/meta/manifest.json">
+        <link rel="mask-icon" href="/meta/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="theme-color" content="#ffffff">
+
+    <link href="/css/custom.css" rel="stylesheet">
+
+    
+    <meta name="msapplication-config" content="/ietemplates/ieconfig.xml">
+
+  </head>
+
+
+  <body>
+    <div class="page-wrapper">
+          
+<div class="mob-nav">
+              <input class="burger-check" id="mobile-burger" type="checkbox"><label for="mobile-burger" class="burger"></label>
+           
+        <div class="slide-in-nav">
+             <div class="container slide-in">
+                     
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                            
+                            <label for="drop1">Wstęp<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="drop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                              <a href="/pl/get-started/what-is-monero">Czym jest Monero?</a>
+                                  
+                              <a href="/pl/get-started/using">Używanie</a>
+                                  
+                              <a href="/pl/get-started/accepting">Akceptowanie</a>
+                                  
+                              <a href="/pl/get-started/contributing">Współpraca</a>
+                                  
+                              <a href="/pl/get-started/mining">Wydobywanie</a>
+                                  
+                              <a href="/pl/get-started/faq">FAQ</a>
+                                  
+                            </div>
+                            
+                     </div>
+                 </div>
+                  
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                               <a href="/pl/downloads/">Downloads</a>
+                            
+                     </div>
+                 </div>
+                  
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                            
+                            <label for="drop2">Najnowsze<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="drop2" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                              <a href="/pl/blog">Wszystkie wpisy</a>
+                                  
+                              <a href="/pl/blog/tags/monero%20missives.html">Postulaty</a>
+                                  
+                              <a href="/pl/blog/tags/dev%20diaries.html">Zapisy z czatów</a>
+                                  
+                              <a href="/pl/blog/tags/releases.html">Aktualizacje</a>
+                                  
+                            </div>
+                            
+                     </div>
+                 </div>
+                  
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                            
+                            <label for="drop3">Społeczność<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="drop3" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                              <a href="/pl/community/team">Zespół</a>
+                                  
+                              <a href="/pl/community/hangouts">Miejsca spotkań</a>
+                                  
+                              <a href="/pl/community/events">Wydarzenia</a>
+                                  
+                              <a href="/pl/community/sponsorships">Sponsoring</a>
+                                  
+                              <a href="/pl/community/merchants">Handel</a>
+                                  
+                            </div>
+                            
+                     </div>
+                 </div>
+                  
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                            
+                            <label for="drop4">Materiały<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="drop4" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                              <a href="/pl/resources/about">O Monero</a>
+                                  
+                              <a href="/pl/resources/roadmap">Oś czasu</a>
+                                  
+                              <a href="/pl/resources/research-lab">Laboratorium badawcze</a>
+                                  
+                              <a href="/pl/resources/moneropedia">Moneropedia</a>
+                                  
+                              <a href="/pl/resources/user-guides">Przewodniki dla użytkowników</a>
+                                  
+                              <a href="/pl/resources/developer-guides">Przewodniki dla deweloperów</a>
+                                  
+                              <a href="/pl/technical-specs">Właściwości techniczne</a>
+                                  
+                            </div>
+                            
+                     </div>
+                 </div>
+                 
+                 <div class="row">
+                     <div class="col-xs-12">
+                         <div class="text-center nav-item mob">
+                            <a href="https://forum.getmonero.org">Forum Funding System</a> 
+                         </div>
+                     </div>
+                 </div>
+                 <div class="row">
+                     <div class="col-xs-12">
+                         <div class="text-center nav-item mob">
+                            <a href="https://github.com/monero-project/meta/blob/master/VULNERABILITY_RESPONSE_PROCESS.md">Vulnerability Response</a>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="row">
+                     <div class="col-xs-12">
+                         <div class="text-center nav-item mob">
+                            <a href="/pl/the-monero-project/">The Monero Project</a> 
+                         </div>
+                     </div>
+                 </div>            
+             </div>
+          
+        </div>
+       </div>
+       
+        <div class="desktop-nav">
+            <nav class="container">
+            <div class="topnav">
+              <div class="row middle-xs">
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <a href="
+                    
+                    /pl
+                    
+                    "><img src="/img/monero-logo.png" alt="Monero Logo" class="monero-logo"></a>
+                  </div>
+                  <div class="col-lg-8 col-md-8 col-sm-8 topnav-list end-xs">
+                      <div class="row end-xs middle-xs">
+                         <div class="col-md-12">
+                          <a href="https://forum.getmonero.org" class="top-link">Forum Funding System</a>
+                          <a href="https://github.com/monero-project/meta/blob/master/VULNERABILITY_RESPONSE_PROCESS.md" class="top-link">Vulnerability Response</a>
+                          <a href="/pl/the-monero-project/" class="top-link">The Monero Project</a>
+                          <div href="#" class="dropdown top-link language-change">
+                            <input class="burger-checkdropdown" id="langdrop" type="checkbox">
+                            <label for="langdrop">
+                            
+                                
+                            
+                            
+                            
+                                
+                            
+                            
+                            
+                                
+                            
+                            
+                            
+                                
+                            
+                                    Polski
+                            
+                                
+                            
+                            
+                            
+                                
+                            
+                            <div class="arrow-down"></div></label>
+                            <div class="dropdown-content text-center">
+                                    
+                                
+                                  
+                                    <a href="/2018/02/11/PoW-change-and-key-reuse.html" >English</a>
+                                  
+                                
+                              
+                                
+                                  
+                                    <a href="/es/2018/02/11/PoW-change-and-key-reuse.html" >Español</a>
+                                  
+                                
+                              
+                                
+                                  
+                                    <a href="/it/2018/02/11/PoW-change-and-key-reuse.html" >Italian</a>
+                                  
+                                
+                              
+                                
+                              
+                                
+                                  
+                                    <a href="/fr/2018/02/11/PoW-change-and-key-reuse.html" >Français</a>
+                                  
+                                
+                              
+                            </div>
+                          </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="botnav white-nav">
+                <input class="burger-check" id="burger-check" type="checkbox"><label for="burger-check" class="burger"></label>
+                <div class="row between-xs nav-items">
+                     
+                    <div class="col dropdown nav-item">
+                        
+                            <label for="desktopdrop1">Wstęp<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="desktopdrop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                                  <a href="/pl/get-started/what-is-monero">Czym jest Monero?</a>
+                                
+                                  <a href="/pl/get-started/using">Używanie</a>
+                                
+                                  <a href="/pl/get-started/accepting">Akceptowanie</a>
+                                
+                                  <a href="/pl/get-started/contributing">Współpraca</a>
+                                
+                                  <a href="/pl/get-started/mining">Wydobywanie</a>
+                                
+                                  <a href="/pl/get-started/faq">FAQ</a>
+                                
+                            </div>
+                            
+                    </div>
+                    
+                    <div class="col dropdown nav-item">
+                        
+                           <a href="/pl/downloads/">Downloads</a>
+                            
+                    </div>
+                    
+                    <div class="col dropdown nav-item">
+                        
+                            <label for="desktopdrop1">Najnowsze<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="desktopdrop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                                  <a href="/pl/blog">Wszystkie wpisy</a>
+                                
+                                  <a href="/pl/blog/tags/monero%20missives.html">Postulaty</a>
+                                
+                                  <a href="/pl/blog/tags/dev%20diaries.html">Zapisy z czatów</a>
+                                
+                                  <a href="/pl/blog/tags/releases.html">Aktualizacje</a>
+                                
+                            </div>
+                            
+                    </div>
+                    
+                    <div class="col dropdown nav-item">
+                        
+                            <label for="desktopdrop1">Społeczność<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="desktopdrop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                                  <a href="/pl/community/team">Zespół</a>
+                                
+                                  <a href="/pl/community/hangouts">Miejsca spotkań</a>
+                                
+                                  <a href="/pl/community/events">Wydarzenia</a>
+                                
+                                  <a href="/pl/community/sponsorships">Sponsoring</a>
+                                
+                                  <a href="/pl/community/merchants">Handel</a>
+                                
+                            </div>
+                            
+                    </div>
+                    
+                    <div class="col dropdown nav-item">
+                        
+                            <label for="desktopdrop1">Materiały<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="desktopdrop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                                  <a href="/pl/resources/about">O Monero</a>
+                                
+                                  <a href="/pl/resources/roadmap">Oś czasu</a>
+                                
+                                  <a href="/pl/resources/research-lab">Laboratorium badawcze</a>
+                                
+                                  <a href="/pl/resources/moneropedia">Moneropedia</a>
+                                
+                                  <a href="/pl/resources/user-guides">Przewodniki dla użytkowników</a>
+                                
+                                  <a href="/pl/resources/developer-guides">Przewodniki dla deweloperów</a>
+                                
+                                  <a href="/pl/technical-specs">Właściwości techniczne</a>
+                                
+                            </div>
+                            
+                    </div>
+                    
+                  </div>
+            </div>
+        </nav>
+        </div>
+        <div class="mob bot-nav white-nav">
+            <div class="row center-xs middle-xs">
+                <div class="col-xs-6">
+                    <a href="
+                    
+                    /pl
+                    
+                    "><img src="/img/monero-logo.png" alt="Monero Logo" class="monero-logo"></a>
+                </div>
+                <div class="dropdown col-xs-6 text-center mob-language-change">
+                <input class="burger-checkdropdown" id="moblangdrop" type="checkbox">
+                 <label for="moblangdrop"><img src="/img/language.png" alt="Lang" class="icon-language"/><div class="arrow-down"></div></label>
+                               <div class="mob dropdown-content text-center">
+                               <p class="mob-lang-change mob-lang-selected">
+                                   
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                                 Polski
+                                
+                              
+                                
+                              
+                                   
+                               </p>
+                               
+                                
+                                  
+                                    <a class="mob-lang-change" href="/2018/02/11/PoW-change-and-key-reuse.html" >English</a>
+                                  
+                                
+                              
+                                
+                                  
+                                    <a class="mob-lang-change" href="/es/2018/02/11/PoW-change-and-key-reuse.html" >Español</a>
+                                  
+                                
+                              
+                                
+                                  
+                                    <a class="mob-lang-change" href="/it/2018/02/11/PoW-change-and-key-reuse.html" >Italian</a>
+                                  
+                                
+                              
+                                
+                              
+                                
+                                  
+                                    <a class="mob-lang-change" href="/fr/2018/02/11/PoW-change-and-key-reuse.html" >Français</a>
+                                  
+                                
+                              
+                            </div>
+                          </div>
+            </div>     
+        </div>    
+
+        
+
+<div class="site-wrap post">
+    
+    <section class="container">
+            <div class="row">
+                <!-- left two-thirds block-->
+                <div class="left two-thirds col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                    <div class="info-block">
+                        <div class="row">
+                            <div class="col">
+                               <h2>PoW change and key reuse</h2> 
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p class="author">Opublikowane przez: dEBRYUNE, dnaleor and the Monero project</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p>February 11, 2018</p>
+                            </div>
+                        </div>
+                    <div>
+                        <h1 id="pow-change">PoW change</h1>
+
+<p>Lately, a common reoccurring subject has been ASIC resistance and how we should react to any (potential) threat from ASICs. This blog post sets out our (somewhat) formal stance on ASIC resistance and our intention to maintain ASIC resistance by swiftly reacting to any potential threat from ASICs and considering slightly modifying the PoW at every hardfork.</p>
+
+<p>An ASIC (Application Specific Integrated Circuit) is custom mining hardware that is specialized for a particular use. For example, Bitcoin ASICs are specialized to mine cryptocurrencies utilizing a SHA256 hash algorithm. Due to the fact that they are designed for a specific use, they will typically have a large performance advantage over hardware that is intended for general-purpose use like CPUs, GPUs, and even FPGAs. Thus, any newly developed ASIC will obtain a significant majority of the network hashrate and introduce centralization.</p>
+
+<p>The Monero code was forked from the CryptoNote reference implementation. In the CryptoNote whitepaper (https://cryptonote.org/whitepaper.pdf), one of the identified deficiencies of Bitcoin is the Proof of Work due to its centralizing nature, as we will discuss below. In order to create a more egalitarian mining network and foster decentralization, the original CryptoNote developers created the Cryptonight Proof of Work function to "close the gap between CPU (majority) and GPU/FPGA/ASIC (minority) miners." While the CryptoNote authors admit that "It is appropriate that some users can have a certain advantage over others," they propose that "their investments should grow at least linearly with the power." Thus, it is recognized that ASICs may be an inevitable development for any Proof of Work. We also concede that ASICs may be inevitable, but we feel that any transition to an ASIC-dominated network needs to be as egalitarian as possible in order to foster decentralization. At this point in time, we suspect that any newly developed Cryptonight ASIC will not be egalitarian and will not foster a decentralized network.</p>
+
+<p>The drawback of Bitcoin's (SHA256) proof-of-work system is the easy migration from CPUs to GPUs, to FPGAs, and finally to ASICs, where each step came with huge efficiency improvements. Thus, there is a large gap between CPU mining and ASIC mining, which resulted in ASICs being the only viable way to mine. In essence, this causes centralization, because only those with access to specialized hardware (ASICs) are still able to mine, and these typically come from one or very few manufacturers. Cryptonight (Monero's proof-of-work system) intends to close the gap between CPU and GPU, FPGA, and ASIC mining by using a proof-of-work system that is memory bound over a moderate amount of memory. As a result, ASICs get significantly more expensive to build. This proof-of-work system intends to foster egalitarian mining, which yields the following benefits: First, if mining is decentralized (because CPUs and GPUs are still usable for mining), it will be very difficult to pressure miners into not confirming a certain transaction, or otherwise act as a censor to the Monero blockchain. Second, it will lessen the pressure towards centralization of mining in large data centers (as can be seen in Bitcoin). Third, it is quite difficult for governments to regulate companies selling general-purpose hardware (as opposed to companies selling specialized hardware).</p>
+
+<p>Let's further discuss this last point. Specialized hardware will, most likely, only be designed by a few companies. As we can see from Bitcoin, the majority of ASICs are designed and shipped by Bitmain. As Peter Todd said:</p>
+
+<blockquote>
+  <p>"There's only a tiny number of companies in the world that are capable of building performance/cost competitive ASICs, basically the likes of Intel, ASMC, GlobalFoundries, etc."</p>
+</blockquote>
+
+<p>This creates a single point of failure. For instance, a government could require these ASIC manufacturers to add a "kill-switch" which allows them to shut down a miner remotely or otherwise control it. This threat has the potential to destroy the whole network. In a similar fashion, governments could require miners to have a license to buy and operate ASICs, thereby confining ASICs to a certain group of licensed people. Furthermore, licensing could ultimately lead to blacklisting certain transactions, i.e., governments can require miners to <em>not</em> mine certain transactions, where disobedience would result in miners having their license revoked. By contrast, introducing a license to operate general purpose hardware is probably an infeasible endeavor.</p>
+
+<p>Mining, in general, is also prone to the rich-get-richer effect, which ultimately leads to centralization. For example, a large miner may have significant economies of scale which allows him to grow his share of the hashrate. The Cryptonight algorithm, due to its egalitarian design, somewhat mitigates this effect because miners have competition from (i) miners that have virtually no costs (e.g. botnets), (ii) hobbyist miners, who use their CPUs and GPUs to support the network and aren't predominantly profit driven, and (iii) web miners. Note that web miners have both illegitimate (e.g. mining via ads without consent) and legitimate use cases (e.g. mining to solve CAPTCHAs or mining to reduce/replace advertisements). By contrast, ASICs accelerate the rich-get-richer effect, because ASIC miners have no competition from the aforementioned mining "groups".</p>
+
+<p>In sum, we strongly believe that it's beneficial to preserve our ASIC resistance. Therefore, we will perform an emergency hard fork to curb any potential threat from ASICs if needed. Furthermore, in order to maintain its goal of decentralization and to provide a deterrent for ASIC development and to protect against unknown or undetectable ASIC development, the Monero team proposes modifying the Cryptonight PoW hash every scheduled fork, twice a year. The modifications will be light, and should not change performance profiles much. The first change is now being tested, and will happen in the coming March fork. Finally, we will continue to research alternative Proof of Work functions that may provide better ASIC resistance than Cryptonight.</p>
+
+<p>Patches will be available for the following software: zone117x's pool, Snipa's pool, Lucas Jones' CPU miner, wolf0's CPU miner, ccminer-cryptonight, sgminer-gm, xmr-stak, xmrig-nvidia, wolf-xmr-miner.</p>
+
+<h1 id="key-reuse">Key reuse</h1>
+
+<p>It is important to realize that the security of the Monero network and your own Monero is dependent on the security of your Monero keys. Your Monero keys are <em>MONERO</em> keys. Do NOT use them for any other purpose, including claiming coins from a Monero fork. Using your keys to spend the same outputs twice on different forked blockchains will damage your privacy, and others', as both spends will bear the same key image, but different rings, with only your spent output in common (this does not impact stealth addresses nor confidential transactions, just ring signatures).  Moreover, by using such a "same keys" fork, the security of your Monero private keys now depends on those third parties.</p>
+
+<ul>
+  <li>
+    <p>Forkers, if you're forking Monero, DO NOT ask users to reuse their Monero keys, but have them create new keys for your fork.</p>
+  </li>
+  <li>
+    <p>Users, if a forker asks you to use your Monero keys for their fork (after this notification is published), they're trying to manipulate you into being part of a large scale attack on Monero.</p>
+  </li>
+</ul>
+
+<p>Be safe, and don't reuse your Monero keys for any other purpose than using Monero.</p>
+
+
+                    </div>
+                    <hr>
+                    <p id="post-meta">Post tags <i class="fa fa-tags"></i>: <a href="/blog/tags/mining.html">Mining</a>, <a href="/blog/tags/protocol upgrade.html">Protocol Upgrade</a>, <a href="/blog/tags/crypto.html">Cryptography</a></p>
+                    </div>
+                </div>
+                <!-- end left two-thirds block-->
+                
+                <!-- right one-third block-->
+                <div class="right one-third col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <div class="sidebar col-sm-12 col-xs-12">   
+                            <div class="info-block">
+                                <div class="row center-xs">
+                                    <div class="col"><h2>Recent Posts</h2></div>
+                                </div>
+                                
+                                <div class="row start-xs info-block-row">
+                                    <div class="col">
+                                         <p><a href="/2018/03/29/response-to-an-empirical-analysis-of-traceability.html">Response to "An Empirical Analysis of Traceability in the Monero Blockchain", Version 2</a></p>
+                                     </div>
+                                </div>
+                                
+                                <div class="row start-xs info-block-row">
+                                    <div class="col">
+                                         <p><a href="/2018/03/29/monero-0.12.0.0-released.html">Monero 0.12.0.0 "Lithium Luna" Release</a></p>
+                                     </div>
+                                </div>
+                                
+                                <div class="row start-xs info-block-row">
+                                    <div class="col">
+                                         <p><a href="/2018/03/28/a-scheduled-protocol-upgrade-is-planned-for-April-6-2018-03-28.html">A Scheduled Network Upgrade is Planned for April 6</a></p>
+                                     </div>
+                                </div>
+                                
+                                <div class="row start-xs info-block-row">
+                                    <div class="col">
+                                         <p><a href="/2018/03/01/core-team-announcement.html">Core Team Announcement</a></p>
+                                     </div>
+                                </div>
+                                
+                            </div>
+                            <div class="info-block">
+                                <div class="row center-xs">
+                                    <div class="col">
+                                        <h2>Popular Tags</h2>
+                                    </div>
+                                </div>
+                                    
+                                    <div class="row start-xs">
+                                        <div class="col">
+                                             <p><a href="/blog/tags/monero missives.html">Monero Missives</a></p>
+                                         </div>
+                                     </div>
+                                     
+                                    <div class="row start-xs">
+                                        <div class="col">
+                                             <p><a href="/blog/tags/conferences.html">Conferences</a></p>
+                                         </div>
+                                     </div>
+                                     
+                                    <div class="row start-xs">
+                                        <div class="col">
+                                             <p><a href="/blog/tags/exchanges.html">Exchanges</a></p>
+                                         </div>
+                                     </div>
+                                     
+                                    <div class="row start-xs">
+                                        <div class="col">
+                                             <p><a href="/blog/tags/gui.html">Monero Core GUI</a></p>
+                                         </div>
+                                     </div>
+                                     
+
+
+                            </div>
+                        </div> 
+                </div>
+                <!-- end right one-third block-->
+            </div>
+        </section>
+    </div>
+
+    <footer class="container-fluid">
+            <div class="container">
+                <div class="row around-xs footer-wrapper">
+                   
+                     <div class="col-sm-3 col-xs-6">
+                     <h3>Materiały</h3>
+                         <ul class="list-unstyled">
+                            
+                             
+                                <li><a class="white" href="/pl/resources/about/">O Monero</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/pl/resources/moneropedia/">Moneropedia</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/pl/resources/developer-guides/">Przewodniki dla deweloperów</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/pl/resources/user-guides/">Przewodniki dla użytkowników</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://getmonero.org/feed.xml">Kanał RSS</a></li>
+                              
+                            
+                         </ul>
+                     </div>
+                  
+                     <div class="col-sm-3 col-xs-6">
+                     <h3>Kanały IRC</h3>
+                         <ul class="list-unstyled">
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero">monero</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-dev">monero-dev</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-markets">monero-markets</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-pools">monero-pools</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-community">monero-community</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-translations">monero-translations</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-hardware">monero-hardware</a></li>
+                              
+                            
+                         </ul>
+                     </div>
+                  
+                     <div class="col-sm-3 col-xs-6">
+                     <h3>Społeczność</h3>
+                         <ul class="list-unstyled">
+                            
+                             
+                              <li><a class="white" href="https://reddit.com/r/monero">Reddit</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://monero.stackexchange.com/">Stack Exchange</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://bitcointalk.org/index.php?topic=583449.0">BitcoinTalk Thread</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://mattermost.getmonero.org/">Mattermost Chat</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://telegram.me/bitmonero">Telegram Chat</a></li>
+                              
+                            
+                         </ul>
+                     </div>
+                  
+                     <div class="col-sm-3 col-xs-6">
+                     <h3>Projekt Monero</h3>
+                         <ul class="list-unstyled">
+                            
+                             
+                              <li><a class="white" href="https://openalias.org/">Open Alias</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://getkovri.org/">Kovri</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/pl/resources/research-lab/">Laboratorium Badawcze Monero</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/pl/press-kit">Monero Press Kit</a></li>
+                              
+                            
+                         </ul>
+                     </div>
+                 
+                <div class="row center-xs">
+                    <div class="social-icons">
+                    </div>
+                    <div class="footer-links">
+                        <ul class="list-unstyled list-inline">
+                           
+                            
+                             <li><a href="/pl/legal" class="white footer-link">Informacje prawne</a></li>
+                           
+                           
+                            
+                             <li><a href="https://github.com/monero-project" class="white footer-link">Kod źródłowy</a></li>
+                            
+                           
+                            
+                             <li><a href="/pl/technical-specs/" class="white footer-link">Właściwości techniczne</a></li>
+                           
+                           
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
+</footer>
+<!-- Matomo -->
+<script type="text/javascript">
+    var _paq = _paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+        var u = "//analytics.getmonero.org/";
+        _paq.push(['setTrackerUrl', u + 'piwik.php']);
+        _paq.push(['setSiteId', '1']);
+        var d = document,
+            g = d.createElement('script'),
+            s = d.getElementsByTagName('script')[0];
+        g.type = 'text/javascript';
+        g.async = true;
+        g.defer = true;
+        g.src = u + 'piwik.js';
+        s.parentNode.insertBefore(g, s);
+    })();
+</script>
+<!-- End Matomo Code -->
+<!-- page served by server N -->
+    </div>
+  </body>
+</html>

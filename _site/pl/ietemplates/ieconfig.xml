@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<browserconfig>
+  <msapplication>
+    <tile>
+      <square70x70logo src="https://static.getmonero.org/images/live-tiles/small.png"/>
+      <square150x150logo src="https://static.getmonero.org/images/live-tiles/medium.png"/>
+      <wide310x150logo src="https://static.getmonero.org/images/live-tiles/wide.png"/>
+      <square310x310logo src="https://static.getmonero.org/images/live-tiles/large.png"/>
+      <TileColor>eeeeee</TileColor>
+    </tile>
+    <notification>
+      <polling-uri src="/ietemplates/poll1.xml"/>
+      <polling-uri2 src="/ietemplates/poll2.xml"/>
+      <polling-uri3 src="/ietemplates/poll3.xml"/>
+      <polling-uri4 src="/ietemplates/poll4.xml"/>
+      <polling-uri5 src="/ietemplates/poll5.xml"/>
+      <frequency>1440</frequency>
+      <cycle>1</cycle>
+    </notification>
+  </msapplication>
+</browserconfig>

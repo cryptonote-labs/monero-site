@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>
+     Monero 0.11.1.0 "Helium Hydra" Release | Monero - sicuro, privato, non tracciabile
+    </title>
+	<meta name="description" content="Monero 0.11.1.0 "Helium Hydra" Release [sulla home di Monero, la moneta digitale sicura, privata e non tracciabile]">
+	<meta name="keywords" content="monero, xmr, bitmonero, cryptocurrency">
+
+    <meta property="og:title" content="Monero: Monero 0.11.1.0 "Helium Hydra" Release"/>
+    <meta property="og:description" content="Monero 0.11.1.0 "Helium Hydra" Release [sulla home di Monero, la moneta digitale sicura, privata e non tracciabile]">
+    <meta property="og:image" content="http://static.getmonero.org/images/opengraph/logo.png">
+    <meta property="og:site_name" content="getmonero.org, The Monero Project">
+    <meta property="og:url" content="https://getmonero.org/2017/10/27/monero-0.11.1.0-released.html">
+    <meta property="og:type" content="website">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/meta/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/meta/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/meta/favicon-16x16.png">
+        <link rel="manifest" href="/meta/manifest.json">
+        <link rel="mask-icon" href="/meta/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="theme-color" content="#ffffff">
+
+    <link href="/css/custom.css" rel="stylesheet">
+
+    
+    <meta name="msapplication-config" content="/ietemplates/ieconfig.xml">
+
+  </head>
+
+
+  <body>
+    <div class="page-wrapper">
+          
+<div class="mob-nav">
+              <input class="burger-check" id="mobile-burger" type="checkbox"><label for="mobile-burger" class="burger"></label>
+           
+        <div class="slide-in-nav">
+             <div class="container slide-in">
+                     
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                            
+                            <label for="drop1">Inizia da Qui<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="drop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                              <a href="/it/get-started/what-is-monero">cos'è Monero?</a>
+                                  
+                              <a href="/it/get-started/using">Utilizzo</a>
+                                  
+                              <a href="/it/get-started/accepting">Adozione</a>
+                                  
+                              <a href="/it/get-started/contributing">Contribuire</a>
+                                  
+                              <a href="/it/get-started/mining">Mining</a>
+                                  
+                              <a href="/it/get-started/faq">FAQ</a>
+                                  
+                            </div>
+                            
+                     </div>
+                 </div>
+                  
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                               <a href="/it/downloads/">Downloads</a>
+                            
+                     </div>
+                 </div>
+                  
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                            
+                            <label for="drop2">Notizie Recenti<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="drop2" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                              <a href="/it/blog">Tutti i Post</a>
+                                  
+                              <a href="/it/blog/tags/monero%20missives.html">Missive</a>
+                                  
+                              <a href="/it/blog/tags/dev%20diaries.html">Logs dei Meetings</a>
+                                  
+                              <a href="/it/blog/tags/releases.html">Uscite</a>
+                                  
+                            </div>
+                            
+                     </div>
+                 </div>
+                  
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                            
+                            <label for="drop3">Community<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="drop3" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                              <a href="/it/community/team">Team</a>
+                                  
+                              <a href="/it/community/hangouts">Hangouts</a>
+                                  
+                              <a href="/it/community/sponsorships">Sponsorships</a>
+                                  
+                              <a href="/it/community/merchants">Mercanti</a>
+                                  
+                            </div>
+                            
+                     </div>
+                 </div>
+                  
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                            
+                            <label for="drop4">Risorse<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="drop4" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                              <a href="/it/resources/about">About</a>
+                                  
+                              <a href="/it/resources/roadmap">Roadmap</a>
+                                  
+                              <a href="/it/resources/research-lab">Research Lab</a>
+                                  
+                              <a href="/it/resources/moneropedia">Moneropedia</a>
+                                  
+                              <a href="/it/resources/user-guides">Guide per Utenti</a>
+                                  
+                              <a href="/it/resources/developer-guides">Guide per sviluppatori</a>
+                                  
+                              <a href="/it/technical-specs">Specifiche Tecniche</a>
+                                  
+                            </div>
+                            
+                     </div>
+                 </div>
+                 
+                 <div class="row">
+                     <div class="col-xs-12">
+                         <div class="text-center nav-item mob">
+                            <a href="https://forum.getmonero.org">Forum Funding System</a> 
+                         </div>
+                     </div>
+                 </div>
+                 <div class="row">
+                     <div class="col-xs-12">
+                         <div class="text-center nav-item mob">
+                            <a href="https://github.com/monero-project/meta/blob/master/VULNERABILITY_RESPONSE_PROCESS.md">Vulnerability Response</a>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="row">
+                     <div class="col-xs-12">
+                         <div class="text-center nav-item mob">
+                            <a href="/it/the-monero-project/">The Monero Project</a> 
+                         </div>
+                     </div>
+                 </div>            
+             </div>
+          
+        </div>
+       </div>
+       
+        <div class="desktop-nav">
+            <nav class="container">
+            <div class="topnav">
+              <div class="row middle-xs">
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <a href="
+                    
+                    /it
+                    
+                    "><img src="/img/monero-logo.png" alt="Monero Logo" class="monero-logo"></a>
+                  </div>
+                  <div class="col-lg-8 col-md-8 col-sm-8 topnav-list end-xs">
+                      <div class="row end-xs middle-xs">
+                         <div class="col-md-12">
+                          <a href="https://forum.getmonero.org" class="top-link">Forum Funding System</a>
+                          <a href="https://github.com/monero-project/meta/blob/master/VULNERABILITY_RESPONSE_PROCESS.md" class="top-link">Vulnerability Response</a>
+                          <a href="/it/the-monero-project/" class="top-link">The Monero Project</a>
+                          <div href="#" class="dropdown top-link language-change">
+                            <input class="burger-checkdropdown" id="langdrop" type="checkbox">
+                            <label for="langdrop">
+                            
+                                
+                            
+                            
+                            
+                                
+                            
+                            
+                            
+                                
+                            
+                                    Italiano
+                            
+                                
+                            
+                            
+                            
+                                
+                            
+                            
+                            
+                                
+                            
+                            <div class="arrow-down"></div></label>
+                            <div class="dropdown-content text-center">
+                                    
+                                
+                                  
+                                    <a href="/2017/10/27/monero-0.11.1.0-released.html" >English</a>
+                                  
+                                
+                              
+                                
+                                  
+                                    <a href="/es/2017/10/27/monero-0.11.1.0-released.html" >Español</a>
+                                  
+                                
+                              
+                                
+                              
+                                
+                                  
+                                    <a href="/pl/2017/10/27/monero-0.11.1.0-released.html" >Polski</a>
+                                  
+                                
+                              
+                                
+                                  
+                                    <a href="/fr/2017/10/27/monero-0.11.1.0-released.html" >Français</a>
+                                  
+                                
+                              
+                            </div>
+                          </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="botnav white-nav">
+                <input class="burger-check" id="burger-check" type="checkbox"><label for="burger-check" class="burger"></label>
+                <div class="row between-xs nav-items">
+                     
+                    <div class="col dropdown nav-item">
+                        
+                            <label for="desktopdrop1">Inizia da Qui<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="desktopdrop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                                  <a href="/it/get-started/what-is-monero">cos'è Monero?</a>
+                                
+                                  <a href="/it/get-started/using">Utilizzo</a>
+                                
+                                  <a href="/it/get-started/accepting">Adozione</a>
+                                
+                                  <a href="/it/get-started/contributing">Contribuire</a>
+                                
+                                  <a href="/it/get-started/mining">Mining</a>
+                                
+                                  <a href="/it/get-started/faq">FAQ</a>
+                                
+                            </div>
+                            
+                    </div>
+                    
+                    <div class="col dropdown nav-item">
+                        
+                           <a href="/it/downloads/">Downloads</a>
+                            
+                    </div>
+                    
+                    <div class="col dropdown nav-item">
+                        
+                            <label for="desktopdrop1">Notizie Recenti<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="desktopdrop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                                  <a href="/it/blog">Tutti i Post</a>
+                                
+                                  <a href="/it/blog/tags/monero%20missives.html">Missive</a>
+                                
+                                  <a href="/it/blog/tags/dev%20diaries.html">Logs dei Meetings</a>
+                                
+                                  <a href="/it/blog/tags/releases.html">Uscite</a>
+                                
+                            </div>
+                            
+                    </div>
+                    
+                    <div class="col dropdown nav-item">
+                        
+                            <label for="desktopdrop1">Community<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="desktopdrop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                                  <a href="/it/community/team">Team</a>
+                                
+                                  <a href="/it/community/hangouts">Hangouts</a>
+                                
+                                  <a href="/it/community/sponsorships">Sponsorships</a>
+                                
+                                  <a href="/it/community/merchants">Mercanti</a>
+                                
+                            </div>
+                            
+                    </div>
+                    
+                    <div class="col dropdown nav-item">
+                        
+                            <label for="desktopdrop1">Risorse<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="desktopdrop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                                  <a href="/it/resources/about">About</a>
+                                
+                                  <a href="/it/resources/roadmap">Roadmap</a>
+                                
+                                  <a href="/it/resources/research-lab">Research Lab</a>
+                                
+                                  <a href="/it/resources/moneropedia">Moneropedia</a>
+                                
+                                  <a href="/it/resources/user-guides">Guide per Utenti</a>
+                                
+                                  <a href="/it/resources/developer-guides">Guide per sviluppatori</a>
+                                
+                                  <a href="/it/technical-specs">Specifiche Tecniche</a>
+                                
+                            </div>
+                            
+                    </div>
+                    
+                  </div>
+            </div>
+        </nav>
+        </div>
+        <div class="mob bot-nav white-nav">
+            <div class="row center-xs middle-xs">
+                <div class="col-xs-6">
+                    <a href="
+                    
+                    /it
+                    
+                    "><img src="/img/monero-logo.png" alt="Monero Logo" class="monero-logo"></a>
+                </div>
+                <div class="dropdown col-xs-6 text-center mob-language-change">
+                <input class="burger-checkdropdown" id="moblangdrop" type="checkbox">
+                 <label for="moblangdrop"><img src="/img/language.png" alt="Lang" class="icon-language"/><div class="arrow-down"></div></label>
+                               <div class="mob dropdown-content text-center">
+                               <p class="mob-lang-change mob-lang-selected">
+                                   
+                              
+                                
+                              
+                                
+                              
+                                
+                                 Italiano
+                                
+                              
+                                
+                              
+                                
+                              
+                                   
+                               </p>
+                               
+                                
+                                  
+                                    <a class="mob-lang-change" href="/2017/10/27/monero-0.11.1.0-released.html" >English</a>
+                                  
+                                
+                              
+                                
+                                  
+                                    <a class="mob-lang-change" href="/es/2017/10/27/monero-0.11.1.0-released.html" >Español</a>
+                                  
+                                
+                              
+                                
+                              
+                                
+                                  
+                                    <a class="mob-lang-change" href="/pl/2017/10/27/monero-0.11.1.0-released.html" >Polski</a>
+                                  
+                                
+                              
+                                
+                                  
+                                    <a class="mob-lang-change" href="/fr/2017/10/27/monero-0.11.1.0-released.html" >Français</a>
+                                  
+                                
+                              
+                            </div>
+                          </div>
+            </div>     
+        </div>    
+
+        
+
+<div class="site-wrap post">
+    
+    <section class="container">
+            <div class="row">
+                <!-- left two-thirds block-->
+                <div class="left two-thirds col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                    <div class="info-block">
+                        <div class="row">
+                            <div class="col">
+                               <h2>Monero 0.11.1.0 "Helium Hydra" Release</h2> 
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p class="author">Postato da: Riccardo Spagni (fluffypony)</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p>October 27, 2017</p>
+                            </div>
+                        </div>
+                    <div>
+                        <h3 id="overview">Overview</h3>
+
+<p>This is the v0.11.1.0 point release of the Monero software, and it is part of the v0.11 mandatory update. The major release was due to the September 15th hard fork, which in turn increased the minimum ring signature size to 5 across the network, banned duplicate ring members in a ring signature, and enforced the use of ringCT for all transaction outputs. This release of the software presents a number of major improvements to Monero, as well as a large set of bug fixes.</p>
+
+<p>Some highlights of this point release are:</p>
+
+<p><em>GUI</em></p>
+
+<ul>
+  <li>fixed a bug where, in an edge case, the wallet wouldn't see the first transaction to it</li>
+  <li>added an option to change wallet creation height and rescan wallet cache</li>
+  <li>changed the default required confirmations to 10</li>
+  <li>reworked testnet settings in the wizard</li>
+  <li>updated the Windows installer</li>
+  <li>made the privacy slider smoother</li>
+  <li>the password dialog box is now shown when making a transfer</li>
+  <li>added a Romanian translation</li>
+</ul>
+
+<p><em>CLI</em></p>
+
+<ul>
+  <li>fixed an occasional sync failure that occurred when a transaction was already in the mempool</li>
+  <li>added an underflow check on low block heights</li>
+  <li>added a guard against a mined block not finding all the transactions in the mempool</li>
+  <li>fixed the transaction size estimator for transactions with a large number of inputs</li>
+  <li>fixed an LMDB issue on 32-bit systems</li>
+  <li>the get_tx_backlog RPC call was unrestricted</li>
+  <li>threads now guard against exceptions during transaction verification</li>
+  <li>fixed a crash that could occur when checking pre-validated transactions</li>
+  <li>various other bug fixes and improvements</li>
+</ul>
+
+<p>Some highlights of the major release this is a part of are:</p>
+
+<p><em>GUI</em></p>
+
+<ul>
+  <li>Added and updated translations</li>
+  <li>Smart mining enabled</li>
+  <li>Added 'Rescanning Wallet Balance' feature</li>
+  <li>Prep work for iOS and Android</li>
+  <li>displays view/spend keys when viewing Wallet seed on the Settings page</li>
+  <li>added a Vulnerability Response Process, with bug bounties available via a dedicated HackerOne portal</li>
+  <li>added easylogging option</li>
+  <li>added custom blockchain location setting on the Settings page</li>
+  <li>history now shows coinbase transactions</li>
+  <li>wallet creation height and log file paths are now shown on the Settings page</li>
+  <li>wallet will now only prompt for daemon auto start if the wallet is local</li>
+  <li>lots of prep work for more streamlined remote node integration</li>
+  <li>fixed 32 bit fonts</li>
+  <li>bug fixes and performance improvements</li>
+</ul>
+
+<p><em>CLI</em></p>
+
+<ul>
+  <li>major synchronisation speed-up from reducing bandwidth used</li>
+  <li>massively improved the blockchain import function</li>
+  <li>changed terminology from "mixin" to "ring size"</li>
+  <li>add a –fluffy-blocks option to relay blocks as fluffy blocks if possible</li>
+  <li>allow for password verification without loading the subsequently unencrypted wallet into RAM</li>
+  <li>reduced privacy leak risks when using untrusted remote nodes</li>
+  <li>added an Esperanto wordlist for mnemonic seed choices</li>
+  <li>decreased memory demands for the getblocks RPC call</li>
+  <li>added a "fee" command to display fee information</li>
+  <li>transfer CLI command warns if there's a tx backlog for selected fee</li>
+  <li>add average seconds per block in bc_dyn_stats</li>
+  <li>added an on_get_alt_blocks_hashes RPC call</li>
+  <li>added an Italian translation for the CLI</li>
+  <li>return the per-tx amount in the transfer_split RPC call</li>
+  <li>switched to readline for the CLI</li>
+  <li>automatically switch to SAFE db-sync-mode once daemon catches up to network</li>
+  <li>added a histogram to poolstats</li>
+  <li>major speed-up for poolstats and coinbase_tx_sum</li>
+  <li>enable support for macOS smart mining</li>
+  <li>added the ability to build a Snap package</li>
+  <li>added a Vulnerability Response Process, with bug bounties available via <a href="https://hackerone.com/monero">a dedicated HackerOne portal</a></li>
+  <li>added support for payment proving via key derivation instead of tx key reveal</li>
+  <li>changed output selection for ring signatures to heavily weight newer outputs</li>
+  <li>added a sweep_below function to sweep small amounts</li>
+  <li>moved the mempool to a database on disk instead of keeping it all in memory</li>
+  <li>fully enable iOS and Android full node support</li>
+  <li>enabled support for ppc64le architectures</li>
+  <li>added the ability to create and open wallets via RPC</li>
+  <li>added ability to relay transactions manually after creating them</li>
+  <li>better AC / battery power detection for Linux smart mining</li>
+  <li>getblocktemplate now indicates the expected total reward</li>
+  <li>as always, loads of bug fixes and performance improvements</li>
+</ul>
+
+<h3 id="contributors-for-this-release">Contributors for this Release</h3>
+
+<p>This release was the direct result of 65 people who worked, largely unpaid and altruistically, to put out 794 commits containing 81 094 new lines of code. We'd like to thank them very much for their time and effort. In no particular order they are:</p>
+
+<ul>
+  <li>Andrei Muresan</li>
+  <li>Mike C</li>
+  <li>Ordtrogen Översättning</li>
+  <li>Mattias Eriksson</li>
+  <li>xmr-eric</li>
+  <li>Dan Miller</li>
+  <li>erciccione</li>
+  <li>Fabio Nitto</li>
+  <li>rbrunner7</li>
+  <li>Howard Chu</li>
+  <li>luigi1111</li>
+  <li>Eugene Otto</li>
+  <li>Nexie Kind</li>
+  <li>schnerchi</li>
+  <li>Scott Anecito</li>
+  <li>Medusa</li>
+  <li>Jethro Grassie</li>
+  <li>mastad0n</li>
+  <li>Jonathan Cross</li>
+  <li>Antti Keränen</li>
+  <li>anonimal</li>
+  <li>Erik de Castro Lopo</li>
+  <li>Martin Wimpress</li>
+  <li>Robby Weinberg</li>
+  <li>s0ds0ds0d</li>
+  <li>kenshi84</li>
+  <li>René Brunner</li>
+  <li>m2049r</li>
+  <li>moneromooo</li>
+  <li>redfish</li>
+  <li>8go</li>
+  <li>JollyMort</li>
+  <li>hesen</li>
+  <li>Lafudoci</li>
+  <li>Isaac</li>
+  <li>Jkat</li>
+  <li>MaxXor</li>
+  <li>vdo</li>
+  <li>Miguel Herranz</li>
+  <li>ProkhorZ</li>
+  <li>MoroccanMalinois</li>
+  <li>Mandrill Pie</li>
+  <li>moneroexamples</li>
+  <li>Helmut Pozimski</li>
+  <li>Randi Joseph</li>
+  <li>L.C. Karssen</li>
+  <li>Schnoffel</li>
+  <li>Light3rn</li>
+  <li>Gentian</li>
+  <li>Ryan Mehta</li>
+  <li>Julien Klepatch</li>
+  <li>stoffu</li>
+  <li>Jona</li>
+  <li>Gingeropolous</li>
+  <li>Riccardo "fluffypony" Spagni</li>
+  <li>Guillaume Le Vaillant</li>
+  <li>Nano Akron</li>
+  <li>assylias</li>
+  <li>Jaquee</li>
+  <li>Michael Shick</li>
+  <li>Luigi Maselli</li>
+  <li>Lee Clagett</li>
+  <li>louvetic</li>
+  <li>Roberto Oliveira</li>
+  <li>binaryFate</li>
+</ul>
+
+<h3 id="official-download-links">Official Download Links</h3>
+
+<p><em>GUI</em></p>
+
+<ul>
+  <li><a href="https://downloads.getmonero.org/gui/monero-gui-win-x64-v0.11.1.0.zip">Windows, 64-bit</a></li>
+  <li><a href="https://downloads.getmonero.org/gui/monero-gui-mac-x64-v0.11.1.0.tar.bz2">macOS, 64-bit</a></li>
+  <li><a href="https://downloads.getmonero.org/gui/monero-gui-linux-x64-v0.11.1.0.tar.bz2">Linux, 64-bit</a></li>
+  <li><a href="https://downloads.getmonero.org/gui/monero-gui-linux-x86-v0.11.1.0.tar.bz2">Linux, 32-bit</a></li>
+</ul>
+
+<p><em>CLI</em></p>
+
+<ul>
+  <li><a href="https://downloads.getmonero.org/cli/monero-win-x64-v0.11.1.0.zip">Windows, 64-bit</a></li>
+  <li><a href="https://downloads.getmonero.org/cli/monero-win-x86-v0.11.1.0.zip">Windows, 32-bit</a></li>
+  <li><a href="https://downloads.getmonero.org/cli/monero-mac-x64-v0.11.1.0.tar.bz2">macOS, 64-bit</a></li>
+  <li><a href="https://downloads.getmonero.org/cli/monero-linux-x64-v0.11.1.0.tar.bz2">Linux, 64-bit</a></li>
+  <li><a href="https://downloads.getmonero.org/cli/monero-linux-x86-v0.11.1.0.tar.bz2">Linux, 32-bit</a></li>
+  <li><a href="https://downloads.getmonero.org/cli/monero-linux-armv7-v0.11.1.0.tar.bz2">Linux, armv7</a></li>
+  <li><a href="https://downloads.getmonero.org/cli/monero-linux-armv8-v0.11.1.0.tar.bz2">Linux, armv8</a></li>
+  <li><a href="https://downloads.getmonero.org/cli/monero-freebsd-x64-v0.11.1.0.tar.bz2">FreeBSD, 64-bit</a></li>
+  <li><a href="https://downloads.getmonero.org/cli/monero-dragonflybsd-x64-v0.11.1.0.tar.bz2">DragonflyBSD, 64-bit</a></li>
+</ul>
+
+<h3 id="download-hashes">Download Hashes</h3>
+
+<p>If you would like to verify that you have downloaded the correct file, please use the following SHA256 hashes:</p>
+
+<p><em>GUI</em></p>
+
+<p>monero-gui-win-x64-v0.11.1.0.zip, 39d16f40fccf532b0193f33afd5a90c817c924e9abad41d4f4990a4c8c50ba97<br />
+monero-gui-mac-x64-v0.11.1.0.tar.bz2, 4f63ac3e9c5f87f8d8318ff89cdbfa954716e8addbdc8fcd0352fe678b84f8e2<br />
+monero-gui-linux-x64-v0.11.1.0.tar.bz2, e18a13f39a3b4aa87c9afdd9c87dfc087ed4940d99cf18c16ec59037e5f68eaf<br />
+monero-gui-linux-x86-v0.11.1.0.tar.bz2, 5df6ebeab728a653eaf64352bc60d8dddbf4d6a47a422856015d7e93ce5dc411</p>
+
+<p><em>CLI</em></p>
+
+<p>monero-win-x64-v0.11.1.0.zip, 81f80876b5ce95b4c94b858bd4b57d2ac808e52e7b98819ab5c33be8ecbc09ae<br />
+monero-win-x86-v0.11.1.0.zip, d1c1c2e75211143f935c2e06cf09892e7118e46fbb1d5fc240cde9cb1d3b92c9<br />
+monero-mac-x64-v0.11.1.0.tar.bz2, 75b12623760574688572adfb10504d872d60ca7c4ac7571011d62429d6288e50<br />
+monero-linux-x64-v0.11.1.0.tar.bz2, 6581506f8a030d8d50b38744ba7144f2765c9028d18d990beb316e13655ab248<br />
+monero-linux-x86-v0.11.1.0.tar.bz2, ef212bda6b9a30af2a3e7e94cb2af4dd6e01eb0f54a4d1c0eb25abe75316e2ae<br />
+monero-linux-armv7-v0.11.1.0.tar.bz2, 72d48a83189e3f99e7bd3d0ceab34e7466d99ec4ca85bb8e7b81ed338c692a46<br />
+monero-linux-armv8-v0.11.1.0.tar.bz2, f1f0850e37eb65595d8e92eb2b84f5119165f418ab54a72dfa8a149e0efa810b<br />
+monero-freebsd-x64-v0.11.1.0.tar.bz2, bd2090f643d212a4031edbf44a8f1425cf335b6b63c6527a7e82f5bc6a83db67<br />
+monero-dragonflybsd-x64-v0.11.1.0.tar.bz2, 30e2d50db8e1738a72d3a06ec106c1a3f157de057efad344bd12151b6bbd3019</p>
+
+<p>A GPG-signed list of the hashes is at https://getmonero.org/downloads/hashes.txt and should be treated as canonical, with the signature checked against the appropriate GPG key in the source code (in /utils/gpg_keys)</p>
+
+                    </div>
+                    <hr>
+                    <p id="post-meta">Post tags <i class="fa fa-tag"></i>: <a href="/blog/tags/releases.html">Monero Software Releases</a></p>
+                    </div>
+                </div>
+                <!-- end left two-thirds block-->
+                
+                <!-- right one-third block-->
+                <div class="right one-third col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <div class="sidebar col-sm-12 col-xs-12">   
+                            <div class="info-block">
+                                <div class="row center-xs">
+                                    <div class="col"><h2>Recent Posts</h2></div>
+                                </div>
+                                
+                                <div class="row start-xs info-block-row">
+                                    <div class="col">
+                                         <p><a href="/2018/03/29/response-to-an-empirical-analysis-of-traceability.html">Response to "An Empirical Analysis of Traceability in the Monero Blockchain", Version 2</a></p>
+                                     </div>
+                                </div>
+                                
+                                <div class="row start-xs info-block-row">
+                                    <div class="col">
+                                         <p><a href="/2018/03/29/monero-0.12.0.0-released.html">Monero 0.12.0.0 "Lithium Luna" Release</a></p>
+                                     </div>
+                                </div>
+                                
+                                <div class="row start-xs info-block-row">
+                                    <div class="col">
+                                         <p><a href="/2018/03/28/a-scheduled-protocol-upgrade-is-planned-for-April-6-2018-03-28.html">A Scheduled Network Upgrade is Planned for April 6</a></p>
+                                     </div>
+                                </div>
+                                
+                                <div class="row start-xs info-block-row">
+                                    <div class="col">
+                                         <p><a href="/2018/03/01/core-team-announcement.html">Core Team Announcement</a></p>
+                                     </div>
+                                </div>
+                                
+                            </div>
+                            <div class="info-block">
+                                <div class="row center-xs">
+                                    <div class="col">
+                                        <h2>Popular Tags</h2>
+                                    </div>
+                                </div>
+                                    
+                                    <div class="row start-xs">
+                                        <div class="col">
+                                             <p><a href="/blog/tags/monero missives.html">Monero Missives</a></p>
+                                         </div>
+                                     </div>
+                                     
+                                    <div class="row start-xs">
+                                        <div class="col">
+                                             <p><a href="/blog/tags/conferences.html">Conferences</a></p>
+                                         </div>
+                                     </div>
+                                     
+                                    <div class="row start-xs">
+                                        <div class="col">
+                                             <p><a href="/blog/tags/exchanges.html">Exchanges</a></p>
+                                         </div>
+                                     </div>
+                                     
+                                    <div class="row start-xs">
+                                        <div class="col">
+                                             <p><a href="/blog/tags/gui.html">Monero Core GUI</a></p>
+                                         </div>
+                                     </div>
+                                     
+
+
+                            </div>
+                        </div> 
+                </div>
+                <!-- end right one-third block-->
+            </div>
+        </section>
+    </div>
+
+    <footer class="container-fluid">
+            <div class="container">
+                <div class="row around-xs footer-wrapper">
+                   
+                     <div class="col-sm-3 col-xs-6">
+                     <h3>Risorse</h3>
+                         <ul class="list-unstyled">
+                            
+                             
+                                <li><a class="white" href="/it/resources/about/">Informazioni su Monero</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/it/resources/moneropedia/">Moneropedia</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/it/resources/developer-guides/">Guide per Sviluppatori</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/it/resources/user-guides/">Guide per l'utente</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://getmonero.org/feed.xml">RSS Feed</a></li>
+                              
+                            
+                         </ul>
+                     </div>
+                  
+                     <div class="col-sm-3 col-xs-6">
+                     <h3>IRC Chats</h3>
+                         <ul class="list-unstyled">
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero">monero</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-dev">monero-dev</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-markets">monero-markets</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-pools">monero-pools</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-community">monero-community</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-translations">monero-translations</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-hardware">monero-hardware</a></li>
+                              
+                            
+                         </ul>
+                     </div>
+                  
+                     <div class="col-sm-3 col-xs-6">
+                     <h3>Community</h3>
+                         <ul class="list-unstyled">
+                            
+                             
+                              <li><a class="white" href="https://reddit.com/r/monero">Reddit</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://monero.stackexchange.com/">Stack Exchange</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://bitcointalk.org/index.php?topic=583449.0">BitcoinTalk Thread</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://mattermost.getmonero.org/">Mattermost Chat</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://telegram.me/bitmonero">Telegram Chat</a></li>
+                              
+                            
+                         </ul>
+                     </div>
+                  
+                     <div class="col-sm-3 col-xs-6">
+                     <h3>The Monero Project</h3>
+                         <ul class="list-unstyled">
+                            
+                             
+                              <li><a class="white" href="https://openalias.org/">Open Alias</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://getkovri.org/">Kovri</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/it/resources/research-lab/">Monero Research Lab</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/it/press-kit">Monero Press Kit</a></li>
+                              
+                            
+                         </ul>
+                     </div>
+                 
+                <div class="row center-xs">
+                    <div class="social-icons">
+                    </div>
+                    <div class="footer-links">
+                        <ul class="list-unstyled list-inline">
+                           
+                            
+                             <li><a href="/it/legal" class="white footer-link">Legale</a></li>
+                           
+                           
+                            
+                             <li><a href="https://github.com/monero-project" class="white footer-link">Codice Sorgente</a></li>
+                            
+                           
+                            
+                             <li><a href="/it/technical-specs/" class="white footer-link">Specifiche Tecniche</a></li>
+                           
+                           
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
+</footer>
+<!-- Matomo -->
+<script type="text/javascript">
+    var _paq = _paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+        var u = "//analytics.getmonero.org/";
+        _paq.push(['setTrackerUrl', u + 'piwik.php']);
+        _paq.push(['setSiteId', '1']);
+        var d = document,
+            g = d.createElement('script'),
+            s = d.getElementsByTagName('script')[0];
+        g.type = 'text/javascript';
+        g.async = true;
+        g.defer = true;
+        g.src = u + 'piwik.js';
+        s.parentNode.insertBefore(g, s);
+    })();
+</script>
+<!-- End Matomo Code -->
+<!-- page served by server N -->
+    </div>
+  </body>
+</html>

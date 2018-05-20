@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>
+     A note on fees | Monero - secure, private, untraceable
+    </title>
+	<meta name="description" content="A note on fees [on the home of Monero, a digital currency that is secure, private, and untraceable]">
+	<meta name="keywords" content="monero, xmr, bitmonero, cryptocurrency">
+
+    <meta property="og:title" content="Monero: A note on fees"/>
+    <meta property="og:description" content="A note on fees [on the home of Monero, a digital currency that is secure, private, and untraceable]">
+    <meta property="og:image" content="http://static.getmonero.org/images/opengraph/logo.png">
+    <meta property="og:site_name" content="getmonero.org, The Monero Project">
+    <meta property="og:url" content="https://getmonero.org/2017/12/11/A-note-on-fees.html">
+    <meta property="og:type" content="website">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/meta/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/meta/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/meta/favicon-16x16.png">
+        <link rel="manifest" href="/meta/manifest.json">
+        <link rel="mask-icon" href="/meta/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="theme-color" content="#ffffff">
+
+    <link href="/css/custom.css" rel="stylesheet">
+
+    
+    <meta name="msapplication-config" content="/ietemplates/ieconfig.xml">
+
+  </head>
+
+
+  <body>
+    <div class="page-wrapper">
+          
+<div class="mob-nav">
+              <input class="burger-check" id="mobile-burger" type="checkbox"><label for="mobile-burger" class="burger"></label>
+           
+        <div class="slide-in-nav">
+             <div class="container slide-in">
+                     
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                            
+                            <label for="drop1">Inicio<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="drop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                              <a href="/es/get-started/what-is-monero">¿Qué es Monero?</a>
+                                  
+                              <a href="/es/get-started/using">Usar Monero</a>
+                                  
+                              <a href="/es/get-started/accepting">Aceptar Monero</a>
+                                  
+                              <a href="/es/get-started/contributing">Contribuir a Monero</a>
+                                  
+                              <a href="/es/get-started/mining">Minar Monero</a>
+                                  
+                              <a href="/es/get-started/faq">FAQ</a>
+                                  
+                            </div>
+                            
+                     </div>
+                 </div>
+                  
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                               <a href="/es/downloads">Descargas</a>
+                            
+                     </div>
+                 </div>
+                  
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                            
+                            <label for="drop2">Noticias<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="drop2" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                              <a href="/es/blog">Todas publicaciones</a>
+                                  
+                              <a href="/es/blog/tags/monero%20missives.html">Misivas</a>
+                                  
+                              <a href="/es/blog/tags/dev%20diaries.html">Transcripciones de reuniones</a>
+                                  
+                              <a href="/es/blog/tags/releases.html">Lanzamientos</a>
+                                  
+                            </div>
+                            
+                     </div>
+                 </div>
+                  
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                            
+                            <label for="drop3">Comunidad<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="drop3" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                              <a href="/es/community/team">Equipo</a>
+                                  
+                              <a href="/es/community/hangouts">Canales de comunicación</a>
+                                  
+                              <a href="/es/community/sponsorships">Patrocinios</a>
+                                  
+                              <a href="/es/community/merchants">Comerciantes</a>
+                                  
+                            </div>
+                            
+                     </div>
+                 </div>
+                  
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                            
+                            <label for="drop4">Recursos<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="drop4" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                              <a href="/es/resources/about">Sobre Monero</a>
+                                  
+                              <a href="/es/resources/roadmap">Hoja de ruta</a>
+                                  
+                              <a href="/es/resources/research-lab">Laboratorio de investigación</a>
+                                  
+                              <a href="/es/resources/moneropedia">Moneropedia</a>
+                                  
+                              <a href="/es/resources/user-guides">Guías de usuario</a>
+                                  
+                              <a href="/es/resources/developer-guides">Guías de desarrolladores</a>
+                                  
+                              <a href="/es/technical-specs">Especificaciones técnicas</a>
+                                  
+                            </div>
+                            
+                     </div>
+                 </div>
+                 
+                 <div class="row">
+                     <div class="col-xs-12">
+                         <div class="text-center nav-item mob">
+                            <a href="https://forum.getmonero.org">Forum Funding System</a> 
+                         </div>
+                     </div>
+                 </div>
+                 <div class="row">
+                     <div class="col-xs-12">
+                         <div class="text-center nav-item mob">
+                            <a href="https://github.com/monero-project/meta/blob/master/VULNERABILITY_RESPONSE_PROCESS.md">Vulnerability Response</a>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="row">
+                     <div class="col-xs-12">
+                         <div class="text-center nav-item mob">
+                            <a href="/es/the-monero-project/">The Monero Project</a> 
+                         </div>
+                     </div>
+                 </div>            
+             </div>
+          
+        </div>
+       </div>
+       
+        <div class="desktop-nav">
+            <nav class="container">
+            <div class="topnav">
+              <div class="row middle-xs">
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <a href="
+                    
+                    /es
+                    
+                    "><img src="/img/monero-logo.png" alt="Monero Logo" class="monero-logo"></a>
+                  </div>
+                  <div class="col-lg-8 col-md-8 col-sm-8 topnav-list end-xs">
+                      <div class="row end-xs middle-xs">
+                         <div class="col-md-12">
+                          <a href="https://forum.getmonero.org" class="top-link">Forum Funding System</a>
+                          <a href="https://github.com/monero-project/meta/blob/master/VULNERABILITY_RESPONSE_PROCESS.md" class="top-link">Vulnerability Response</a>
+                          <a href="/es/the-monero-project/" class="top-link">The Monero Project</a>
+                          <div href="#" class="dropdown top-link language-change">
+                            <input class="burger-checkdropdown" id="langdrop" type="checkbox">
+                            <label for="langdrop">
+                            
+                                
+                            
+                            
+                            
+                                
+                            
+                                    Español
+                            
+                                
+                            
+                            
+                            
+                                
+                            
+                            
+                            
+                                
+                            
+                            
+                            
+                                
+                            
+                            <div class="arrow-down"></div></label>
+                            <div class="dropdown-content text-center">
+                                    
+                                
+                                  
+                                    <a href="/2017/12/11/A-note-on-fees.html" >English</a>
+                                  
+                                
+                              
+                                
+                              
+                                
+                                  
+                                    <a href="/it/2017/12/11/A-note-on-fees.html" >Italiano</a>
+                                  
+                                
+                              
+                                
+                                  
+                                    <a href="/pl/2017/12/11/A-note-on-fees.html" >Polski</a>
+                                  
+                                
+                              
+                                
+                                  
+                                    <a href="/fr/2017/12/11/A-note-on-fees.html" >Français</a>
+                                  
+                                
+                              
+                            </div>
+                          </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="botnav white-nav">
+                <input class="burger-check" id="burger-check" type="checkbox"><label for="burger-check" class="burger"></label>
+                <div class="row between-xs nav-items">
+                     
+                    <div class="col dropdown nav-item">
+                        
+                            <label for="desktopdrop1">Inicio<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="desktopdrop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                                  <a href="/es/get-started/what-is-monero">¿Qué es Monero?</a>
+                                
+                                  <a href="/es/get-started/using">Usar Monero</a>
+                                
+                                  <a href="/es/get-started/accepting">Aceptar Monero</a>
+                                
+                                  <a href="/es/get-started/contributing">Contribuir a Monero</a>
+                                
+                                  <a href="/es/get-started/mining">Minar Monero</a>
+                                
+                                  <a href="/es/get-started/faq">FAQ</a>
+                                
+                            </div>
+                            
+                    </div>
+                    
+                    <div class="col dropdown nav-item">
+                        
+                           <a href="/es/downloads">Descargas</a>
+                            
+                    </div>
+                    
+                    <div class="col dropdown nav-item">
+                        
+                            <label for="desktopdrop1">Noticias<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="desktopdrop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                                  <a href="/es/blog">Todas publicaciones</a>
+                                
+                                  <a href="/es/blog/tags/monero%20missives.html">Misivas</a>
+                                
+                                  <a href="/es/blog/tags/dev%20diaries.html">Transcripciones de reuniones</a>
+                                
+                                  <a href="/es/blog/tags/releases.html">Lanzamientos</a>
+                                
+                            </div>
+                            
+                    </div>
+                    
+                    <div class="col dropdown nav-item">
+                        
+                            <label for="desktopdrop1">Comunidad<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="desktopdrop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                                  <a href="/es/community/team">Equipo</a>
+                                
+                                  <a href="/es/community/hangouts">Canales de comunicación</a>
+                                
+                                  <a href="/es/community/sponsorships">Patrocinios</a>
+                                
+                                  <a href="/es/community/merchants">Comerciantes</a>
+                                
+                            </div>
+                            
+                    </div>
+                    
+                    <div class="col dropdown nav-item">
+                        
+                            <label for="desktopdrop1">Recursos<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="desktopdrop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                                  <a href="/es/resources/about">Sobre Monero</a>
+                                
+                                  <a href="/es/resources/roadmap">Hoja de ruta</a>
+                                
+                                  <a href="/es/resources/research-lab">Laboratorio de investigación</a>
+                                
+                                  <a href="/es/resources/moneropedia">Moneropedia</a>
+                                
+                                  <a href="/es/resources/user-guides">Guías de usuario</a>
+                                
+                                  <a href="/es/resources/developer-guides">Guías de desarrolladores</a>
+                                
+                                  <a href="/es/technical-specs">Especificaciones técnicas</a>
+                                
+                            </div>
+                            
+                    </div>
+                    
+                  </div>
+            </div>
+        </nav>
+        </div>
+        <div class="mob bot-nav white-nav">
+            <div class="row center-xs middle-xs">
+                <div class="col-xs-6">
+                    <a href="
+                    
+                    /es
+                    
+                    "><img src="/img/monero-logo.png" alt="Monero Logo" class="monero-logo"></a>
+                </div>
+                <div class="dropdown col-xs-6 text-center mob-language-change">
+                <input class="burger-checkdropdown" id="moblangdrop" type="checkbox">
+                 <label for="moblangdrop"><img src="/img/language.png" alt="Lang" class="icon-language"/><div class="arrow-down"></div></label>
+                               <div class="mob dropdown-content text-center">
+                               <p class="mob-lang-change mob-lang-selected">
+                                   
+                              
+                                
+                              
+                                
+                                 Español
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                   
+                               </p>
+                               
+                                
+                                  
+                                    <a class="mob-lang-change" href="/2017/12/11/A-note-on-fees.html" >English</a>
+                                  
+                                
+                              
+                                
+                              
+                                
+                                  
+                                    <a class="mob-lang-change" href="/it/2017/12/11/A-note-on-fees.html" >Italiano</a>
+                                  
+                                
+                              
+                                
+                                  
+                                    <a class="mob-lang-change" href="/pl/2017/12/11/A-note-on-fees.html" >Polski</a>
+                                  
+                                
+                              
+                                
+                                  
+                                    <a class="mob-lang-change" href="/fr/2017/12/11/A-note-on-fees.html" >Français</a>
+                                  
+                                
+                              
+                            </div>
+                          </div>
+            </div>     
+        </div>    
+
+        
+
+<div class="site-wrap post">
+    
+    <section class="container">
+            <div class="row">
+                <!-- left two-thirds block-->
+                <div class="left two-thirds col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                    <div class="info-block">
+                        <div class="row">
+                            <div class="col">
+                               <h2>A note on fees</h2> 
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p class="author">Posted by: dEBRUYNE / ArticMine</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p>December 11, 2017</p>
+                            </div>
+                        </div>
+                    <div>
+                        <p>Lately, a common reoccurring complaint has been that fees are too expensive. Whilst we don't disagree with that statement, we have to thoroughly analyze the situation first. Furthermore, the notion of devs having to release new binaries with lower fees is myopic, because (i) it'd merely kick the can down the road, (ii) changing the constants or formulas requires a hard fork, i.e., they are enforced on a consensus level, and (iii) constantly intervening would be contradictory to our grass-roots, decentralized nature.</p>
+
+<p>Let's start by comparing Monero's per kB fees to the per kB fees of other (hybrid) proof-of-work coins. Fees per kB for a typical transaction (2 inputs + 2 outputs):</p>
+
+<ul>
+  <li><strong>Bitcoin:</strong> ~$26.90</li>
+  <li><strong>Ethereum:</strong> ~$2.91</li>
+  <li><strong>Bitcoin Cash:</strong> ~$0.07</li>
+  <li><strong>Litecoin:</strong> ~$0.10</li>
+  <li><strong>Dash:</strong> ~$0.07</li>
+  <li><strong>Monero:</strong> ~$0.24</li>
+</ul>
+
+<p>As you can see, the per kB fee of Monero is fairly low. However, due to the high transaction size, the absolute default fee (in $ terms) is quite high. Note that the transaction size is this big due to Monero's inherent default privacy, i.e., the range proofs, which mask the amount values, make up ~12 kB of a single transaction. RingCT, however, was absolutely necessary to strengthen the privacy of the network. More specifically, there were a lot of privacy "leaks" when Monero didn't mask amounts yet. Fortunately, <a href="https://getmonero.org/2017/12/07/Monero-Compatible-Bulletproofs.html">Bulletproofs</a> will reduce transaction sizes by at least 80%.</p>
+
+<hr />
+
+<p>To thoroughly analyze the situation, let's continue with examining the constants. We start with examining the penalty function and the dynamic block size algorithm. The formula is as follows:</p>
+
+<p><strong>Penalty = BaseReward * ((BlockSize / M<sub>N</sub>) - 1)²</strong></p>
+
+<p>The new reward is:</p>
+
+<p><strong>NewReward = BaseReward - Penalty</strong></p>
+
+<p>Where:</p>
+
+<ul>
+  <li>M<sub>N</sub> is the median of the block size over the last N blocks, with N being <a href="https://github.com/monero-project/bitmonero/blob/master/src/cryptonote_config.h#L57">100</a> in Monero</li>
+  <li>BlockSize is the size of the current block</li>
+  <li>BaseReward is the reward as per the emission curve or where applicable the tail emission</li>
+  <li>NewReward is the actual reward paid to the miner</li>
+  <li>The maximum allowed block size is 2M<sub>N</sub></li>
+</ul>
+
+<p>Note that the formula of the BaseReward is defined <a href="https://bitcointalk.org/index.php?topic=583449.0">as follows</a>:</p>
+
+<p><strong>BaseReward = 2 * ((S - A) * 2<sup>-20</sup> * 10<sup>-12</sup>)</strong></p>
+
+<p>Where:</p>
+
+<ul>
+  <li>2 is the adjustment factor for the switch to two minute blocks</li>
+  <li>S is the initial number of atomic units is = 2<sup>64</sup> - 1</li>
+  <li>A is the current circulation, which can be found <a href="https://moneroblocks.info/">here</a>. In addition, the current circulation (emission) displayed on the block explorer has to be multiplied with 10<sup>12</sup> (Monero uses 12 decimal places) to convert it to atomic units.</li>
+</ul>
+
+<p>Note that the minimum block size limit is 300 kB. Thus, miners are able to construct blocks up to 300 kB without incurring a penalty. In other words, aforementioned penalty function only "kicks in" for blocks bigger than 300 kB.</p>
+
+<p>Now, a default transaction in Monero, i.e., one that has two inputs and two outputs, is approximately 13.2 kB. Let's plug this into the formula:</p>
+
+<p>Assuming a current <code class="highlighter-rouge">BaseReward</code> of 5.7 XMR:</p>
+
+<p><code class="highlighter-rouge">Penalty</code> = 5.7 * ((313.2/300)-1)², which yields ~0.011 XMR.</p>
+
+<p>Note that the <code class="highlighter-rouge">BaseReward</code> was significantly higher 6-12 months ago, which translates to a higher penalty.</p>
+
+<p>Now, miners need incentive to expand the block size. Therefore, the fee from including one additional transaction (above 300 kB) needs to outweigh the penalty. Otherwise, miners will simply fill blocks until 300 kB and exclude any other transactions, which would lead to a congested network and a large mempool. In sum, the current default fee (~0.013) was set to incentivize miners to include one additional transaction in their blocks without losing revenue.</p>
+
+<p>As you can see from aforementioned penalty function, the penalty will go down when the base reward decreases. Furthermore, as can be easily spotted by graphing the function, the penalty function is more "lenient" in the beginning of the function. This means that any decrease in transaction size translates to a bigger than equal decrease in fees. Put differently, for example, an 80% reduction in transaction size could lead to an 90% reduction in fees. Let's play around with the formula to get some more concrete numbers. Assuming single-output bulletproofs, the transaction size of a typical transaction would be ~2.5 kB. Now, let's also assume that we want to incentivize miners to expand the block size with two transactions without losing revenue. That is, they will be able to include two additional transactions (above the minimum block size limit) without the penalty outweighing the fees. Plugging in the numbers, we get:</p>
+
+<p><code class="highlighter-rouge">Penalty</code> = 5.7 * ((305/300)-1)², which yields ~0.0016 XMR or ~0.0008 XMR per typical transaction.</p>
+
+<p>Reducing the transaction size with approximately 80%, but keeping the same minimum block size limit might be a bit blunt. Therefore, it could be that the minimum block size limit would be lowered to 100, 150, 200, or 250 kB. Let's plug in the numbers again:</p>
+
+<p><code class="highlighter-rouge">Penalty</code> = 5.7 * ((255/250)-1)², which yields ~0.0023 XMR or ~0.00115 XMR per typical transaction.</p>
+
+<p><code class="highlighter-rouge">Penalty</code> = 5.7 * ((205/200)-1)², which yields ~0.0036 XMR or ~0.0018 XMR per typical transaction.</p>
+
+<p><code class="highlighter-rouge">Penalty</code> = 5.7 * ((155/150)-1)², which yields ~0.0063 XMR or ~0.00315 XMR per typical transaction.</p>
+
+<p><code class="highlighter-rouge">Penalty</code> = 5.7 * ((105/100)-1)², which yields ~0.014 XMR or ~0.007 XMR per typical transaction.</p>
+
+<p>You can graph all the outcomes by setting M<sub>N</sub> to <code class="highlighter-rouge">x</code> and <code class="highlighter-rouge">BlockSize</code> to <code class="highlighter-rouge">x+5</code>.</p>
+
+<hr />
+
+<p>One might ask oneself, how does the dynamic fee algorithm come into play? First, to clarify, the default fee is set to account for the penalty in a bare minimum case. That is, a case where miners expand the block size with one additional transaction above the minimum block size limit. More specifically, in the current situation it would mean creating a block of 313 kB (to reiterate, the minimum block size is 300 kB). Once the median block size (of the last 100 blocks) significantly diverges from the minimum block size, the dynamic fee algorithm comes into play.</p>
+
+<p>Let's examine the dynamic fee algorithm:</p>
+
+<p><strong>Fee per kB = (R/R<sub>0</sub>) * (M<sub>0</sub>/M) * F<sub>0</sub> * (60/300) * 4</strong></p>
+
+<p>Where:</p>
+
+<ul>
+  <li>R is the base reward</li>
+  <li>R<sub>0</sub> is the reference base reward (10 XMR)</li>
+  <li>M is the block size limit</li>
+  <li>M<sub>0</sub> is the minimum block size limit (300 kB)</li>
+  <li>F<sub>0</sub> is 0.002 XMR</li>
+  <li>60/300 is the adjustment factor to account for the increase of the minimum block size limit (60 kB -&gt; 300 kB)</li>
+  <li>4 is the adjustment factor to account for the default fee multiplier. That is, the lowest fee level uses a multiplier of 1, whereas the default fee level uses a multiplier of 4</li>
+</ul>
+
+<p>As a practical example, a few moons ago the median block size increased to approximately 400 kB and the default fee went down to ~0.0095. As we can see from the formula, this approximately matches the theoretical fee. That is:</p>
+
+<p><code class="highlighter-rouge">Fee per kB</code> = (6.5/10) * (300/400) * 0.002 * (60/300) * 4 = ~0.0008</p>
+
+<p>Subsequently, multiply with the size of a typical transaction (~13 kB), which yields ~0.01 XMR.</p>
+
+<p>Basically the inverse of the percentage increase of the median block size (against a base of the minimum block size) translates to the percentage reduction in fees. More specifically, a 600 kB median block size, which is a 100% (or factor 2) increase translates to a 50% (1/2) reduction in fees.</p>
+
+<p>So why did the significant price increase not lead to a significant reduction in absolute fees, i.e., fees in XMR terms? Well, basically, the factor increase in price was significantly higher than the factor increase in usage. Furthermore, the median block size needs to be constantly above 300 kB in order for the dynamic fee algorithm to work properly. Moreover, the algorithm was designed to correlate with price, but, as we can see, price is imperfectly correlated with usage. In sum, whilst usage has grown a lot, it hasn't grown as much as the price and therefore fees (in XMR terms) have not declined yet.</p>
+
+<hr />
+
+<p>From combining the penalty formula and the dynamic block size formula with the dynamic fee formula we can infer that a higher minimum block size limit (for example, 300 kB) leads to lower initial default fees, but fee reduction (by the dynamic fee algorithm) being somewhat "slow". By contrast, a lower minimum block size limit (for example, 150 kB) leads to higher initial default fees, but faster fee reduction.</p>
+
+<p>In conclusion, whilst fees are currently too high, they, most likely, won't be anymore in the future. In addition, more research has to be conducted on the topic of the minimum block size limit, because, preferably, we'd like to use a limit that doesn't require future intervention anymore.</p>
+
+<hr />
+
+<p><strong>A few remaining notes:</strong></p>
+
+<ol>
+  <li>
+    <p><em>Median</em> fees were taken from <a href="https://bitinfocharts.com/">Bitinfocharts</a>.</p>
+  </li>
+  <li>
+    <p>A more in depth analysis (by ArticMine) of the penalty function can be found <a href="https://bitcointalk.org/index.php?topic=753252.msg13591241#msg13591241">here</a>.</p>
+  </li>
+  <li>
+    <p>The penalty function in the original <a href="cryptonote.org/whitepaper.pdf">CryptoNote whitepaper</a> is somewhat different. More information can be found <a href="https://monero.stackexchange.com/questions/1067/block-reward-penalties-and-dynamic-block-size">here</a>.</p>
+  </li>
+  <li>
+    <p>Code details and the actual implementation of the dynamic block size algorithm can be found <a href="https://github.com/monero-project/monero/blob/master/src/cryptonote_basic/cryptonote_basic_impl.cpp">here</a>.</p>
+  </li>
+  <li>
+    <p>Code details and the actual implementation of the dynamic fee algorithm can be found <a href="https://github.com/monero-project/monero/commit/82dbba10d467e28e56929e2e7f3b1f04d4635da4">here</a>.</p>
+  </li>
+</ol>
+
+                    </div>
+                    <hr>
+                    <p id="post-meta">Post tags <i class="fa fa-tags"></i>: <a href="/blog/tags/crypto.html">Cryptography</a>, <a href="/blog/tags/research.html">Monero Research Lab</a></p>
+                    </div>
+                </div>
+                <!-- end left two-thirds block-->
+                
+                <!-- right one-third block-->
+                <div class="right one-third col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <div class="sidebar col-sm-12 col-xs-12">   
+                            <div class="info-block">
+                                <div class="row center-xs">
+                                    <div class="col"><h2>Recent Posts</h2></div>
+                                </div>
+                                
+                                <div class="row start-xs info-block-row">
+                                    <div class="col">
+                                         <p><a href="/2018/03/29/response-to-an-empirical-analysis-of-traceability.html">Response to "An Empirical Analysis of Traceability in the Monero Blockchain", Version 2</a></p>
+                                     </div>
+                                </div>
+                                
+                                <div class="row start-xs info-block-row">
+                                    <div class="col">
+                                         <p><a href="/2018/03/29/monero-0.12.0.0-released.html">Monero 0.12.0.0 "Lithium Luna" Release</a></p>
+                                     </div>
+                                </div>
+                                
+                                <div class="row start-xs info-block-row">
+                                    <div class="col">
+                                         <p><a href="/2018/03/28/a-scheduled-protocol-upgrade-is-planned-for-April-6-2018-03-28.html">A Scheduled Network Upgrade is Planned for April 6</a></p>
+                                     </div>
+                                </div>
+                                
+                                <div class="row start-xs info-block-row">
+                                    <div class="col">
+                                         <p><a href="/2018/03/01/core-team-announcement.html">Core Team Announcement</a></p>
+                                     </div>
+                                </div>
+                                
+                            </div>
+                            <div class="info-block">
+                                <div class="row center-xs">
+                                    <div class="col">
+                                        <h2>Popular Tags</h2>
+                                    </div>
+                                </div>
+                                    
+                                    <div class="row start-xs">
+                                        <div class="col">
+                                             <p><a href="/blog/tags/monero missives.html">Monero Missives</a></p>
+                                         </div>
+                                     </div>
+                                     
+                                    <div class="row start-xs">
+                                        <div class="col">
+                                             <p><a href="/blog/tags/conferences.html">Conferences</a></p>
+                                         </div>
+                                     </div>
+                                     
+                                    <div class="row start-xs">
+                                        <div class="col">
+                                             <p><a href="/blog/tags/exchanges.html">Exchanges</a></p>
+                                         </div>
+                                     </div>
+                                     
+                                    <div class="row start-xs">
+                                        <div class="col">
+                                             <p><a href="/blog/tags/gui.html">Monero Core GUI</a></p>
+                                         </div>
+                                     </div>
+                                     
+
+
+                            </div>
+                        </div> 
+                </div>
+                <!-- end right one-third block-->
+            </div>
+        </section>
+    </div>
+
+    <footer class="container-fluid">
+            <div class="container">
+                <div class="row around-xs footer-wrapper">
+                   
+                     <div class="col-sm-3 col-xs-6">
+                     <h3>Recursos</h3>
+                         <ul class="list-unstyled">
+                            
+                             
+                                <li><a class="white" href="/es/resources/about/">Sobre Monero</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/es/resources/moneropedia/">Moneropedia</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/es/resources/developer-guides/">Guias de Desarrollo</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/es/resources/user-guides/">Guias de Usuario</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://getmonero.org/feed.xml">RSS Feed</a></li>
+                              
+                            
+                         </ul>
+                     </div>
+                  
+                     <div class="col-sm-3 col-xs-6">
+                     <h3>Canales IRC</h3>
+                         <ul class="list-unstyled">
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero">monero</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-dev">monero-dev</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-markets">monero-markets</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-pools">monero-pools</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-community">monero-community</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-translations">monero-translations</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-hardware">monero-hardware</a></li>
+                              
+                            
+                         </ul>
+                     </div>
+                  
+                     <div class="col-sm-3 col-xs-6">
+                     <h3>Comunidad</h3>
+                         <ul class="list-unstyled">
+                            
+                             
+                              <li><a class="white" href="https://reddit.com/r/monero">Reddit</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://monero.stackexchange.com/">Stack Exchange</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://bitcointalk.org/index.php?topic=583449.0">BitcoinTalk Thread</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://mattermost.getmonero.org/">Mattermost Chat</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://telegram.me/bitmonero">Telegram Chat</a></li>
+                              
+                            
+                         </ul>
+                     </div>
+                  
+                     <div class="col-sm-3 col-xs-6">
+                     <h3>El Proyecto Monero</h3>
+                         <ul class="list-unstyled">
+                            
+                             
+                              <li><a class="white" href="https://openalias.org/">Open Alias</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://getkovri.org/">Kovri</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/es/resources/research-lab/">Monero Research Lab</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/es/press-kit">Kit de Prensa</a></li>
+                              
+                            
+                         </ul>
+                     </div>
+                 
+                <div class="row center-xs">
+                    <div class="social-icons">
+                    </div>
+                    <div class="footer-links">
+                        <ul class="list-unstyled list-inline">
+                           
+                            
+                             <li><a href="/es/legal" class="white footer-link">Aviso Legal</a></li>
+                           
+                           
+                            
+                             <li><a href="https://github.com/monero-project" class="white footer-link">Código Fuente</a></li>
+                            
+                           
+                            
+                             <li><a href="/es/technical-specs/" class="white footer-link">Especificaciones Técnicas</a></li>
+                           
+                           
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
+</footer>
+<!-- Matomo -->
+<script type="text/javascript">
+    var _paq = _paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+        var u = "//analytics.getmonero.org/";
+        _paq.push(['setTrackerUrl', u + 'piwik.php']);
+        _paq.push(['setSiteId', '1']);
+        var d = document,
+            g = d.createElement('script'),
+            s = d.getElementsByTagName('script')[0];
+        g.type = 'text/javascript';
+        g.async = true;
+        g.defer = true;
+        g.src = u + 'piwik.js';
+        s.parentNode.insertBefore(g, s);
+    })();
+</script>
+<!-- End Matomo Code -->
+<!-- page served by server N -->
+    </div>
+  </body>
+</html>

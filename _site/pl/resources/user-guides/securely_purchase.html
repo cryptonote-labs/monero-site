@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>
+     Securely purchasing and storing Monero | Monero - bezpieczne, prywatne, niewykrywalne
+    </title>
+	<meta name="description" content="Securely purchasing and storing Monero [w domu Monero, cyfrowej waluty, która jest bezpieczna, prywatna i niewykrywalna]">
+	<meta name="keywords" content="monero, xmr, bitmonero, cryptocurrency">
+
+    <meta property="og:title" content="Monero: Securely purchasing and storing Monero"/>
+    <meta property="og:description" content="Securely purchasing and storing Monero [w domu Monero, cyfrowej waluty, która jest bezpieczna, prywatna i niewykrywalna]">
+    <meta property="og:image" content="http://static.getmonero.org/images/opengraph/logo.png">
+    <meta property="og:site_name" content="getmonero.org, Projekt Monero">
+    <meta property="og:url" content="https://getmonero.org/resources/user-guides/securely_purchase.html">
+    <meta property="og:type" content="website">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/meta/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/meta/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/meta/favicon-16x16.png">
+        <link rel="manifest" href="/meta/manifest.json">
+        <link rel="mask-icon" href="/meta/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="theme-color" content="#ffffff">
+
+    <link href="/css/custom.css" rel="stylesheet">
+
+    
+    <meta name="msapplication-config" content="/ietemplates/ieconfig.xml">
+
+  </head>
+
+
+  <body>
+    <div class="page-wrapper">
+          
+<div class="mob-nav">
+              <input class="burger-check" id="mobile-burger" type="checkbox"><label for="mobile-burger" class="burger"></label>
+           
+        <div class="slide-in-nav">
+             <div class="container slide-in">
+                     
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                            
+                            <label for="drop1">Wstęp<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="drop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                              <a href="/pl/get-started/what-is-monero">Czym jest Monero?</a>
+                                  
+                              <a href="/pl/get-started/using">Używanie</a>
+                                  
+                              <a href="/pl/get-started/accepting">Akceptowanie</a>
+                                  
+                              <a href="/pl/get-started/contributing">Współpraca</a>
+                                  
+                              <a href="/pl/get-started/mining">Wydobywanie</a>
+                                  
+                              <a href="/pl/get-started/faq">FAQ</a>
+                                  
+                            </div>
+                            
+                     </div>
+                 </div>
+                  
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                               <a href="/pl/downloads/">Downloads</a>
+                            
+                     </div>
+                 </div>
+                  
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                            
+                            <label for="drop2">Najnowsze<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="drop2" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                              <a href="/pl/blog">Wszystkie wpisy</a>
+                                  
+                              <a href="/pl/blog/tags/monero%20missives.html">Postulaty</a>
+                                  
+                              <a href="/pl/blog/tags/dev%20diaries.html">Zapisy z czatów</a>
+                                  
+                              <a href="/pl/blog/tags/releases.html">Aktualizacje</a>
+                                  
+                            </div>
+                            
+                     </div>
+                 </div>
+                  
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                            
+                            <label for="drop3">Społeczność<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="drop3" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                              <a href="/pl/community/team">Zespół</a>
+                                  
+                              <a href="/pl/community/hangouts">Miejsca spotkań</a>
+                                  
+                              <a href="/pl/community/events">Wydarzenia</a>
+                                  
+                              <a href="/pl/community/sponsorships">Sponsoring</a>
+                                  
+                              <a href="/pl/community/merchants">Handel</a>
+                                  
+                            </div>
+                            
+                     </div>
+                 </div>
+                  
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                            
+                            <label for="drop4">Materiały<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="drop4" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                              <a href="/pl/resources/about">O Monero</a>
+                                  
+                              <a href="/pl/resources/roadmap">Oś czasu</a>
+                                  
+                              <a href="/pl/resources/research-lab">Laboratorium badawcze</a>
+                                  
+                              <a href="/pl/resources/moneropedia">Moneropedia</a>
+                                  
+                              <a href="/pl/resources/user-guides">Przewodniki dla użytkowników</a>
+                                  
+                              <a href="/pl/resources/developer-guides">Przewodniki dla deweloperów</a>
+                                  
+                              <a href="/pl/technical-specs">Właściwości techniczne</a>
+                                  
+                            </div>
+                            
+                     </div>
+                 </div>
+                 
+                 <div class="row">
+                     <div class="col-xs-12">
+                         <div class="text-center nav-item mob">
+                            <a href="https://forum.getmonero.org">Forum Funding System</a> 
+                         </div>
+                     </div>
+                 </div>
+                 <div class="row">
+                     <div class="col-xs-12">
+                         <div class="text-center nav-item mob">
+                            <a href="https://github.com/monero-project/meta/blob/master/VULNERABILITY_RESPONSE_PROCESS.md">Vulnerability Response</a>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="row">
+                     <div class="col-xs-12">
+                         <div class="text-center nav-item mob">
+                            <a href="/pl/the-monero-project/">The Monero Project</a> 
+                         </div>
+                     </div>
+                 </div>            
+             </div>
+          
+        </div>
+       </div>
+       
+        <div class="desktop-nav">
+            <nav class="container">
+            <div class="topnav">
+              <div class="row middle-xs">
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <a href="
+                    
+                    /pl
+                    
+                    "><img src="/img/monero-logo.png" alt="Monero Logo" class="monero-logo"></a>
+                  </div>
+                  <div class="col-lg-8 col-md-8 col-sm-8 topnav-list end-xs">
+                      <div class="row end-xs middle-xs">
+                         <div class="col-md-12">
+                          <a href="https://forum.getmonero.org" class="top-link">Forum Funding System</a>
+                          <a href="https://github.com/monero-project/meta/blob/master/VULNERABILITY_RESPONSE_PROCESS.md" class="top-link">Vulnerability Response</a>
+                          <a href="/pl/the-monero-project/" class="top-link">The Monero Project</a>
+                          <div href="#" class="dropdown top-link language-change">
+                            <input class="burger-checkdropdown" id="langdrop" type="checkbox">
+                            <label for="langdrop">
+                            
+                                
+                            
+                            
+                            
+                                
+                            
+                            
+                            
+                                
+                            
+                            
+                            
+                                
+                            
+                                    Polski
+                            
+                                
+                            
+                            
+                            
+                                
+                            
+                            <div class="arrow-down"></div></label>
+                            <div class="dropdown-content text-center">
+                                    
+                                
+                                  
+                                    <a href="/resources/user-guides/securely_purchase.html" >English</a>
+                                  
+                                
+                              
+                                
+                                  
+                                    <a href="/es/resources/user-guides/securely_purchase.html" >Español</a>
+                                  
+                                
+                              
+                                
+                                  
+                                    <a href="/it/resources/user-guides/securely_purchase.html" >Italian</a>
+                                  
+                                
+                              
+                                
+                              
+                                
+                                  
+                                    <a href="/fr/resources/user-guides/securely_purchase.html" >Français</a>
+                                  
+                                
+                              
+                            </div>
+                          </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="botnav white-nav">
+                <input class="burger-check" id="burger-check" type="checkbox"><label for="burger-check" class="burger"></label>
+                <div class="row between-xs nav-items">
+                     
+                    <div class="col dropdown nav-item">
+                        
+                            <label for="desktopdrop1">Wstęp<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="desktopdrop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                                  <a href="/pl/get-started/what-is-monero">Czym jest Monero?</a>
+                                
+                                  <a href="/pl/get-started/using">Używanie</a>
+                                
+                                  <a href="/pl/get-started/accepting">Akceptowanie</a>
+                                
+                                  <a href="/pl/get-started/contributing">Współpraca</a>
+                                
+                                  <a href="/pl/get-started/mining">Wydobywanie</a>
+                                
+                                  <a href="/pl/get-started/faq">FAQ</a>
+                                
+                            </div>
+                            
+                    </div>
+                    
+                    <div class="col dropdown nav-item">
+                        
+                           <a href="/pl/downloads/">Downloads</a>
+                            
+                    </div>
+                    
+                    <div class="col dropdown nav-item">
+                        
+                            <label for="desktopdrop1">Najnowsze<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="desktopdrop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                                  <a href="/pl/blog">Wszystkie wpisy</a>
+                                
+                                  <a href="/pl/blog/tags/monero%20missives.html">Postulaty</a>
+                                
+                                  <a href="/pl/blog/tags/dev%20diaries.html">Zapisy z czatów</a>
+                                
+                                  <a href="/pl/blog/tags/releases.html">Aktualizacje</a>
+                                
+                            </div>
+                            
+                    </div>
+                    
+                    <div class="col dropdown nav-item">
+                        
+                            <label for="desktopdrop1">Społeczność<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="desktopdrop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                                  <a href="/pl/community/team">Zespół</a>
+                                
+                                  <a href="/pl/community/hangouts">Miejsca spotkań</a>
+                                
+                                  <a href="/pl/community/events">Wydarzenia</a>
+                                
+                                  <a href="/pl/community/sponsorships">Sponsoring</a>
+                                
+                                  <a href="/pl/community/merchants">Handel</a>
+                                
+                            </div>
+                            
+                    </div>
+                    
+                    <div class="col dropdown nav-item">
+                        
+                            <label for="desktopdrop1">Materiały<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="desktopdrop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                                  <a href="/pl/resources/about">O Monero</a>
+                                
+                                  <a href="/pl/resources/roadmap">Oś czasu</a>
+                                
+                                  <a href="/pl/resources/research-lab">Laboratorium badawcze</a>
+                                
+                                  <a href="/pl/resources/moneropedia">Moneropedia</a>
+                                
+                                  <a href="/pl/resources/user-guides">Przewodniki dla użytkowników</a>
+                                
+                                  <a href="/pl/resources/developer-guides">Przewodniki dla deweloperów</a>
+                                
+                                  <a href="/pl/technical-specs">Właściwości techniczne</a>
+                                
+                            </div>
+                            
+                    </div>
+                    
+                  </div>
+            </div>
+        </nav>
+        </div>
+        <div class="mob bot-nav white-nav">
+            <div class="row center-xs middle-xs">
+                <div class="col-xs-6">
+                    <a href="
+                    
+                    /pl
+                    
+                    "><img src="/img/monero-logo.png" alt="Monero Logo" class="monero-logo"></a>
+                </div>
+                <div class="dropdown col-xs-6 text-center mob-language-change">
+                <input class="burger-checkdropdown" id="moblangdrop" type="checkbox">
+                 <label for="moblangdrop"><img src="/img/language.png" alt="Lang" class="icon-language"/><div class="arrow-down"></div></label>
+                               <div class="mob dropdown-content text-center">
+                               <p class="mob-lang-change mob-lang-selected">
+                                   
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                                 Polski
+                                
+                              
+                                
+                              
+                                   
+                               </p>
+                               
+                                
+                                  
+                                    <a class="mob-lang-change" href="/resources/user-guides/securely_purchase.html" >English</a>
+                                  
+                                
+                              
+                                
+                                  
+                                    <a class="mob-lang-change" href="/es/resources/user-guides/securely_purchase.html" >Español</a>
+                                  
+                                
+                              
+                                
+                                  
+                                    <a class="mob-lang-change" href="/it/resources/user-guides/securely_purchase.html" >Italian</a>
+                                  
+                                
+                              
+                                
+                              
+                                
+                                  
+                                    <a class="mob-lang-change" href="/fr/resources/user-guides/securely_purchase.html" >Français</a>
+                                  
+                                
+                              
+                            </div>
+                          </div>
+            </div>     
+        </div>    
+
+            <div class="site-wrap">
+    <!-- FULL WIDTH BLOCK -->
+        <section class="container full">
+                <div class="info-block text-adapt">
+                    <div>
+                        <h2 id="jak-bezpiecznie-kupować-i-przechowywać-monero">Jak bezpiecznie kupować i przechowywać Monero?</h2>
+
+<p>Ten przewodnik opisuje, jak kupować i bezpiecznie przechowywać Monero, zgodnie ze stanem na czerwiec 2017 roku.</p>
+
+<h4 id="krok-1-kup-bitcoin">Krok 1: Kup Bitcoin.</h4>
+
+<p>Istnieje wiele sposobów na zakupo Bitcoina. Dwie na wpół niezawodne organizacje to Xapo <a href="http://www.xapo.com/">http://www.xapo.com/</a> oraz Coinbase <a href="http://www.coinbase.com/">http://www.coinbase.com/</a>. Proces obejmuje przesłanie swojego dokumentu (dowodu osobistego, paszportu itp.) i zajmie od 2 do 10 dni (lub więcej). Zanim dokonasz dużego zakupu, zweryfikuj ich opinię na Reddit. Xapo korzysta z Wire Transfer, a Coinbase z Bank Transfer (ACH w USA). Xapo zazwyczaj jest szybszy niż Coinbase. Coinbase pozwala także na małe, natychmiastowe kupna za pośrednictwem karty debetowej, ale ta opcja obarczona jest wysoką opłatą. Po zakupie Bitcoina jesteś gotowy na wymianę go na Monero!</p>
+
+<h4 id="krok-2-Ściągnij-i-utwórz-papierowy-portfel-na-bezpiecznym-i-odłączonym-od-sieci-komputerze">Krok 2: Ściągnij i utwórz papierowy portfel na bezpiecznym i odłączonym od sieci komputerze.</h4>
+
+<p>Ściągnij generator papierowego portfela ze strony https://moneroaddress.org i skopiuj go na USB (bezpośredni link: https://github.com/moneromooo-monero/monero-wallet-generator/archive/master.zip).</p>
+
+<p>Rozpakuj i otwórz generator papierowego portfela (monero-wallet-generator.html) w przeglądarce na odłączonym od sieci komputerze, który nie był wcześniej używany lub posiada świeżo zainstalowany system operacyjny.</p>
+
+<p>Twój papierowy portfel posiada cztery ważne informacje:</p>
+
+<p>Publiczny adres Monero
+Publiczny adres jest używany do otrzymywania płatności. Przekazujesz go osobie, która prześle pieniądze do twojego portfela.</p>
+
+<p>Kod mnemoniczny Monero
+Kod mnemoniczny jest metodą przechowywania całego portfela, łatwo rozpoznawalną dla ludzi. Jest wszystkim, czego potrzebujesz, aby przywrócić swój portfel.</p>
+
+<p>Prywatny klucz wydawania Monero
+Prywatny klucz wydawania jest używany do wysyłania pieniędzy z twojego portfela.</p>
+
+<p>Prywatny klucz widoczności Monero
+Prywatny klucz widoczności służy to wyświetlania transakcji przychodzących na konto. Często jest on używany do zakładania portfela tylko do odczytu, który wyświetla transakcje przychodzące, będące aktualnie przesyłane w łańcuchu bloków do zimnego portfela.</p>
+
+<p>W tym miejscu masz wiele opcji. Możesz wydrukować swój portfel, zapisać jako PDF lub plik tekstowy na USB, nagrać na CD/DVD itd. Najpewniej będziesz potrzebował przynajmniej dwóch lub trzech jego kopii, bezpiecznie zachowanych w różnych miejscach. Jeśli zapisujesz je na dysku, ochroń wszystko silnym hasłem. Jeśli zachowujesz portfel na papierze, nie pokazuj go nikomu, aby nie zapamiętano twojego 25-słownego kodu lub nie zrobiono zdjęcia bez twojej zgody. Przesyłanie zdjęcia twojego portfela jest równoznaczne z oddaniem wszystkich twoich pieniędzy.</p>
+
+<p>Jakąkolwiek metodę wybierzesz, upewnij się, że żadna kopia twojego portfela Monero nie została na urządzeniu, którego używałeś. Bezpiecznie usuń portfel po zapisaniu go na dysku lub upewnij się, że drukarka nie zachowała żadnej kopii w swojej pamięci.</p>
+
+<p>*Jeśli stracisz dostęp do swojego papierowego portfela, twoje Monero nigdy nie będzie dostępne ani dla ciebie, ani dla nikogo innego. Nie będziesz mógł ich odzyskać!</p>
+
+<h4 id="adnotacja">Adnotacja</h4>
+<p>Opcją zaszyfrowania kodu mnemonicznego Monero jest https://xmr.llcoins.net/. Ściągnij stronę html i otwórz ją na odłączonym od sieci komputerze. Sprawdź część "Encrypt/Decrypt Mnemonic Seed" i upewnij się, że używasz "CN Add" z mocnym hasłem. Dzięki, manicminer5.</p>
+
+<h4 id="krok-3-zamień-bitcoin-na-monero-i-prześlij-je-do-swojego-papierowego-portfela">Krok 3: Zamień Bitcoin na Monero i prześlij je do swojego papierowego portfela.</h4>
+
+<p>Przejdź do komputera z połączeniem internetowym i wejdź na stronę www.shapeshift.io. Wybierz "Deposit Bitcoin" i "Receive Monero" (szybko).</p>
+
+<p>Naciśnij Dalej.</p>
+
+<p>Twój adres Monero (publiczny adres Monero w twoim papierowym portfelu Monero)
+Wklej publiczny adres Monero z papierowego portfela w miejscu podpisanym "Your Monero Address". Ponieważ twój publiczny adres znajduje się na komputerze odłączonym od sieci (prawda?), przepisz go ręcznie lub skopiuj tylko publiczny adres na czysty dysk USB.</p>
+
+<p>Adres zwrotny (publiczny adres Bitcoin, na który otrzymujesz pieniądze)
+Wprowadź adres Bitcoin, który kontrolujesz i gdzie ewentualny zwrot zostanie wysłany, jeśli zaistnieje problem z transakcją. Na Xapo i Coinbase adres ten nazywa się adresem otrzymywania i może się czasami zmieniać.</p>
+
+<p>Numer identyfikacyjny płatności
+Zostaw pole z numerem identyfikacji płatności puste, jeśli wysyłasz do własnego portfela Monero lub do papierowego portfela Monero.</p>
+
+<p>Zaznacz zgodę z warunkami i zmień suwak na "Reusable Address".</p>
+
+<p>Kliknij "Start Transaction".</p>
+
+<p>Adres wpłat (publiczny adres Bitcoina, stworzony jedynie do otrzymywania funduszy na Shapeshift.io)
+Z nowego okna skopiuj adres wpłat (ctrl+c lub menu Edit - Copy). Za pomocą tego adresu prześlesz Bitcoin z Xapo lub Coinbase na Shapeshift.io.</p>
+
+<p>Przejdź do swojego konta Xapo lub Circle i znajdź przycisk Transfer lub Send. Wklej adres wpłat Bitcoina  wpole Destination i wpisz kwotę w Bitcoinach, którą chcesz zamienić na Monero. Kwota musi się zmieścić w minimalnym i maksymalnym zakresie wpłat Shapeshift.io. Kliknij Send i zautoryzuj transakcję, jeśli zostaniesz o to poproszony.</p>
+
+<p>Kiedy wysyłka zostanie zainicjowana przez Xapo lub Coinbase, pojawi się pewne opóźnienie przy wejściu transakcji do łańcucha bloków Bitcoina i oczekiwaniu na potwierdzenie. Może ono zająć kilka minut lub godzin. Możesz sprawdzić, czy płatność została wysłana, wyszukując adres wpłat Shapeshift.io na stronie blockchain.info. Pojawi się tam twoja transakcja do Shapeshift.io.</p>
+
+<p>Po potwierdzeniu twojej wpłaty Bitcoinów, Shapeshift.io rozpocznie wymianę Bitcoinów (BTC) na Monero (XMR) na jednej z giełd, a gdy ją zakończy, wyśle Monero na adres twojego zimnego papierowego portfela. Zajmie to kilka minut lub godzin. W przypadku problemów, skontaktuj się z ekipą Shapeshift.io, jest ona bardzo pomocna.</p>
+
+<p>Gdy Shapeshift.io poinformuje o ukończeniu twojej transakcji, powinieneś już mieć swoje Monero w papierowym portfelu!</p>
+
+<h4 id="adnotacje-i-jak-zweryfikować-fundusze">Adnotacje i jak zweryfikować fundusze</h4>
+<p>Ponieważ łańcuch bloków Monero jest prywatny i niewykrywalny, nie będziesz mógł wyszukać swojego publicznego adresu Monero i potwierdzić, że fundusze doszły, tak jak to można zrobić w przypadku Bitcoina. To jest dobre dla prywatności, ale niewygodne.</p>
+
+<p>Aby bezpiecznie zweryfikować, czy pieniądze wpłynęły na twoje konto, będziesz musiał założyć portfel tylko do odczytu. Do tego przyda się klucz widoczności. Aby założyć portfel tylko do odczytu, przejdź do części <a href="/pl/resources/user-guides/view_only.html">Portfele tylko do odczytu</a>.</p>
+
+<p>Aby zweryfikować, czy pieniądze <em>nadal</em> są w twoim portfelu i nie zostały wydane, musisz założyć zimny portfel za pomocą swojego kodu mnemonicznego, na komputerze odłączonym od sieci z aktualną kopią łańcucha bloków Monero. Po skończeniu, bezpiecznie usuń portfel lub połącz go z internetem, aby stał się gorącym portfelem.</p>
+
+
+                    </div>
+                </div>
+        </section>
+    <!-- END FULL WIDTH BLOCK -->
+    </div>
+    <footer class="container-fluid">
+            <div class="container">
+                <div class="row around-xs footer-wrapper">
+                   
+                     <div class="col-sm-3 col-xs-6">
+                     <h3>Materiały</h3>
+                         <ul class="list-unstyled">
+                            
+                             
+                                <li><a class="white" href="/pl/resources/about/">O Monero</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/pl/resources/moneropedia/">Moneropedia</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/pl/resources/developer-guides/">Przewodniki dla deweloperów</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/pl/resources/user-guides/">Przewodniki dla użytkowników</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://getmonero.org/feed.xml">Kanał RSS</a></li>
+                              
+                            
+                         </ul>
+                     </div>
+                  
+                     <div class="col-sm-3 col-xs-6">
+                     <h3>Kanały IRC</h3>
+                         <ul class="list-unstyled">
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero">monero</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-dev">monero-dev</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-markets">monero-markets</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-pools">monero-pools</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-community">monero-community</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-translations">monero-translations</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-hardware">monero-hardware</a></li>
+                              
+                            
+                         </ul>
+                     </div>
+                  
+                     <div class="col-sm-3 col-xs-6">
+                     <h3>Społeczność</h3>
+                         <ul class="list-unstyled">
+                            
+                             
+                              <li><a class="white" href="https://reddit.com/r/monero">Reddit</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://monero.stackexchange.com/">Stack Exchange</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://bitcointalk.org/index.php?topic=583449.0">BitcoinTalk Thread</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://mattermost.getmonero.org/">Mattermost Chat</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://telegram.me/bitmonero">Telegram Chat</a></li>
+                              
+                            
+                         </ul>
+                     </div>
+                  
+                     <div class="col-sm-3 col-xs-6">
+                     <h3>Projekt Monero</h3>
+                         <ul class="list-unstyled">
+                            
+                             
+                              <li><a class="white" href="https://openalias.org/">Open Alias</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://getkovri.org/">Kovri</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/pl/resources/research-lab/">Laboratorium Badawcze Monero</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/pl/press-kit">Monero Press Kit</a></li>
+                              
+                            
+                         </ul>
+                     </div>
+                 
+                <div class="row center-xs">
+                    <div class="social-icons">
+                    </div>
+                    <div class="footer-links">
+                        <ul class="list-unstyled list-inline">
+                           
+                            
+                             <li><a href="/pl/legal" class="white footer-link">Informacje prawne</a></li>
+                           
+                           
+                            
+                             <li><a href="https://github.com/monero-project" class="white footer-link">Kod źródłowy</a></li>
+                            
+                           
+                            
+                             <li><a href="/pl/technical-specs/" class="white footer-link">Właściwości techniczne</a></li>
+                           
+                           
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
+</footer>
+<!-- Matomo -->
+<script type="text/javascript">
+    var _paq = _paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+        var u = "//analytics.getmonero.org/";
+        _paq.push(['setTrackerUrl', u + 'piwik.php']);
+        _paq.push(['setSiteId', '1']);
+        var d = document,
+            g = d.createElement('script'),
+            s = d.getElementsByTagName('script')[0];
+        g.type = 'text/javascript';
+        g.async = true;
+        g.defer = true;
+        g.src = u + 'piwik.js';
+        s.parentNode.insertBefore(g, s);
+    })();
+</script>
+<!-- End Matomo Code -->
+<!-- page served by server N -->
+    </div>
+  </body>
+</html>

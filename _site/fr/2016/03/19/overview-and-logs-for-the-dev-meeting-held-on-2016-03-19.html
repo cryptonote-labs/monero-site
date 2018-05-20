@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>
+     Overview and Logs for the Dev Meeting Held on 2016-03-19 | Monero - sécurisé, confidentiel, intracable
+    </title>
+	<meta name="description" content="Overview and Logs for the Dev Meeting Held on 2016-03-19 [accueil de Monero, une monnaie digitale qui est sécurisée, confidentielle, et intracable]">
+	<meta name="keywords" content="monero, xmr, bitmonero, cryptocurrency">
+
+    <meta property="og:title" content="Monero: Overview and Logs for the Dev Meeting Held on 2016-03-19"/>
+    <meta property="og:description" content="Overview and Logs for the Dev Meeting Held on 2016-03-19 [accueil de Monero, une monnaie digitale qui est sécurisée, confidentielle, et intracable]">
+    <meta property="og:image" content="http://static.getmonero.org/images/opengraph/logo.png">
+    <meta property="og:site_name" content="getmonero.org, Le Projet Monero">
+    <meta property="og:url" content="https://getmonero.org/2016/03/19/overview-and-logs-for-the-dev-meeting-held-on-2016-03-19.html">
+    <meta property="og:type" content="website">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/meta/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/meta/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/meta/favicon-16x16.png">
+        <link rel="manifest" href="/meta/manifest.json">
+        <link rel="mask-icon" href="/meta/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="theme-color" content="#ffffff">
+
+    <link href="/css/custom.css" rel="stylesheet">
+
+    
+    <meta name="msapplication-config" content="/ietemplates/ieconfig.xml">
+
+  </head>
+
+
+  <body>
+    <div class="page-wrapper">
+          
+<div class="mob-nav">
+              <input class="burger-check" id="mobile-burger" type="checkbox"><label for="mobile-burger" class="burger"></label>
+           
+        <div class="slide-in-nav">
+             <div class="container slide-in">
+                     
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                            
+                            <label for="drop1">Commencer<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="drop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                              <a href="/fr/get-started/what-is-monero">Qu'est-ce que Monero ?</a>
+                                  
+                              <a href="/fr/get-started/using">Utiliser</a>
+                                  
+                              <a href="/fr/get-started/accepting">Accepter</a>
+                                  
+                              <a href="/fr/get-started/contributing">Contribuer</a>
+                                  
+                              <a href="/fr/get-started/mining">Miner</a>
+                                  
+                              <a href="/fr/get-started/faq">FAQ</a>
+                                  
+                            </div>
+                            
+                     </div>
+                 </div>
+                  
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                               <a href="/fr/downloads/">Téléchargements</a>
+                            
+                     </div>
+                 </div>
+                  
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                            
+                            <label for="drop2">Actualités<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="drop2" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                              <a href="/fr/blog">Toutes</a>
+                                  
+                              <a href="/fr/blog/tags/monero%20missives.html">Missives</a>
+                                  
+                              <a href="/fr/blog/tags/dev%20diaries.html">Comptes-rendus de Réunions</a>
+                                  
+                              <a href="/fr/blog/tags/releases.html">Versions</a>
+                                  
+                            </div>
+                            
+                     </div>
+                 </div>
+                  
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                            
+                            <label for="drop3">Communauté<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="drop3" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                              <a href="/fr/community/team">Équipe</a>
+                                  
+                              <a href="/fr/community/hangouts">Rencontres</a>
+                                  
+                              <a href="/fr/community/sponsorships">Parrainages</a>
+                                  
+                              <a href="/fr/community/merchants">Commerçants</a>
+                                  
+                            </div>
+                            
+                     </div>
+                 </div>
+                  
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                            
+                            <label for="drop4">Ressources<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="drop4" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                              <a href="/fr/resources/about">À propos</a>
+                                  
+                              <a href="/fr/resources/roadmap">Feuille de route</a>
+                                  
+                              <a href="/fr/resources/research-lab">Laboratoire de Recherche</a>
+                                  
+                              <a href="/fr/resources/moneropedia">Moneropedia</a>
+                                  
+                              <a href="/fr/resources/user-guides">Guides Utilisateur</a>
+                                  
+                              <a href="/fr/resources/developer-guides">Guides du Dévelopeur</a>
+                                  
+                              <a href="/fr/technical-specs">Spécifications Techniques</a>
+                                  
+                            </div>
+                            
+                     </div>
+                 </div>
+                 
+                 <div class="row">
+                     <div class="col-xs-12">
+                         <div class="text-center nav-item mob">
+                            <a href="https://forum.getmonero.org">Forum Funding System</a> 
+                         </div>
+                     </div>
+                 </div>
+                 <div class="row">
+                     <div class="col-xs-12">
+                         <div class="text-center nav-item mob">
+                            <a href="https://github.com/monero-project/meta/blob/master/VULNERABILITY_RESPONSE_PROCESS.md">Vulnerability Response</a>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="row">
+                     <div class="col-xs-12">
+                         <div class="text-center nav-item mob">
+                            <a href="/fr/the-monero-project/">The Monero Project</a> 
+                         </div>
+                     </div>
+                 </div>            
+             </div>
+          
+        </div>
+       </div>
+       
+        <div class="desktop-nav">
+            <nav class="container">
+            <div class="topnav">
+              <div class="row middle-xs">
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <a href="
+                    
+                    /fr
+                    
+                    "><img src="/img/monero-logo.png" alt="Monero Logo" class="monero-logo"></a>
+                  </div>
+                  <div class="col-lg-8 col-md-8 col-sm-8 topnav-list end-xs">
+                      <div class="row end-xs middle-xs">
+                         <div class="col-md-12">
+                          <a href="https://forum.getmonero.org" class="top-link">Forum Funding System</a>
+                          <a href="https://github.com/monero-project/meta/blob/master/VULNERABILITY_RESPONSE_PROCESS.md" class="top-link">Vulnerability Response</a>
+                          <a href="/fr/the-monero-project/" class="top-link">The Monero Project</a>
+                          <div href="#" class="dropdown top-link language-change">
+                            <input class="burger-checkdropdown" id="langdrop" type="checkbox">
+                            <label for="langdrop">
+                            
+                                
+                            
+                            
+                            
+                                
+                            
+                            
+                            
+                                
+                            
+                            
+                            
+                                
+                            
+                            
+                            
+                                
+                            
+                                    Français
+                            
+                                
+                            
+                            <div class="arrow-down"></div></label>
+                            <div class="dropdown-content text-center">
+                                    
+                                
+                                  
+                                    <a href="/2016/03/19/overview-and-logs-for-the-dev-meeting-held-on-2016-03-19.html" >English</a>
+                                  
+                                
+                              
+                                
+                                  
+                                    <a href="/es/2016/03/19/overview-and-logs-for-the-dev-meeting-held-on-2016-03-19.html" >Español</a>
+                                  
+                                
+                              
+                                
+                                  
+                                    <a href="/it/2016/03/19/overview-and-logs-for-the-dev-meeting-held-on-2016-03-19.html" >Italiano</a>
+                                  
+                                
+                              
+                                
+                                  
+                                    <a href="/pl/2016/03/19/overview-and-logs-for-the-dev-meeting-held-on-2016-03-19.html" >Polski</a>
+                                  
+                                
+                              
+                                
+                              
+                            </div>
+                          </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="botnav white-nav">
+                <input class="burger-check" id="burger-check" type="checkbox"><label for="burger-check" class="burger"></label>
+                <div class="row between-xs nav-items">
+                     
+                    <div class="col dropdown nav-item">
+                        
+                            <label for="desktopdrop1">Commencer<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="desktopdrop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                                  <a href="/fr/get-started/what-is-monero">Qu'est-ce que Monero ?</a>
+                                
+                                  <a href="/fr/get-started/using">Utiliser</a>
+                                
+                                  <a href="/fr/get-started/accepting">Accepter</a>
+                                
+                                  <a href="/fr/get-started/contributing">Contribuer</a>
+                                
+                                  <a href="/fr/get-started/mining">Miner</a>
+                                
+                                  <a href="/fr/get-started/faq">FAQ</a>
+                                
+                            </div>
+                            
+                    </div>
+                    
+                    <div class="col dropdown nav-item">
+                        
+                           <a href="/fr/downloads/">Téléchargements</a>
+                            
+                    </div>
+                    
+                    <div class="col dropdown nav-item">
+                        
+                            <label for="desktopdrop1">Actualités<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="desktopdrop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                                  <a href="/fr/blog">Toutes</a>
+                                
+                                  <a href="/fr/blog/tags/monero%20missives.html">Missives</a>
+                                
+                                  <a href="/fr/blog/tags/dev%20diaries.html">Comptes-rendus de Réunions</a>
+                                
+                                  <a href="/fr/blog/tags/releases.html">Versions</a>
+                                
+                            </div>
+                            
+                    </div>
+                    
+                    <div class="col dropdown nav-item">
+                        
+                            <label for="desktopdrop1">Communauté<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="desktopdrop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                                  <a href="/fr/community/team">Équipe</a>
+                                
+                                  <a href="/fr/community/hangouts">Rencontres</a>
+                                
+                                  <a href="/fr/community/sponsorships">Parrainages</a>
+                                
+                                  <a href="/fr/community/merchants">Commerçants</a>
+                                
+                            </div>
+                            
+                    </div>
+                    
+                    <div class="col dropdown nav-item">
+                        
+                            <label for="desktopdrop1">Ressources<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="desktopdrop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                                  <a href="/fr/resources/about">À propos</a>
+                                
+                                  <a href="/fr/resources/roadmap">Feuille de route</a>
+                                
+                                  <a href="/fr/resources/research-lab">Laboratoire de Recherche</a>
+                                
+                                  <a href="/fr/resources/moneropedia">Moneropedia</a>
+                                
+                                  <a href="/fr/resources/user-guides">Guides Utilisateur</a>
+                                
+                                  <a href="/fr/resources/developer-guides">Guides du Dévelopeur</a>
+                                
+                                  <a href="/fr/technical-specs">Spécifications Techniques</a>
+                                
+                            </div>
+                            
+                    </div>
+                    
+                  </div>
+            </div>
+        </nav>
+        </div>
+        <div class="mob bot-nav white-nav">
+            <div class="row center-xs middle-xs">
+                <div class="col-xs-6">
+                    <a href="
+                    
+                    /fr
+                    
+                    "><img src="/img/monero-logo.png" alt="Monero Logo" class="monero-logo"></a>
+                </div>
+                <div class="dropdown col-xs-6 text-center mob-language-change">
+                <input class="burger-checkdropdown" id="moblangdrop" type="checkbox">
+                 <label for="moblangdrop"><img src="/img/language.png" alt="Lang" class="icon-language"/><div class="arrow-down"></div></label>
+                               <div class="mob dropdown-content text-center">
+                               <p class="mob-lang-change mob-lang-selected">
+                                   
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                                 Français
+                                
+                              
+                                   
+                               </p>
+                               
+                                
+                                  
+                                    <a class="mob-lang-change" href="/2016/03/19/overview-and-logs-for-the-dev-meeting-held-on-2016-03-19.html" >English</a>
+                                  
+                                
+                              
+                                
+                                  
+                                    <a class="mob-lang-change" href="/es/2016/03/19/overview-and-logs-for-the-dev-meeting-held-on-2016-03-19.html" >Español</a>
+                                  
+                                
+                              
+                                
+                                  
+                                    <a class="mob-lang-change" href="/it/2016/03/19/overview-and-logs-for-the-dev-meeting-held-on-2016-03-19.html" >Italiano</a>
+                                  
+                                
+                              
+                                
+                                  
+                                    <a class="mob-lang-change" href="/pl/2016/03/19/overview-and-logs-for-the-dev-meeting-held-on-2016-03-19.html" >Polski</a>
+                                  
+                                
+                              
+                                
+                              
+                            </div>
+                          </div>
+            </div>     
+        </div>    
+
+        
+
+<div class="site-wrap post">
+    
+    <section class="container">
+            <div class="row">
+                <!-- left two-thirds block-->
+                <div class="left two-thirds col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                    <div class="info-block">
+                        <div class="row">
+                            <div class="col">
+                               <h2>Overview and Logs for the Dev Meeting Held on 2016-03-19</h2> 
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p class="author">Publiés par: dEBRUYNE / fluffypony</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p>March 19, 2016</p>
+                            </div>
+                        </div>
+                    <div>
+                        <h1 id="logs">Logs</h1>
+
+<p><strong>&lt;dEBRUYNE&gt;</strong> dev meeting in 5 min, FYI<br />
+<strong>&lt;hyc&gt;</strong> dingdong<br />
+<strong>&lt;gingeropolous&gt;</strong> hello<br />
+<strong>&lt;dEBRUYNE&gt;</strong> fluffypony, smooth, othe, ArticMine, luigiw, NoodleDoodle, tewinget, moneromooo<br />
+<strong>&lt;floofypony&gt;</strong> there we go<br />
+<strong>&lt;dEBRUYNE&gt;</strong> did I forget anyone?<br />
+<strong>&lt;tewinget&gt;</strong> oh, hello<br />
+<strong>&lt;luigi&gt;</strong> is warptangent around?<br />
+<strong>&lt;ArticMine&gt;</strong> Hello<br />
+<strong>&lt;hyc&gt;</strong> he's been fighting a flu last we heard<br />
+<strong>&lt;moneromooo&gt;</strong> hi<br />
+<strong>&lt;NoodleDoodle&gt;</strong> Hello. I'm here but I'm fighting the apocalypse.<br />
+<strong>&lt;NoodleDoodle&gt;</strong> of flus.<br />
+<strong>&lt;luigi&gt;</strong> keep doing it<br />
+<strong>&lt;luigi&gt;</strong> wait you're alive that's good to hear<br />
+<strong>&lt;dEBRUYNE&gt;</strong> fluffypony seems ded<br />
+<strong>&lt;fluffypony&gt;</strong> sorry<br />
+<strong>&lt;fluffypony&gt;</strong> was eating<br />
+<strong>&lt;fluffypony&gt;</strong> welcome everyone<br />
+<strong>&lt;fluffypony&gt;</strong> so as you know we pushed out 0.9.2<br />
+<strong>&lt;fluffypony&gt;</strong> however, there are some nagging issues from the ReadTXN work<br />
+<strong>&lt;fluffypony&gt;</strong> hyc has nailed a major one as of a few hours ago<br />
+<strong>&lt;fluffypony&gt;</strong> so we'll probably do a point release on Monday or so<br />
+<strong>&lt;fluffypony&gt;</strong> also that means that the way we use LMDB has changed a bit<br />
+<strong>&lt;fluffypony&gt;</strong> hyc can you tell us briefly how we should wrapping access to LMDB, both read and write operations?<br />
+<strong>&lt;hyc&gt;</strong> Are you talking about the CRITICAL_REGION stuff?<br />
+<strong>&lt;fluffypony&gt;</strong> yes, and the cursors vs. txns stuff<br />
+<strong>&lt;hyc&gt;</strong> ok, the critical_region stuff actually is not a change at all.<br />
+<strong>&lt;hyc&gt;</strong> basically, when you're setting up to do a write, you need exclusive access to the DB<br />
+<strong>&lt;hyc&gt;</strong> this appears to have been a long-standing bug, unrelated to the readtxn changes<br />
+<strong>&lt;hyc&gt;</strong> so as for reads - there is now a long-lived read txn per thread<br />
+<strong>&lt;hyc&gt;</strong> and a set of read cursors to go with each<br />
+<strong>&lt;hyc&gt;</strong> the TXN_PREFIX_RDONLY macro sets that up in a particular function, grabbing the thread-local-storage for it<br />
+<strong>&lt;hyc&gt;</strong> and RCURSOR(dbname) sets up a read cursor for a particular DB<br />
+<strong>&lt;hyc&gt;</strong> these are analogous to the CURSOR(dbname) macro for getting a write cursor to a DB<br />
+<strong>&lt;hyc&gt;</strong> the point of all this is to avoid a bunch of malloc/free/seek when accessing a DB<br />
+<strong>&lt;hyc&gt;</strong> the old code was allocating a readtxn and cursors inside each function<br />
+<strong>&lt;hyc&gt;</strong> likewise for writes<br />
+<strong>&lt;hyc&gt;</strong> by reusing the same cursors acros a set oof functions we get a pretty good performance gain<br />
+<strong>&lt;hyc&gt;</strong> ok?<br />
+<strong>&lt;fluffypony&gt;</strong> neat<br />
+<strong>&lt;fluffypony&gt;</strong> also on the topic of stuff-hyc-did-lately<br />
+<strong>&lt;fluffypony&gt;</strong> if anyone missed it, we now have a win environment guide up on forum.getmonero.org<br />
+<strong>&lt;dEBRUYNE&gt;</strong> ^ https//forum.getmonero.org/5/support//building-monero-v0-9-2-on-winMonero<br />
+<strong>&lt;fluffypony&gt;</strong> so that should get us all on the same page with testing etc.<br />
+<strong>&lt;hyc&gt;</strong> and one success story replied to it already ;)<br />
+<strong>&lt;fluffypony&gt;</strong> we've also dropped support for BDB as the default database, and switched to LMDB as the default<br />
+<strong>&lt;fluffypony&gt;</strong> including on -bit and ARM<br />
+<strong>&lt;fluffypony&gt;</strong> BDB will remain supported for the moment, primarily as a mechanism for contributors to understand how to build out DB support<br />
+<strong>&lt;fluffypony&gt;</strong> krongle)<br />
+<strong>&lt;fluffypony&gt;</strong> shew we have the entire xmr.to team here today, that's awesome<br />
+<strong>&lt;binaryFate&gt;</strong> fluffypony good memory P<br />
+<strong>&lt;fluffypony&gt;</strong> we shared a podcast together, binaryFate -P<br />
+<strong>&lt;krongle&gt;</strong> yes - impressive nick-name recollection<br />
+<strong>&lt;fluffypony&gt;</strong> hah hah<br />
+<strong>&lt;fluffypony&gt;</strong> while we have you guys here, are you guys doing anything cool you want to talk about?<br />
+<strong>&lt;binaryFate&gt;</strong> we're doing many cool things, but nothing we can talk about at this stage<br />
+<strong>&lt;fluffypony&gt;</strong> hah hah<br />
+<strong>&lt;fluffypony&gt;</strong> it does lead to an interesting point of conversation<br />
+<strong>&lt;binaryFate&gt;</strong> seriously considering btc -&gt; xmr direction<br />
+<strong>&lt;fluffypony&gt;</strong> plugins<br />
+<strong>&lt;iam6yearsold&gt;</strong> If NobleSir or xmr.to team could talk more about xmr.to integration at MiniNero that would be great…. also are 2 way conversions coming to xmr.to soon?<br />
+<strong>&lt;fluffypony&gt;</strong> iam6yearsold Shen's offline at the moment, I'll ask him to update the Reddit thread with some info )<br />
+<strong>&lt;fluffypony&gt;</strong> re plugins, we've spoken briefly about options for the GUI<br />
+<strong>&lt;dEBRUYNE&gt;</strong> iam6yearsold There is a bit of info here -&gt; https//imgur.com/a/HZL7k<br />
+<strong>&lt;binaryFate&gt;</strong> iam6yearsold for MiniNero integration you'd have to see with NobleSir. The API doc is at http//xmrto-api.readthedocs.org/en/latest/<br />
+<strong>&lt;fluffypony&gt;</strong> but I guess we could have "plugins", of a sort, that add functionality<br />
+<strong>&lt;fluffypony&gt;</strong> like xmr.to or shapeshift integration right in wallet2 / wallet2_api<br />
+<strong>&lt;dEBRUYNE&gt;</strong> I think we should be fairly strict on which plugins to allow<br />
+<strong>&lt;binaryFate&gt;</strong> fluffypony we wanted to discuss that plugin integration soon in fact )<br />
+<strong>&lt;arnuschky&gt;</strong> we're quite interested to all secondary  questions related to plugins<br />
+<strong>&lt;fluffypony&gt;</strong> I guess the major question becomes<br />
+<strong>&lt;arnuschky&gt;</strong> so plugin repository/db, packaging, distribution etc<br />
+<strong>&lt;fluffypony&gt;</strong> do we allow "permissionless" plugin development, or do we just have a central repo that we git submodule in?<br />
+<strong>&lt;ArticMine&gt;</strong> The main question I see with plugins is trust<br />
+<strong>&lt;fluffypony&gt;</strong> ArticMine exactly<br />
+<strong>&lt;arnuschky&gt;</strong> yes. It puts quite a bit responsibility on the dev team<br />
+<strong>&lt;gingeropolous&gt;</strong> well no ones going to trust anything that doesn;t come from core<br />
+<strong>&lt;tewinget&gt;</strong> &lt;fluffypony&gt; we shared a podcast together, binaryFate -P  &lt;– wasn't I there for that?<br />
+<strong>&lt;fluffypony&gt;</strong> considering the recent Google Chrome Bitcoin stealing malware I think that premissionless plugins are dangerous<br />
+<strong>&lt;gingeropolous&gt;</strong> as we've seen with 3rd party GUIs<br />
+<strong>&lt;luigi&gt;</strong> you obviously can't stop permissionless dev, you can discourage users from trusting it I guess<br />
+<strong>&lt;hyc&gt;</strong> we can start signing binaries, ohjoy<br />
+<strong>&lt;dEBRUYNE&gt;</strong> I would prefer the latter<br />
+<strong>&lt;fluffypony&gt;</strong> luigi I mean permissionless within core<br />
+<strong>&lt;luigi&gt;</strong> oh<br />
+<strong>&lt;luigi&gt;</strong> I think no<br />
+<strong>&lt;arnuschky&gt;</strong> it's related to how plugins are written. If it's binary blobs, it's a) hard to build, distribute etc, and b) hard to examine<br />
+<strong>&lt;binaryFate&gt;</strong> fluffypony I'd see both possible all together. Unpermissioned scale and central repo for a selected subset would ease experience and trust for user<br />
+<strong>&lt;arnuschky&gt;</strong> so if plugins are interpreted (eg python), things become a whole lot easier<br />
+<strong>&lt;iam6yearsold&gt;</strong> for the record I hated the twittter plugin idea I saw a while back<br />
+<strong>&lt;ArticMine&gt;</strong> My take permissionless has to be allowed. The end user has to be made aware who is signing and if to trust the plugin<br />
+<strong>&lt;fluffypony&gt;</strong> well the Electrum model works well<br />
+<strong>&lt;moneromooo&gt;</strong> I agree with ArticMine<br />
+<strong>&lt;arnuschky&gt;</strong> (inspection in case of central repo, but also self-distribution by plugin devs)<br />
+<strong>&lt;fluffypony&gt;</strong> ThomasV will merge basically any plugin, as long as it's not malicious<br />
+<strong>&lt;fluffypony&gt;</strong> and plugins are part of the core code, effectively just in a subfolder<br />
+<strong>&lt;fluffypony&gt;</strong> I think it's a testament to Electrum that they haven't had a malicious plugin ever<br />
+<strong>&lt;arnuschky&gt;</strong> how do they deal with the upgrade/maintenance workload? Or do they just disable broken plugins?<br />
+<strong>&lt;dEBRUYNE&gt;</strong> Is there a way to make a subfolder in the subfolder? i.e. (1) signed and approved by core-team, (2) optional<br />
+<strong>&lt;fluffypony&gt;</strong> arnuschky yeah they just disable broken plugins, and eventually they get deprecated out<br />
+<strong>&lt;ArticMine&gt;</strong> We should allow self distribution with appropriate warning<br />
+<strong>&lt;fluffypony&gt;</strong> ArticMine anyone can compile their own build, which would be the same thing<br />
+<strong>&lt;arnuschky&gt;</strong> are you planning for compiled plugins or interpreted ones? that's quite a differens IMHO<br />
+<strong>&lt;fluffypony&gt;</strong> arnuschky so<br />
+<strong>&lt;arnuschky&gt;</strong> self-distribution is a mess for compiled ones…<br />
+<strong>&lt;fluffypony&gt;</strong> I was thinking we have a repo, say it's called monero-plugins<br />
+<strong>&lt;arnuschky&gt;</strong> audit as well<br />
+<strong>&lt;fluffypony&gt;</strong> and then anyone can PR to that repo<br />
+<strong>&lt;fluffypony&gt;</strong> and that repo is pulled into the main Monero source as a git submodule<br />
+<strong>&lt;fluffypony&gt;</strong> there are two advantages to this<br />
+<strong>&lt;fluffypony&gt;</strong> 1. as it gets bigger and harder to deal with, we can step back and other known members of the community can manage that repo<br />
+<strong>&lt;fluffypony&gt;</strong> 2. if we come up with a standard set of functionality hooks, then other projects can pull that same repo in<br />
+<strong>&lt;fluffypony&gt;</strong> eg. jwinterm's lightwallet<br />
+<strong>&lt;fluffypony&gt;</strong> also it means that the compiled Monero binaries have those plugins baked in, and you can't add extra plugins post-compile<br />
+<strong>&lt;fluffypony&gt;</strong> so no need to deal with interpreted code and securing that on disk and in memory<br />
+<strong>&lt;hyc&gt;</strong> baked in means no dynamic loading?<br />
+<strong>&lt;tewinget&gt;</strong> &lt;fluffypony&gt; so no need to deal with interpreted code and securing that on disk  &lt;– if securing an interpreted plugin on disk became an issue, securing the binary would be an issue anyway, so I don't know of that bit matters<br />
+<strong>&lt;binaryFate&gt;</strong> Sounds all good to us. If distribution is done through official channels it's great.<br />
+<strong>&lt;fluffypony&gt;</strong> hyc yes<br />
+<strong>&lt;fluffypony&gt;</strong> no dynamic loading<br />
+<strong>&lt;hyc&gt;</strong> cool<br />
+<strong>&lt;fluffypony&gt;</strong> tewinget I mean we can't secure it in the path from random-site-on-the-web down to random-download-folder and eventually into secure-disk-location<br />
+<strong>&lt;arnuschky&gt;</strong> fluffypony that would be really great.<br />
+<strong>&lt;fluffypony&gt;</strong> ok - I think next steps would be to consider some of the hooks we need to provide to add functionality<br />
+<strong>&lt;fluffypony&gt;</strong> we can use the Monero wikia as a collaboration area for that<br />
+<strong>&lt;ArticMine&gt;</strong> It is a good balance for plugins<br />
+<strong>&lt;fluffypony&gt;</strong> and then we'll just update the Monero Slack<br />
+<strong>&lt;arnuschky&gt;</strong> well securing the plugins can always happen by signature - no matter if interpreted or binary<br />
+<strong>&lt;fluffypony&gt;</strong> I'm kidding, we don't have a Slack<br />
+<strong>&lt;fluffypony&gt;</strong> we're not that cool<br />
+<strong>&lt;aerbax&gt;</strong> Would these plugins allow for interpreted languages like Lua or Python?<br />
+<strong>&lt;arnuschky&gt;</strong> :)<br />
+<strong>&lt;fluffypony&gt;</strong> aerbax I don't see why not, individual CMake files in each plugin folder that allow it to produce a library fix everything<br />
+<strong>&lt;binaryFate&gt;</strong> We could financially support development of plugin architecture if xmr.to is the first instanciation of those plugins.<br />
+<strong>&lt;fluffypony&gt;</strong> if it spits out a .so / .a / .dll with the right hooks then it's fine<br />
+<strong>&lt;tewinget&gt;</strong> fluffypony&gt; tewinget I mean we can't secure it in the path from random-site-on-the-web down to random-download-folder and eventually into secure-disk-location  &lt;– and yet, we provide binary downloads…so "random site on the web" could be managed the same as said binary downloads<br />
+<strong>&lt;tewinget&gt;</strong> just like any random site on the web can offer binaries for download and we can't secure that either<br />
+<strong>&lt;tewinget&gt;</strong> caveat emptor has to come into play at some point, I think<br />
+<strong>&lt;fluffypony&gt;</strong> the binaries present a single attack surface, and there's GPG-signed hashes<br />
+<strong>&lt;fluffypony&gt;</strong> if we have to do GPG-signed hashes for a bunch of .py files I think I'll go mad -P<br />
+<strong>&lt;tewinget&gt;</strong> I'm not saying I think it should be one way or another, I'm merely pointing out flaws in your argument P<br />
+<strong>&lt;fluffypony&gt;</strong> fair enough<br />
+<strong>&lt;fluffypony&gt;</strong> binaryFate I think the stumbling block will be that somebody needs to champion this and run with it, and I won't be able to lead it due to travelling in a week<br />
+<strong>&lt;ArticMine&gt;</strong> As long as people can compile their own version with non permissioned plugins this can work<br />
+<strong>&lt;luigi&gt;</strong> they can always do that<br />
+<strong>&lt;fluffypony&gt;</strong> yep<br />
+<strong>&lt;fluffypony&gt;</strong> and in fact that would be the testing model<br />
+<strong>&lt;luigi&gt;</strong> we're not apple )<br />
+<strong>&lt;fluffypony&gt;</strong> fork the repo, and build a binary to test your new plugin<br />
+<strong>&lt;iam6yearsold&gt;</strong> asking noobs to compile will limit adoption<br />
+<strong>&lt;ArticMine&gt;</strong> luigi Exactly<br />
+<strong>&lt;fluffypony&gt;</strong> iam6yearsold why would noobs be writing their own plugins?<br />
+<strong>&lt;gingeropolous&gt;</strong> for security<br />
+<strong>&lt;dEBRUYNE&gt;</strong> lol gingeropolous<br />
+<strong>&lt;fluffypony&gt;</strong> lol<br />
+<strong>&lt;arnuschky&gt;</strong> fluffypony championing the first plugin or the whole infrastructure?<br />
+<strong>&lt;tewinget&gt;</strong> What about a curated repo of plugins (as suggested) but with those plugins written in python/lua?  Someone modifying the python/lua on a target's disk is the same as someone modifying the binary anyway, and python/lua plugins would be far easier to develop and audit I think<br />
+<strong>&lt;fluffypony&gt;</strong> arnuschky championing the design, I guess<br />
+<strong>&lt;arnuschky&gt;</strong> tewinget I would prefer that.<br />
+<strong>&lt;iam6yearsold&gt;</strong> how about 1 version with binaries and gpg sig and no plugins? caveat emptor for the rest<br />
+<strong>&lt;arnuschky&gt;</strong> mostly due to auditing, and there's no build/distribution mess attached<br />
+<strong>&lt;fluffypony&gt;</strong> I would prefer we remain language agnostic<br />
+<strong>&lt;fluffypony&gt;</strong> iam6yearsold that's what we already have<br />
+<strong>&lt;tewinget&gt;</strong> fluffypony language-agnostic is fine, but…well, how do you imagine that will work out?<br />
+<strong>&lt;iam6yearsold&gt;</strong> thanks pony. I like the current situation then<br />
+<strong>&lt;fluffypony&gt;</strong> tewinget read up<br />
+<strong>&lt;arnuschky&gt;</strong> ah even language agnostic. I thought up to now it's supposed to be a C++ only API<br />
+<strong>&lt;tewinget&gt;</strong> as in, how do we become language-agnostic so that we can remain so?<br />
+<strong>&lt;fluffypony&gt;</strong> []  &lt;aerbax&gt;        Would these plugins allow for interpreted languages like Lua or Python?<br />
+<strong>&lt;fluffypony&gt;</strong> []  &lt;fluffypony&gt;   aerbax I don't see why not, individual CMake files in each plugin folder that allow it to produce a library fix everything<br />
+<strong>&lt;fluffypony&gt;</strong> ^^<br />
+<strong>* smooth</strong> is here<br />
+<strong>&lt;fluffypony&gt;</strong> also what if a plugin wants to call a function in the core crypto library, for instance?<br />
+<strong>&lt;arnuschky&gt;</strong> design-wise, that's sounds like a nightmare, no?<br />
+<strong>&lt;moneromooo&gt;</strong> Oh, so linked directly ? I kinda assumed it was gointg to be RPC based.<br />
+<strong>&lt;fluffypony&gt;</strong> ok well I think we're getting into an implementation discussion that's outside of the scope of this meeting<br />
+<strong>&lt;arnuschky&gt;</strong> I mean, if you don't have a small and defined API, every bigger change in the wallet will break plugins<br />
+<strong>&lt;arnuschky&gt;</strong> true )<br />
+<strong>&lt;fluffypony&gt;</strong> after the dev meeting we can continue this conversation if you guys want<br />
+<strong>&lt;fluffypony&gt;</strong> but let's first circle back around<br />
+<strong>&lt;luigi&gt;</strong> this deserves some kind of design thread like ringct imo<br />
+<strong>&lt;moneromooo&gt;</strong> Oh, link ?<br />
+<strong>&lt;fluffypony&gt;</strong> moneromooo: "this deserves"<br />
+<strong>&lt;fluffypony&gt;</strong> so nothing yet<br />
+<strong>&lt;moneromooo&gt;</strong> "like ringct"<br />
+<strong>&lt;fluffypony&gt;</strong> oh<br />
+<strong>&lt;fluffypony&gt;</strong> I see what you were asking<br />
+<strong>&lt;luigi&gt;</strong> oh<br />
+<strong>&lt;moneromooo&gt;</strong> Oh<br />
+<strong>&lt;fluffypony&gt;</strong> OH<br />
+<strong>&lt;luigi&gt;</strong> "like ringct is supposed to get"<br />
+<strong>&lt;moneromooo&gt;</strong> Fair enough.<br />
+<strong>&lt;fluffypony&gt;</strong> so basically this is all luigi's fault<br />
+<strong>&lt;luigi&gt;</strong> warp was gonna go it!@<br />
+<strong>&lt;gingeropolous&gt;</strong> its true. i mis-called out luigi on that one<br />
+<strong>&lt;fluffypony&gt;</strong> warptangent is off sick at the moment<br />
+<strong>&lt;luigi&gt;</strong> yes<br />
+<strong>&lt;luigi&gt;</strong> so I blame that<br />
+<strong>&lt;fluffypony&gt;</strong> I blame Canada<br />
+<strong>&lt;fluffypony&gt;</strong> ok back on track<br />
+<strong>&lt;fluffypony&gt;</strong> since the last meeting the bulk of the PRs have been bug fixes<br />
+<strong>&lt;fluffypony&gt;</strong> and changes to the way we access the DB as discussed at the beginning<br />
+<strong>&lt;fluffypony&gt;</strong> we also had a huge discussion about how to handle mixins below the minimum in the RPC call<br />
+<strong>&lt;fluffypony&gt;</strong> which was then implemented in #715<br />
+<strong>&lt;fluffypony&gt;</strong> I'm also going to try to personally spend some time on the text that users see, things like the level 0 logging output and the CLI flag help<br />
+<strong>&lt;luigi&gt;</strong> oh I was gonna do that<br />
+<strong>&lt;luigi&gt;</strong> but then I didn't<br />
+<strong>&lt;fluffypony&gt;</strong> luigi we can do it together<br />
+<strong>&lt;luigi&gt;</strong> awwww<br />
+<strong>&lt;fluffypony&gt;</strong> I can show you the world, shining shimmering splendid<br />
+<strong>&lt;gingeropolous&gt;</strong> take you wonder by wonder<br />
+<strong>&lt;fluffypony&gt;</strong> lol<br />
+<strong>&lt;fluffypony&gt;</strong> also #728 was a little contentious<br />
+<strong>&lt;fluffypony&gt;</strong> so we created a company called Mixinstream that has hired all the contributors<br />
+<strong>&lt;palexander&gt;</strong> heh heh<br />
+<strong>&lt;fluffypony&gt;</strong> and gingeropolous has launched Monero Classic<br />
+<strong>&lt;gingeropolous&gt;</strong> ( sorry )<br />
+<strong>&lt;fluffypony&gt;</strong> -P<br />
+<strong>&lt;fluffypony&gt;</strong> ok so #728 is Ilya's work as part of the GUI effort<br />
+<strong>&lt;dEBRUYNE&gt;</strong> Can I launch unlimited?<br />
+<strong>&lt;fluffypony&gt;</strong> he was struggling with wallet2, and decided to break it out into something more logical and usable<br />
+<strong>&lt;fluffypony&gt;</strong> (to him at any rate)<br />
+<strong>&lt;ArticMine&gt;</strong> What makes it contentious?<br />
+<strong>&lt;fluffypony&gt;</strong> ArticMine I'll get to that now<br />
+<strong>&lt;fluffypony&gt;</strong> he's unintuitively called it wallet2_api, which is a little confusing<br />
+<strong>&lt;fluffypony&gt;</strong> but basically a lot of it is a wallet2_api call which then does little additional logic, and mainly just passes stuff back to wallet2<br />
+<strong>&lt;fluffypony&gt;</strong> and there's a lot of DRY-violating code because of it<br />
+<strong>&lt;fluffypony&gt;</strong> obviously there was some push back, not to prevent merging it<br />
+<strong>&lt;fluffypony&gt;</strong> but more to understand the thought process<br />
+<strong>&lt;moneromooo&gt;</strong> Define DRY ?<br />
+<strong>&lt;iam6yearsold&gt;</strong> DRY violating scares the shit out of me<br />
+<strong>&lt;gingeropolous&gt;</strong> https//en.wikipedia.org/wiki/Don%t_repeat_yourself<br />
+<strong>&lt;gingeropolous&gt;</strong> maybe<br />
+<strong>&lt;fluffypony&gt;</strong> yes<br />
+<strong>&lt;fluffypony&gt;</strong> iam6yearsold DRY violations are just where you have a piece of code in two places<br />
+<strong>&lt;fluffypony&gt;</strong> so any changes have to happen in both<br />
+<strong>&lt;fluffypony&gt;</strong> we can treat the DRY-violating code as a temporary issue, though<br />
+<strong>&lt;iam6yearsold&gt;</strong> two places = more opportunity for error<br />
+<strong>&lt;fluffypony&gt;</strong> as we're going to wait until Ilya is done with it<br />
+<strong>&lt;ArticMine&gt;</strong> Which makes maintenance much harder<br />
+<strong>&lt;fluffypony&gt;</strong> and then we'll either drop wallet2 and replace it with the new wallet API<br />
+<strong>&lt;fluffypony&gt;</strong> (ie. replace the simplewallet calls as well)<br />
+<strong>&lt;fluffypony&gt;</strong> or if it's just a pointless layer we'll have to go the opposite route<br />
+<strong>&lt;fluffypony&gt;</strong> and change his Qt callers to use wallet2<br />
+<strong>&lt;fluffypony&gt;</strong> as it stands it's kinda undecided and we'll have to see how Ilya goes<br />
+<strong>&lt;ArticMine&gt;</strong> Is Ilya aware of the concern?<br />
+<strong>&lt;fluffypony&gt;</strong> ArticMine yes, we had some discussion on the PR, and othe has also spoken to him afaik<br />
+<strong>&lt;fluffypony&gt;</strong> he was responsive on the PR comments, but this isn't Bitcoin<br />
+<strong>&lt;fluffypony&gt;</strong> we don't ACK NACK utACK for years before merging somethingm<br />
+<strong>&lt;fluffypony&gt;</strong> aintnobodygottimeforthat.gif<br />
+<strong>&lt;luigi&gt;</strong> utNACK<br />
+<strong>&lt;fluffypony&gt;</strong> luigi #networknerd<br />
+<strong>&lt;moneromooo&gt;</strong> utACK was not a typo ?<br />
+<strong>&lt;luigi&gt;</strong> no<br />
+<strong>&lt;luigi&gt;</strong> means untested<br />
+<strong>&lt;luigi&gt;</strong> conceptACK or similar<br />
+<strong>&lt;fluffypony&gt;</strong> yeah<br />
+<strong>&lt;fluffypony&gt;</strong> moneromooo https//lists.linuxfoundation.org/pipermail/bitcoin-dev/-December/71.html<br />
+<strong>&lt;fluffypony&gt;</strong> if you're interested<br />
+<strong>&lt;hyc&gt;</strong> crap<br />
+<strong>&lt;fluffypony&gt;</strong> LOL<br />
+<strong>&lt;fluffypony&gt;</strong> PasteGate 2.0<br />
+<strong>&lt;gingeropolous&gt;</strong> internets<br />
+<strong>&lt;othe&gt;</strong> ur pasting skills suck<br />
+<strong>&lt;dEBRUYNE&gt;</strong> Hahah<br />
+<strong>&lt;fluffypony&gt;</strong> othe pasting is a scam<br />
+<strong>&lt;hyc&gt;</strong> that's how I write all my patches<br />
+<strong>&lt;fluffypony&gt;</strong> I just copy-and-paste code from StackExchange<br />
+<strong>&lt;gingeropolous&gt;</strong> thats my job<br />
+<strong>&lt;fluffypony&gt;</strong> heh<br />
+<strong>&lt;fluffypony&gt;</strong> ok so anyone who can reproduce the 0.9.2 segfault please try latest master<br />
+<strong>&lt;fluffypony&gt;</strong> and if you're still segfaulting let us know<br />
+<strong>&lt;fluffypony&gt;</strong> else we're going to do a point release on Monday<br />
+<strong>&lt;fluffypony&gt;</strong> 0.9.3, I guess?<br />
+<strong>&lt;luigi&gt;</strong> hrm<br />
+<strong>&lt;fluffypony&gt;</strong> or 0.9.2.1<br />
+<strong>&lt;luigi&gt;</strong> we're gonna run out of numbers at this rate<br />
+<strong>&lt;fluffypony&gt;</strong> yeah we are<br />
+<strong>&lt;luigi&gt;</strong> oh wait<br />
+<strong>&lt;hyc&gt;</strong> 0921<br />
+<strong>&lt;luigi&gt;</strong> we have 0.10<br />
+<strong>&lt;luigi&gt;</strong> nevermind<br />
+<strong>&lt;iam6yearsold&gt;</strong> will there be multiple devs in IRC at time of hard fork this week just in case? I see a few pools still on old cold and probably a few users too<br />
+<strong>&lt;fluffypony&gt;</strong> yes we just do a Bitcoin<br />
+<strong>&lt;moneromooo&gt;</strong> No chance, there's an infinity of those.<br />
+<strong>&lt;fluffypony&gt;</strong> 0.11<br />
+<strong>&lt;fluffypony&gt;</strong> iam6yearsold yes, and we've reached out to as many of them as we can<br />
+<strong>&lt;luigi&gt;</strong> is 0.10 supposed to be for next hard fork?<br />
+<strong>&lt;fluffypony&gt;</strong> luigi fork that<br />
+<strong>&lt;fluffypony&gt;</strong> when warptangent is back we'll see how it goes on ringCT<br />
+<strong>&lt;fluffypony&gt;</strong> and make a more concrete decision as to the timing of the next fork<br />
+<strong>&lt;dEBRUYNE&gt;</strong> iam6yearsold The hardfork will approximately take place at 13:00 UTC, so both US and Europe will probably be awake<br />
+<strong>&lt;dEBRUYNE&gt;</strong> and Asia of course<br />
+<strong>&lt;luigi&gt;</strong> everyone will be awake<br />
+<strong>&lt;fluffypony&gt;</strong> even me<br />
+<strong>&lt;dEBRUYNE&gt;</strong> hawaii will probably be asleep<br />
+<strong>&lt;dEBRUYNE&gt;</strong> -P<br />
+<strong>&lt;fluffypony&gt;</strong> heh<br />
+<strong>&lt;dEBRUYNE&gt;</strong> fwiw!<br />
+<strong>&lt;luigi&gt;</strong> wat<br />
+<strong>&lt;Wolf`&gt;</strong> lol<br />
+<strong>&lt;smooth&gt;</strong> we should also consider what else we should go in the next major version besides ringct (doesn't need to be discussed now)<br />
+<strong>&lt;dEBRUYNE&gt;</strong> uh I meant  UTC btw<br />
+<strong>&lt;dEBRUYNE&gt;</strong> you muricans with AM/PM<br />
+<strong>&lt;Wolf`&gt;</strong> who got drunk and posted about a party in #monero-dev<br />
+<strong>&lt;luigi&gt;</strong> oh<br />
+<strong>&lt;luigi&gt;</strong> then america won't be up<br />
+<strong>&lt;moneromooo&gt;</strong> The db reorg seems like a good candidate.<br />
+<strong>&lt;luigi&gt;</strong> oh well<br />
+<strong>&lt;fluffypony&gt;</strong> smooth agreed<br />
+<strong>&lt;dEBRUYNE&gt;</strong> east coast will right?<br />
+<strong>&lt;luigi&gt;</strong> sure ish<br />
+<strong>&lt;dEBRUYNE&gt;</strong> You better set your alarm luigi<br />
+<strong>&lt;dEBRUYNE&gt;</strong> :-P<br />
+<strong>&lt;fluffypony&gt;</strong> Surae is also going to be picking up MRL-6 in the summer<br />
+<strong>&lt;fluffypony&gt;</strong> he has some ideas about how to complete that<br />
+<strong>&lt;dEBRUYNE&gt;</strong> MRL-6 is multisig?<br />
+<strong>&lt;iam6yearsold&gt;</strong> I will party hard if fork happens with no drama<br />
+<strong>&lt;fluffypony&gt;</strong> dEBRUYNE: no<br />
+<strong>&lt;fluffypony&gt;</strong> https//github.com/monero-project/research-lab/tree/master/publications/MRL-%-%Difficulty%Adjustment%Algorithms%in%Cryptocurrency%Protocols<br />
+<strong>&lt;dEBRUYNE&gt;</strong> oh cool, thanks<br />
+<strong>&lt;moneromooo&gt;</strong> How do get cmake to tell you the commands it's running ?<br />
+<strong>&lt;luigi&gt;</strong> we have diff, we have db stuff, we have fee stuff<br />
+<strong>&lt;fluffypony</strong>&gt; moneromooo: I normally make VERBOSE=1<br />
+<strong>&lt;moneromooo&gt;</strong> Thanks, I was trying V=1<br />
+<strong>&lt;luigi&gt;</strong> I like my V=2<br />
+<strong>&lt;fluffypony&gt;</strong> ok - any last things to add<br />
+<strong>&lt;fluffypony&gt;</strong> or can we call it?<br />
+<strong>&lt;luigi&gt;</strong> call it</p>
+
+                    </div>
+                    <hr>
+                    <p id="post-meta">Post tags <i class="fa fa-tags"></i>: <a href="/blog/tags/dev diaries.html">Dev Diaries</a>, <a href="/blog/tags/core.html">Monero Core</a>, <a href="/blog/tags/crypto.html">Cryptography</a></p>
+                    </div>
+                </div>
+                <!-- end left two-thirds block-->
+                
+                <!-- right one-third block-->
+                <div class="right one-third col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <div class="sidebar col-sm-12 col-xs-12">   
+                            <div class="info-block">
+                                <div class="row center-xs">
+                                    <div class="col"><h2>Recent Posts</h2></div>
+                                </div>
+                                
+                                <div class="row start-xs info-block-row">
+                                    <div class="col">
+                                         <p><a href="/2018/03/29/response-to-an-empirical-analysis-of-traceability.html">Response to "An Empirical Analysis of Traceability in the Monero Blockchain", Version 2</a></p>
+                                     </div>
+                                </div>
+                                
+                                <div class="row start-xs info-block-row">
+                                    <div class="col">
+                                         <p><a href="/2018/03/29/monero-0.12.0.0-released.html">Monero 0.12.0.0 "Lithium Luna" Release</a></p>
+                                     </div>
+                                </div>
+                                
+                                <div class="row start-xs info-block-row">
+                                    <div class="col">
+                                         <p><a href="/2018/03/28/a-scheduled-protocol-upgrade-is-planned-for-April-6-2018-03-28.html">A Scheduled Network Upgrade is Planned for April 6</a></p>
+                                     </div>
+                                </div>
+                                
+                                <div class="row start-xs info-block-row">
+                                    <div class="col">
+                                         <p><a href="/2018/03/01/core-team-announcement.html">Core Team Announcement</a></p>
+                                     </div>
+                                </div>
+                                
+                            </div>
+                            <div class="info-block">
+                                <div class="row center-xs">
+                                    <div class="col">
+                                        <h2>Popular Tags</h2>
+                                    </div>
+                                </div>
+                                    
+                                    <div class="row start-xs">
+                                        <div class="col">
+                                             <p><a href="/blog/tags/monero missives.html">Monero Missives</a></p>
+                                         </div>
+                                     </div>
+                                     
+                                    <div class="row start-xs">
+                                        <div class="col">
+                                             <p><a href="/blog/tags/conferences.html">Conferences</a></p>
+                                         </div>
+                                     </div>
+                                     
+                                    <div class="row start-xs">
+                                        <div class="col">
+                                             <p><a href="/blog/tags/exchanges.html">Exchanges</a></p>
+                                         </div>
+                                     </div>
+                                     
+                                    <div class="row start-xs">
+                                        <div class="col">
+                                             <p><a href="/blog/tags/gui.html">Monero Core GUI</a></p>
+                                         </div>
+                                     </div>
+                                     
+
+
+                            </div>
+                        </div> 
+                </div>
+                <!-- end right one-third block-->
+            </div>
+        </section>
+    </div>
+
+    <footer class="container-fluid">
+            <div class="container">
+                <div class="row around-xs footer-wrapper">
+                   
+                     <div class="col-sm-3 col-xs-6">
+                     <h3>Resources</h3>
+                         <ul class="list-unstyled">
+                            
+                             
+                                <li><a class="white" href="/fr/resources/about/">À propos de Monero</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/fr/resources/moneropedia/">Moneropedia</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/fr/resources/developer-guides/">Guides du Dévelopeur</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/fr/resources/user-guides/">Guides Utilisateur</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://getmonero.org/feed.xml">Flux RSS</a></li>
+                              
+                            
+                         </ul>
+                     </div>
+                  
+                     <div class="col-sm-3 col-xs-6">
+                     <h3>Canaux IRC</h3>
+                         <ul class="list-unstyled">
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero">monero</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-dev">monero-dev</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-markets">monero-markets</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-pools">monero-pools</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-community">monero-community</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-translations">monero-translations</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-hardware">monero-hardware</a></li>
+                              
+                            
+                         </ul>
+                     </div>
+                  
+                     <div class="col-sm-3 col-xs-6">
+                     <h3>Communauté</h3>
+                         <ul class="list-unstyled">
+                            
+                             
+                              <li><a class="white" href="https://reddit.com/r/monero">Reddit</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://monero.stackexchange.com/">Stack Exchange</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://bitcointalk.org/index.php?topic=583449.0">Fil BitcoinTalk</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://mattermost.getmonero.org/">Discussion Mattermost</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://telegram.me/bitmonero">Discussion Telegram</a></li>
+                              
+                            
+                         </ul>
+                     </div>
+                  
+                     <div class="col-sm-3 col-xs-6">
+                     <h3>Le Projet Monero</h3>
+                         <ul class="list-unstyled">
+                            
+                             
+                              <li><a class="white" href="https://openalias.org/">Open Alias</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://getkovri.org/">Kovri</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/fr/resources/research-lab/">Laboratoire de Recherche Monero</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/fr/press-kit">Dossier de Presse Monero</a></li>
+                              
+                            
+                         </ul>
+                     </div>
+                 
+                <div class="row center-xs">
+                    <div class="social-icons">
+                    </div>
+                    <div class="footer-links">
+                        <ul class="list-unstyled list-inline">
+                           
+                            
+                             <li><a href="/fr/legal" class="white footer-link">Juridique</a></li>
+                           
+                           
+                            
+                             <li><a href="https://github.com/monero-project" class="white footer-link">Code Source</a></li>
+                            
+                           
+                            
+                             <li><a href="/fr/technical-specs/" class="white footer-link">Spécifications Techniques</a></li>
+                           
+                           
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
+</footer>
+<!-- Matomo -->
+<script type="text/javascript">
+    var _paq = _paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+        var u = "//analytics.getmonero.org/";
+        _paq.push(['setTrackerUrl', u + 'piwik.php']);
+        _paq.push(['setSiteId', '1']);
+        var d = document,
+            g = d.createElement('script'),
+            s = d.getElementsByTagName('script')[0];
+        g.type = 'text/javascript';
+        g.async = true;
+        g.defer = true;
+        g.src = u + 'piwik.js';
+        s.parentNode.insertBefore(g, s);
+    })();
+</script>
+<!-- End Matomo Code -->
+<!-- page served by server N -->
+    </div>
+  </body>
+</html>

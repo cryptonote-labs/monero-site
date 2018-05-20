@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>
+     Overview and Logs for the Dev Meeting Held on 2017-12-17 | Monero - sécurisé, confidentiel, intracable
+    </title>
+	<meta name="description" content="Overview and Logs for the Dev Meeting Held on 2017-12-17 [accueil de Monero, une monnaie digitale qui est sécurisée, confidentielle, et intracable]">
+	<meta name="keywords" content="monero, xmr, bitmonero, cryptocurrency">
+
+    <meta property="og:title" content="Monero: Overview and Logs for the Dev Meeting Held on 2017-12-17"/>
+    <meta property="og:description" content="Overview and Logs for the Dev Meeting Held on 2017-12-17 [accueil de Monero, une monnaie digitale qui est sécurisée, confidentielle, et intracable]">
+    <meta property="og:image" content="http://static.getmonero.org/images/opengraph/logo.png">
+    <meta property="og:site_name" content="getmonero.org, Le Projet Monero">
+    <meta property="og:url" content="https://getmonero.org/2017/12/17/overview-and-logs-for-the-dev-meeting-held-on-2017-12-17.html">
+    <meta property="og:type" content="website">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/meta/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/meta/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/meta/favicon-16x16.png">
+        <link rel="manifest" href="/meta/manifest.json">
+        <link rel="mask-icon" href="/meta/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="theme-color" content="#ffffff">
+
+    <link href="/css/custom.css" rel="stylesheet">
+
+    
+    <meta name="msapplication-config" content="/ietemplates/ieconfig.xml">
+
+  </head>
+
+
+  <body>
+    <div class="page-wrapper">
+          
+<div class="mob-nav">
+              <input class="burger-check" id="mobile-burger" type="checkbox"><label for="mobile-burger" class="burger"></label>
+           
+        <div class="slide-in-nav">
+             <div class="container slide-in">
+                     
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                            
+                            <label for="drop1">Commencer<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="drop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                              <a href="/fr/get-started/what-is-monero">Qu'est-ce que Monero ?</a>
+                                  
+                              <a href="/fr/get-started/using">Utiliser</a>
+                                  
+                              <a href="/fr/get-started/accepting">Accepter</a>
+                                  
+                              <a href="/fr/get-started/contributing">Contribuer</a>
+                                  
+                              <a href="/fr/get-started/mining">Miner</a>
+                                  
+                              <a href="/fr/get-started/faq">FAQ</a>
+                                  
+                            </div>
+                            
+                     </div>
+                 </div>
+                  
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                               <a href="/fr/downloads/">Téléchargements</a>
+                            
+                     </div>
+                 </div>
+                  
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                            
+                            <label for="drop2">Actualités<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="drop2" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                              <a href="/fr/blog">Toutes</a>
+                                  
+                              <a href="/fr/blog/tags/monero%20missives.html">Missives</a>
+                                  
+                              <a href="/fr/blog/tags/dev%20diaries.html">Comptes-rendus de Réunions</a>
+                                  
+                              <a href="/fr/blog/tags/releases.html">Versions</a>
+                                  
+                            </div>
+                            
+                     </div>
+                 </div>
+                  
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                            
+                            <label for="drop3">Communauté<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="drop3" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                              <a href="/fr/community/team">Équipe</a>
+                                  
+                              <a href="/fr/community/hangouts">Rencontres</a>
+                                  
+                              <a href="/fr/community/sponsorships">Parrainages</a>
+                                  
+                              <a href="/fr/community/merchants">Commerçants</a>
+                                  
+                            </div>
+                            
+                     </div>
+                 </div>
+                  
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                            
+                            <label for="drop4">Ressources<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="drop4" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                              <a href="/fr/resources/about">À propos</a>
+                                  
+                              <a href="/fr/resources/roadmap">Feuille de route</a>
+                                  
+                              <a href="/fr/resources/research-lab">Laboratoire de Recherche</a>
+                                  
+                              <a href="/fr/resources/moneropedia">Moneropedia</a>
+                                  
+                              <a href="/fr/resources/user-guides">Guides Utilisateur</a>
+                                  
+                              <a href="/fr/resources/developer-guides">Guides du Dévelopeur</a>
+                                  
+                              <a href="/fr/technical-specs">Spécifications Techniques</a>
+                                  
+                            </div>
+                            
+                     </div>
+                 </div>
+                 
+                 <div class="row">
+                     <div class="col-xs-12">
+                         <div class="text-center nav-item mob">
+                            <a href="https://forum.getmonero.org">Forum Funding System</a> 
+                         </div>
+                     </div>
+                 </div>
+                 <div class="row">
+                     <div class="col-xs-12">
+                         <div class="text-center nav-item mob">
+                            <a href="https://github.com/monero-project/meta/blob/master/VULNERABILITY_RESPONSE_PROCESS.md">Vulnerability Response</a>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="row">
+                     <div class="col-xs-12">
+                         <div class="text-center nav-item mob">
+                            <a href="/fr/the-monero-project/">The Monero Project</a> 
+                         </div>
+                     </div>
+                 </div>            
+             </div>
+          
+        </div>
+       </div>
+       
+        <div class="desktop-nav">
+            <nav class="container">
+            <div class="topnav">
+              <div class="row middle-xs">
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <a href="
+                    
+                    /fr
+                    
+                    "><img src="/img/monero-logo.png" alt="Monero Logo" class="monero-logo"></a>
+                  </div>
+                  <div class="col-lg-8 col-md-8 col-sm-8 topnav-list end-xs">
+                      <div class="row end-xs middle-xs">
+                         <div class="col-md-12">
+                          <a href="https://forum.getmonero.org" class="top-link">Forum Funding System</a>
+                          <a href="https://github.com/monero-project/meta/blob/master/VULNERABILITY_RESPONSE_PROCESS.md" class="top-link">Vulnerability Response</a>
+                          <a href="/fr/the-monero-project/" class="top-link">The Monero Project</a>
+                          <div href="#" class="dropdown top-link language-change">
+                            <input class="burger-checkdropdown" id="langdrop" type="checkbox">
+                            <label for="langdrop">
+                            
+                                
+                            
+                            
+                            
+                                
+                            
+                            
+                            
+                                
+                            
+                            
+                            
+                                
+                            
+                            
+                            
+                                
+                            
+                                    Français
+                            
+                                
+                            
+                            <div class="arrow-down"></div></label>
+                            <div class="dropdown-content text-center">
+                                    
+                                
+                                  
+                                    <a href="/2017/12/17/overview-and-logs-for-the-dev-meeting-held-on-2017-12-17.html" >English</a>
+                                  
+                                
+                              
+                                
+                                  
+                                    <a href="/es/2017/12/17/overview-and-logs-for-the-dev-meeting-held-on-2017-12-17.html" >Español</a>
+                                  
+                                
+                              
+                                
+                                  
+                                    <a href="/it/2017/12/17/overview-and-logs-for-the-dev-meeting-held-on-2017-12-17.html" >Italiano</a>
+                                  
+                                
+                              
+                                
+                                  
+                                    <a href="/pl/2017/12/17/overview-and-logs-for-the-dev-meeting-held-on-2017-12-17.html" >Polski</a>
+                                  
+                                
+                              
+                                
+                              
+                            </div>
+                          </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="botnav white-nav">
+                <input class="burger-check" id="burger-check" type="checkbox"><label for="burger-check" class="burger"></label>
+                <div class="row between-xs nav-items">
+                     
+                    <div class="col dropdown nav-item">
+                        
+                            <label for="desktopdrop1">Commencer<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="desktopdrop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                                  <a href="/fr/get-started/what-is-monero">Qu'est-ce que Monero ?</a>
+                                
+                                  <a href="/fr/get-started/using">Utiliser</a>
+                                
+                                  <a href="/fr/get-started/accepting">Accepter</a>
+                                
+                                  <a href="/fr/get-started/contributing">Contribuer</a>
+                                
+                                  <a href="/fr/get-started/mining">Miner</a>
+                                
+                                  <a href="/fr/get-started/faq">FAQ</a>
+                                
+                            </div>
+                            
+                    </div>
+                    
+                    <div class="col dropdown nav-item">
+                        
+                           <a href="/fr/downloads/">Téléchargements</a>
+                            
+                    </div>
+                    
+                    <div class="col dropdown nav-item">
+                        
+                            <label for="desktopdrop1">Actualités<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="desktopdrop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                                  <a href="/fr/blog">Toutes</a>
+                                
+                                  <a href="/fr/blog/tags/monero%20missives.html">Missives</a>
+                                
+                                  <a href="/fr/blog/tags/dev%20diaries.html">Comptes-rendus de Réunions</a>
+                                
+                                  <a href="/fr/blog/tags/releases.html">Versions</a>
+                                
+                            </div>
+                            
+                    </div>
+                    
+                    <div class="col dropdown nav-item">
+                        
+                            <label for="desktopdrop1">Communauté<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="desktopdrop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                                  <a href="/fr/community/team">Équipe</a>
+                                
+                                  <a href="/fr/community/hangouts">Rencontres</a>
+                                
+                                  <a href="/fr/community/sponsorships">Parrainages</a>
+                                
+                                  <a href="/fr/community/merchants">Commerçants</a>
+                                
+                            </div>
+                            
+                    </div>
+                    
+                    <div class="col dropdown nav-item">
+                        
+                            <label for="desktopdrop1">Ressources<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="desktopdrop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                                  <a href="/fr/resources/about">À propos</a>
+                                
+                                  <a href="/fr/resources/roadmap">Feuille de route</a>
+                                
+                                  <a href="/fr/resources/research-lab">Laboratoire de Recherche</a>
+                                
+                                  <a href="/fr/resources/moneropedia">Moneropedia</a>
+                                
+                                  <a href="/fr/resources/user-guides">Guides Utilisateur</a>
+                                
+                                  <a href="/fr/resources/developer-guides">Guides du Dévelopeur</a>
+                                
+                                  <a href="/fr/technical-specs">Spécifications Techniques</a>
+                                
+                            </div>
+                            
+                    </div>
+                    
+                  </div>
+            </div>
+        </nav>
+        </div>
+        <div class="mob bot-nav white-nav">
+            <div class="row center-xs middle-xs">
+                <div class="col-xs-6">
+                    <a href="
+                    
+                    /fr
+                    
+                    "><img src="/img/monero-logo.png" alt="Monero Logo" class="monero-logo"></a>
+                </div>
+                <div class="dropdown col-xs-6 text-center mob-language-change">
+                <input class="burger-checkdropdown" id="moblangdrop" type="checkbox">
+                 <label for="moblangdrop"><img src="/img/language.png" alt="Lang" class="icon-language"/><div class="arrow-down"></div></label>
+                               <div class="mob dropdown-content text-center">
+                               <p class="mob-lang-change mob-lang-selected">
+                                   
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                                 Français
+                                
+                              
+                                   
+                               </p>
+                               
+                                
+                                  
+                                    <a class="mob-lang-change" href="/2017/12/17/overview-and-logs-for-the-dev-meeting-held-on-2017-12-17.html" >English</a>
+                                  
+                                
+                              
+                                
+                                  
+                                    <a class="mob-lang-change" href="/es/2017/12/17/overview-and-logs-for-the-dev-meeting-held-on-2017-12-17.html" >Español</a>
+                                  
+                                
+                              
+                                
+                                  
+                                    <a class="mob-lang-change" href="/it/2017/12/17/overview-and-logs-for-the-dev-meeting-held-on-2017-12-17.html" >Italiano</a>
+                                  
+                                
+                              
+                                
+                                  
+                                    <a class="mob-lang-change" href="/pl/2017/12/17/overview-and-logs-for-the-dev-meeting-held-on-2017-12-17.html" >Polski</a>
+                                  
+                                
+                              
+                                
+                              
+                            </div>
+                          </div>
+            </div>     
+        </div>    
+
+        
+
+<div class="site-wrap post">
+    
+    <section class="container">
+            <div class="row">
+                <!-- left two-thirds block-->
+                <div class="left two-thirds col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                    <div class="info-block">
+                        <div class="row">
+                            <div class="col">
+                               <h2>Overview and Logs for the Dev Meeting Held on 2017-12-17</h2> 
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p class="author">Publiés par: dEBRUYNE / fluffypony</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p>December 17, 2017</p>
+                            </div>
+                        </div>
+                    <div>
+                        <h1 id="overview">Overview</h1>
+
+<p>An overview can be found on <a href="https://monerobase.com/wiki/DevMeeting_2017-12-17">MoneroBase</a>.</p>
+
+<h1 id="logs">Logs</h1>
+
+<p><strong>&lt;fluffypony&gt;</strong> 1. Greetings<br />
+<strong>&lt;fluffypony&gt;</strong> 2. Brief review of what's been completed since the previous meeting<br />
+<strong>&lt;fluffypony&gt;</strong> 3. March hardfork items + code freeze<br />
+<strong>&lt;fluffypony&gt;</strong> 4. Code + ticket discussion / Q &amp; A<br />
+<strong>&lt;fluffypony&gt;</strong> 5. Any additional meeting items<br />
+<strong>&lt;fluffypony&gt;</strong> 6. Confirm next meeting date/time<br />
+<strong>&lt;fluffypony&gt;</strong> I think we've done 1. so we'll skip it<br />
+<strong>&lt;fluffypony&gt;</strong> 2. Brief review of what's been completed since the previous meeting<br />
+<strong>&lt;fluffypony&gt;</strong> well Bulletproofs went live on testnet<br />
+<strong>&lt;fluffypony&gt;</strong> so there's that<br />
+<strong>&lt;fluffypony&gt;</strong> and we merged some stuff<br />
+<strong>&lt;fluffypony&gt;</strong> moneromooo: anything in particular you want to highlight?<br />
+<strong>&lt;moneromooo&gt;</strong> Ah, whether to enable them for v7 or v8 on mainnet.<br />
+<strong>&lt;fluffypony&gt;</strong> that's the next point<br />
+<strong>&lt;fluffypony&gt;</strong> I meant anything in 2. you want to highlight :)<br />
+<strong>&lt;moneromooo&gt;</strong> Not in particular,  no.<br />
+<strong>&lt;HUCK45&gt;</strong> Hey all, I just saw that awesome project recently and a question came to my mind- why there isn’t any option for GPU mining instead of CPU? Browsers these days allow that, by webgl for example (depending on the user settings, but on default it uses gpu)<br />
+<strong>&lt;fluffypony&gt;</strong> HUCK45: we're in a meeting - feel free to take that to #monero<br />
+<strong>&lt;rehrar&gt;</strong> HUCK45 we're in a dev meeting right now. :) This'll have to wait.<br />
+<strong>&lt;suraeNoether&gt;</strong> as far as MRL is concerned: the math on bulletproofs seems tight, but the best test for cryptography is time<br />
+<strong>&lt;fluffypony&gt;</strong> ok so I'll highlight a few PRs<br />
+<strong>&lt;fluffypony&gt;</strong> suraeNoether: not there yet<br />
+<strong>&lt;suraeNoether&gt;</strong> oh woops<br />
+<strong>&lt;fluffypony&gt;</strong> #2878 tightens up –offline mode by disabling DNS lookups<br />
+<strong>&lt;fluffypony&gt;</strong> #2877 refactors a bunch of p2p stuff<br />
+<strong>&lt;fluffypony&gt;</strong> and then the obvious bug fixes and improvements<br />
+<strong>&lt;fluffypony&gt;</strong> Bulletproofs on testnet is in #2883<br />
+<strong>&lt;fluffypony&gt;</strong> which brings us to 3. March hardfork items + code freeze<br />
+<strong>&lt;fluffypony&gt;</strong> so v7 already has sorted inputs<br />
+<strong>&lt;fluffypony&gt;</strong> moneromooo: do you want to explain that?<br />
+<strong>&lt;moneromooo&gt;</strong> Sorted inputs? Or bp ?<br />
+<strong>&lt;moneromooo&gt;</strong> I assume bp. They're just a smaller sized range proof system.<br />
+<strong>&lt;fluffypony&gt;</strong> sorted inputs<br />
+<strong>&lt;fluffypony&gt;</strong> I assume everyone knows what BP is<br />
+<strong>&lt;moneromooo&gt;</strong> Well, just… sort inputs by their key image. Nothing more.<br />
+<strong>&lt;iDunk&gt;</strong> Is it like unsorted inputs, but sorted ?<br />
+<strong>&lt;fluffypony&gt;</strong> iDunk: kinda<br />
+<strong>&lt;gingeropolous&gt;</strong> and why sort?<br />
+<strong>&lt;moneromooo&gt;</strong> Kinda :)<br />
+<strong>&lt;fluffypony&gt;</strong> gingeropolous: that's the big question<br />
+<strong>&lt;iDunk&gt;</strong> Cool :)<br />
+<strong>&lt;gingeropolous&gt;</strong> :)<br />
+<strong>&lt;fluffypony&gt;</strong> it's to prevent metadata leaking<br />
+<strong>&lt;fluffypony&gt;</strong> eg. the specific wallet used for a tx<br />
+<strong>&lt;moneromooo&gt;</strong> To avoid broken implementations leak stuff. It'd be better for outputs (ie, always put change last, etc), but unfortunately it doesn't work for outputs as the keys depend on their index.<br />
+<strong>&lt;moneromooo&gt;</strong> It has become hairy after subaddresses unfortunately, at least for the small benefit.<br />
+<strong>&lt;luigi1111w&gt;</strong> which?<br />
+<strong>&lt;moneromooo&gt;</strong> What is the question ?<br />
+<strong>&lt;luigi1111w&gt;</strong> what is "it"<br />
+<strong>&lt;fluffypony&gt;</strong> ordering outputs<br />
+<strong>&lt;moneromooo&gt;</strong> inputs.<br />
+<strong>&lt;luigi1111w&gt;</strong> subaddress or multisig?<br />
+<strong>&lt;moneromooo&gt;</strong> I'll rephrase:<br />
+<strong>&lt;moneromooo&gt;</strong> The input sorting code has become hairy after subaddresses unfortunately, at least for the small benefit.<br />
+<strong>&lt;luigi1111w&gt;</strong> yes that was clear, just not why<br />
+<strong>&lt;luigi1111w&gt;</strong> well was clear after &lt;moneromooo&gt; inputs.<br />
+<strong>&lt;moneromooo&gt;</strong> Because the sorting was internal to construct_tx before, now it's changed in the caller as well.<br />
+<strong>&lt;luigi1111w&gt;</strong> ok<br />
+<strong>&lt;moneromooo&gt;</strong> So that means you have to order selected_transfers too, and possible something else, can't recall exactly.<br />
+<strong>&lt;moneromooo&gt;</strong> Anyway, it's just minutiae particular to our wallet code.<br />
+<strong>&lt;luigi1111w&gt;</strong> btw, change being last doesn't leak metadata<br />
+<strong>&lt;moneromooo&gt;</strong> It doesn't leak that change is that ?<br />
+<strong>&lt;moneromooo&gt;</strong> It doesn't leak that change is last ?<br />
+<strong>&lt;luigi1111w&gt;</strong> right<br />
+<strong>&lt;luigi1111w&gt;</strong> or what wallet was used<br />
+<strong>&lt;moneromooo&gt;</strong> OK, it leaks that change is more likely to be last than otherwise.<br />
+<strong>&lt;luigi1111w&gt;</strong> is it?<br />
+<strong>&lt;luigi1111w&gt;</strong> what if a popular wallet puts it first<br />
+<strong>&lt;moneromooo&gt;</strong> x+epsilon &gt; x, even if epsilon is very small.<br />
+<strong>&lt;moneromooo&gt;</strong> (assuming epsilon is positive)<br />
+<strong>&lt;fluffypony&gt;</strong> luigi1111w: the onus is on wallets to follow the pattern<br />
+<strong>&lt;luigi1111w&gt;</strong> what pattern<br />
+<strong>&lt;luigi1111w&gt;</strong> why is there a pattern<br />
+<strong>&lt;moneromooo&gt;</strong> I'm lost here, I'll wait.<br />
+<strong>&lt;luigi1111w&gt;</strong> me too :)<br />
+<strong>&lt;moneromooo&gt;</strong> Maybe ask your question again, rephrased :)<br />
+<strong>&lt;pigeons&gt;</strong> I guess if there is an intentional pattern, there won't be several accidental identifying ones<br />
+<strong>&lt;rbrunner&gt;</strong> Fingerprinting wallets?<br />
+<strong>&lt;luigi1111w&gt;</strong> my point is chnage isn't a fingerprinting pattern for wallets<br />
+<strong>&lt;luigi1111w&gt;</strong> well my new point, whatever<br />
+<strong>&lt;luigi1111w&gt;</strong> anyway it doesn't really matter as we're not doing it anyway<br />
+<strong>&lt;fluffypony&gt;</strong> ok let's talk about Bulletproofs then<br />
+<strong>&lt;fluffypony&gt;</strong> suraeNoether: your turn :)<br />
+<strong>&lt;suraeNoether&gt;</strong> whelp, i pretty much had my piece in terms of bulletproofs: there isn't a research-oriented approach to answer if they are ready for implementation.<br />
+<strong>&lt;suraeNoether&gt;</strong> the best test for crypto is use and time.<br />
+<strong>&lt;suraeNoether&gt;</strong> the math has been reviewed, looks tight. it may feel like it's being put into production too soon, but…<br />
+<strong>&lt;suraeNoether&gt;</strong> any time we implement something new, we take some risks in that regard<br />
+<strong>&lt;suraeNoether&gt;</strong> it looks to me like a no-brainer drop-in replacement for our current range proofs, and to sarang it seems fine. the coding is done.<br />
+<strong>&lt;msvb-mob&gt;</strong> suraeNoether: Is there a way to merge new features on testnet only?<br />
+<strong>&lt;msvb-mob&gt;</strong> Maybe a risk reduction strategy I mean?<br />
+<strong>&lt;suraeNoether&gt;</strong> afaik BP is already on testnet as of … today?<br />
+<strong>&lt;moneromooo&gt;</strong> As of a week back or so.<br />
+<strong>&lt;suraeNoether&gt;</strong> ah there you go<br />
+<strong>&lt;msvb-mob&gt;</strong> So we have at least that granularity, okay.<br />
+<strong>&lt;luigi1111w&gt;</strong> I'm going through the code and have some questions<br />
+<strong>&lt;suraeNoether&gt;</strong> yeah, i mean<br />
+<strong>&lt;suraeNoether&gt;</strong> luigi1111w: sarang will be able to answer them tomorrow afaik.<br />
+<strong>&lt;rehrar&gt;</strong> Is the chance of finding meaningful vulnerabilities that much greater if we extend it out to September hard fork? Like, would the extra six months be an adequate amount of time if it was determined that the three months between now and March hardfork wasn't sufficient?<br />
+<strong>&lt;suraeNoether&gt;</strong> \^ this is actually sort of the tough spot we find ourselves in<br />
+<strong>&lt;suraeNoether&gt;</strong> thing is, there isn't a real monetary incentive to attack something like BP while its on testnet<br />
+<strong>&lt;luigi1111w&gt;</strong> attacking it on mainnet is catastrophic, however<br />
+<strong>&lt;suraeNoether&gt;</strong> yep<br />
+<strong>&lt;suraeNoether&gt;</strong> its like designing a new parachute<br />
+<strong>&lt;rbrunner&gt;</strong> Well, we could put bounties for Testnet attacks, no?<br />
+<strong>&lt;luigi1111w&gt;</strong> meh<br />
+<strong>&lt;rehrar&gt;</strong> It's simple. We make testnetcoin a 3B dollar project.<br />
+<strong>&lt;fluffypony&gt;</strong> sure, but then we shouldn't ever deploy anything<br />
+<strong>&lt;fluffypony&gt;</strong> :-P<br />
+<strong>&lt;fluffypony&gt;</strong> LOL rehrar<br />
+<strong>&lt;suraeNoether&gt;</strong> lol<br />
+<strong>&lt;suraeNoether&gt;</strong> eventually someone has to strap it onto their own backs and jump<br />
+<strong>&lt;suraeNoether&gt;</strong> is what i mean<br />
+<strong>&lt;fluffypony&gt;</strong> yes<br />
+<strong>&lt;fluffypony&gt;</strong> so here's my thinking<br />
+<strong>&lt;luigi1111w&gt;</strong> the people that could review and attack are pretty small in number<br />
+<strong>&lt;fluffypony&gt;</strong> we code freeze via a 0.12 branch in the next 2-ish weeks<br />
+<strong>&lt;fluffypony&gt;</strong> we include BP for the March HF<br />
+<strong>&lt;fluffypony&gt;</strong> we release test bins in Jan<br />
+<strong>&lt;fluffypony&gt;</strong> we re-measure our confidence towards the end of Jan / beginning of Feb<br />
+<strong>&lt;fluffypony&gt;</strong> if we're not happy with it we change it to v8<br />
+<strong>&lt;fluffypony&gt;</strong> or the opposite - put it in v8 and move it to v7 towards the end of Jan if we're confident<br />
+<strong>&lt;luigi1111w&gt;</strong> much more comfortable with the latter<br />
+<strong>&lt;luigi1111w&gt;</strong> though there's plenty of support for delaying v7 as well<br />
+<strong>&lt;rehrar&gt;</strong> I think delaying v7 by a couple months would be well worth it?<br />
+<strong>&lt;rehrar&gt;</strong> and even if the next fork is still held to September, we will still have the multi-input BP to merge, which is exciting, no?<br />
+<strong>&lt;fluffypony&gt;</strong> I don't think we should move fork dates<br />
+<strong>&lt;rehrar&gt;</strong> or were both single and multi output BPs being discussed right now?<br />
+<strong>&lt;moneromooo&gt;</strong> Single only.<br />
+<strong>&lt;fluffypony&gt;</strong> it's becoming increasingly difficult, and sticking to the predictable fork schedule is advantageous for exchanges, merchants, and pools<br />
+<strong>&lt;fluffypony&gt;</strong> (emergency hard forks aside)<br />
+<strong>&lt;moneromooo&gt;</strong> I'm reasonably sure most don't know in advance when the fork is supposed to be anyway.<br />
+<strong>&lt;luigi1111w&gt;</strong> ^^<br />
+<strong>&lt;rehrar&gt;</strong> other loser coins: "oh btw mister exchange, we're forking in like two weeks, please update software"<br />
+<strong>&lt;fluffypony&gt;</strong> moneromooo: they're starting to know<br />
+<strong>&lt;dEBRUYNE&gt;</strong> As long as they are notified well in advance I don't see a problem with pushing it back 1-2 months<br />
+<strong>&lt;dEBRUYNE&gt;</strong> Like moneromooo says, most probably don't even know we have one scheduled for march<br />
+<strong>&lt;fluffypony&gt;</strong> pushing it back by 1-2 months isn't enough time<br />
+<strong>&lt;luigi1111w&gt;</strong> it might be<br />
+<strong>&lt;luigi1111w&gt;</strong> although<br />
+<strong>&lt;fluffypony&gt;</strong> imho we're either happy with March or we need 6 additional months of testing<br />
+<strong>&lt;moneromooo&gt;</strong> How about 12 ?<br />
+<strong>&lt;rehrar&gt;</strong> It may be that in the future FP you might be right, but I think we're still small enough that we can pull a stunt like this without too many consequences<br />
+<strong>&lt;fluffypony&gt;</strong> moneromooo: we might need that, if our confidence level is low<br />
+<strong>&lt;moneromooo&gt;</strong> The confidence will stay low until 3 months before the fork, when people will start looking.<br />
+<strong>&lt;moneromooo&gt;</strong> Before 3 months, (almost) nobody will look.<br />
+<strong>&lt;suraeNoether&gt;</strong> if we give ourselves 6 months of testing for BPs<br />
+<strong>&lt;suraeNoether&gt;</strong> i'll tell you what'll happen<br />
+<strong>&lt;fluffypony&gt;</strong> lol<br />
+<strong>&lt;suraeNoether&gt;</strong> 5 months an 2 weeks will go by<br />
+<strong>&lt;fluffypony&gt;</strong> so then March it is?<br />
+<strong>&lt;moneromooo&gt;</strong> Now, if people did look for 6 months… then yes.<br />
+<strong>&lt;suraeNoether&gt;</strong> and then testing will begin<br />
+<strong>&lt;dEBRUYNE&gt;</strong> Pushing it back 6 months might perhaps result in it going down the priority list<br />
+<strong>&lt;moneromooo&gt;</strong> I'm ready to go for september if there is a good reason (ie, someone says they need the 6 months).<br />
+<strong>&lt;dEBRUYNE&gt;</strong> And then we just get the same # of months of review<br />
+<strong>&lt;fluffypony&gt;</strong> I'm happy with March, but I'm also open to having my mind changed<br />
+<strong>&lt;fluffypony&gt;</strong> I'm also reaching out to the paper authors to see if any of them are able to do an implementation review<br />
+<strong>&lt;moneromooo&gt;</strong> smooth thinks it's too early, for the record.<br />
+<strong>&lt;rbrunner&gt;</strong> Main argument?<br />
+<strong>&lt;moneromooo&gt;</strong> At 9 txes per block (monthly average now), I think BPs save ~ 2 GB per month.<br />
+<strong>&lt;dEBRUYNE&gt;</strong> I think you'll see more transactions once fees drop to an acceptable level though<br />
+<strong>&lt;dEBRUYNE&gt;</strong> So savings might be even more<br />
+<strong>&lt;Vespco&gt;</strong> March with aggressive promotion of testnet usage starting now. We can highlight the need on reddit and provide clear stack exchange instructions and .bins to attract more users<br />
+<strong>&lt;luigi1111w&gt;</strong> I don't think that helps<br />
+<strong>&lt;luigi1111w&gt;</strong> you need math and code people<br />
+<strong>&lt;luigi1111w&gt;</strong> we may have enough (not now, I mean within the next 3 months)<br />
+<strong>&lt;rehrar&gt;</strong> Ok, just so the discussion doesn't go on forever, and to summarize for anyone reading logs afterwards, there's three main camps here: 1. Launch BPs in March HF, 2. Launch BP's in September HF, 3. Delay March HF to something like a May HF and launch BPs then.<br />
+<strong>&lt;rehrar&gt;</strong> Of those three, I'd say 3 is reasonable<br />
+<strong>&lt;luigi1111w&gt;</strong> there are two other non-forking changes that people would like to see in a release too, subaddresses and multisig<br />
+<strong>&lt;luigi1111w&gt;</strong> former is in already<br />
+<strong>&lt;dEBRUYNE&gt;</strong> As the fork height isn't set yet, can't we reasses in 2 months?<br />
+<strong>&lt;luigi1111w&gt;</strong> latter "should" be (IMO) in the next release<br />
+<strong>&lt;dEBRUYNE&gt;</strong> And see if there has been adequate review<br />
+<strong>&lt;fluffypony&gt;</strong> luigi1111w: agreed<br />
+<strong>&lt;luigi1111w&gt;</strong> dEBRUYNE no we are trying to get releases out in reasonable time<br />
+<strong>&lt;luigi1111w&gt;</strong> ie, not the week before<br />
+<strong>&lt;moneromooo&gt;</strong> MS is going in soon. Just after I fix the core tests after last rebase :)<br />
+<strong>&lt;dEBRUYNE&gt;</strong> No I meant whether BP go in or not<br />
+<strong>&lt;dEBRUYNE&gt;</strong> \^ luigi1111w<br />
+<strong>&lt;Vespco&gt;</strong> Is GUI ready for multisig and subaaddresses?<br />
+<strong>&lt;dEBRUYNE&gt;</strong> Or is two months to late for that to decide?<br />
+<strong>&lt;luigi1111w&gt;</strong> yes<br />
+<strong>&lt;dEBRUYNE&gt;</strong> too*<br />
+<strong>&lt;dEBRUYNE&gt;</strong> Ok<br />
+<strong>&lt;fluffypony&gt;</strong> dEBRUYNE: basically-final bins need to be out by Feb<br />
+<strong>&lt;fluffypony&gt;</strong> beginning-ish of Feb<br />
+<strong>&lt;luigi1111w&gt;</strong> by the time you decide and build the release you're at like one week<br />
+<strong>&lt;luigi1111w&gt;</strong> agree<br />
+<strong>&lt;dEBRUYNE&gt;</strong> But also, if we push back the fork 1-2 months, we have more time to release basically-final bins<br />
+<strong>&lt;luigi1111w&gt;</strong> well 2 months imo<br />
+<strong>&lt;luigi1111w&gt;</strong> so whenever in march<br />
+<strong>&lt;suraeNoether&gt;</strong> i think MRL's opinion is 2 1 3, to vote for a september hard fork. because if we are wrong, the cost is large. if we are correct, we save 12 G<br />
+<strong>&lt;suraeNoether&gt;</strong> grand scheme of things<br />
+<strong>&lt;luigi1111w&gt;</strong> in grand scheme you don't really save anything<br />
+<strong>&lt;dEBRUYNE&gt;</strong> If we don't include BP in March 2018, I suppose we can at least fix the fees :-P<br />
+<strong>&lt;luigi1111w&gt;</strong> since we "might as well" prune that data<br />
+<strong>&lt;luigi1111w&gt;</strong> later<br />
+<strong>&lt;suraeNoether&gt;</strong> luigi1111w: yeah, on a long enough time horizon<br />
+<strong>&lt;vtnerd&gt;</strong> prune the range proofs?<br />
+<strong>&lt;luigi1111w&gt;</strong> yes<br />
+<strong>&lt;fluffypony&gt;</strong> if we did 2, any opinions on reducing the base fee in the March HF? we can increase it again later if we need<br />
+<strong>&lt;vtnerd&gt;</strong> how would some future user verify inflation?<br />
+<strong>&lt;luigi1111w&gt;</strong> vtnerd if you desire to do that for your trust model, of course you don't prune<br />
+<strong>&lt;dEBRUYNE&gt;</strong> fluffypony: we need to tweak the penalty<br />
+<strong>&lt;vtnerd&gt;</strong> oh so this is like the bitcoin prune old blocks option<br />
+<strong>&lt;luigi1111w&gt;</strong> well you don't lose the hashability<br />
+<strong>&lt;suraeNoether&gt;</strong> fluffypony: I think dEBRUYNE may have thought about fee structures more than anyone else<br />
+<strong>&lt;fluffypony&gt;</strong> yes<br />
+<strong>&lt;luigi1111w&gt;</strong> JollyMort[m] :)<br />
+<strong>&lt;dEBRUYNE&gt;</strong> \^ would certainly beat me :P<br />
+<strong>&lt;suraeNoether&gt;</strong> fair<br />
+<strong>&lt;endogenic&gt;</strong> is it worth writing a paper on fee structure modeling etc?<br />
+<strong>&lt;luigi1111w&gt;</strong> longer term I think yes<br />
+<strong>&lt;luigi1111w&gt;</strong> but we certainly don't have time for march<br />
+<strong>&lt;dEBRUYNE&gt;</strong> Perhaps we could change the penalty exponent to \^3 instead of \^2<br />
+<strong>&lt;fluffypony&gt;</strong> suraeNoether: what would your comfort level change to if one or more of the paper's authors reviewed the implementation?<br />
+<strong>&lt;suraeNoether&gt;</strong> fluffypony: no, the implementation isn't the concern at all, in my mind at least<br />
+<strong>&lt;suraeNoether&gt;</strong> assuming it's passing unit tests<br />
+<strong>&lt;suraeNoether&gt;</strong> (which i think it is, iirc)<br />
+<strong>&lt;moneromooo&gt;</strong> It is.<br />
+<strong>&lt;dEBRUYNE&gt;</strong> What if the paper itself is "broken"? Only time will tell that I guess<br />
+<strong>&lt;suraeNoether&gt;</strong> there ya go. the question is whether or not someone clever can divide by zero and cause a big monero bang with bullet proofs .<br />
+<strong>&lt;suraeNoether&gt;</strong> dEBRUYNE:  \^ exactly<br />
+<strong>&lt;suraeNoether&gt;</strong> the best test for crypto is time<br />
+<strong>&lt;rehrar&gt;</strong> will an aggressive 'test bps on testnet' campaign do anything?<br />
+<strong>&lt;luigi1111w&gt;</strong> no<br />
+<strong>&lt;suraeNoether&gt;</strong> i don't think so<br />
+<strong>&lt;suraeNoether&gt;</strong> if someone found something<br />
+<strong>&lt;rehrar&gt;</strong> so then that's points for March HF isn't it?<br />
+<strong>&lt;suraeNoether&gt;</strong> it would be worht more for them to wait until it was implemented than to report it<br />
+<strong>&lt;rbrunner&gt;</strong> I think with no high-value target to attack nobody will aim at BP<br />
+<strong>&lt;luigi1111w&gt;</strong> I disagree with suraeNoether and would like the implementation reviewed<br />
+<strong>&lt;rehrar&gt;</strong> if we gain little value for waiting, then we shouldn't wait<br />
+<strong>&lt;suraeNoether&gt;</strong> luigi1111w: I dind't say i dind't want the implementation reviewed. fluffypony asked me if such a review would make me more comfortable with a March HF<br />
+<strong>&lt;luigi1111w&gt;</strong> then we still disagree<br />
+<strong>&lt;luigi1111w&gt;</strong> so it's fine :)<br />
+<strong>&lt;suraeNoether&gt;</strong> heh, okay. well at least we can agree that we both want the implementation reviewed one way or another<br />
+<strong>&lt;moneromooo&gt;</strong> (thanks stoffu btw, who did review it well)<br />
+<strong>&lt;suraeNoether&gt;</strong> stoffu is a silent hero<br />
+<strong>&lt;rehrar&gt;</strong> Meeting is coming to a close. Not necessarily to decide right now, but just to see where everyone is, can we have everyone that was in this conversation verbally state whether they prefer March or September for BPs?<br />
+<strong>&lt;fluffypony&gt;</strong> in terms of someone finding an issue in the math itself, I don't think that 6 months is a macro-enough timescale for that<br />
+<strong>&lt;fluffypony&gt;</strong> my preference would be March, pending peer review, or September + fee reduction failing that<br />
+<strong>&lt;rbrunner&gt;</strong> March: Only with BP live on mainnet you would ever get bright and bad people interested to break something<br />
+<strong>&lt;suraeNoether&gt;</strong> i have the reversed preference as fluffypony, plus i would like the authors to review the implementation in either case<br />
+<strong>&lt;suraeNoether&gt;</strong> i think sarang has the same preference as fluffypony though<br />
+<strong>&lt;vtnerd&gt;</strong> uh, so before meeting adjourns I'd like to prod https://github.com/monero-project/supercop/pull/1<br />
+<strong>&lt;moneromooo&gt;</strong> What we'd need is for people who may review it to tell is now when they would, and how much time they'd need… Not gonna happen most likely.<br />
+<strong>&lt;vtnerd&gt;</strong> unedited supercop code is all that is now<br />
+<strong>&lt;luigi1111w&gt;</strong> cool<br />
+<strong>&lt;pigeons&gt;</strong> pre-borromean ringct signature issue was found by 3rd party (and/after the monero team), so people do look at non-mainnet code. and also that incident shows how short timelines are scary<br />
+<strong>&lt;endogenic&gt;</strong> \^<br />
+<strong>&lt;fluffypony&gt;</strong> also msvb-mob wanted to say a couple of things about the HW wallet<br />
+<strong>&lt;suraeNoether&gt;</strong> pigeons: that's an extremely good point<br />
+<strong>&lt;msvb-mob&gt;</strong> Hardware team achieved a breakthrough today in manipulating the MCU factory bootloader without programming.<br />
+<strong>&lt;msvb-mob&gt;</strong> That means that future firmware developers can flash boards using DFU over USB.<br />
+<strong>&lt;msvb-mob&gt;</strong> DFU == Device Firmware Upgrade<br />
+<strong>&lt;fluffypony&gt;</strong> pigeons: good point<br />
+<strong>&lt;fluffypony&gt;</strong> msvb-mob: nice one!<br />
+<strong>&lt;msvb-mob&gt;</strong> In the near future we will ask for in depth advice from core development and MRL to confirm our design is on track.<br />
+<strong>&lt;msvb-mob&gt;</strong> Any questions? You can ask about 34C3 assembly as well.<br />
+<strong>&lt;moneromooo&gt;</strong> There is a factory bootloader ? As in, code you did not write ?<br />
+<strong>&lt;msvb-mob&gt;</strong> moneromooo: Yes, most hardware manufacturers (Nordic, STM, Maxim, TI) supply a default bootloader you can't get rid of.<br />
+<strong>&lt;msvb-mob&gt;</strong> And when they're nice, it's full of USB and DFU.<br />
+<strong>&lt;luigi1111w&gt;</strong> pigeons thanks, and that memory pushes me towards the wait camp<br />
+<strong>&lt;moneromooo&gt;</strong> That sounds like a great idea :/<br />
+<strong>&lt;msvb-mob&gt;</strong> Next topic.<br />
+<strong>&lt;luigi1111w&gt;</strong> meeting is basically over afaik<br />
+<strong>&lt;rbrunner&gt;</strong> Please don't forget the GUI wallet Windows installer and put it into service sometime after busy Christmas. I have a PR waiting that gives the last polish to the installer script, and after that it's really, really ready<br />
+<strong>&lt;fluffypony&gt;</strong> yep that's it<br />
+<strong>&lt;fluffypony&gt;</strong> one last thing<br />
+<strong>&lt;fluffypony&gt;</strong> next meeting would be Dec 31<br />
+<strong>&lt;fluffypony&gt;</strong> but I don't think anyone wants that<br />
+<strong>&lt;fluffypony&gt;</strong> so push out to Jan 14?<br />
+<strong>&lt;rehrar&gt;</strong> Monero New Year party?<br />
+<strong>&lt;msvb-mob&gt;</strong> If we do one week later, we synced again with community meetings.<br />
+<strong>&lt;luigi1111w&gt;</strong> is that what we want?<br />
+<strong>&lt;luigi1111w&gt;</strong> ok with both<br />
+<strong>&lt;rehrar&gt;</strong> you guys don't go anyways :P<br />
+<strong>&lt;luigi1111w&gt;</strong> and by ok I mean as not ok as normal<br />
+<strong>&lt;fluffypony&gt;</strong> msvb-mob: I'd prefer us unsynced, otherwise it's just too much on a weekend<br />
+<strong>&lt;fluffypony&gt;</strong> wife will murder me :-P<br />
+<strong>&lt;moneromooo&gt;</strong> Technically, that's still synced, but out of phase…<br />
+<strong>* moneromooo</strong> steps back<br />
+<strong>&lt;msvb-mob&gt;</strong> Nobody is protesting 14 Jan. I'm not opinionated, just wanted to mention the sync aspect.<br />
+<strong>&lt;fluffypony&gt;</strong> lol moneromooo<br />
+<strong>&lt;rehrar&gt;</strong> Ok 14 Jan it is</p>
+
+                    </div>
+                    <hr>
+                    <p id="post-meta">Post tags <i class="fa fa-tags"></i>: <a href="/blog/tags/dev diaries.html">Dev Diaries</a>, <a href="/blog/tags/core.html">Monero Core</a>, <a href="/blog/tags/crypto.html">Cryptography</a></p>
+                    </div>
+                </div>
+                <!-- end left two-thirds block-->
+                
+                <!-- right one-third block-->
+                <div class="right one-third col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <div class="sidebar col-sm-12 col-xs-12">   
+                            <div class="info-block">
+                                <div class="row center-xs">
+                                    <div class="col"><h2>Recent Posts</h2></div>
+                                </div>
+                                
+                                <div class="row start-xs info-block-row">
+                                    <div class="col">
+                                         <p><a href="/2018/03/29/response-to-an-empirical-analysis-of-traceability.html">Response to "An Empirical Analysis of Traceability in the Monero Blockchain", Version 2</a></p>
+                                     </div>
+                                </div>
+                                
+                                <div class="row start-xs info-block-row">
+                                    <div class="col">
+                                         <p><a href="/2018/03/29/monero-0.12.0.0-released.html">Monero 0.12.0.0 "Lithium Luna" Release</a></p>
+                                     </div>
+                                </div>
+                                
+                                <div class="row start-xs info-block-row">
+                                    <div class="col">
+                                         <p><a href="/2018/03/28/a-scheduled-protocol-upgrade-is-planned-for-April-6-2018-03-28.html">A Scheduled Network Upgrade is Planned for April 6</a></p>
+                                     </div>
+                                </div>
+                                
+                                <div class="row start-xs info-block-row">
+                                    <div class="col">
+                                         <p><a href="/2018/03/01/core-team-announcement.html">Core Team Announcement</a></p>
+                                     </div>
+                                </div>
+                                
+                            </div>
+                            <div class="info-block">
+                                <div class="row center-xs">
+                                    <div class="col">
+                                        <h2>Popular Tags</h2>
+                                    </div>
+                                </div>
+                                    
+                                    <div class="row start-xs">
+                                        <div class="col">
+                                             <p><a href="/blog/tags/monero missives.html">Monero Missives</a></p>
+                                         </div>
+                                     </div>
+                                     
+                                    <div class="row start-xs">
+                                        <div class="col">
+                                             <p><a href="/blog/tags/conferences.html">Conferences</a></p>
+                                         </div>
+                                     </div>
+                                     
+                                    <div class="row start-xs">
+                                        <div class="col">
+                                             <p><a href="/blog/tags/exchanges.html">Exchanges</a></p>
+                                         </div>
+                                     </div>
+                                     
+                                    <div class="row start-xs">
+                                        <div class="col">
+                                             <p><a href="/blog/tags/gui.html">Monero Core GUI</a></p>
+                                         </div>
+                                     </div>
+                                     
+
+
+                            </div>
+                        </div> 
+                </div>
+                <!-- end right one-third block-->
+            </div>
+        </section>
+    </div>
+
+    <footer class="container-fluid">
+            <div class="container">
+                <div class="row around-xs footer-wrapper">
+                   
+                     <div class="col-sm-3 col-xs-6">
+                     <h3>Resources</h3>
+                         <ul class="list-unstyled">
+                            
+                             
+                                <li><a class="white" href="/fr/resources/about/">À propos de Monero</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/fr/resources/moneropedia/">Moneropedia</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/fr/resources/developer-guides/">Guides du Dévelopeur</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/fr/resources/user-guides/">Guides Utilisateur</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://getmonero.org/feed.xml">Flux RSS</a></li>
+                              
+                            
+                         </ul>
+                     </div>
+                  
+                     <div class="col-sm-3 col-xs-6">
+                     <h3>Canaux IRC</h3>
+                         <ul class="list-unstyled">
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero">monero</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-dev">monero-dev</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-markets">monero-markets</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-pools">monero-pools</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-community">monero-community</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-translations">monero-translations</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-hardware">monero-hardware</a></li>
+                              
+                            
+                         </ul>
+                     </div>
+                  
+                     <div class="col-sm-3 col-xs-6">
+                     <h3>Communauté</h3>
+                         <ul class="list-unstyled">
+                            
+                             
+                              <li><a class="white" href="https://reddit.com/r/monero">Reddit</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://monero.stackexchange.com/">Stack Exchange</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://bitcointalk.org/index.php?topic=583449.0">Fil BitcoinTalk</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://mattermost.getmonero.org/">Discussion Mattermost</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://telegram.me/bitmonero">Discussion Telegram</a></li>
+                              
+                            
+                         </ul>
+                     </div>
+                  
+                     <div class="col-sm-3 col-xs-6">
+                     <h3>Le Projet Monero</h3>
+                         <ul class="list-unstyled">
+                            
+                             
+                              <li><a class="white" href="https://openalias.org/">Open Alias</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://getkovri.org/">Kovri</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/fr/resources/research-lab/">Laboratoire de Recherche Monero</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/fr/press-kit">Dossier de Presse Monero</a></li>
+                              
+                            
+                         </ul>
+                     </div>
+                 
+                <div class="row center-xs">
+                    <div class="social-icons">
+                    </div>
+                    <div class="footer-links">
+                        <ul class="list-unstyled list-inline">
+                           
+                            
+                             <li><a href="/fr/legal" class="white footer-link">Juridique</a></li>
+                           
+                           
+                            
+                             <li><a href="https://github.com/monero-project" class="white footer-link">Code Source</a></li>
+                            
+                           
+                            
+                             <li><a href="/fr/technical-specs/" class="white footer-link">Spécifications Techniques</a></li>
+                           
+                           
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
+</footer>
+<!-- Matomo -->
+<script type="text/javascript">
+    var _paq = _paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+        var u = "//analytics.getmonero.org/";
+        _paq.push(['setTrackerUrl', u + 'piwik.php']);
+        _paq.push(['setSiteId', '1']);
+        var d = document,
+            g = d.createElement('script'),
+            s = d.getElementsByTagName('script')[0];
+        g.type = 'text/javascript';
+        g.async = true;
+        g.defer = true;
+        g.src = u + 'piwik.js';
+        s.parentNode.insertBefore(g, s);
+    })();
+</script>
+<!-- End Matomo Code -->
+<!-- page served by server N -->
+    </div>
+  </body>
+</html>

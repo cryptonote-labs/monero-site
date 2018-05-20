@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>
+     Logs for the Kovri Dev Meeting Held on 2017-10-06 | Monero - secure, private, untraceable
+    </title>
+	<meta name="description" content="Logs for the Kovri Dev Meeting Held on 2017-10-06 [on the home of Monero, a digital currency that is secure, private, and untraceable]">
+	<meta name="keywords" content="monero, xmr, bitmonero, cryptocurrency">
+
+    <meta property="og:title" content="Monero: Logs for the Kovri Dev Meeting Held on 2017-10-06"/>
+    <meta property="og:description" content="Logs for the Kovri Dev Meeting Held on 2017-10-06 [on the home of Monero, a digital currency that is secure, private, and untraceable]">
+    <meta property="og:image" content="http://static.getmonero.org/images/opengraph/logo.png">
+    <meta property="og:site_name" content="getmonero.org, The Monero Project">
+    <meta property="og:url" content="https://getmonero.org/2017/10/06/logs-for-the-Kovri-dev-meeting-held-on-2017-10-06.html">
+    <meta property="og:type" content="website">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/meta/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/meta/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/meta/favicon-16x16.png">
+        <link rel="manifest" href="/meta/manifest.json">
+        <link rel="mask-icon" href="/meta/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="theme-color" content="#ffffff">
+
+    <link href="/css/custom.css" rel="stylesheet">
+
+    
+    <meta name="msapplication-config" content="/ietemplates/ieconfig.xml">
+
+  </head>
+
+
+  <body>
+    <div class="page-wrapper">
+          
+<div class="mob-nav">
+              <input class="burger-check" id="mobile-burger" type="checkbox"><label for="mobile-burger" class="burger"></label>
+           
+        <div class="slide-in-nav">
+             <div class="container slide-in">
+                     
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                            
+                            <label for="drop1">Inicio<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="drop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                              <a href="/es/get-started/what-is-monero">¿Qué es Monero?</a>
+                                  
+                              <a href="/es/get-started/using">Usar Monero</a>
+                                  
+                              <a href="/es/get-started/accepting">Aceptar Monero</a>
+                                  
+                              <a href="/es/get-started/contributing">Contribuir a Monero</a>
+                                  
+                              <a href="/es/get-started/mining">Minar Monero</a>
+                                  
+                              <a href="/es/get-started/faq">FAQ</a>
+                                  
+                            </div>
+                            
+                     </div>
+                 </div>
+                  
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                               <a href="/es/downloads">Descargas</a>
+                            
+                     </div>
+                 </div>
+                  
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                            
+                            <label for="drop2">Noticias<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="drop2" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                              <a href="/es/blog">Todas publicaciones</a>
+                                  
+                              <a href="/es/blog/tags/monero%20missives.html">Misivas</a>
+                                  
+                              <a href="/es/blog/tags/dev%20diaries.html">Transcripciones de reuniones</a>
+                                  
+                              <a href="/es/blog/tags/releases.html">Lanzamientos</a>
+                                  
+                            </div>
+                            
+                     </div>
+                 </div>
+                  
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                            
+                            <label for="drop3">Comunidad<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="drop3" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                              <a href="/es/community/team">Equipo</a>
+                                  
+                              <a href="/es/community/hangouts">Canales de comunicación</a>
+                                  
+                              <a href="/es/community/sponsorships">Patrocinios</a>
+                                  
+                              <a href="/es/community/merchants">Comerciantes</a>
+                                  
+                            </div>
+                            
+                     </div>
+                 </div>
+                  
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                            
+                            <label for="drop4">Recursos<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="drop4" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                              <a href="/es/resources/about">Sobre Monero</a>
+                                  
+                              <a href="/es/resources/roadmap">Hoja de ruta</a>
+                                  
+                              <a href="/es/resources/research-lab">Laboratorio de investigación</a>
+                                  
+                              <a href="/es/resources/moneropedia">Moneropedia</a>
+                                  
+                              <a href="/es/resources/user-guides">Guías de usuario</a>
+                                  
+                              <a href="/es/resources/developer-guides">Guías de desarrolladores</a>
+                                  
+                              <a href="/es/technical-specs">Especificaciones técnicas</a>
+                                  
+                            </div>
+                            
+                     </div>
+                 </div>
+                 
+                 <div class="row">
+                     <div class="col-xs-12">
+                         <div class="text-center nav-item mob">
+                            <a href="https://forum.getmonero.org">Forum Funding System</a> 
+                         </div>
+                     </div>
+                 </div>
+                 <div class="row">
+                     <div class="col-xs-12">
+                         <div class="text-center nav-item mob">
+                            <a href="https://github.com/monero-project/meta/blob/master/VULNERABILITY_RESPONSE_PROCESS.md">Vulnerability Response</a>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="row">
+                     <div class="col-xs-12">
+                         <div class="text-center nav-item mob">
+                            <a href="/es/the-monero-project/">The Monero Project</a> 
+                         </div>
+                     </div>
+                 </div>            
+             </div>
+          
+        </div>
+       </div>
+       
+        <div class="desktop-nav">
+            <nav class="container">
+            <div class="topnav">
+              <div class="row middle-xs">
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <a href="
+                    
+                    /es
+                    
+                    "><img src="/img/monero-logo.png" alt="Monero Logo" class="monero-logo"></a>
+                  </div>
+                  <div class="col-lg-8 col-md-8 col-sm-8 topnav-list end-xs">
+                      <div class="row end-xs middle-xs">
+                         <div class="col-md-12">
+                          <a href="https://forum.getmonero.org" class="top-link">Forum Funding System</a>
+                          <a href="https://github.com/monero-project/meta/blob/master/VULNERABILITY_RESPONSE_PROCESS.md" class="top-link">Vulnerability Response</a>
+                          <a href="/es/the-monero-project/" class="top-link">The Monero Project</a>
+                          <div href="#" class="dropdown top-link language-change">
+                            <input class="burger-checkdropdown" id="langdrop" type="checkbox">
+                            <label for="langdrop">
+                            
+                                
+                            
+                            
+                            
+                                
+                            
+                                    Español
+                            
+                                
+                            
+                            
+                            
+                                
+                            
+                            
+                            
+                                
+                            
+                            
+                            
+                                
+                            
+                            <div class="arrow-down"></div></label>
+                            <div class="dropdown-content text-center">
+                                    
+                                
+                                  
+                                    <a href="/2017/10/06/logs-for-the-Kovri-dev-meeting-held-on-2017-10-06.html" >English</a>
+                                  
+                                
+                              
+                                
+                              
+                                
+                                  
+                                    <a href="/it/2017/10/06/logs-for-the-Kovri-dev-meeting-held-on-2017-10-06.html" >Italiano</a>
+                                  
+                                
+                              
+                                
+                                  
+                                    <a href="/pl/2017/10/06/logs-for-the-Kovri-dev-meeting-held-on-2017-10-06.html" >Polski</a>
+                                  
+                                
+                              
+                                
+                                  
+                                    <a href="/fr/2017/10/06/logs-for-the-Kovri-dev-meeting-held-on-2017-10-06.html" >Français</a>
+                                  
+                                
+                              
+                            </div>
+                          </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="botnav white-nav">
+                <input class="burger-check" id="burger-check" type="checkbox"><label for="burger-check" class="burger"></label>
+                <div class="row between-xs nav-items">
+                     
+                    <div class="col dropdown nav-item">
+                        
+                            <label for="desktopdrop1">Inicio<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="desktopdrop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                                  <a href="/es/get-started/what-is-monero">¿Qué es Monero?</a>
+                                
+                                  <a href="/es/get-started/using">Usar Monero</a>
+                                
+                                  <a href="/es/get-started/accepting">Aceptar Monero</a>
+                                
+                                  <a href="/es/get-started/contributing">Contribuir a Monero</a>
+                                
+                                  <a href="/es/get-started/mining">Minar Monero</a>
+                                
+                                  <a href="/es/get-started/faq">FAQ</a>
+                                
+                            </div>
+                            
+                    </div>
+                    
+                    <div class="col dropdown nav-item">
+                        
+                           <a href="/es/downloads">Descargas</a>
+                            
+                    </div>
+                    
+                    <div class="col dropdown nav-item">
+                        
+                            <label for="desktopdrop1">Noticias<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="desktopdrop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                                  <a href="/es/blog">Todas publicaciones</a>
+                                
+                                  <a href="/es/blog/tags/monero%20missives.html">Misivas</a>
+                                
+                                  <a href="/es/blog/tags/dev%20diaries.html">Transcripciones de reuniones</a>
+                                
+                                  <a href="/es/blog/tags/releases.html">Lanzamientos</a>
+                                
+                            </div>
+                            
+                    </div>
+                    
+                    <div class="col dropdown nav-item">
+                        
+                            <label for="desktopdrop1">Comunidad<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="desktopdrop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                                  <a href="/es/community/team">Equipo</a>
+                                
+                                  <a href="/es/community/hangouts">Canales de comunicación</a>
+                                
+                                  <a href="/es/community/sponsorships">Patrocinios</a>
+                                
+                                  <a href="/es/community/merchants">Comerciantes</a>
+                                
+                            </div>
+                            
+                    </div>
+                    
+                    <div class="col dropdown nav-item">
+                        
+                            <label for="desktopdrop1">Recursos<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="desktopdrop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                                  <a href="/es/resources/about">Sobre Monero</a>
+                                
+                                  <a href="/es/resources/roadmap">Hoja de ruta</a>
+                                
+                                  <a href="/es/resources/research-lab">Laboratorio de investigación</a>
+                                
+                                  <a href="/es/resources/moneropedia">Moneropedia</a>
+                                
+                                  <a href="/es/resources/user-guides">Guías de usuario</a>
+                                
+                                  <a href="/es/resources/developer-guides">Guías de desarrolladores</a>
+                                
+                                  <a href="/es/technical-specs">Especificaciones técnicas</a>
+                                
+                            </div>
+                            
+                    </div>
+                    
+                  </div>
+            </div>
+        </nav>
+        </div>
+        <div class="mob bot-nav white-nav">
+            <div class="row center-xs middle-xs">
+                <div class="col-xs-6">
+                    <a href="
+                    
+                    /es
+                    
+                    "><img src="/img/monero-logo.png" alt="Monero Logo" class="monero-logo"></a>
+                </div>
+                <div class="dropdown col-xs-6 text-center mob-language-change">
+                <input class="burger-checkdropdown" id="moblangdrop" type="checkbox">
+                 <label for="moblangdrop"><img src="/img/language.png" alt="Lang" class="icon-language"/><div class="arrow-down"></div></label>
+                               <div class="mob dropdown-content text-center">
+                               <p class="mob-lang-change mob-lang-selected">
+                                   
+                              
+                                
+                              
+                                
+                                 Español
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                   
+                               </p>
+                               
+                                
+                                  
+                                    <a class="mob-lang-change" href="/2017/10/06/logs-for-the-Kovri-dev-meeting-held-on-2017-10-06.html" >English</a>
+                                  
+                                
+                              
+                                
+                              
+                                
+                                  
+                                    <a class="mob-lang-change" href="/it/2017/10/06/logs-for-the-Kovri-dev-meeting-held-on-2017-10-06.html" >Italiano</a>
+                                  
+                                
+                              
+                                
+                                  
+                                    <a class="mob-lang-change" href="/pl/2017/10/06/logs-for-the-Kovri-dev-meeting-held-on-2017-10-06.html" >Polski</a>
+                                  
+                                
+                              
+                                
+                                  
+                                    <a class="mob-lang-change" href="/fr/2017/10/06/logs-for-the-Kovri-dev-meeting-held-on-2017-10-06.html" >Français</a>
+                                  
+                                
+                              
+                            </div>
+                          </div>
+            </div>     
+        </div>    
+
+        
+
+<div class="site-wrap post">
+    
+    <section class="container">
+            <div class="row">
+                <!-- left two-thirds block-->
+                <div class="left two-thirds col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                    <div class="info-block">
+                        <div class="row">
+                            <div class="col">
+                               <h2>Logs for the Kovri Dev Meeting Held on 2017-10-06</h2> 
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p class="author">Posted by: dEBRUYNE / fluffypony</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p>October 06, 2017</p>
+                            </div>
+                        </div>
+                    <div>
+                        <p><em>October 6th, 2017</em></p>
+
+<h1 id="logs">Logs</h1>
+
+<p><strong>&lt;anonimal&gt;</strong> 1. Greetings<br />
+<strong>&lt;anonimal&gt;</strong> 2. Brief review of what's been completed since the previous meeting<br />
+<strong>&lt;anonimal&gt;</strong> 3. Contributor FFS check-in / status<br />
+<strong>&lt;anonimal&gt;</strong> 4. Code + ticket discussion / Q &amp; A<br />
+<strong>&lt;anonimal&gt;</strong> 5. Any additional meeting items<br />
+<strong>&lt;anonimal&gt;</strong> 6. Confirm next meeting date/time<br />
+<strong>&lt;anonimal&gt;</strong> Hello<br />
+<strong>&lt;MoroccanMalinois&gt;</strong> Hi<br />
+<strong>&lt;ArticMine&gt;</strong> Hi<br />
+<strong>&lt;ajs&gt;</strong> Yo<br />
+<strong>&lt;anonimal&gt;</strong> ping rehrar<br />
+<strong>&lt;rehrar&gt;</strong> Yeah I'm here. Sorry.<br />
+<strong>&lt;rehrar&gt;</strong> Finishing something up with wife. Done in 2.<br />
+<strong>&lt;anonimal&gt;</strong> 2 what?<br />
+<strong>&lt;rehrar&gt;</strong> Min. Sorry.<br />
+<strong>&lt;rehrar&gt;</strong> Ok. You have 100% rehrar now.<br />
+<strong>&lt;anonimal&gt;</strong> 2. Brief review of what's been completed since the previous meeting<br />
+<strong>&lt;anonimal&gt;</strong> For me, in addition to the usual project work + review/collab, testnet development and a big chunk of time spent toward a complete NTCP rewrite<br />
+<strong>&lt;anonimal&gt;</strong> We last met on the 24th, that week was productive, last week was a very productive 60 hour week, this week was very unproductive.<br />
+<strong>&lt;anonimal&gt;</strong> (for me)<br />
+<strong>&lt;anonimal&gt;</strong> Sunday's Vegas shooting has kept me pre-occupied as well as finally getting to long-standing non-kovri personal tech things resolved.<br />
+<strong>&lt;rehrar&gt;</strong> I can bump docs by myself, finished the Spanish translation. First draft of Russian translation should be done tomorrow. Started new website construction. Obtained svgs of Kovri logo from FP (should I push them anywhere?) and worked on the press kit.<br />
+<strong>&lt;rehrar&gt;</strong> Oh, I'm all set up for Kovri twitter now also, and can ask a few questions regarding that later this meeting.<br />
+<strong>&lt;anonimal&gt;</strong> Yes, meta repo like we discussed. If they go on the site then kovri-site.<br />
+<strong>&lt;anonimal&gt;</strong> Anything else for point 2.?<br />
+<strong>&lt;erciccione_[m]&gt;</strong> hi everybody<br />
+<strong>&lt;MoroccanMalinois&gt;</strong> Not much for me, i understand better some of the weird ssu numbers that i had, but still need more debugging<br />
+<strong>&lt;anonimal&gt;</strong> Ok<br />
+<strong>&lt;anonimal&gt;</strong> There's been a lot of new French translation work, collab between woodyjon and MoroccanMalinois. rehrar will you summarize any other team translation work?<br />
+<strong>&lt;rehrar&gt;</strong> Sure.<br />
+<strong>&lt;rehrar&gt;</strong> So the translation efforts have been, at least from my end, focused on the BTC Manager article that they put out about Kovri. We agreed it's a really good Kovri intro and we can point noobs to Kovri there for them to understand more about the project.<br />
+<strong>&lt;rehrar&gt;</strong> I'm taking on Spanish and Russian, and I think I found a Dutch guy who is interested in translating.<br />
+<strong>&lt;anonimal&gt;</strong> Ok, great<br />
+<strong>&lt;rehrar&gt;</strong> On another front, we are also receive awesome help from woodyjon with the French translation of the site.<br />
+<strong>&lt;rehrar&gt;</strong> I will start doc Russian translation also<br />
+<strong>&lt;erciccione_[m]&gt;</strong> @rehrar i'm gonna make the italian translation of the article as soon as i get my stuff back (moving home)<br />
+<strong>&lt;anonimal&gt;</strong> rehrar: Yes, I just mentioned woodyjon. He's also working on the few bits in kovri-site?<br />
+<strong>&lt;anonimal&gt;</strong> erciccione_[m]: great<br />
+<strong>&lt;rehrar&gt;</strong> There was a second article featuring anonimal from BTC Manager a bit ago, and anyone is free to translate it. There is a repo set up at https://GitHub.com/rehrar/monero-translations<br />
+<strong>&lt;anonimal&gt;</strong> 3. Contributor FFS check-in / status<br />
+<strong>&lt;rehrar&gt;</strong> Yeah. Woodyjon is making quick work of the site.<br />
+<strong>&lt;MoroccanMalinois&gt;</strong> Nothing new for me<br />
+<strong>&lt;anonimal&gt;</strong> I'm chugging along.<br />
+<strong>&lt;rehrar&gt;</strong> Majority hours are going to Monero right now. Planned on finished cranking out a huge chunk of Kovri hours for Monero in the next two days.<br />
+<strong>&lt;anonimal&gt;</strong> MoroccanMalinois: are you don't with your last milestone? I've lost track of how many meetings you've said you'd be done with it by now so I'm starting to get a little concerned. I know at least more than 3 meetings.<br />
+<strong>&lt;anonimal&gt;</strong> Is everything ok?<br />
+<strong>&lt;anonimal&gt;</strong> *done<br />
+<strong>&lt;MoroccanMalinois&gt;</strong> unexpected professional obligations … i prefer to submit what i already have before asking for a milestone, but it requires more debugging …<br />
+<strong>&lt;anonimal&gt;</strong> Ok, but <em>if</em> you've put in the hours already then I think you should get the payout.<br />
+<strong>&lt;anonimal&gt;</strong> Otherwise people are wondering what you're doing (it's been at least 2 months since last milestone completion and no further info in the forum thread).<br />
+<strong>&lt;anonimal&gt;</strong> Does that sound fair?<br />
+<strong>&lt;ArticMine&gt;</strong> Maye an informal update?<br />
+<strong>&lt;ArticMine&gt;</strong> Maybe<br />
+<strong>&lt;MoroccanMalinois&gt;</strong> Sounds fair, will publish something soon<br />
+<strong>&lt;anonimal&gt;</strong> Ok, sounds good.<br />
+<strong>* anonimal</strong> hopes your unexpected obligations go smoothly<br />
+<strong>&lt;MoroccanMalinois&gt;</strong> me too :)<br />
+<strong>&lt;anonimal&gt;</strong> Anything else on point 3 FFS check-in?<br />
+<strong>&lt;anonimal&gt;</strong> 4. Code + ticket discussion / Q &amp; A<br />
+<strong>&lt;anonimal&gt;</strong> One thing that wasn't mentioned in the brief review was selsta's contributions and ongoing work. We now have colored logging to console and, last I heard, selsta is working on kovri-util cpuid functionality.<br />
+<strong>* anonimal</strong> checks issue trackers for point 4<br />
+<strong>&lt;MoroccanMalinois&gt;</strong> One question: on testnet floodfill instances keeps indefinitely trying to build a session with themselves since they are in the reseed zip (hence number of SessionRequest that keeps increasing), should we try to skip building this session based on IP comparison ?<br />
+<strong>&lt;anonimal&gt;</strong> I take it you've somehow implementing something which allows only a specific number of floodfills to be created rather than every RI?<br />
+<strong>&lt;anonimal&gt;</strong> Or is every router still –floodfill?<br />
+<strong>&lt;selsta&gt;</strong> anonimal: yes cpuid is my next project. although I haven’t started yet as uni is quite challenging :/<br />
+<strong>&lt;MoroccanMalinois&gt;</strong> nope, that's what happens with current testnet (for my tests, i disable ntcp)<br />
+<strong>&lt;anonimal&gt;</strong> selsta: good to hear :)<br />
+<strong>&lt;anonimal&gt;</strong> MoroccanMalinois: that's a good question, I'll have to look at the code and get back to you after the meeting.<br />
+<strong>&lt;MoroccanMalinois&gt;</strong> k thanks<br />
+<strong>&lt;anonimal&gt;</strong> meta/#118 is still open, I haven't heard a chirp from pigeons in a while. pigeons is this an easy fix?<br />
+<strong>* anonimal</strong> still can't connect that machine<br />
+<strong>&lt;anonimal&gt;</strong> meta/#77 still hasn't been resolved, I know we talked about it with fluffypony many meetings ago.<br />
+<strong>&lt;anonimal&gt;</strong> Any last thoughts on meta/#113?<br />
+<strong>&lt;i2p-relay&gt; {-fluffypony}</strong> &lt;- on vacation still<br />
+<strong>&lt;rehrar&gt;</strong> #12 too no?<br />
+<strong>&lt;anonimal&gt;</strong> Ooo vacation, nice :)<br />
+<strong>&lt;rehrar&gt;</strong> Have a good life fluffypony<br />
+<strong>&lt;i2p-relay&gt; {-fluffypony}</strong> lol<br />
+<strong>&lt;rehrar&gt;</strong> When do you return?<br />
+<strong>&lt;anonimal&gt;</strong> ArticMine erciccione_[m] rehrar last thoughts on meta/#113?<br />
+<strong>&lt;anonimal&gt;</strong> Can it be closed now?<br />
+<strong>&lt;rehrar&gt;</strong> Nothing further to add. I can close it unless anyone else has anything more.<br />
+<strong>&lt;erciccione_[m]&gt;</strong> nothing from me<br />
+<strong>&lt;rehrar&gt;</strong> Going once.<br />
+<strong>&lt;anonimal&gt;</strong> serhack started? work on kovri-site/#4, how's that coming along serhack?<br />
+<strong>&lt;rehrar&gt;</strong> Twice?<br />
+<strong>&lt;rehrar&gt;</strong> Closed<br />
+<strong>&lt;serhack&gt;</strong> hey!<br />
+<strong>&lt;serhack&gt;</strong> I'm waiting for rehrar :slightly_smiling_face:<br />
+<strong>&lt;ArticMine&gt;</strong> Ok<br />
+<strong>&lt;rehrar&gt;</strong> Oh?<br />
+<strong>&lt;serhack&gt;</strong> :) in order to design the page :<br />
+<strong>&lt;anonimal&gt;</strong> Ok. Yes, that will require some collab between you two.<br />
+<strong>&lt;i2p-relay&gt; {-fluffypony}</strong> rehrar: Oct 15<br />
+<strong>&lt;anonimal&gt;</strong> Any questions about kovri-site/#4, rehrar?<br />
+<strong>&lt;rehrar&gt;</strong> Not super sure what all this is, or what is required of me.<br />
+<strong>&lt;rehrar&gt;</strong> I know it's been an ongoing conversation for a while. Do we just need to print Serhack stuff on the page?<br />
+<strong>&lt;serhack&gt;</strong> okay, let's explain to rehrar <br />
+<strong>&lt;serhack&gt;</strong> yes rehrar<br />
+<strong>&lt;rehrar&gt;</strong> Ok, then that shouldn't be an issue. On every page of Kovri site?<br />
+<strong>&lt;anonimal&gt;</strong> …<br />
+<strong>&lt;anonimal&gt;</strong> No, let's talk more after the meeting.<br />
+<strong>&lt;serhack&gt;</strong> :( no<br />
+<strong>&lt;serhack&gt;</strong> don't be worried<br />
+<strong>&lt;rehrar&gt;</strong> Sure thing. Sorry for my misunderstanding.<br />
+<strong>&lt;anonimal&gt;</strong> re: meta/#87, more people should get involved with meta/#87 so we can wrap it up.<br />
+<strong>&lt;anonimal&gt;</strong> Should something go on reddit?<br />
+<strong>&lt;rehrar&gt;</strong> I'll post right after this meeting.<br />
+<strong>&lt;rehrar&gt;</strong> If that's what we decide.<br />
+<strong>&lt;rehrar&gt;</strong> There's a lot of big discussions going on right now, like the project relicensing issue, as well.<br />
+<strong>&lt;rehrar&gt;</strong> ArticMine, would you mind looking at that PR?<br />
+<strong>&lt;rehrar&gt;</strong> https://github.com/monero-project/meta/pull/87<br />
+<strong>&lt;ArticMine&gt;</strong> I'll take at look at #87<br />
+<strong>&lt;rehrar&gt;</strong> Thanks!<br />
+<strong>&lt;anonimal&gt;</strong> rehrar: kovri-site/#3, did a draft ever come up for a quickstart?<br />
+<strong>&lt;anonimal&gt;</strong> re-introducing a simple quickstart section to the readme is trivial but I don't think you had that in mind?<br />
+<strong>&lt;rehrar&gt;</strong> Kovri site #3 is changing the link color<br />
+<strong>&lt;anonimal&gt;</strong> We're running out of time, let's talk more later.<br />
+<strong>&lt;rehrar&gt;</strong> Ok.<br />
+<strong>&lt;anonimal&gt;</strong> s/kovri-site/kovri-docs/<br />
+<strong>&lt;anonimal&gt;</strong> oops<br />
+<strong>&lt;rehrar&gt;</strong> Ok. We'll talk more.<br />
+<strong>&lt;anonimal&gt;</strong> One last thing, the first Monero Coffee Chat is tomorrow https://github.com/monero-project/meta/issues/123<br />
+<strong>&lt;anonimal&gt;</strong> sgp I won't be able to make it but surely sometime in the future I can hop on the call.<br />
+<strong>&lt;serhack&gt;</strong> great<br />
+<strong>&lt;anonimal&gt;</strong> 5. Any additional meeting items<br />
+<strong>&lt;rehrar&gt;</strong> Nothing that can't be discussed later.<br />
+<strong>&lt;anonimal&gt;</strong> ^<br />
+<strong>&lt;anonimal&gt;</strong> 6. Confirm next meeting date/time<br />
+<strong>&lt;anonimal&gt;</strong> Does 20:00 work for everyone?<br />
+<strong>&lt;anonimal&gt;</strong> Or is 18:00 the best for everyone?<br />
+<strong>&lt;rehrar&gt;</strong> 20 should be fine.<br />
+<strong>&lt;MoroccanMalinois&gt;</strong> both ok for me<br />
+<strong>&lt;ArticMine&gt;</strong> 1800 is better for me<br />
+<strong>&lt;erciccione_[m]&gt;</strong> both good for me<br />
+<strong>&lt;ArticMine&gt;</strong> but I can do 2000 if we keep it there<br />
+<strong>&lt;serhack&gt;</strong> 2000 is the perfect time<br />
+<strong>&lt;ArticMine&gt;</strong> That is on Fridays<br />
+<strong>&lt;ArticMine&gt;</strong> So we make it 2000 on every second Firday?<br />
+<strong>&lt;anonimal&gt;</strong> If that works for you.<br />
+<strong>&lt;ArticMine&gt;</strong> Friday<br />
+<strong>&lt;ArticMine&gt;</strong> Yes that works<br />
+<strong>&lt;rehrar&gt;</strong> Serhack explained to me. It'll be done before the end of the day.<br />
+<strong>&lt;serhack&gt;</strong> in italy it's the end of the day<br />
+<strong>&lt;serhack&gt;</strong> but I will work on it asap<br />
+<strong>&lt;anonimal&gt;</strong> Ok thanks everyone. Please anyone speakup/complain if the new dates and times aren't working out.<br />
+<strong>&lt;anonimal&gt;</strong> Next meeting Oct. 20th, 20:00 UTC.</p>
+
+                    </div>
+                    <hr>
+                    <p id="post-meta">Post tags <i class="fa fa-tags"></i>: <a href="/blog/tags/dev diaries.html">Dev Diaries</a>, <a href="/blog/tags/i2p.html">Kovri I2P Router</a>, <a href="/blog/tags/crypto.html">Cryptography</a></p>
+                    </div>
+                </div>
+                <!-- end left two-thirds block-->
+                
+                <!-- right one-third block-->
+                <div class="right one-third col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <div class="sidebar col-sm-12 col-xs-12">   
+                            <div class="info-block">
+                                <div class="row center-xs">
+                                    <div class="col"><h2>Recent Posts</h2></div>
+                                </div>
+                                
+                                <div class="row start-xs info-block-row">
+                                    <div class="col">
+                                         <p><a href="/2018/03/29/response-to-an-empirical-analysis-of-traceability.html">Response to "An Empirical Analysis of Traceability in the Monero Blockchain", Version 2</a></p>
+                                     </div>
+                                </div>
+                                
+                                <div class="row start-xs info-block-row">
+                                    <div class="col">
+                                         <p><a href="/2018/03/29/monero-0.12.0.0-released.html">Monero 0.12.0.0 "Lithium Luna" Release</a></p>
+                                     </div>
+                                </div>
+                                
+                                <div class="row start-xs info-block-row">
+                                    <div class="col">
+                                         <p><a href="/2018/03/28/a-scheduled-protocol-upgrade-is-planned-for-April-6-2018-03-28.html">A Scheduled Network Upgrade is Planned for April 6</a></p>
+                                     </div>
+                                </div>
+                                
+                                <div class="row start-xs info-block-row">
+                                    <div class="col">
+                                         <p><a href="/2018/03/01/core-team-announcement.html">Core Team Announcement</a></p>
+                                     </div>
+                                </div>
+                                
+                            </div>
+                            <div class="info-block">
+                                <div class="row center-xs">
+                                    <div class="col">
+                                        <h2>Popular Tags</h2>
+                                    </div>
+                                </div>
+                                    
+                                    <div class="row start-xs">
+                                        <div class="col">
+                                             <p><a href="/blog/tags/monero missives.html">Monero Missives</a></p>
+                                         </div>
+                                     </div>
+                                     
+                                    <div class="row start-xs">
+                                        <div class="col">
+                                             <p><a href="/blog/tags/conferences.html">Conferences</a></p>
+                                         </div>
+                                     </div>
+                                     
+                                    <div class="row start-xs">
+                                        <div class="col">
+                                             <p><a href="/blog/tags/exchanges.html">Exchanges</a></p>
+                                         </div>
+                                     </div>
+                                     
+                                    <div class="row start-xs">
+                                        <div class="col">
+                                             <p><a href="/blog/tags/gui.html">Monero Core GUI</a></p>
+                                         </div>
+                                     </div>
+                                     
+
+
+                            </div>
+                        </div> 
+                </div>
+                <!-- end right one-third block-->
+            </div>
+        </section>
+    </div>
+
+    <footer class="container-fluid">
+            <div class="container">
+                <div class="row around-xs footer-wrapper">
+                   
+                     <div class="col-sm-3 col-xs-6">
+                     <h3>Recursos</h3>
+                         <ul class="list-unstyled">
+                            
+                             
+                                <li><a class="white" href="/es/resources/about/">Sobre Monero</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/es/resources/moneropedia/">Moneropedia</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/es/resources/developer-guides/">Guias de Desarrollo</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/es/resources/user-guides/">Guias de Usuario</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://getmonero.org/feed.xml">RSS Feed</a></li>
+                              
+                            
+                         </ul>
+                     </div>
+                  
+                     <div class="col-sm-3 col-xs-6">
+                     <h3>Canales IRC</h3>
+                         <ul class="list-unstyled">
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero">monero</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-dev">monero-dev</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-markets">monero-markets</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-pools">monero-pools</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-community">monero-community</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-translations">monero-translations</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-hardware">monero-hardware</a></li>
+                              
+                            
+                         </ul>
+                     </div>
+                  
+                     <div class="col-sm-3 col-xs-6">
+                     <h3>Comunidad</h3>
+                         <ul class="list-unstyled">
+                            
+                             
+                              <li><a class="white" href="https://reddit.com/r/monero">Reddit</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://monero.stackexchange.com/">Stack Exchange</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://bitcointalk.org/index.php?topic=583449.0">BitcoinTalk Thread</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://mattermost.getmonero.org/">Mattermost Chat</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://telegram.me/bitmonero">Telegram Chat</a></li>
+                              
+                            
+                         </ul>
+                     </div>
+                  
+                     <div class="col-sm-3 col-xs-6">
+                     <h3>El Proyecto Monero</h3>
+                         <ul class="list-unstyled">
+                            
+                             
+                              <li><a class="white" href="https://openalias.org/">Open Alias</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://getkovri.org/">Kovri</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/es/resources/research-lab/">Monero Research Lab</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/es/press-kit">Kit de Prensa</a></li>
+                              
+                            
+                         </ul>
+                     </div>
+                 
+                <div class="row center-xs">
+                    <div class="social-icons">
+                    </div>
+                    <div class="footer-links">
+                        <ul class="list-unstyled list-inline">
+                           
+                            
+                             <li><a href="/es/legal" class="white footer-link">Aviso Legal</a></li>
+                           
+                           
+                            
+                             <li><a href="https://github.com/monero-project" class="white footer-link">Código Fuente</a></li>
+                            
+                           
+                            
+                             <li><a href="/es/technical-specs/" class="white footer-link">Especificaciones Técnicas</a></li>
+                           
+                           
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
+</footer>
+<!-- Matomo -->
+<script type="text/javascript">
+    var _paq = _paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+        var u = "//analytics.getmonero.org/";
+        _paq.push(['setTrackerUrl', u + 'piwik.php']);
+        _paq.push(['setSiteId', '1']);
+        var d = document,
+            g = d.createElement('script'),
+            s = d.getElementsByTagName('script')[0];
+        g.type = 'text/javascript';
+        g.async = true;
+        g.defer = true;
+        g.src = u + 'piwik.js';
+        s.parentNode.insertBefore(g, s);
+    })();
+</script>
+<!-- End Matomo Code -->
+<!-- page served by server N -->
+    </div>
+  </body>
+</html>

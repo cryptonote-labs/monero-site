@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>
+     Logs for the Kovri Dev Meeting Held on 2017-06-11 | Monero - secure, private, untraceable
+    </title>
+	<meta name="description" content="Logs for the Kovri Dev Meeting Held on 2017-06-11 [on the home of Monero, a digital currency that is secure, private, and untraceable]">
+	<meta name="keywords" content="monero, xmr, bitmonero, cryptocurrency">
+
+    <meta property="og:title" content="Monero: Logs for the Kovri Dev Meeting Held on 2017-06-11"/>
+    <meta property="og:description" content="Logs for the Kovri Dev Meeting Held on 2017-06-11 [on the home of Monero, a digital currency that is secure, private, and untraceable]">
+    <meta property="og:image" content="http://static.getmonero.org/images/opengraph/logo.png">
+    <meta property="og:site_name" content="getmonero.org, The Monero Project">
+    <meta property="og:url" content="https://getmonero.org/2017/06/11/logs-for-the-Kovri-dev-meeting-held-on-2017-06-11.html">
+    <meta property="og:type" content="website">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/meta/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/meta/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/meta/favicon-16x16.png">
+        <link rel="manifest" href="/meta/manifest.json">
+        <link rel="mask-icon" href="/meta/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="theme-color" content="#ffffff">
+
+    <link href="/css/custom.css" rel="stylesheet">
+
+    
+    <meta name="msapplication-config" content="/ietemplates/ieconfig.xml">
+
+  </head>
+
+
+  <body>
+    <div class="page-wrapper">
+          
+<div class="mob-nav">
+              <input class="burger-check" id="mobile-burger" type="checkbox"><label for="mobile-burger" class="burger"></label>
+           
+        <div class="slide-in-nav">
+             <div class="container slide-in">
+                     
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                            
+                            <label for="drop1">Inicio<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="drop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                              <a href="/es/get-started/what-is-monero">¿Qué es Monero?</a>
+                                  
+                              <a href="/es/get-started/using">Usar Monero</a>
+                                  
+                              <a href="/es/get-started/accepting">Aceptar Monero</a>
+                                  
+                              <a href="/es/get-started/contributing">Contribuir a Monero</a>
+                                  
+                              <a href="/es/get-started/mining">Minar Monero</a>
+                                  
+                              <a href="/es/get-started/faq">FAQ</a>
+                                  
+                            </div>
+                            
+                     </div>
+                 </div>
+                  
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                               <a href="/es/downloads">Descargas</a>
+                            
+                     </div>
+                 </div>
+                  
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                            
+                            <label for="drop2">Noticias<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="drop2" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                              <a href="/es/blog">Todas publicaciones</a>
+                                  
+                              <a href="/es/blog/tags/monero%20missives.html">Misivas</a>
+                                  
+                              <a href="/es/blog/tags/dev%20diaries.html">Transcripciones de reuniones</a>
+                                  
+                              <a href="/es/blog/tags/releases.html">Lanzamientos</a>
+                                  
+                            </div>
+                            
+                     </div>
+                 </div>
+                  
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                            
+                            <label for="drop3">Comunidad<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="drop3" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                              <a href="/es/community/team">Equipo</a>
+                                  
+                              <a href="/es/community/hangouts">Canales de comunicación</a>
+                                  
+                              <a href="/es/community/sponsorships">Patrocinios</a>
+                                  
+                              <a href="/es/community/merchants">Comerciantes</a>
+                                  
+                            </div>
+                            
+                     </div>
+                 </div>
+                  
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                            
+                            <label for="drop4">Recursos<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="drop4" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                              <a href="/es/resources/about">Sobre Monero</a>
+                                  
+                              <a href="/es/resources/roadmap">Hoja de ruta</a>
+                                  
+                              <a href="/es/resources/research-lab">Laboratorio de investigación</a>
+                                  
+                              <a href="/es/resources/moneropedia">Moneropedia</a>
+                                  
+                              <a href="/es/resources/user-guides">Guías de usuario</a>
+                                  
+                              <a href="/es/resources/developer-guides">Guías de desarrolladores</a>
+                                  
+                              <a href="/es/technical-specs">Especificaciones técnicas</a>
+                                  
+                            </div>
+                            
+                     </div>
+                 </div>
+                 
+                 <div class="row">
+                     <div class="col-xs-12">
+                         <div class="text-center nav-item mob">
+                            <a href="https://forum.getmonero.org">Forum Funding System</a> 
+                         </div>
+                     </div>
+                 </div>
+                 <div class="row">
+                     <div class="col-xs-12">
+                         <div class="text-center nav-item mob">
+                            <a href="https://github.com/monero-project/meta/blob/master/VULNERABILITY_RESPONSE_PROCESS.md">Vulnerability Response</a>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="row">
+                     <div class="col-xs-12">
+                         <div class="text-center nav-item mob">
+                            <a href="/es/the-monero-project/">The Monero Project</a> 
+                         </div>
+                     </div>
+                 </div>            
+             </div>
+          
+        </div>
+       </div>
+       
+        <div class="desktop-nav">
+            <nav class="container">
+            <div class="topnav">
+              <div class="row middle-xs">
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <a href="
+                    
+                    /es
+                    
+                    "><img src="/img/monero-logo.png" alt="Monero Logo" class="monero-logo"></a>
+                  </div>
+                  <div class="col-lg-8 col-md-8 col-sm-8 topnav-list end-xs">
+                      <div class="row end-xs middle-xs">
+                         <div class="col-md-12">
+                          <a href="https://forum.getmonero.org" class="top-link">Forum Funding System</a>
+                          <a href="https://github.com/monero-project/meta/blob/master/VULNERABILITY_RESPONSE_PROCESS.md" class="top-link">Vulnerability Response</a>
+                          <a href="/es/the-monero-project/" class="top-link">The Monero Project</a>
+                          <div href="#" class="dropdown top-link language-change">
+                            <input class="burger-checkdropdown" id="langdrop" type="checkbox">
+                            <label for="langdrop">
+                            
+                                
+                            
+                            
+                            
+                                
+                            
+                                    Español
+                            
+                                
+                            
+                            
+                            
+                                
+                            
+                            
+                            
+                                
+                            
+                            
+                            
+                                
+                            
+                            <div class="arrow-down"></div></label>
+                            <div class="dropdown-content text-center">
+                                    
+                                
+                                  
+                                    <a href="/2017/06/11/logs-for-the-Kovri-dev-meeting-held-on-2017-06-11.html" >English</a>
+                                  
+                                
+                              
+                                
+                              
+                                
+                                  
+                                    <a href="/it/2017/06/11/logs-for-the-Kovri-dev-meeting-held-on-2017-06-11.html" >Italiano</a>
+                                  
+                                
+                              
+                                
+                                  
+                                    <a href="/pl/2017/06/11/logs-for-the-Kovri-dev-meeting-held-on-2017-06-11.html" >Polski</a>
+                                  
+                                
+                              
+                                
+                                  
+                                    <a href="/fr/2017/06/11/logs-for-the-Kovri-dev-meeting-held-on-2017-06-11.html" >Français</a>
+                                  
+                                
+                              
+                            </div>
+                          </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="botnav white-nav">
+                <input class="burger-check" id="burger-check" type="checkbox"><label for="burger-check" class="burger"></label>
+                <div class="row between-xs nav-items">
+                     
+                    <div class="col dropdown nav-item">
+                        
+                            <label for="desktopdrop1">Inicio<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="desktopdrop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                                  <a href="/es/get-started/what-is-monero">¿Qué es Monero?</a>
+                                
+                                  <a href="/es/get-started/using">Usar Monero</a>
+                                
+                                  <a href="/es/get-started/accepting">Aceptar Monero</a>
+                                
+                                  <a href="/es/get-started/contributing">Contribuir a Monero</a>
+                                
+                                  <a href="/es/get-started/mining">Minar Monero</a>
+                                
+                                  <a href="/es/get-started/faq">FAQ</a>
+                                
+                            </div>
+                            
+                    </div>
+                    
+                    <div class="col dropdown nav-item">
+                        
+                           <a href="/es/downloads">Descargas</a>
+                            
+                    </div>
+                    
+                    <div class="col dropdown nav-item">
+                        
+                            <label for="desktopdrop1">Noticias<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="desktopdrop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                                  <a href="/es/blog">Todas publicaciones</a>
+                                
+                                  <a href="/es/blog/tags/monero%20missives.html">Misivas</a>
+                                
+                                  <a href="/es/blog/tags/dev%20diaries.html">Transcripciones de reuniones</a>
+                                
+                                  <a href="/es/blog/tags/releases.html">Lanzamientos</a>
+                                
+                            </div>
+                            
+                    </div>
+                    
+                    <div class="col dropdown nav-item">
+                        
+                            <label for="desktopdrop1">Comunidad<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="desktopdrop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                                  <a href="/es/community/team">Equipo</a>
+                                
+                                  <a href="/es/community/hangouts">Canales de comunicación</a>
+                                
+                                  <a href="/es/community/sponsorships">Patrocinios</a>
+                                
+                                  <a href="/es/community/merchants">Comerciantes</a>
+                                
+                            </div>
+                            
+                    </div>
+                    
+                    <div class="col dropdown nav-item">
+                        
+                            <label for="desktopdrop1">Recursos<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="desktopdrop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                                  <a href="/es/resources/about">Sobre Monero</a>
+                                
+                                  <a href="/es/resources/roadmap">Hoja de ruta</a>
+                                
+                                  <a href="/es/resources/research-lab">Laboratorio de investigación</a>
+                                
+                                  <a href="/es/resources/moneropedia">Moneropedia</a>
+                                
+                                  <a href="/es/resources/user-guides">Guías de usuario</a>
+                                
+                                  <a href="/es/resources/developer-guides">Guías de desarrolladores</a>
+                                
+                                  <a href="/es/technical-specs">Especificaciones técnicas</a>
+                                
+                            </div>
+                            
+                    </div>
+                    
+                  </div>
+            </div>
+        </nav>
+        </div>
+        <div class="mob bot-nav white-nav">
+            <div class="row center-xs middle-xs">
+                <div class="col-xs-6">
+                    <a href="
+                    
+                    /es
+                    
+                    "><img src="/img/monero-logo.png" alt="Monero Logo" class="monero-logo"></a>
+                </div>
+                <div class="dropdown col-xs-6 text-center mob-language-change">
+                <input class="burger-checkdropdown" id="moblangdrop" type="checkbox">
+                 <label for="moblangdrop"><img src="/img/language.png" alt="Lang" class="icon-language"/><div class="arrow-down"></div></label>
+                               <div class="mob dropdown-content text-center">
+                               <p class="mob-lang-change mob-lang-selected">
+                                   
+                              
+                                
+                              
+                                
+                                 Español
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                   
+                               </p>
+                               
+                                
+                                  
+                                    <a class="mob-lang-change" href="/2017/06/11/logs-for-the-Kovri-dev-meeting-held-on-2017-06-11.html" >English</a>
+                                  
+                                
+                              
+                                
+                              
+                                
+                                  
+                                    <a class="mob-lang-change" href="/it/2017/06/11/logs-for-the-Kovri-dev-meeting-held-on-2017-06-11.html" >Italiano</a>
+                                  
+                                
+                              
+                                
+                                  
+                                    <a class="mob-lang-change" href="/pl/2017/06/11/logs-for-the-Kovri-dev-meeting-held-on-2017-06-11.html" >Polski</a>
+                                  
+                                
+                              
+                                
+                                  
+                                    <a class="mob-lang-change" href="/fr/2017/06/11/logs-for-the-Kovri-dev-meeting-held-on-2017-06-11.html" >Français</a>
+                                  
+                                
+                              
+                            </div>
+                          </div>
+            </div>     
+        </div>    
+
+        
+
+<div class="site-wrap post">
+    
+    <section class="container">
+            <div class="row">
+                <!-- left two-thirds block-->
+                <div class="left two-thirds col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                    <div class="info-block">
+                        <div class="row">
+                            <div class="col">
+                               <h2>Logs for the Kovri Dev Meeting Held on 2017-06-11</h2> 
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p class="author">Posted by: dEBRUYNE / fluffypony</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p>June 11, 2017</p>
+                            </div>
+                        </div>
+                    <div>
+                        <h1 id="logs">Logs</h1>
+
+<p><strong>&lt;anonimal&gt;</strong> 1. Greetings<br />
+<strong>&lt;anonimal&gt;</strong> 2. Brief review of what's been completed since the previous meeting<br />
+<strong>&lt;anonimal&gt;</strong> 3. Status of <a href="https://github.com/monero-project/meta/issues/46">96boards.org OpenHours showcase for Kovri / Monero</a><br />
+<strong>&lt;anonimal&gt;</strong> 4. Moving <code class="highlighter-rouge">anonimal/kovri-site</code> and <code class="highlighter-rouge">anonimal/kovri-docs</code> to <code class="highlighter-rouge">monero-project</code> #74<br />
+<strong>&lt;anonimal&gt;</strong> 5. Resolve FFS RFC for @moroccanmalinois<br />
+<strong>&lt;anonimal&gt;</strong> 6. Code + ticket discussion / Q &amp; A<br />
+<strong>&lt;anonimal&gt;</strong> 7. Any additional meeting items<br />
+<strong>&lt;anonimal&gt;</strong> 8. Confirm next meeting date/time<br />
+<strong>&lt;anonimal&gt;</strong> Hi<br />
+<strong>&lt;ArticMine&gt;</strong> hi<br />
+<strong>&lt;rehrar&gt;</strong> Hi!!<br />
+<strong>&lt;johnalan&gt;</strong> hi<br />
+<strong>&lt;anonimal&gt;</strong> 2. Brief review of what's been completed since the previous meeting<br />
+<strong>&lt;rehrar&gt;</strong> Sorry. Slack being stupid.<br />
+<strong>&lt;MoroccanMalinois&gt;</strong> Hi<br />
+<strong>&lt;rehrar&gt;</strong> The one last week? Is this a mini-meeting?<br />
+<strong>&lt;anonimal&gt;</strong> Yes, but it should go as long as it needs<br />
+<strong>&lt;anonimal&gt;</strong> I was busy dealing with more guzzi drama and dis-information, so I haven't been able to prepare for 2<br />
+<strong>&lt;anonimal&gt;</strong> This week was very busy though:<br />
+<strong>&lt;i2p-relay&gt; {-fluffypony}</strong> sorry I missed 1. - I'm in and out, getting changed and need to get food desperately<br />
+<strong>&lt;anonimal&gt;</strong> much preparing for 96boards (which ended up being canceled), kovri-site dev / collaboration, kovri-docs created, PR review/merges<br />
+<strong>&lt;anonimal&gt;</strong> rehrar doing great work, MoroccanMalinois doing great work<br />
+<strong>&lt;i2p-relay&gt; {-fluffypony}</strong> anonimal doing great work<br />
+<strong>&lt;anonimal&gt;</strong> Everyone around doing great work. elopio pigeons and every other contributor this past week.<br />
+<strong>* anonimal</strong> blushes, thank you<br />
+<strong>&lt;anonimal&gt;</strong> #653 was interesting, still not sure what his issue was before he closed it.<br />
+<strong>&lt;anonimal&gt;</strong> In all a very collaborative and active IRC week. Did I miss anything?<br />
+<strong>&lt;anonimal&gt;</strong> Oh, yes, guzzi quit and left his FFS unfinished. MoroccanMalinois is stepping up to finish his FFS work (we'll talk more in point 5).<br />
+<strong>&lt;anonimal&gt;</strong> Moving on to 3.?<br />
+<strong>&lt;anonimal&gt;</strong> 3. Status of <a href="https://github.com/monero-project/meta/issues/46">96boards.org OpenHours showcase for Kovri / Monero</a><br />
+<strong>&lt;anonimal&gt;</strong> I think we're rescheduled (or will be) for July 20th or 27th<br />
+<strong>&lt;anonimal&gt;</strong> I'll keep everyone apprised.<br />
+<strong>&lt;anonimal&gt;</strong> Details are in the meta issue.<br />
+<strong>&lt;anonimal&gt;</strong> I think everyone was informed about fluff's flight delay. Did anyone not get that info / reschedule notice?<br />
+<strong>* anonimal</strong> posted in the reddit thread too<br />
+<strong>&lt;i2p-relay&gt; {-fluffypony}</strong> yeah stupid fire<br />
+<strong>&lt;i2p-relay&gt; {-fluffypony}</strong> Robert indicated that next month would suit<br />
+<strong>&lt;anonimal&gt;</strong> Ok<br />
+<strong>&lt;anonimal&gt;</strong> Anything else on 3.?<br />
+<strong>&lt;anonimal&gt;</strong> 4. Moving <code class="highlighter-rouge">anonimal/kovri-site</code> and <code class="highlighter-rouge">anonimal/kovri-docs</code> to <code class="highlighter-rouge">monero-project</code> #74<br />
+<strong>&lt;i2p-relay&gt; {-fluffypony}</strong> I can create empty repos for that now before I leave<br />
+<strong>&lt;anonimal&gt;</strong> fluffypony: what do you think about this? ^ https://github.com/monero-project/meta/issues/74<br />
+<strong>&lt;i2p-relay&gt; {-fluffypony}</strong> I think that's good<br />
+<strong>&lt;rehrar&gt;</strong> Sorry. Here. Checking backlog. I'm out and a guy I know decided to give me a 15 minute talk on WW2<br />
+<strong>&lt;anonimal&gt;</strong> fluffypony: alright, cool<br />
+<strong>&lt;anonimal&gt;</strong> Anything else on 4.?<br />
+<strong>&lt;johnalan&gt;</strong> um<br />
+<strong>&lt;johnalan&gt;</strong> at the risk of asking a stupid q<br />
+<strong>&lt;johnalan&gt;</strong> is there anything that needs to be done on making Kovri Ipv6 ready<br />
+<strong>&lt;johnalan&gt;</strong> one example is port fowarding<br />
+<strong>&lt;johnalan&gt;</strong> on ipv6 consumer routers you can’t do that<br />
+<strong>&lt;johnalan&gt;</strong> as all devices have public IP<br />
+<strong>&lt;anonimal&gt;</strong> johnalan: ipv6 is supported, let's talk more at point 7.<br />
+<strong>&lt;johnalan&gt;</strong> ok<br />
+<strong>&lt;johnalan&gt;</strong> no probs<br />
+<strong>&lt;johnalan&gt;</strong> sorry<br />
+<strong>&lt;anonimal&gt;</strong> 5. Resolve FFS RFC for @moroccanmalinois https://forum.getmonero.org/9/work-in-progress/87082/proposal-for-kovri-dev?page=&amp;noscroll=1#post-91048<br />
+<strong>&lt;MoroccanMalinois&gt;</strong> Just a few words before this point: I am bad at social things. I don't do politics/drama. Not a funny guy, don't feels comfortable with english, but i am happy to answer technical questions when i can. I already feel honored by the support i have received so far and whatever happens with the FFS, i am OK with it and it won't change anything to the work i am going to do or not do in the next months.So just wanted to say a big<br />
+<strong>&lt;MoroccanMalinois&gt;</strong> THANKS !<br />
+<strong>&lt;anonimal&gt;</strong> Woo!<br />
+<strong>&lt;anonimal&gt;</strong> I've seen no negative responses to the RFC. Did anyone say anything in the reddit thread?<br />
+<strong>* anonimal</strong> checks<br />
+<strong>&lt;i2p-relay&gt; {-fluffypony}</strong> MoroccanMalinois: your English has been excellent, you mustn't worry about that :)<br />
+<strong>&lt;MoroccanMalinois&gt;</strong> :)<br />
+<strong>&lt;moneromooo&gt;</strong> MoroccanMalinois == good guy to have<br />
+<strong>&lt;moneromooo&gt;</strong> (or gal)<br />
+<strong>&lt;anonimal&gt;</strong> https://www.reddit.com/r/Monero/comments/6g1q8b/request_for_replacement_assistant_kovri_developer/<br />
+<strong>&lt;anonimal&gt;</strong> Nothing but positive reviews it seems.<br />
+<strong>&lt;MoroccanMalinois&gt;</strong> Thank u very much mooo<br />
+<strong>&lt;anonimal&gt;</strong> So, everyone is in agreement?<br />
+<strong>* anonimal</strong> yes<br />
+<strong>&lt;johnalan&gt;</strong> yes<br />
+<strong>&lt;moneromooo&gt;</strong> yes<br />
+<strong>&lt;johnalan&gt;</strong> delighted to have him<br />
+<strong>&lt;johnalan&gt;</strong> her<br />
+<strong>&lt;johnalan&gt;</strong> whatev<br />
+<strong>* MoroccanMalinois</strong> blushing <br />
+<strong>&lt;serhack&gt;</strong> yes<br />
+<strong>&lt;anonimal&gt;</strong> Sold! Congrats to MoroccanMalinois. You've always been aboard so saying "welcome aboard" is redundant.<br />
+<strong>&lt;anonimal&gt;</strong> Welcome aboard<br />
+<strong>&lt;anonimal&gt;</strong> lol<br />
+<strong>&lt;anonimal&gt;</strong> On this note, I'd like to point out one thing:<br />
+<strong>&lt;anonimal&gt;</strong> We spent more time vetting MoroccanMalinois as a replacement for guzzi then we did vetting guzzi to receive an FFS in the first place.<br />
+<strong>&lt;anonimal&gt;</strong> palexander had some great questions. In general, how can we better vet FFS proposals?<br />
+<strong>&lt;anonimal&gt;</strong> Is this possible? If so, how?<br />
+<strong>&lt;moneromooo&gt;</strong> I think the key is to have people contribute enough to get a feel of how it works. I don't know how much guzzi contributed at start though.<br />
+<strong>&lt;endogenic&gt;</strong> one thing i'd like to mention is that if someone is getting paid, they should know something, and be able to ship at least what they say they know w/o reliance on others<br />
+<strong>&lt;endogenic&gt;</strong> if that's not able to be kept then i'd say that's grounds for renegotiation or something<br />
+<strong>&lt;endogenic&gt;</strong> aside from that, i think it's important to be careful with whether teaching someone becomes a codependency sort of situation<br />
+<strong>&lt;endogenic&gt;</strong> not that i'm saying you wanted that at all anonimal, obviously<br />
+<strong>&lt;anonimal&gt;</strong> I think moneromooo and endogenic hit that nail on the head HARD!<br />
+<strong>&lt;anonimal&gt;</strong> moneromooo: to be brutally honest, guzzi contributed very little; even less AFTER he started his FFS.<br />
+<strong>&lt;anonimal&gt;</strong> The value of the work was on par to the amount.<br />
+<strong>&lt;anonimal&gt;</strong> He should've spent his time taking an online course or going to a community college instead of, endogenic so elegantly put it, used me as a co-dependent.<br />
+<strong>&lt;anonimal&gt;</strong> Though the dependency was not mutual.<br />
+<strong>* anonimal</strong> typing<br />
+<strong>&lt;MoroccanMalinois&gt;</strong> :) Dear community, Thanks very much<br />
+<strong>&lt;anonimal&gt;</strong> For guzzi to take 4 months to complete 40 hours of work, get many free hours of tutelage from me, complain about not understanding how to program c++, attack me and discredit other contributors, quit, then continue to attack the project: I don't think anyone could've predicted this would happen.<br />
+<strong>* anonimal</strong> grabs meta link for FFS sticky<br />
+<strong>&lt;endogenic&gt;</strong> lol anonimal as to the last sentence you may find it can be noticed much earlier<br />
+<strong>&lt;i2p-relay&gt; {-fluffypony}</strong> anonimal: I've created the repos and given you access<br />
+<strong>&lt;i2p-relay&gt; {-fluffypony}</strong> or invited you anyway<br />
+<strong>&lt;i2p-relay&gt; {-fluffypony}</strong> on that note I have to take my leave, chat later<br />
+<strong>&lt;anonimal&gt;</strong> Thanks fluffypony. Godspeed.<br />
+<strong>&lt;anonimal&gt;</strong> endogenic: lol alright, you have a point ;)<br />
+<strong>&lt;anonimal&gt;</strong> https://github.com/monero-project/meta/issues/63<br />
+<strong>&lt;anonimal&gt;</strong> So, ^ create formalized FFS process<br />
+<strong>&lt;i2p-relay&gt; {-fluffypony}</strong> o/<br />
+<strong>&lt;endogenic&gt;</strong> \o fp!<br />
+<strong>&lt;anonimal&gt;</strong> It's already in meta. endogenic moneromooo not to prod your brain too much, but does a sentence or two come to mind that could be added/revised?<br />
+<strong>&lt;anonimal&gt;</strong> gingeropolous: ^ thanks<br />
+<strong>&lt;endogenic&gt;</strong> may be good to put rigorous criteria to "disappears"<br />
+<strong>&lt;endogenic&gt;</strong> taking vacation at improper times, etc, imo, is akin to abandonment<br />
+<strong>&lt;rehrar&gt;</strong> Ok. I'm sorry for the second disappearance. O vote aye for @moroccanmalinois<br />
+<strong>&lt;endogenic&gt;</strong> obviously that's super strict and not applicable directly to a FOSS context<br />
+<strong>&lt;moneromooo&gt;</strong> "improper" ?<br />
+<strong>&lt;endogenic&gt;</strong> but my point is that if someone just pops in every now and then to say "hey i'm still alive" but is dragging their heels then that may be a sticking point where you would have wanted to define what disappears means<br />
+<strong>&lt;endogenic&gt;</strong> moneromooo: "improper" as in let's say they committed to doing something but then decided to put a vacation there<br />
+<strong>&lt;moneromooo&gt;</strong> Maybe there could be a rough show of hands as to whether something needs fixing, then.<br />
+<strong>&lt;anonimal&gt;</strong> Good point I think.<br />
+<strong>&lt;anonimal&gt;</strong> fp and I had repeatedly - repeatedly - over the course of months had asked him to show up to meetings; yet he still wouldn't do it reliably. MoroccanMalinois was better at attending meetings and no one asked him to!<br />
+<strong>&lt;endogenic&gt;</strong> moneromooo: yeah i believe it has to be judged case-by-case, anyway<br />
+<strong>&lt;endogenic&gt;</strong> anonimal: yep<br />
+<strong>&lt;anonimal&gt;</strong> So, maybe we should add something to the regular meeting agenda? "X. contributor / FFS check-in, status"?<br />
+<strong>&lt;endogenic&gt;</strong> anonimal: there are so many good people who would want to work on kovri<br />
+<strong>&lt;johnalan&gt;</strong> anonimal: good idea<br />
+<strong>&lt;endogenic&gt;</strong> that actually sounds like a great idea<br />
+<strong>&lt;moneromooo&gt;</strong> Yep<br />
+<strong>&lt;anonimal&gt;</strong> And then add something to the FFS document which <em>enforces</em> something<br />
+<strong>&lt;anonimal&gt;</strong> That's the tricky part I think.<br />
+<strong>&lt;endogenic&gt;</strong> the contract can't enforce things per se imo<br />
+<strong>&lt;endogenic&gt;</strong> but can give paper trail to agreement<br />
+<strong>&lt;endogenic&gt;</strong> so imo the question is what matter needs addressing<br />
+<strong>&lt;anonimal&gt;</strong> Ok, so make this more of a per-issue/per-person/per-meeting check-in resolution?<br />
+<strong>&lt;johnalan&gt;</strong> its not to make it difficult or hard on the FFS contributor, just a status update. If that’s not much in a given week or two no problem<br />
+<strong>&lt;anonimal&gt;</strong> Instead of a global catch-all?<br />
+<strong>&lt;endogenic&gt;</strong> well it could probably be couched in general terms<br />
+<strong>&lt;rehrar&gt;</strong> I think status updates are healthy accountability. They are hired by the community after all.<br />
+<strong>&lt;johnalan&gt;</strong> ^^^<br />
+<strong>&lt;rehrar&gt;</strong> As long as they are done unilaterally without preference (so anonimal too and other higher ups) then it's a good thing.<br />
+<strong>&lt;endogenic&gt;</strong> but it's basically to have them indicate they understand that they are working for the community, not the other way around<br />
+<strong>&lt;anonimal&gt;</strong> johnalan rehrar: I believe I've been doing that for every meeting since 2015. In the eyes of a problem contributor, any response is a good response because "it's a response and that's all I need to give"<br />
+<strong>&lt;johnalan&gt;</strong> ok<br />
+<strong>&lt;rehrar&gt;</strong> I'm not pointing fingers at you, bud. Just saying as long as everyone is held to a similar standard, I think it's healthy and ensures something like this doesn't happen again.<br />
+<strong>&lt;johnalan&gt;</strong> good point<br />
+<strong>* anonimal</strong> is questioning the validity / quality of the response as it pertains to the FFS<br />
+<strong>&lt;johnalan&gt;</strong> fair<br />
+<strong>&lt;anonimal&gt;</strong> rehrar: I didn't think that nor am I implying that. I'm not attacking you or johnalan. This is purely information relay.<br />
+<strong>&lt;rehrar&gt;</strong> Part of a formalized FFS should include updates on a regular basis, and if this minimum thing isn't kept up, it's fair to question whether or not the person has the committment to fulfill the project<br />
+<strong>&lt;rehrar&gt;</strong> if they can't even be bothered to give updates, how can they be bothered to complete the assigned tasks?<br />
+<strong>&lt;anonimal&gt;</strong> Indeed<br />
+<strong>&lt;rehrar&gt;</strong> Even if they can't make it to a meeting, they can write something up before hand and have a proxy give it on their behalf.<br />
+<strong>&lt;rehrar&gt;</strong> It's honestly a bare minimum as far as standards go, and I'm all for it. :)<br />
+<strong>&lt;anonimal&gt;</strong> So how can we write this into an FFS standard?<br />
+<strong>&lt;johnalan&gt;</strong> measurable goals<br />
+<strong>&lt;rehrar&gt;</strong> I think that's a big of a longer conversation that should involve more people if we're talking about the FFS at large, and is outside the scope of this meeting.<br />
+<strong>&lt;rehrar&gt;</strong> *bit of a longer<br />
+<strong>&lt;moneromooo&gt;</strong> tbh, I'd keep it fairly generic, and keep in mind some FFSes aren't coding.<br />
+<strong>&lt;rehrar&gt;</strong> if we're just talking about FFS's for Kovri, then sure, let's talk<br />
+<strong>&lt;rehrar&gt;</strong> I wouldn't mind writing up a draft and presenting it to everyone. :)<br />
+<strong>&lt;anonimal&gt;</strong> rehrar: https://github.com/monero-project/meta/blob/master/FFS<br />
+<strong>&lt;johnalan&gt;</strong> sorry gents gotta dash (no pun intended)<br />
+<strong>&lt;rehrar&gt;</strong> I'll fork and do some amends for review.<br />
+<strong>&lt;ArticMine&gt;</strong> I would prefer this to be applied to FFS across the Monero project, not just Kovri<br />
+<strong>&lt;anonimal&gt;</strong> ^<br />
+<strong>* anonimal</strong> was just typing that<br />
+<strong>&lt;rehrar&gt;</strong> This is actually pretty important for me, as I'm designing the new FFS interface for the new website. Have a meeting with Fluffy on Monday about some technical aspects, but getting this hammered down too would be very helpful.<br />
+<strong>&lt;anonimal&gt;</strong> I've been hoping for this discussion for a long time now; before I even opened up my first FFS. I'm glad to see we finally have the time/space to get to this.<br />
+<strong>&lt;rehrar&gt;</strong> It's possible to launch the new website without the redesigned FFS for the short term, and roll out the new one once this discussion has been hammered out.<br />
+<strong>&lt;rehrar&gt;</strong> I used hammered something twice. Slap me.<br />
+<strong>&lt;anonimal&gt;</strong> Lots of good input. I'll need to give this more thought too.<br />
+<strong>&lt;anonimal&gt;</strong> Anything else on this point?<br />
+<strong>* anonimal</strong> will add to the next meeting agenda<br />
+<strong>&lt;rehrar&gt;</strong> Nah, but it may be a good thing to add the the next #monero-dev agenda also<br />
+<strong>&lt;anonimal&gt;</strong> ^ fluffypony<br />
+<strong>&lt;anonimal&gt;</strong> 6. Code + ticket discussion / Q &amp; A<br />
+<strong>&lt;anonimal&gt;</strong> 6 minutes left. Any questions/comments?<br />
+<strong>&lt;anonimal&gt;</strong> MoroccanMalinois: I'd like to add your testnet bash script to /contrib. What do you think?<br />
+<strong>&lt;MoroccanMalinois&gt;</strong> I'll wait for it to work :)<br />
+<strong>&lt;anonimal&gt;</strong> lol, ok<br />
+<strong>&lt;MoroccanMalinois&gt;</strong> Pretty sure it doesn't work related to the config<br />
+<strong>&lt;MoroccanMalinois&gt;</strong> External IP Detection seems completely broken<br />
+<strong>&lt;anonimal&gt;</strong> Which config?<br />
+<strong>&lt;MoroccanMalinois&gt;</strong> But it works perfectly on mainnet<br />
+<strong>&lt;anonimal&gt;</strong> I'll talk more with you about that after the meeting.<br />
+<strong>&lt;MoroccanMalinois&gt;</strong> Sure<br />
+<strong>&lt;anonimal&gt;</strong> Anything else on 6.?<br />
+<strong>&lt;anonimal&gt;</strong> 7. Any additional meeting items<br />
+<strong>&lt;rehrar&gt;</strong> I have something. So I've discussed with anonimal what it would be like for me to put in a FFS as a 'general staffer' of Kovri. There's a lot of work that needs to be done that isn't coding related. Website maintenance, reddit moderation and theme design, trying to get other developers interested, etc. I'd like some feedback from others on what the thoughts of something like this are instead of FFS for each project. Basically, bei<br />
+<strong>&lt;rehrar&gt;</strong> from moneromooo and others as well since there's a possibility of me doing something like this for Monero as well (I had a discussion with dEBRUYNE who supported the idea)<br />
+<strong>&lt;moneromooo&gt;</strong> This got cut: "Basically, bei […] from moneromooo".<br />
+<strong>&lt;rehrar&gt;</strong> sec<br />
+<strong>&lt;rehrar&gt;</strong> Basically, being paid on a per hour basis 10ish/wk<br />
+<strong>&lt;rehrar&gt;</strong> 10ish hours I mean<br />
+<strong>&lt;ArticMine&gt;</strong> Maybe doing the FFS for Monero as a whole including Kovri<br />
+<strong>&lt;rehrar&gt;</strong> that's what I was thinking yes. 10 hours/wk for Monero and 10 for Kovri or something like that in one FFS<br />
+<strong>&lt;rehrar&gt;</strong> I would outline the goals for each project<br />
+<strong>&lt;rehrar&gt;</strong> Would this be something that would be useful? Creating content for Monero (like the reddit posts and helping people get plugged in) is something that's super fun for me and I love to do<br />
+<strong>&lt;rehrar&gt;</strong> and I would love to be able to devote dedicated time for it<br />
+<strong>&lt;endogenic&gt;</strong> the reddit posts could be something of a black hole<br />
+<strong>&lt;rehrar&gt;</strong> and Kovri, well, it's my favorite and the reason I'm here<br />
+<strong>&lt;endogenic&gt;</strong> if it were to be funded, it might be good to formalize the plan for making posts<br />
+<strong>&lt;moneromooo&gt;</strong> Reddit, I dunno, but website content curating would be useful, for example.<br />
+<strong>&lt;endogenic&gt;</strong> rather than it being, purely for example, contacting specific people who might not know about kovri<br />
+<strong>&lt;rehrar&gt;</strong> understood, content can be different<br />
+<strong>&lt;rehrar&gt;</strong> and yeah, web maintenance for both projects is definitely one thing I had in mind<br />
+<strong>* anonimal</strong> notes we don't have a formalized way of reporting completed work. Even I'm ad-hoc'ing it. Sidenote: I think we should give this more thought with FFS re-write work<br />
+<strong>&lt;ArticMine&gt;</strong> I looked at you work for https://getkovri.org/ it is rock solid<br />
+<strong>&lt;anonimal&gt;</strong> rehrar knows I'm on-board with the idea.<br />
+<strong>&lt;rehrar&gt;</strong> thanks so much ArticMine :)<br />
+<strong>&lt;ArticMine&gt;</strong> This kind of material is needed across the whole project<br />
+<strong>&lt;anonimal&gt;</strong> General question: would having a single person in charge of this much be questionable in terms of de-centralization?<br />
+<strong>&lt;ArticMine&gt;</strong> Posting in my opinion is secondary<br />
+<strong>&lt;endogenic&gt;</strong> well they could fall into the same accountability/status update stuff<br />
+<strong>&lt;endogenic&gt;</strong> anonimal:<br />
+<strong>&lt;rehrar&gt;</strong> ArticMine: on slow weeks with not many updates to be made, the time can be filled with more user guides and stuff, which are desperately needed. :)<br />
+<strong>&lt;rehrar&gt;</strong> Anyways, a discussion for another time. There's tons of ideas.<br />
+<strong>&lt;anonimal&gt;</strong> Ok, we're in over time. So I see no objections to rehrar's proposal?<br />
+<strong>&lt;endogenic&gt;</strong> yeah i would be happy to see rehrar working on that stuff<br />
+<strong>&lt;anonimal&gt;</strong> Is this in the FFS ideas section?<br />
+<strong>&lt;rehrar&gt;</strong> I haven't made it yet, no.<br />
+<strong>&lt;rehrar&gt;</strong> I'd have questions on what people think a fair price would be, but that can be for after the meeting. :)<br />
+<strong>&lt;anonimal&gt;</strong> In the future I think it's better to post there first and link here because of the amount of people not on IRC.<br />
+<strong>&lt;rehrar&gt;</strong> Ok. Sorry.<br />
+<strong>&lt;anonimal&gt;</strong> No problem, I just hope the word gets out better that's all. We are but a small a group.<br />
+<strong>&lt;anonimal&gt;</strong> I have one thing to add to this last agenda item:<br />
+<strong>&lt;endogenic&gt;</strong> preannouncement??<br />
+<strong>* anonimal</strong> slams fist on table, plan foiled by endogenic<br />
+<strong>&lt;endogenic&gt;</strong> lolol<br />
+<strong>* anonimal</strong> typing<br />
+<strong>&lt;ArticMine&gt;</strong> anonimal: General question: would having a single person in charge of this much be questionable in terms of de-centralization? &lt;— Not a major concern if the contend is licensed under a sharealike license CC /GNU etc<br />
+<strong>&lt;ArticMine&gt;</strong> Since it can always be forked<br />
+<strong>&lt;anonimal&gt;</strong> One last thing: it seems like some people have been misinterpreting my language. Some people seem to think I'm attacking them when I am not. I don't know why. Maybe I'm being direct / honest / too the point / curt?<br />
+<strong>&lt;anonimal&gt;</strong> I do point out ideas, and question ideas, but I don't consider that attacking.<br />
+<strong>&lt;anonimal&gt;</strong> I do that to my own ideas. Even if I attack an idea, I wouldn't take it personal.<br />
+<strong>&lt;anonimal&gt;</strong> I'm bringing this up because I've seen this since the beginning; but the issues were 99.9% with problem contributors who have no gone to the wayside.<br />
+<strong>&lt;anonimal&gt;</strong> *now gone to<br />
+<strong>&lt;i2p-relay&gt; {-pigeons}</strong> sometimes in pursuit of efficiency engineers can ignore little customs and manners that make people comfortable in communication<br />
+<strong>&lt;endogenic&gt;</strong> imo honesty has the function of keeping things simple, clear, and bright - but ppl tend to follow what they feel instead of their rational understanding, which is why too-blunt yet frank criticism of a person who has some self-esteem or self-worth issues usually ends up not working out - so imo it's a question of how people are led and managed<br />
+<strong>&lt;i2p-relay&gt; {-pigeons}</strong> people online are from all different backgrounds, its hard to know their communication style, so a little extra care probably helps<br />
+<strong>&lt;endogenic&gt;</strong> on one hand, you probably (definitely) could have been more strict with guzzi early on but didn't want to based on some shred of idealism about him<br />
+<strong>&lt;endogenic&gt;</strong> what i've had to learn is that people only take what they're ready to take from a teaching<br />
+<strong>&lt;endogenic&gt;</strong> i.e. ppl hear what they want<br />
+<strong>&lt;endogenic&gt;</strong> so pragmatism kind of means living with that reality and operating as if not being able to rely on others - i think it causes others to have to step up and behave like adults<br />
+<strong>&lt;rehrar&gt;</strong> I find two things contribute here. Text is horrible for conveying meaning, and coders are not always (there are exceptions, don't kill me) super socially adept :D<br />
+<strong>&lt;rehrar&gt;</strong> but mostly the first<br />
+<strong>&lt;rehrar&gt;</strong> seriously, being in person has its advantages<br />
+<strong>&lt;endogenic&gt;</strong> let's all move to the Monero Corporate Headquarters<br />
+<strong>&lt;anonimal&gt;</strong> endogenic: you whacked me across the face with an epiphany stick with "could have been more strict with guzzi early on but didn't want to based on some shred of idealism about him"<br />
+<strong>&lt;endogenic&gt;</strong> in Beverly Hills<br />
+<strong>&lt;endogenic&gt;</strong> anonimal: i keep getting whacked by the same stick and hope that i get it into my thick skull one of these days :P<br />
+<strong>&lt;anonimal&gt;</strong> pigeons I think you have great points, but how does one bring extra care if care means something different to everyone?<br />
+<strong>&lt;ArticMine&gt;</strong> I think there is a balance here<br />
+<strong>&lt;anonimal&gt;</strong> rehrar: I completely agree about text as it relates to IRC<br />
+<strong>&lt;rehrar&gt;</strong> I don't think guzzi was malicious, and everyone has a different viewpoint. There are two sides to every story. We just have to be a little more careful on making sure our meanings are understood because of the text-based environment.<br />
+<strong>&lt;rehrar&gt;</strong> But aside from that, what's done is done, and we can move forward with a great new contributor under FFS<br />
+<strong>&lt;rehrar&gt;</strong> it'd be wise for all of us to move on from this and focus on what needs to be done to push Kovri forward<br />
+<strong>&lt;rehrar&gt;</strong> learning lessons along the way about communication, of course.<br />
+<strong>&lt;anonimal&gt;</strong> Indeed.<br />
+<strong>&lt;anonimal&gt;</strong> I have to point out that I know how dry and straightforward I can be most of the time. I've done this to avoid any emotional misinterpretation. Maybe some people interpret this as "mean"?<br />
+<strong>&lt;rehrar&gt;</strong> I think at its core, it's a bit of a fault of the FFS at large. A similar thing happened with FireIce as I recall<br />
+<strong>&lt;endogenic&gt;</strong> anonimal: if only we could see your smiling face… :)<br />
+<strong>&lt;rehrar&gt;</strong> defacto expectations by community and contributors that are not fulfilled in some way<br />
+<strong>&lt;anonimal&gt;</strong> Nows the time for anonimal bashing! Get those sticks, bats, golf clubs, or weapons of choice!<br />
+<strong>&lt;rehrar&gt;</strong> is it a smile or a grimace? :P<br />
+<strong>&lt;endogenic&gt;</strong> lol<br />
+<strong>&lt;rehrar&gt;</strong> that's why I'm saying. One night at the club for all of us and we'll all be on the same page. :D<br />
+<strong>&lt;rehrar&gt;</strong> flash a few moneros and pick up a few honeys, BAM! comraderie<br />
+<strong>&lt;rehrar&gt;</strong> anyways, end of meeting?<br />
+<strong>* endogenic</strong> opens a barolo in your and the devs honor<br />
+<strong>&lt;anonimal&gt;</strong> rehrar: hopefully we can improve the FFS process<br />
+<strong>&lt;anonimal&gt;</strong> endogenic: yes, a smiling face would help<br />
+<strong>&lt;endogenic&gt;</strong> lol anonimal just meant your face<br />
+<strong>&lt;endogenic&gt;</strong> i.e. on a podcast or something - ribbing you for being anon<br />
+<strong>&lt;endogenic&gt;</strong> and also wondering what effect that would have…<br />
+<strong>&lt;anonimal&gt;</strong> I think we should talk more about that at another meeting.<br />
+<strong>&lt;endogenic&gt;</strong> yeah i had no conscious intention to bring it up again<br />
+<strong>&lt;endogenic&gt;</strong> sry<br />
+<strong>&lt;anonimal&gt;</strong> Right now I'm curious for any last words about my character as it relates to communication.<br />
+<strong>&lt;anonimal&gt;</strong> Not to be narcissistic, but I have to keep myself in check too.<br />
+<strong>&lt;rehrar&gt;</strong> I am not qualified to comment. I was not here for the majoirty of exchanges between you and guzzi<br />
+<strong>&lt;anonimal&gt;</strong> And if I'm pissing all you off, I'd like to hear about it.<br />
+<strong>&lt;rehrar&gt;</strong> in regards to myself, I have no issues with you. Say it like it is, and I'll do the same and we gucci<br />
+<strong>&lt;anonimal&gt;</strong> rehrar: ok. I must say that bad apples come and go, and I can't take blame for that reality.<br />
+<strong>&lt;anonimal&gt;</strong> Ok, thanks everyone for the overtime<br />
+<strong>&lt;rehrar&gt;</strong> time to watch fresh prince<br />
+<strong>&lt;anonimal&gt;</strong> Great meeting :) Thank you all<br />
+<strong>&lt;anonimal&gt;</strong> lol rehrar, I can totally imagine you watching that show X)<br />
+<strong>&lt;anonimal&gt;</strong> Thanks for the great input everyone<br />
+<strong>&lt;ArticMine&gt;</strong> Next meeting time?<br />
+<strong>&lt;anonimal&gt;</strong> Ooops! Sorry, thanks ArticMine<br />
+<strong>&lt;anonimal&gt;</strong> 8. Confirm next meeting date/time<br />
+<strong>&lt;anonimal&gt;</strong> Same time, two weeks from today?<br />
+<strong>&lt;serhack&gt;</strong> okay<br />
+<strong>&lt;anonimal&gt;</strong> Same as monero's?<br />
+<strong>&lt;ArticMine&gt;</strong> After the Monero meeting</p>
+
+                    </div>
+                    <hr>
+                    <p id="post-meta">Post tags <i class="fa fa-tags"></i>: <a href="/blog/tags/dev diaries.html">Dev Diaries</a>, <a href="/blog/tags/i2p.html">Kovri I2P Router</a>, <a href="/blog/tags/crypto.html">Cryptography</a></p>
+                    </div>
+                </div>
+                <!-- end left two-thirds block-->
+                
+                <!-- right one-third block-->
+                <div class="right one-third col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <div class="sidebar col-sm-12 col-xs-12">   
+                            <div class="info-block">
+                                <div class="row center-xs">
+                                    <div class="col"><h2>Recent Posts</h2></div>
+                                </div>
+                                
+                                <div class="row start-xs info-block-row">
+                                    <div class="col">
+                                         <p><a href="/2018/03/29/response-to-an-empirical-analysis-of-traceability.html">Response to "An Empirical Analysis of Traceability in the Monero Blockchain", Version 2</a></p>
+                                     </div>
+                                </div>
+                                
+                                <div class="row start-xs info-block-row">
+                                    <div class="col">
+                                         <p><a href="/2018/03/29/monero-0.12.0.0-released.html">Monero 0.12.0.0 "Lithium Luna" Release</a></p>
+                                     </div>
+                                </div>
+                                
+                                <div class="row start-xs info-block-row">
+                                    <div class="col">
+                                         <p><a href="/2018/03/28/a-scheduled-protocol-upgrade-is-planned-for-April-6-2018-03-28.html">A Scheduled Network Upgrade is Planned for April 6</a></p>
+                                     </div>
+                                </div>
+                                
+                                <div class="row start-xs info-block-row">
+                                    <div class="col">
+                                         <p><a href="/2018/03/01/core-team-announcement.html">Core Team Announcement</a></p>
+                                     </div>
+                                </div>
+                                
+                            </div>
+                            <div class="info-block">
+                                <div class="row center-xs">
+                                    <div class="col">
+                                        <h2>Popular Tags</h2>
+                                    </div>
+                                </div>
+                                    
+                                    <div class="row start-xs">
+                                        <div class="col">
+                                             <p><a href="/blog/tags/monero missives.html">Monero Missives</a></p>
+                                         </div>
+                                     </div>
+                                     
+                                    <div class="row start-xs">
+                                        <div class="col">
+                                             <p><a href="/blog/tags/conferences.html">Conferences</a></p>
+                                         </div>
+                                     </div>
+                                     
+                                    <div class="row start-xs">
+                                        <div class="col">
+                                             <p><a href="/blog/tags/exchanges.html">Exchanges</a></p>
+                                         </div>
+                                     </div>
+                                     
+                                    <div class="row start-xs">
+                                        <div class="col">
+                                             <p><a href="/blog/tags/gui.html">Monero Core GUI</a></p>
+                                         </div>
+                                     </div>
+                                     
+
+
+                            </div>
+                        </div> 
+                </div>
+                <!-- end right one-third block-->
+            </div>
+        </section>
+    </div>
+
+    <footer class="container-fluid">
+            <div class="container">
+                <div class="row around-xs footer-wrapper">
+                   
+                     <div class="col-sm-3 col-xs-6">
+                     <h3>Recursos</h3>
+                         <ul class="list-unstyled">
+                            
+                             
+                                <li><a class="white" href="/es/resources/about/">Sobre Monero</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/es/resources/moneropedia/">Moneropedia</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/es/resources/developer-guides/">Guias de Desarrollo</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/es/resources/user-guides/">Guias de Usuario</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://getmonero.org/feed.xml">RSS Feed</a></li>
+                              
+                            
+                         </ul>
+                     </div>
+                  
+                     <div class="col-sm-3 col-xs-6">
+                     <h3>Canales IRC</h3>
+                         <ul class="list-unstyled">
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero">monero</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-dev">monero-dev</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-markets">monero-markets</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-pools">monero-pools</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-community">monero-community</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-translations">monero-translations</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-hardware">monero-hardware</a></li>
+                              
+                            
+                         </ul>
+                     </div>
+                  
+                     <div class="col-sm-3 col-xs-6">
+                     <h3>Comunidad</h3>
+                         <ul class="list-unstyled">
+                            
+                             
+                              <li><a class="white" href="https://reddit.com/r/monero">Reddit</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://monero.stackexchange.com/">Stack Exchange</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://bitcointalk.org/index.php?topic=583449.0">BitcoinTalk Thread</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://mattermost.getmonero.org/">Mattermost Chat</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://telegram.me/bitmonero">Telegram Chat</a></li>
+                              
+                            
+                         </ul>
+                     </div>
+                  
+                     <div class="col-sm-3 col-xs-6">
+                     <h3>El Proyecto Monero</h3>
+                         <ul class="list-unstyled">
+                            
+                             
+                              <li><a class="white" href="https://openalias.org/">Open Alias</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://getkovri.org/">Kovri</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/es/resources/research-lab/">Monero Research Lab</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/es/press-kit">Kit de Prensa</a></li>
+                              
+                            
+                         </ul>
+                     </div>
+                 
+                <div class="row center-xs">
+                    <div class="social-icons">
+                    </div>
+                    <div class="footer-links">
+                        <ul class="list-unstyled list-inline">
+                           
+                            
+                             <li><a href="/es/legal" class="white footer-link">Aviso Legal</a></li>
+                           
+                           
+                            
+                             <li><a href="https://github.com/monero-project" class="white footer-link">Código Fuente</a></li>
+                            
+                           
+                            
+                             <li><a href="/es/technical-specs/" class="white footer-link">Especificaciones Técnicas</a></li>
+                           
+                           
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
+</footer>
+<!-- Matomo -->
+<script type="text/javascript">
+    var _paq = _paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+        var u = "//analytics.getmonero.org/";
+        _paq.push(['setTrackerUrl', u + 'piwik.php']);
+        _paq.push(['setSiteId', '1']);
+        var d = document,
+            g = d.createElement('script'),
+            s = d.getElementsByTagName('script')[0];
+        g.type = 'text/javascript';
+        g.async = true;
+        g.defer = true;
+        g.src = u + 'piwik.js';
+        s.parentNode.insertBefore(g, s);
+    })();
+</script>
+<!-- End Matomo Code -->
+<!-- page served by server N -->
+    </div>
+  </body>
+</html>

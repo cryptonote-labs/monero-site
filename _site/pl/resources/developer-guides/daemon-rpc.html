@@ -1,0 +1,1530 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>
+     Daemon RPC documentation | Monero - bezpieczne, prywatne, niewykrywalne
+    </title>
+	<meta name="description" content="Daemon RPC documentation [w domu Monero, cyfrowej waluty, która jest bezpieczna, prywatna i niewykrywalna]">
+	<meta name="keywords" content="monero, xmr, bitmonero, cryptocurrency">
+
+    <meta property="og:title" content="Monero: Daemon RPC documentation"/>
+    <meta property="og:description" content="Daemon RPC documentation [w domu Monero, cyfrowej waluty, która jest bezpieczna, prywatna i niewykrywalna]">
+    <meta property="og:image" content="http://static.getmonero.org/images/opengraph/logo.png">
+    <meta property="og:site_name" content="getmonero.org, Projekt Monero">
+    <meta property="og:url" content="https://getmonero.org/resources/developer-guides/daemon-rpc.html">
+    <meta property="og:type" content="website">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/meta/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/meta/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/meta/favicon-16x16.png">
+        <link rel="manifest" href="/meta/manifest.json">
+        <link rel="mask-icon" href="/meta/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="theme-color" content="#ffffff">
+
+    <link href="/css/custom.css" rel="stylesheet">
+
+    
+    <meta name="msapplication-config" content="/ietemplates/ieconfig.xml">
+
+  </head>
+
+
+  <body>
+    <div class="page-wrapper">
+          
+<div class="mob-nav">
+              <input class="burger-check" id="mobile-burger" type="checkbox"><label for="mobile-burger" class="burger"></label>
+           
+        <div class="slide-in-nav">
+             <div class="container slide-in">
+                     
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                            
+                            <label for="drop1">Wstęp<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="drop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                              <a href="/pl/get-started/what-is-monero">Czym jest Monero?</a>
+                                  
+                              <a href="/pl/get-started/using">Używanie</a>
+                                  
+                              <a href="/pl/get-started/accepting">Akceptowanie</a>
+                                  
+                              <a href="/pl/get-started/contributing">Współpraca</a>
+                                  
+                              <a href="/pl/get-started/mining">Wydobywanie</a>
+                                  
+                              <a href="/pl/get-started/faq">FAQ</a>
+                                  
+                            </div>
+                            
+                     </div>
+                 </div>
+                  
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                               <a href="/pl/downloads/">Downloads</a>
+                            
+                     </div>
+                 </div>
+                  
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                            
+                            <label for="drop2">Najnowsze<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="drop2" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                              <a href="/pl/blog">Wszystkie wpisy</a>
+                                  
+                              <a href="/pl/blog/tags/monero%20missives.html">Postulaty</a>
+                                  
+                              <a href="/pl/blog/tags/dev%20diaries.html">Zapisy z czatów</a>
+                                  
+                              <a href="/pl/blog/tags/releases.html">Aktualizacje</a>
+                                  
+                            </div>
+                            
+                     </div>
+                 </div>
+                  
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                            
+                            <label for="drop3">Społeczność<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="drop3" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                              <a href="/pl/community/team">Zespół</a>
+                                  
+                              <a href="/pl/community/hangouts">Miejsca spotkań</a>
+                                  
+                              <a href="/pl/community/events">Wydarzenia</a>
+                                  
+                              <a href="/pl/community/sponsorships">Sponsoring</a>
+                                  
+                              <a href="/pl/community/merchants">Handel</a>
+                                  
+                            </div>
+                            
+                     </div>
+                 </div>
+                  
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                            
+                            <label for="drop4">Materiały<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="drop4" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                              <a href="/pl/resources/about">O Monero</a>
+                                  
+                              <a href="/pl/resources/roadmap">Oś czasu</a>
+                                  
+                              <a href="/pl/resources/research-lab">Laboratorium badawcze</a>
+                                  
+                              <a href="/pl/resources/moneropedia">Moneropedia</a>
+                                  
+                              <a href="/pl/resources/user-guides">Przewodniki dla użytkowników</a>
+                                  
+                              <a href="/pl/resources/developer-guides">Przewodniki dla deweloperów</a>
+                                  
+                              <a href="/pl/technical-specs">Właściwości techniczne</a>
+                                  
+                            </div>
+                            
+                     </div>
+                 </div>
+                 
+                 <div class="row">
+                     <div class="col-xs-12">
+                         <div class="text-center nav-item mob">
+                            <a href="https://forum.getmonero.org">Forum Funding System</a> 
+                         </div>
+                     </div>
+                 </div>
+                 <div class="row">
+                     <div class="col-xs-12">
+                         <div class="text-center nav-item mob">
+                            <a href="https://github.com/monero-project/meta/blob/master/VULNERABILITY_RESPONSE_PROCESS.md">Vulnerability Response</a>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="row">
+                     <div class="col-xs-12">
+                         <div class="text-center nav-item mob">
+                            <a href="/pl/the-monero-project/">The Monero Project</a> 
+                         </div>
+                     </div>
+                 </div>            
+             </div>
+          
+        </div>
+       </div>
+       
+        <div class="desktop-nav">
+            <nav class="container">
+            <div class="topnav">
+              <div class="row middle-xs">
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <a href="
+                    
+                    /pl
+                    
+                    "><img src="/img/monero-logo.png" alt="Monero Logo" class="monero-logo"></a>
+                  </div>
+                  <div class="col-lg-8 col-md-8 col-sm-8 topnav-list end-xs">
+                      <div class="row end-xs middle-xs">
+                         <div class="col-md-12">
+                          <a href="https://forum.getmonero.org" class="top-link">Forum Funding System</a>
+                          <a href="https://github.com/monero-project/meta/blob/master/VULNERABILITY_RESPONSE_PROCESS.md" class="top-link">Vulnerability Response</a>
+                          <a href="/pl/the-monero-project/" class="top-link">The Monero Project</a>
+                          <div href="#" class="dropdown top-link language-change">
+                            <input class="burger-checkdropdown" id="langdrop" type="checkbox">
+                            <label for="langdrop">
+                            
+                                
+                            
+                            
+                            
+                                
+                            
+                            
+                            
+                                
+                            
+                            
+                            
+                                
+                            
+                                    Polski
+                            
+                                
+                            
+                            
+                            
+                                
+                            
+                            <div class="arrow-down"></div></label>
+                            <div class="dropdown-content text-center">
+                                    
+                                
+                                  
+                                    <a href="/resources/developer-guides/daemon-rpc.html" >English</a>
+                                  
+                                
+                              
+                                
+                                  
+                                    <a href="/es/resources/developer-guides/daemon-rpc.html" >Español</a>
+                                  
+                                
+                              
+                                
+                                  
+                                    <a href="/it/resources/developer-guides/daemon-rpc.html" >Italian</a>
+                                  
+                                
+                              
+                                
+                              
+                                
+                                  
+                                    <a href="/fr/resources/developer-guides/daemon-rpc.html" >Français</a>
+                                  
+                                
+                              
+                            </div>
+                          </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="botnav white-nav">
+                <input class="burger-check" id="burger-check" type="checkbox"><label for="burger-check" class="burger"></label>
+                <div class="row between-xs nav-items">
+                     
+                    <div class="col dropdown nav-item">
+                        
+                            <label for="desktopdrop1">Wstęp<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="desktopdrop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                                  <a href="/pl/get-started/what-is-monero">Czym jest Monero?</a>
+                                
+                                  <a href="/pl/get-started/using">Używanie</a>
+                                
+                                  <a href="/pl/get-started/accepting">Akceptowanie</a>
+                                
+                                  <a href="/pl/get-started/contributing">Współpraca</a>
+                                
+                                  <a href="/pl/get-started/mining">Wydobywanie</a>
+                                
+                                  <a href="/pl/get-started/faq">FAQ</a>
+                                
+                            </div>
+                            
+                    </div>
+                    
+                    <div class="col dropdown nav-item">
+                        
+                           <a href="/pl/downloads/">Downloads</a>
+                            
+                    </div>
+                    
+                    <div class="col dropdown nav-item">
+                        
+                            <label for="desktopdrop1">Najnowsze<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="desktopdrop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                                  <a href="/pl/blog">Wszystkie wpisy</a>
+                                
+                                  <a href="/pl/blog/tags/monero%20missives.html">Postulaty</a>
+                                
+                                  <a href="/pl/blog/tags/dev%20diaries.html">Zapisy z czatów</a>
+                                
+                                  <a href="/pl/blog/tags/releases.html">Aktualizacje</a>
+                                
+                            </div>
+                            
+                    </div>
+                    
+                    <div class="col dropdown nav-item">
+                        
+                            <label for="desktopdrop1">Społeczność<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="desktopdrop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                                  <a href="/pl/community/team">Zespół</a>
+                                
+                                  <a href="/pl/community/hangouts">Miejsca spotkań</a>
+                                
+                                  <a href="/pl/community/events">Wydarzenia</a>
+                                
+                                  <a href="/pl/community/sponsorships">Sponsoring</a>
+                                
+                                  <a href="/pl/community/merchants">Handel</a>
+                                
+                            </div>
+                            
+                    </div>
+                    
+                    <div class="col dropdown nav-item">
+                        
+                            <label for="desktopdrop1">Materiały<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="desktopdrop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                                  <a href="/pl/resources/about">O Monero</a>
+                                
+                                  <a href="/pl/resources/roadmap">Oś czasu</a>
+                                
+                                  <a href="/pl/resources/research-lab">Laboratorium badawcze</a>
+                                
+                                  <a href="/pl/resources/moneropedia">Moneropedia</a>
+                                
+                                  <a href="/pl/resources/user-guides">Przewodniki dla użytkowników</a>
+                                
+                                  <a href="/pl/resources/developer-guides">Przewodniki dla deweloperów</a>
+                                
+                                  <a href="/pl/technical-specs">Właściwości techniczne</a>
+                                
+                            </div>
+                            
+                    </div>
+                    
+                  </div>
+            </div>
+        </nav>
+        </div>
+        <div class="mob bot-nav white-nav">
+            <div class="row center-xs middle-xs">
+                <div class="col-xs-6">
+                    <a href="
+                    
+                    /pl
+                    
+                    "><img src="/img/monero-logo.png" alt="Monero Logo" class="monero-logo"></a>
+                </div>
+                <div class="dropdown col-xs-6 text-center mob-language-change">
+                <input class="burger-checkdropdown" id="moblangdrop" type="checkbox">
+                 <label for="moblangdrop"><img src="/img/language.png" alt="Lang" class="icon-language"/><div class="arrow-down"></div></label>
+                               <div class="mob dropdown-content text-center">
+                               <p class="mob-lang-change mob-lang-selected">
+                                   
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                                 Polski
+                                
+                              
+                                
+                              
+                                   
+                               </p>
+                               
+                                
+                                  
+                                    <a class="mob-lang-change" href="/resources/developer-guides/daemon-rpc.html" >English</a>
+                                  
+                                
+                              
+                                
+                                  
+                                    <a class="mob-lang-change" href="/es/resources/developer-guides/daemon-rpc.html" >Español</a>
+                                  
+                                
+                              
+                                
+                                  
+                                    <a class="mob-lang-change" href="/it/resources/developer-guides/daemon-rpc.html" >Italian</a>
+                                  
+                                
+                              
+                                
+                              
+                                
+                                  
+                                    <a class="mob-lang-change" href="/fr/resources/developer-guides/daemon-rpc.html" >Français</a>
+                                  
+                                
+                              
+                            </div>
+                          </div>
+            </div>     
+        </div>    
+
+            <div class="site-wrap">
+    <!-- FULL WIDTH BLOCK -->
+        <section class="container full">
+                <div class="info-block text-adapt">
+                    <div>
+                        <h2 id="wprowadzenie">Wprowadzenie</h2>
+
+<p>Poniżej znajduje się lista funkcji RPC demona monerod, ich wejścia i wyników oraz przykłady.</p>
+
+<p>Wiele funkcji RPC korzysta z interfejsu demona JSON RPC, podczas gdy inne używają własnego interfejsu, jak przedstawiono poniżej.</p>
+
+<p>Uwaga: "jednostki atomowe (<a data-tooltip="Atomic Units refer to the smallest fraction of 1 XMR." href="/resources/moneropedia/atomic-units.html">atomic unit</a>)" dotyczą najmniejszego ułamka 1 XMR, zgodnie z implementacją monerod. <strong>1 XMR = 1e12 jednostek atomowych.</strong></p>
+
+<h3 id="metody-json-rpc"><a href="#json-rpc-methods">Metody JSON RPC</a>:</h3>
+
+<ul>
+  <li><a href="#getblockcount">getblockcount</a></li>
+  <li><a href="#on_getblockhash">on_getblockhash</a></li>
+  <li><a href="#getblocktemplate">getblocktemplate</a></li>
+  <li><a href="#submitblock">submitblock</a></li>
+  <li><a href="#getlastblockheader">getlastblockheader</a></li>
+  <li><a href="#getblockheaderbyhash">getblockheaderbyhash</a></li>
+  <li><a href="#getblockheaderbyheight">getblockheaderbyheight</a></li>
+  <li><a href="#getblock">getblock</a></li>
+  <li><a href="#get_connections">get_connections</a></li>
+  <li><a href="#get_info">get_info</a></li>
+  <li><a href="#hard_fork_info">hard_fork_info</a></li>
+  <li><a href="#setbans">setbans</a></li>
+  <li><a href="#getbans">getbans</a></li>
+</ul>
+
+<h3 id="pozostałe-metody-rpc"><a href="#other-daemon-rpc-calls">Pozostałe metody RPC</a>:</h3>
+
+<ul>
+  <li><a href="#getheight">/getheight</a></li>
+  <li><a href="#gettransactions">/gettransactions</a></li>
+  <li><a href="#is_key_image_spent">/is_key_image_spent</a></li>
+  <li><a href="#sendrawtransaction">/sendrawtransaction</a></li>
+  <li><a href="#get_transaction_pool">/get_transaction_pool</a></li>
+  <li><a href="#stop_daemon">/stop_daemon</a></li>
+</ul>
+
+<hr />
+
+<h2 id="metody-json-rpc-1">Metody JSON RPC</h2>
+
+<p>Większość funkcji RPC monerod korzysta z interfejsu demona <code class="highlighter-rouge">json_rpc</code>, aby żądać różnych informacji. Wszystkie te metody mają podobną strukturę, na przykład:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>IP=127.0.0.1
+PORT=18081
+METHOD='getblockheaderbyheight'
+PARAMS='{"height":912345}'
+curl \
+    -X POST http://$IP:$PORT/json_rpc \
+    -d '{"jsonrpc":"2.0","id":"0","method":"'$METHOD'","params":'$PARAMS'}' \
+    -H 'Content-Type: application/json'
+</code></pre>
+</div>
+
+<p>Niektóre metody zawierają parametry, a inne nie. Poniżej znajdują się przykłady każdej z funkcji JSON RPC.</p>
+
+<h3 id="getblockcount"><strong>getblockcount</strong></h3>
+
+<p>Sprawdza ile bloków znajduje się w najdłuższym łańcuchu znanym węzłowi.</p>
+
+<p>Wejście: <em>brak</em>.</p>
+
+<p>Wynik:</p>
+
+<ul>
+  <li><em>count</em> - niepodpisana liczba całkowita; liczba bloków w najdłuższym łańcuchu znanym węzłowi.</li>
+  <li><em>status</em> - ciąg; kod generalnego błędu RPC. "OK" oznacza, że wszystko jest w porządku.</li>
+</ul>
+
+<p>Przykład:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>$ curl -X POST http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"getblockcount"}' -H 'Content-Type: application/json'  
+
+{  
+  "id": "0",  
+  "jsonrpc": "2.0",  
+  "result": {  
+    "count": 993163,  
+    "status": "OK"  
+  }  
+}  
+</code></pre>
+</div>
+
+<h3 id="on_getblockhash"><strong>on_getblockhash</strong></h3>
+
+<p>Wyszukuje hasz bloku za pomocą jego wysokości.</p>
+
+<p>Wejście:</p>
+
+<ul>
+  <li>wysokość bloku (liczba całkowita szeregu o długości 1)</li>
+</ul>
+
+<p>Wynik:</p>
+
+<ul>
+  <li>hasz bloku (ciąg)</li>
+</ul>
+
+<p>Przykład:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>$ curl -X POST http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"on_getblockhash","params":[912345]}' -H 'Content-Type: application/json'
+
+{
+  "id": "0",
+  "jsonrpc": "2.0",
+  "result": "e22cf75f39ae720e8b71b3d120a5ac03f0db50bba6379e2850975b4859190bc6"
+}
+</code></pre>
+</div>
+
+<h3 id="getblocktemplate"><strong>getblocktemplate</strong></h3>
+
+<p>Wejście:</p>
+
+<ul>
+  <li><em>wallet_address</em> - ciąg; Adres portfela, który otrzyma transakcję coinbase, jeśli blok zostanie pomyślnie wydobyty.</li>
+  <li><em>reserve_size</em> - niepodpisana liczba całkwita; Wielkość rezerwy.</li>
+</ul>
+
+<p>Wynik:</p>
+
+<ul>
+  <li><em>blocktemplate_blob</em> - ciąg; Blob, na którym próbuje się wydobyć nowy blok.</li>
+  <li><em>difficulty</em> - niepodpisana liczba całkowita; Trudność następnego bloku.</li>
+  <li><em>height</em> - niepodpisana liczba całkowita; Wysokość, na której się wydobywa.</li>
+  <li><em>prev_hash</em> - ciąg; Hasz ostatniego bloku, po którym wydobywa się następny blok.</li>
+  <li><em>reserved_offset</em> - niepodpisana liczba całkowita; Zarezerwowany offset.</li>
+  <li><em>status</em> - ciąg; kod generalnego błędu RPC. "OK" oznacza, że wszystko jest w porządku.</li>
+</ul>
+
+<p>Przykład:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>$ curl -X POST http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"getblocktemplate","params":{"wallet_address":"44GBHzv6ZyQdJkjqZje6KLZ3xSyN1hBSFAnLP6EAqJtCRVzMzZmeXTC2AHKDS9aEDTRKmo6a6o9r9j86pYfhCWDkKjbtcns","reserve_size":60}' -H 'Content-Type: application/json'
+
+{
+  "id": "0",
+  "jsonrpc": "2.0",
+  "result": {
+    "blocktemplate_blob": "01029af88cb70568b84a11dc9406ace9e635918ca03b008f7728b9726b327c1b482a98d81ed83000000000018bd03c01ffcfcf3c0493d7cec7020278dfc296544f139394e5e045fcda1ba2cca5b69b39c9ddc90b7e0de859fdebdc80e8eda1ba01029c5d518ce3cc4de26364059eadc8220a3f52edabdaf025a9bff4eec8b6b50e3d8080dd9da417021e642d07a8c33fbe497054cfea9c760ab4068d31532ff0fbb543a7856a9b78ee80c0f9decfae01023ef3a7182cb0c260732e7828606052a0645d3686d7a03ce3da091dbb2b75e5955f01ad2af83bce0d823bf3dbbed01ab219250eb36098c62cbb6aa2976936848bae53023c00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001f12d7c87346d6b84e17680082d9b4a1d84e36dd01bd2c7f3b3893478a8d88fb3",
+    "difficulty": 982540729,
+    "height": 993231,
+    "prev_hash": "68b84a11dc9406ace9e635918ca03b008f7728b9726b327c1b482a98d81ed830",
+    "reserved_offset": 246,
+    "status": "OK"
+  }
+}
+</code></pre>
+</div>
+
+<h3 id="submitblock"><strong>submitblock</strong></h3>
+
+<p>Zatwierdza wydobyty blok do sieci.</p>
+
+<p>Wejście:</p>
+
+<ul>
+  <li>Dane blobu bloku - ciąg</li>
+</ul>
+
+<p>Wynik:</p>
+
+<ul>
+  <li><em>status</em> - ciąg; Status zatwierdzenia bloku.</li>
+</ul>
+
+<h3 id="getlastblockheader"><strong>getlastblockheader</strong></h3>
+
+<p>Dzięki tej metodzie łatwo jest znaleźć informacje o nagłówku ostatniego bloku. Nie wymaga żadnych wejść.</p>
+
+<p>Wejście: <em>brak</em>.</p>
+
+<p>Wynik:</p>
+
+<ul>
+  <li><em>block_header</em> - struktura zawierająca informacje o nagłówku bloku.
+    <ul>
+      <li><em>depth</em> -  niepodpisana liczba całkowita; liczba bloków następujących po danym bloku w łańcuchu, większa liczba oznacza starszy blok.</li>
+      <li><em>difficulty</em> - niepodpisana liczba całkowita; siła sieci Monero na podstawie mocy wydobycia.</li>
+      <li><em>hash</em> - ciąg; hasz danego bloku.</li>
+      <li><em>height</em> - niepodpisana liczba całkowita; liczba bloków poprzedzających dany blok w łańcuchu.</li>
+      <li><em>major_version</em> - niepodpisana liczba całkowita; główna wersja protokołu Monero na danej wysokości bloku.</li>
+      <li><em>minor_version</em> - niepodpisana liczba całkowita; podrzędna wersja protokołu Monero na danej wysokości bloku.</li>
+      <li><em>nonce</em> - niepodpisana liczba całkowita; losowy i jednorazowy numer kryptograficzny użyty do wydobycia bloku Monero.</li>
+      <li><em>orphan_status</em> - logiczny typ danych; zazwyczaj <code class="highlighter-rouge">false</code>. Jeśli <code class="highlighter-rouge">true</code>, dany blok nie jest częścią najdłuższego łańcucha.</li>
+      <li><em>prev_hash</em> - ciąg; hasz bloku bezpośrednio poprzedzającego dany blok w łańcuchu.</li>
+      <li><em>reward</em> - niepodpisana liczba całkowita; liczba nowych jednostek atomowych wytworzonych w danym bloku i przyznanych górnikowi. 	Zauważ: 1 XMR = 1e12 jednostek atomowych.</li>
+      <li><em>timestamp</em> - niepodpisana liczba całkowita; czas, kiedy blok został zapisany w łańcuchu.</li>
+    </ul>
+  </li>
+  <li><em>status</em> - ciąg; kod generalnego błędu RPC. "OK" oznacza, że wszystko jest w porządku.</li>
+</ul>
+
+<p>W tym przypadku wynikiem jest ostatni blok (wtedy był to blok 990793):</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>$ curl -X POST http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"getlastblockheader"}' -H 'Content-Type: application/json'
+
+{
+  "id": "0",
+  "jsonrpc": "2.0",
+  "result": {
+    "block_header": {
+      "depth": 0,
+      "difficulty": 746963928,
+      "hash": "ac0f1e226268d45c99a16202fdcb730d8f7b36ea5e5b4a565b1ba1a8fc252eb0",
+      "height": 990793,
+      "major_version": 1,
+      "minor_version": 1,
+      "nonce": 1550,
+      "orphan_status": false,
+      "prev_hash": "386575e3b0b004ed8d458dbd31bff0fe37b280339937f971e06df33f8589b75c",
+      "reward": 6856609225169,
+      "timestamp": 1457589942
+    },
+    "status": "OK"
+  }
+}
+</code></pre>
+</div>
+
+<h3 id="getblockheaderbyhash"><strong>getblockheaderbyhash</strong></h3>
+
+<p>Informacja o nagłówku bloku może zostać znaleziona przy użyciu haszu bloku lub jego wysokości. Ta metoda polega na wykorzystaniu bloku haszu jako parametru wejścia w celu uzyskania podstawowych informacji na temat bloku.</p>
+
+<p>Wejście:</p>
+
+<ul>
+  <li><em>hash</em> - ciąg; hasz sha256 bloku.</li>
+</ul>
+
+<p>Wynik:</p>
+
+<ul>
+  <li><em>block_header</em> - struktura zawierająca informacje o nagłówku bloku. Zobacz <a href="#getlastblockheader">getlastblockheader</a>.</li>
+</ul>
+
+<p>W tym przypadku wyszukano blok 912345 za pomocą jego haszu:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>$ curl -X POST http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"getblockheaderbyhash","params":{"hash":"e22cf75f39ae720e8b71b3d120a5ac03f0db50bba6379e2850975b4859190bc6"}}' -H 'Content-Type: application/json'
+
+{
+  "id": "0",
+  "jsonrpc": "2.0",
+  "result": {
+    "block_header": {
+      "depth": 78376,
+      "difficulty": 815625611,
+      "hash": "e22cf75f39ae720e8b71b3d120a5ac03f0db50bba6379e2850975b4859190bc6",
+      "height": 912345,
+      "major_version": 1,
+      "minor_version": 2,
+      "nonce": 1646,
+      "orphan_status": false,
+      "prev_hash": "b61c58b2e0be53fad5ef9d9731a55e8a81d972b8d90ed07c04fd37ca6403ff78",
+      "reward": 7388968946286,
+      "timestamp": 1452793716
+    },
+    "status": "OK"
+  }
+}
+</code></pre>
+</div>
+
+<h3 id="getblockheaderbyheight"><strong>getblockheaderbyheight</strong></h3>
+
+<p>Podobnie do funkcji <code class="highlighter-rouge">getblockheaderbyhash</code> wspomnianej wcześniej, metoda ta bierze pod uwagę wysokość bloku jako parametr wejścia, aby otrzymać podstawowe informacje na temat bloku.</p>
+
+<p>Wejście:</p>
+
+<ul>
+  <li><em>height</em> - niepodpisana liczba całkowita; wysokość bloku.</li>
+</ul>
+
+<p>Wynik:</p>
+
+<ul>
+  <li><em>block_header</em> - Struktura zawierająca informacje na temat nagłówka bloku. Zobacz funkcję <a href="#getlastblockheader">getlastblockheader</a>.</li>
+</ul>
+
+<p>W tym przypadku wyszukano blok 912345 za pomocą jego wysokości (zauważ, że wyszukane informacje są takie same jak w poprzednim przykładzie):</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>$ curl -X POST http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"getblockheaderbyheight","params":{"height":912345}}' -H 'Content-Type: application/json'
+
+{
+  "id": "0",
+  "jsonrpc": "2.0",
+  "result": {
+    "block_header": {
+      "depth": 78376,
+      "difficulty": 815625611,
+      "hash": "e22cf75f39ae720e8b71b3d120a5ac03f0db50bba6379e2850975b4859190bc6",
+      "height": 912345,
+      "major_version": 1,
+      "minor_version": 2,
+      "nonce": 1646,
+      "orphan_status": false,
+      "prev_hash": "b61c58b2e0be53fad5ef9d9731a55e8a81d972b8d90ed07c04fd37ca6403ff78",
+      "reward": 7388968946286,
+      "timestamp": 1452793716
+    },
+    "status": "OK"
+  }
+}
+</code></pre>
+</div>
+
+<h3 id="getblock"><strong>getblock</strong></h3>
+
+<p>Pełne informacje na temat bloku mogą być wyszukane za pomocą wysokości bloku lub jego hasza, podobnie do wcześniej opisanych funkcji wyszukania nagłówka bloku. Dla pełnych informacji na temat bloku, obydwa rodzaje wyszukiwania korzystają z tej samej metody, jednak z różnymi paramterami wejścia.</p>
+
+<p>Wejście (wybierz jedno z następujących):</p>
+
+<ul>
+  <li><em>height</em> - niepodpisana liczba całkowita; wysokość bloku.</li>
+  <li><em>hash</em> - ciąg; hasz bloku.</li>
+</ul>
+
+<p>Wynik:</p>
+
+<ul>
+  <li><em>blob</em> - ciąg; heksadecymalny blok zawierający informacje o bloku.</li>
+  <li><em>block_header</em> - struktura zwierająca informacje na temat nagłówka bloku. Zobacz <a href="#getlastblockheader">getlastblockheader</a>.</li>
+  <li><em>json</em> - ciąg json; szczegóły bloku w formacie JSON:
+    <ul>
+      <li><em>major_version</em> - to samo co w nagłówku bloku.</li>
+      <li><em>minor_version</em> - to samo co w nagłówku bloku.</li>
+      <li><em>timestamp</em> - to samo co w nagłówku bloku.</li>
+      <li><em>prev_id</em> - to samo co <code class="highlighter-rouge">prev_hash</code> w nagłówku bloku</li>
+      <li><em>nonce</em> - to samo co w nagłówku bloku.</li>
+      <li><em>miner_tx</em> - informacje na temat transakcji górnika.
+        <ul>
+          <li><em>version</em> - numer wersji transakcji.</li>
+          <li><em>unlock_time</em> - wysokość bloku gdy transakcja coinbase stanie się zdolna do wydania.</li>
+          <li><em>vin</em> - lista wejść transakcji:
+            <ul>
+              <li><em>gen</em> - transakcje górnika są transakcjami coinbase, inaczej "gen".
+                <ul>
+                  <li><em>height</em> - wysokość danego bloku, czyli kiedy coinbase został wygenerowany.</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><em>vout</em> - lista wyjść transakcji. Każde wyjście zawiera:
+            <ul>
+              <li><em>amount</em> - kwotę wyjścia w jednostkach atomowych.</li>
+              <li><em>target</em> -
+                <ul>
+                  <li><em>key</em> -</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><em>extra</em> - zazwyczaj nazywane "numerem identyfikacyjnym transakcji", może być użyte do zawarcia jakiegokolwiek ciągu 32-		bajtowego/64-znakowego heksadecymalnego.</li>
+          <li><em>signatures</em> - zawiera podpisy uczestników transakcji. Transakcje coinbase nie posiadają podpisów.</li>
+        </ul>
+      </li>
+      <li><em>tx_hashes</em> - lista haszy transakcji nie-coinbase w bloku. Jeśli nie było takich transakcji, lista będzie pusta.</li>
+    </ul>
+  </li>
+  <li><em>status</em> -  ciąg; kod generalnego błędu RPC. "OK" oznacza, że wszystko jest w porządku.</li>
+</ul>
+
+<p><strong>Wyszukiwanie przy użyciu wysokości:</strong></p>
+
+<p>W poniższym przykładzie wyszukano blok 912345 za pomocą jego wysokości. Zauważ, że blok ten nie posiada żadnych transakcji nie-coinbase (zobacz blok z dodatkowymi transakcjami w następnym przykładzie):</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>$ curl -X POST http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"getblock","params":{"height":912345}}' -H 'Content-Type: application/json'
+
+{
+  "id": "0",
+  "jsonrpc": "2.0",
+  "result": {
+    "blob": "...",
+    "block_header": {
+      "depth": 80694,
+      "difficulty": 815625611,
+      "hash": "e22cf75f39ae720e8b71b3d120a5ac03f0db50bba6379e2850975b4859190bc6",
+      "height": 912345,
+      "major_version": 1,
+      "minor_version": 2,
+      "nonce": 1646,
+      "orphan_status": false,
+      "prev_hash": "b61c58b2e0be53fad5ef9d9731a55e8a81d972b8d90ed07c04fd37ca6403ff78",
+      "reward": 7388968946286,
+      "timestamp": 1452793716
+    },
+    "json": "{\n  \"major_version\": 1, \n  \"minor_version\": 2, \n  \"timestamp\": 1452793716, \n  \"prev_id\": \"b61c58b2e0be53fad5ef9d9731a55e8a81d972b8d90ed07c04fd37ca6403ff78\", \n  \"nonce\": 1646, \n  \"miner_tx\": {\n    \"version\": 1, \n    \"unlock_time\": 912405, \n    \"vin\": [ {\n        \"gen\": {\n          \"height\": 912345\n        }\n      }\n    ], \n    \"vout\": [ {\n        \"amount\": 8968946286, \n        \"target\": {\n          \"key\": \"378b043c1724c92c69d923d266fe86477d3a5ddd21145062e148c64c57677008\"\n        }\n      }, {\n        \"amount\": 80000000000, \n        \"target\": {\n          \"key\": \"73733cbd6e6218bda671596462a4b062f95cfe5e1dbb5b990dacb30e827d02f2\"\n        }\n      }, {\n        \"amount\": 300000000000, \n        \"target\": {\n          \"key\": \"47a5dab669770da69a860acde21616a119818e1a489bb3c4b1b6b3c50547bc0c\"\n        }\n      }, {\n        \"amount\": 7000000000000, \n        \"target\": {\n          \"key\": \"1f7e4762b8b755e3e3c72b8610cc87b9bc25d1f0a87c0c816ebb952e4f8aff3d\"\n        }\n      }\n    ], \n    \"extra\": [ 1, 253, 10, 119, 137, 87, 244, 243, 16, 58, 131, 138, 253, 164, 136, 195, 205, 173, 242, 105, 123, 61, 52, 173, 113, 35, 66, 130, 178, 250, 217, 16, 14, 2, 8, 0, 0, 0, 11, 223, 194, 193, 108\n    ], \n    \"signatures\": [ ]\n  }, \n  \"tx_hashes\": [ ]\n}",
+    "status": "OK"
+  }
+}
+</code></pre>
+</div>
+
+<p><strong>Wyszukiwanie za pomocą hasza:</strong></p>
+
+<p>W poniższym przykładzie wyszukano blok 993056 za pomocą jego hasza. Zauważ, że ten blok posiada 3 transakcje nie-coinbase:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>$ curl -X POST http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"getblock","params":{"hash":"510ee3c4e14330a7b96e883c323a60ebd1b5556ac1262d0bc03c24a3b785516f"}}' -H 'Content-Type: application/json'
+
+{
+  "id": "0",
+  "jsonrpc": "2.0",
+  "result": {
+    "blob": "...",
+    "block_header": {
+      "depth": 12,
+      "difficulty": 964985344,
+      "hash": "510ee3c4e14330a7b96e883c323a60ebd1b5556ac1262d0bc03c24a3b785516f",
+      "height": 993056,
+      "major_version": 1,
+      "minor_version": 2,
+      "nonce": 2036,
+      "orphan_status": false,
+      "prev_hash": "0ea4af6547c05c965afc8df6d31509ff3105dc7ae6b10172521d77e09711fd6d",
+      "reward": 6932043647005,
+      "timestamp": 1457720227
+    },
+    "json": "{\n  \"major_version\": 1, \n  \"minor_version\": 2, \n  \"timestamp\": 1457720227, \n  \"prev_id\": \"0ea4af6547c05c965afc8df6d31509ff3105dc7ae6b10172521d77e09711fd6d\", \n  \"nonce\": 2036, \n  \"miner_tx\": {\n    \"version\": 1, \n    \"unlock_time\": 993116, \n    \"vin\": [ {\n        \"gen\": {\n          \"height\": 993056\n        }\n      }\n    ], \n    \"vout\": [ {\n        \"amount\": 2043647005, \n        \"target\": {\n          \"key\": \"59e9d685b3484886bc7b47c133e6099ecdf212d5eaa16ce19cd58e8c3c1e590a\"\n        }\n      }, {\n        \"amount\": 30000000000, \n        \"target\": {\n          \"key\": \"4c5e2f542d25513c46b9e3b7d40140a22d0ae5314bfcae492ad9f56fff8185f0\"\n        }\n      }, {\n        \"amount\": 900000000000, \n        \"target\": {\n          \"key\": \"13dd8ffdac9e6a2f71e327dad65328198dc879a492d145eae72677c0703a3515\"\n        }\n      }, {\n        \"amount\": 6000000000000, \n        \"target\": {\n          \"key\": \"62bda00341681dccbc066757862da593734395745bdfe1fdc89b5948c86a5d4c\"\n        }\n      }\n    ], \n    \"extra\": [ 1, 182, 145, 133, 28, 240, 87, 185, 195, 2, 163, 219, 202, 135, 158, 28, 186, 76, 196, 80, 97, 202, 85, 170, 166, 224, 60, 220, 103, 171, 158, 69, 80, 2, 8, 0, 0, 0, 12, 97, 127, 223, 22\n    ], \n    \"signatures\": [ ]\n  }, \n  \"tx_hashes\": [ \"79c6b9f00db027bde151705aafe85c495883aae2597d5cb8e1adb2e0f3ae1d07\", \"d715db73331abc3ec588ef07c7bb195786a4724b08dff431b51ffa32a4ce899b\", \"b197066426c0ed89f0b431fe171f7fd62bc95dd29943daa7cf3585cf1fdfc99d\"\n  ]\n}",
+    "status": "OK",
+    "tx_hashes": ["79c6b9f00db027bde151705aafe85c495883aae2597d5cb8e1adb2e0f3ae1d07","d715db73331abc3ec588ef07c7bb195786a4724b08dff431b51ffa32a4ce899b","b197066426c0ed89f0b431fe171f7fd62bc95dd29943daa7cf3585cf1fdfc99d"]
+  }
+}
+</code></pre>
+</div>
+
+<h3 id="get_connections"><strong>get_connections</strong></h3>
+
+<p>Wyszukuje informacje na temat przychodzących i wychodzących połączeń z twoim węzłem.</p>
+
+<p>Wejście: <em>brak</em>.</p>
+
+<p>Wynik:</p>
+
+<ul>
+  <li><em>connections</em> - lista wszystkich połączeń i ich informacje:
+    <ul>
+      <li><em>avg_download</em> - niepodpisana liczba całkowita; średnia bajtów ściągniętych przez węzeł.</li>
+      <li><em>avg_upload</em> - niepodpisana liczba całkowita; średnia bajtów przesłanych przez węzeł.</li>
+      <li><em>current_download</em> - niepodpisana liczba całkowita; aktualna liczba bajtów ściągniętych przez węzeł.</li>
+      <li><em>current_upload</em> - niepodpisana liczba całkowita; aktualna liczba bajtów przesłanych przez węzeł.</li>
+      <li><em>incoming</em> - logiczny typ danych; czy dany węzeł otrzymuje informacje z twojego węzła?</li>
+      <li><em>ip</em> - ciąg; adres IP danego węzła.</li>
+      <li><em>live_time</em> - niepodpisana liczba całkowita</li>
+      <li><em>local_ip</em> - logiczny typ danych</li>
+      <li><em>localhost</em> - logiczny typ danych</li>
+      <li><em>peer_id</em> - ciąg; ID węzła w sieci.</li>
+      <li><em>port</em> - ciąg; port używany przez węzeł do połączenia z siecią.</li>
+      <li><em>recv_count</em> - niepodpisana liczba całkowita</li>
+      <li><em>recv_idle_time</em> - niepodpisana liczba całkowita</li>
+      <li><em>send_count</em> - niepodpisana liczba całkowita</li>
+      <li><em>send_idle_time</em> - niepodpisana liczba całkowita</li>
+      <li><em>state</em> - ciąg</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Poniżej znajduje się przykład funkcji <code class="highlighter-rouge">get_connections</code> i jej wyniki:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>$ curl -X POST http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_connections"}' -H 'Content-Type: application/json'
+
+{
+  "id": "0",
+  "jsonrpc": "2.0",
+  "result": {
+    "connections": [{
+      "avg_download": 0,
+      "avg_upload": 0,
+      "current_download": 0,
+      "current_upload": 0,
+      "incoming": false,
+      "ip": "76.173.170.133",
+      "live_time": 1865,
+      "local_ip": false,
+      "localhost": false,
+      "peer_id": "3bfe29d6b1aa7c4c",
+      "port": "18080",
+      "recv_count": 116396,
+      "recv_idle_time": 23,
+      "send_count": 176893,
+      "send_idle_time": 1457726610,
+      "state": "state_normal"
+    },{
+    ...
+    }],
+    "status": "OK"
+  }
+}
+</code></pre>
+</div>
+
+<h3 id="get_info"><strong>get_info</strong></h3>
+
+<p>Wyszukuje podstawowe informacje na temat stanu twojego węzła oraz sieci.</p>
+
+<p>Wejście: <em>brak</em>.</p>
+
+<p>Wynik:</p>
+
+<ul>
+  <li><em>alt_blocks_count</em> - niepodpisana liczba całkowita; liczba alternatywnych bloków głównego łańcucha.</li>
+  <li><em>difficulty</em> - niepodpisana liczba całkowita; trudność sieci (analogiczna do siły sieci).</li>
+  <li><em>grey_peerlist_size</em> - niepodpisana liczba całkowita; rozmiar szarej listy peerów.</li>
+  <li><em>height</em> - niepodpisana liczba całkowita; aktualna długość najdłuższego łańcucha znanego demonowi.</li>
+  <li><em>incoming_connections_count</em> - niepodpisana liczba całkowita; liczba peerów podłączonych i korzystających z twojego węzła.</li>
+  <li><em>outgoing_connections_count</em> - niepodpisana liczba całkowita; liczba peerów, do których jesteś podłączony i od których pobierasz 	informacje.</li>
+  <li><em>status</em> - ciąg; kod generalnego błędu RPC. "OK" oznacza, że wszystko jest w porządku.</li>
+  <li><em>target</em> - niepodpisana liczba całkowita; aktualny cel następnego dowodu pracy.</li>
+  <li><em>target_height</em> - niepodpisana liczba całkowita; wysokość następnego bloku w łańcuchu.</li>
+  <li><em>testnet</em> - logiczny typ danych; określa, czy węzeł jest w sieci testowej ("true") lub sieci głównej ("false").</li>
+  <li><em>top_block_hash</em> - ciąg; hasz najwyższego bloku w łańcuchu.</li>
+  <li><em>tx_count</em> - niepodpisana liczba całkowita; łączna liczba transakcji nie-coinbase w łańcuchu.</li>
+  <li><em>tx_pool_siz</em> - niepodpisana liczba całkowita; liczba transakcji, które zostały nadane, ale nie uwzględnione w bloku.</li>
+  <li><em>white_peerlist_size</em> - niepodpisana liczba całkowita; rozmiar białej listy peerów.</li>
+</ul>
+
+<p>Poniżej znajduje się przykład funkcji <code class="highlighter-rouge">get_info</code> i jej wyniki:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>$ curl -X POST http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_info"}' -H 'Content-Type: application/json'
+
+{
+  "id": "0",
+  "jsonrpc": "2.0",
+  "result": {
+    "alt_blocks_count": 5,
+    "difficulty": 972165250,
+    "grey_peerlist_size": 2280,
+    "height": 993145,
+    "incoming_connections_count": 0,
+    "outgoing_connections_count": 8,
+    "status": "OK",
+    "target": 60,
+    "target_height": 993137,
+    "testnet": false,
+    "top_block_hash": "",
+    "tx_count": 564287,
+    "tx_pool_size": 45,
+    "white_peerlist_size": 529
+  }
+}
+</code></pre>
+</div>
+
+<h3 id="hard_fork_info"><strong>hard_fork_info</strong></h3>
+
+<p>Wyszukuje informacje na temat głosowania na hard fork oraz jego gotowości.</p>
+
+<p>Wejście: <em>brak</em>.</p>
+
+<p>Wynik:</p>
+
+<ul>
+  <li><em>earliest_height</em> - niepodpisana liczba całkowita; wysokość bloku, na której hard fork byłby dokonany, jeśli przegłosowany.</li>
+  <li><em>enabled</em> - logiczny typ danych; okreśa, czy hard fork został wyegzekwowany.</li>
+  <li><em>state</em> -niepodpisana liczba całkowita; aktualny stan hard forku: 0 (hard fork jest prawdopodobny), 1 (aktualizacja jest konieczna do prawidłowego forku), or 2 (wszystko jest w porządku).</li>
+  <li><em>status</em> - ciąg; kod generalnego błędu RPC. "OK" oznacza, że wszystko jest w porządku.</li>
+  <li><em>threshold</em> - niepodpisana liczba całkowita; minimalny procent głosów wymagany do rozpoczęcia hard forku. Domyślną liczbą jest 80.</li>
+  <li><em>version</em> - niepodpisana liczba całkowita; główna wersja bloku do hard forku.</li>
+  <li><em>votes</em> - niepodpisana liczba całkowita; liczba głosów za hard forkiem.</li>
+  <li><em>voting</em> - niepodpisana liczba całkowita; status głosowania za hard forkiem.</li>
+  <li><em>window</em> - niepodpisana liczba całkowita; liczba bloków, w których oddano głosy. Domyślną liczbą jest 10080 bloków.</li>
+</ul>
+
+<p>Przykład:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>$ curl -X POST http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"hard_fork_info"}' -H 'Content-Type: application/json'
+
+{
+  "id": "0",
+  "jsonrpc": "2.0",
+  "result": {
+    "earliest_height": 1009827,
+    "enabled": false,
+    "state": 2,
+    "status": "OK",
+    "threshold": 0,
+    "version": 1,
+    "votes": 7277,
+    "voting": 2,
+    "window": 10080
+  }
+}
+</code></pre>
+</div>
+
+<h3 id="setbans"><strong>setbans</strong></h3>
+
+<p>Banuje inny węzeł za pomocą IP.</p>
+
+<p>Wejście:</p>
+
+<ul>
+  <li><em>bans</em> - lista węzłów do zbanowania:
+    <ul>
+      <li><em>ip</em> - niepodpisana liczba całkowita; adres IP do zbanowania w formacie numerycznym.</li>
+      <li><em>ban</em> - logiczny typ danych; ustaw <code class="highlighter-rouge">true</code>, aby zbanować.</li>
+      <li><em>seconds</em> - niepodpisana liczba całkowita; liczba sekund do zbanowania węzła.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Wynik:</p>
+
+<ul>
+  <li><em>status</em> - ciąg; kod generalnego błędu RPC. "OK" oznacza, że wszystko jest w porządku.</li>
+</ul>
+
+<p>Przykład:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>$ curl -X POST http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"setbans","params":{"bans":[{"ip":838969536,"ban":true,"seconds":30}]}}' -H  'Content-Type: application/json'
+
+{
+  "id": "0",
+  "jsonrpc": "2.0",
+  "result": {
+    "status": "OK"
+  }
+}
+</code></pre>
+</div>
+
+<h3 id="getbans"><strong>getbans</strong></h3>
+
+<p>Wejście: <em>brak</em>.</p>
+
+<p>Wynik:</p>
+
+<ul>
+  <li><em>bans</em> - list zbanowanych węzłów:
+    <ul>
+      <li><em>ip</em> - niepodpisana liczba całkowita; zbanowany adres IP w formacie numerycznym.</li>
+      <li><em>seconds</em> - niepodpisana liczba całkowita; lokalny czas uniksowy, do kiedy dany adres IP jest zbanowany.</li>
+    </ul>
+  </li>
+  <li><em>status</em> - ciąg; kod generalnego błędu RPC. "OK" oznacza, że wszystko jest w porządku.</li>
+</ul>
+
+<p>Przykład:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>$ curl -X POST http://127.0.0.1:18081/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"getbans"}' -H 'Content-Type: application/json'
+
+{
+  "id": "0",
+  "jsonrpc": "2.0",
+  "result": {
+    "bans": [{
+      "ip": 838969536,
+      "seconds": 1457748792
+    }],
+    "status": "OK"
+  }
+}
+</code></pre>
+</div>
+
+<hr />
+
+<h2 id="pozostałe-funkcje-demona-rpc">Pozostałe funkcje demona RPC</h2>
+
+<p>Nie wszystkie funkcje demona RPC korzystają z interfejsu JSON_RPC. Ta sekcja objaśnia przykłady takich funkcji.</p>
+
+<p>Struktura danych w tych funkcjach jest inna niż w funkcjacj JSON RPC. Podczas gdy metody JSON RPC są stosowane przy użyciu rozszerzenia <code class="highlighter-rouge">/json_rpc</code> i określeniu metody, poniższe funkcje są stosowane z własnymi rozszerzeniami. Na przykład:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>IP=127.0.0.1
+PORT=18081
+METHOD='gettransactions'
+PARAMS='{"txs_hashes":["d6e48158472848e6687173a91ae6eebfa3e1d778e65252ee99d7515d63090408"]}'
+curl \
+	-X POST http://$IP:$PORT/$METHOD \
+	-d $PARAMS \
+	-H 'Content-Type: application/json'
+</code></pre>
+</div>
+
+<p>Zauważ: zaleca się używanie funkcji JSON RPC, gdy jest to możliwe, na przykład zalecanym sposobem na wyszukanie wysokości węzła jest zastosowanie metody JSON RPC <a href="#getinfo">get_info</a> lub <a href="#getlastblockheader">getlastblockheader</a>, a nie poniższej <a href="#getheight">getheight</a>.</p>
+
+<h3 id="getheight"><strong>/getheight</strong></h3>
+
+<p>Wyszukanie aktualnej wysokości węzła.</p>
+
+<p>Wejście: <em>brak</em>.</p>
+
+<p>Wynik:</p>
+
+<ul>
+  <li><em>height</em> - niepodpisana liczba całkowita; aktualna długość najdłuższego łańcucha znanego demonowi.</li>
+</ul>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>$ curl -X POST http://127.0.0.1:18081/getheight -H 'Content-Type: application/json'
+
+{
+  "height": 993488,
+  "status": "OK"
+}
+</code></pre>
+</div>
+
+<h3 id="gettransactions"><strong>/gettransactions</strong></h3>
+
+<p>Wyszukuje jedną lub więcej transakcji za pomocą hasza.</p>
+
+<p>Wejście:</p>
+
+<ul>
+  <li><em>txs_hashes</em> - lista ciągów; listra haszów transakcji do wyszukania.</li>
+  <li><em>decode_as_json</em> - logiczny typ danych; opcjonalny. Jeśli ustawiony jako <code class="highlighter-rouge">true</code>, znalezione informacje na temat transakcji będą dekodowane, a nie 	binarne.</li>
+</ul>
+
+<p>Wynik:</p>
+
+<ul>
+  <li><em>status</em> - kod generalnego błędu RPC. "OK" oznacza, że wszystko jest w porządku.</li>
+  <li><em>txs_as_hex</em> - ciąg; pełna informacja na temat transakcji jako ciąg heksadecymalny.</li>
+  <li><em>txs_as_json</em> - ciąg json; (opcjonalny - znaleziony, jeśli tak wskazano w wejściu); lista informacji na temat transakcji:
+    <ul>
+      <li><em>version</em> - wersja transakcji.</li>
+      <li><em>unlock_time</em> - jeśli różne od 0, informuje o czasie, kiedy wyjście transakcji będzie gotowe do wydania.</li>
+      <li><em>vin</em> - lista wkładów do transakcji:
+        <ul>
+          <li><em>key</em> - publiczny klucz poprzedniego wyjścia, wydanego w tej transakcji.
+            <ul>
+              <li><em>amount</em> - kwota wkładu w jednostkach atomowych.</li>
+              <li><em>key_offsets</em> - lista numerycznych offsetów wkładu.</li>
+              <li><em>k_image</em> - obraz klucza danego wkładu.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><em>vout</em> - lista wyjść transakcji:
+        <ul>
+          <li><em>amount</em> - kwota wyjścia transakcji w jednostkach atomowych.</li>
+          <li><em>target</em> - informacje na temat celu wyjścia:
+            <ul>
+              <li><em>key</em> - jednorazowy klucz publiczny odbiorcy. Ktokolwiek posiada prywatny klucz połączony z tym kluczem, kontroluje wyjście tej 	transakcji.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><em>extra</em> - zazwyczaj nazywane "numerem identyfikacyjnym płatności", może zostać użyte do włączenia dowolnych 32 bajtów.</li>
+      <li><em>signatures</em> - lista podpisów użytych w podpisie pierścieniowym w celu ukrycia prawdziwego pochodzenia transakcji.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Przykład 1: wynik jest informacją na temat transakcji w formacie binarnym.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>$ curl -X POST http://127.0.0.1:18081/gettransactions -d '{"txs_hashes":["d6e48158472848e6687173a91ae6eebfa3e1d778e65252ee99d7515d63090408"]}' -H 'Content-Type: application/json'
+
+{
+  "status": "OK",
+  "txs_as_hex": ["..."]
+}
+</code></pre>
+</div>
+
+<p>Przykład 2: zdekoduj otrzymane informacje na temat transakcji w formacie JSON. Zauważ, że lista "vout" została skrócona w podanym wyniku ze względu na jej obszerność.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>$ curl -X POST http://127.0.0.1:18081/gettransactions -d '{"txs_hashes":["d6e48158472848e6687173a91ae6eebfa3e1d778e65252ee99d7515d63090408"],"decode_as_json":true}' -H 'Content-Type: application/json'
+
+{
+  "status": "OK",
+  "txs_as_hex": ["..."],
+  "txs_as_json": ["{\n  \"version\": 1, \n  \"unlock_time\": 0, \n  \"vin\": [ {\n      \"key\": {\n        \"amount\": 70000000, \n        \"key_offsets\": [ 35952\n        ], \n        \"k_image\": \"d16908468dff9438a9814fe96bdaa575f06fe8da85772b72e54926428712293d\"\n      }\n    }, {\n      \"key\": {\n        \"amount\": 400000000000000, \n        \"key_offsets\": [ 6830\n        ], \n        \"k_image\": \"c7a7024b763df1181ae6fe821b70669735e38a68162ac02362e33acbe829b605\"\n      }\n    }\n  ], \n  \"vout\": [ {\n      \"amount\": 50000, \n      \"target\": {\n        \"key\": \"f6be43f7be4f06adcb1d06f4a07c637c7359e009cf3e57bb32b8c9ea636509c3\"\n      }\n    }, {\n      \"amount\": 200000, \n      \"target\": {\n        \"key\": \"b0a7a8e32f2b5302552bcd8d85112c62838b1f56cccd844eb9b63e0a732d0353\"\n      }\n    },  ...  \n  ], \n  \"extra\": [ 1, 225, 240, 98, 34, 169, 73, 47, 237, 117, 192, 30, 192, 60, 155, 47, 4, 115, 20, 21, 11, 13, 252, 219, 129, 13, 174, 37, 36, 78, 191, 141, 109\n  ], \n  \"signatures\": [ \"e6a3be8003d481d2855c8127f56871de3d28a4fb52385b999eb986c831c5cc08361c126b0db24a21b6c4299b438ee2be201d44d57a371230b9cd04395ab8c400\", \"8309851abaf2cf2a7091e0cdb9c83704fa7d68838a7a8ef8c178bb55a1e93a038dd18bb4a7549dc056b7a70e037cabd80911a03f427e36f712756d4c00f38f0b\"]\n}"]
+}
+</code></pre>
+</div>
+
+<h3 id="is_key_image_spent"><strong>/is_key_image_spent</strong></h3>
+
+<p>Sprawdza, czy wyjścia zostały wydane przy użyciu obrazu klucza powiązanego z wyjściem.</p>
+
+<p>Wejście:</p>
+
+<ul>
+  <li><em>key_images</em> - lista ciągów; lista ciągów heksadecymalnych obrazu klucza do sprawdzenia.</li>
+</ul>
+
+<p>Wynik:</p>
+
+<ul>
+  <li><em>spent_status</em> - lista niepodpisanych liczb całkowitych; lista statusów każdego sprawdzonego obrazu. Statusy są następujące: 0 = niewydany, 1 = wydany w łańcuchu bloków, 2 = wydany w puli transakcji.</li>
+  <li><em>status</em> - ciąg; kod generalnego błędu RPC. "OK" oznacza, że wszystko jest w porządku.</li>
+</ul>
+
+<p>Przykład:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>$ curl -X POST http://127.0.0.1:18081/is_key_image_spent -d '{"key_images":["8d1bd8181bf7d857bdb281e0153d84cd55a3fcaa57c3e570f4a49f935850b5e3","7319134bfc50668251f5b899c66b005805ee255c136f0e1cecbb0f3a912e09d4"]}' -H 'Content-Type: application/json'
+
+{
+  "spent_status": [1,2],
+  "status": "OK"
+}
+</code></pre>
+</div>
+
+<h3 id="sendrawtransaction"><strong>/sendrawtransaction</strong></h3>
+
+<p>Nadaje surową transakcję do sieci.</p>
+
+<p>Wejście:</p>
+
+<ul>
+  <li><em>tx_as_hex</em> - ciąg; pełna inforacja na temat transakcji jako ciąg heksadecymalny.</li>
+</ul>
+
+<p>Wynik:</p>
+
+<ul>
+  <li><em>status</em> - ciąg; kod generalnego błędu RPC. "OK" oznacza, że wszystko jest w porządku. Jakikolwiek inny wynik oznacza, że coś poszło 	nie tak.</li>
+  <li><em>double_spend</em> - logiczny typ danych;  Transakcja jest dwukrotnym wydaniem (<code class="highlighter-rouge">true</code>) lub nie (<code class="highlighter-rouge">false</code>).</li>
+  <li><em>fee_too_low</em> - logiczny typ danych; opłata jest za niska (<code class="highlighter-rouge">true</code>) lub nie (<code class="highlighter-rouge">false</code>).</li>
+  <li><em>invalid_input</em> - logiczny typ danych; wejście jest nieprawidłowe (<code class="highlighter-rouge">true</code>) lub prawidłowe (<code class="highlighter-rouge">false</code>).</li>
+  <li><em>invalid_output</em> - logiczny typ danych; wyjście jest nieprawidłowe (<code class="highlighter-rouge">true</code>) lub prawidłowe (<code class="highlighter-rouge">false</code>).</li>
+  <li><em>low_mixin</em> - logiczny typ danych; liczba Mixin jest zbyt niska (<code class="highlighter-rouge">true</code>) lub nie (<code class="highlighter-rouge">false</code>).</li>
+  <li><em>not_rct</em> - logiczny typ danych; transakcja nie jest transakcją pierścieniową (<code class="highlighter-rouge">true</code>) lub jest transakcją pierścieniową (<code class="highlighter-rouge">false</code>).</li>
+  <li><em>not_relayed</em> - logiczny typ danych; transakcja nie została przekazana (<code class="highlighter-rouge">true</code>) lub została przekazana (<code class="highlighter-rouge">false</code>).</li>
+  <li><em>overspend</em> - logiczny typ danych; transakcja korzysta z większej kwoty niż to możliwe (<code class="highlighter-rouge">true</code>) lub nie (<code class="highlighter-rouge">false</code>).</li>
+  <li><em>reason</em> - ciąg; dodatkowe informacje. Obecnie puste lub "Not relayed", jeśli transakcja została zaakceptowana, ale nie przekazana.</li>
+  <li><em>too_big</em> - logiczny typ danych; rozmiar transakcji jest zbyt duży (<code class="highlighter-rouge">true</code>) lub nie (<code class="highlighter-rouge">false</code>).</li>
+</ul>
+
+<p>Przykład (informacja zwrotna nie została tu zawarta):</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>$ curl -X POST http://127.0.0.1:18081/sendrawtransaction -d '{"tx_as_hex":"de6a3..."}' -H 'Content-Type: application/json'
+</code></pre>
+</div>
+
+<h3 id="get_transaction_pool"><strong>/get_transaction_pool</strong></h3>
+
+<p>Wyszukuje informacje na temat ważnych transakcji widocznych przez węzeł, które nie zostały jeszcze wydobyte w bloku, oraz informacje na temat obrazu klucza wydawania w pamięci węzła.</p>
+
+<p>Wejście: <em>brak</em>.</p>
+
+<p>Wynik:</p>
+
+<ul>
+  <li><em>spent_key_images</em> - lista obrazów klucza wydawania wyjścia:
+    <ul>
+      <li><em>id_hash</em> - ciąg; hasz numeru identyfikacyjnego obrazu klucza.</li>
+      <li><em>txs_hashes</em> - lista ciągów; hasze transakcji obrazu klucza.</li>
+    </ul>
+  </li>
+  <li><em>status</em> - ciąg; kod generalnego błędu RPC. "OK" oznacza, że wszystko jest w porządku.</li>
+  <li><em>transactions</em> - lista transakcji w puli pamięci, które nie zostały uwzględnione w bloku:
+    <ul>
+      <li><em>blob_size</em> - niepodpisana liczba całkowita; rozmiar pełnego blobu transakcji.</li>
+      <li><em>fee</em> - niepodpisana liczba całkowita; kwota opłaty wydobywczej uwzględnionej w transakcji w jednostkach atomowych.</li>
+      <li><em>id_hash</em> - ciąg; hasz numeru identyfikacyjnego transakcji.</li>
+      <li><em>kept_by_block</em> - logiczny typ danych; nie akceptujemy transakcji, które skończyły się wcześsniej, chyba że ustawiono jako <code class="highlighter-rouge">true</code>.</li>
+      <li><em>last_failed_height</em> - niepodpisana liczba całkowita; jeśli transakcja skończyła się wcześniej, funckja ta określa, na jakiej 	wysokości się to stało.</li>
+      <li><em>last_failed_id_hash</em> - ciąg; podobnie do poprzedniej, funkcja ta określa poprzedni hasz numeru identyfikacyjnego transakcji.</li>
+      <li><em>max_used_block_height</em> - niepodpisana liczba całkowita; określa wysokość ostatniego bloku z wyjściem użytym do tej transakcji.</li>
+      <li><em>max_used_block_hash</em> - ciąg; określa hasz ostatniego bloku z wyjściem użytym do tej transakcji.</li>
+      <li><em>receive_time</em> - niepodpisana liczba całkowita; uniksowy czas, kiedy transakcja została zauważona w sieci po raz pierwszy przez 	węzeł.</li>
+      <li><em>tx_json</em> - ciąg json; struktura JSON wszystkich informacji o transakcji:
+        <ul>
+          <li><em>version</em> - wersja transakcji.</li>
+          <li><em>unlock_time</em> - jeśli różne od 0, określa czas, kiedy wyjście transakcji będzie możliwe do wydania.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><em>vin</em> - lista wkładów do transakcji:
+    <ul>
+      <li><em>key</em> - publiczny klucz poprzedniego wyjścia, wydanego w tej transakcji.
+        <ul>
+          <li><em>amount</em> - kwota wkładu w jednostkach atomowych.</li>
+          <li><em>key_offsets</em> - lista numerycznych offsetów wkładu.</li>
+          <li><em>k_image</em> - obraz klucza danego wkładu.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><em>vout</em> - lista wyjść transakcji:
+    <ul>
+      <li><em>amount</em> - kwota wyjścia transakcji w jednostkach atomowych.</li>
+      <li><em>target</em> - informacje na temat celu wyjścia:
+        <ul>
+          <li><em>key</em> - jednorazowy klucz publiczny odbiorcy. Ktokolwiek posiada prywatny klucz połączony z tym kluczem, kontroluje wyjście tej 	transakcji.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><em>extra</em> - zazwyczaj nazywane "numerem identyfikacyjnym płatności", może zostać użyte do włączenia dowolnych 32 bajtów.</li>
+  <li><em>signatures</em> - lista podpisów użytych w podpisie pierścieniowym w celu ukrycia prawdziwego pochodzenia transakcji.</li>
+</ul>
+
+<p>Przykład (zauważ, że niektóre z list w poniższym wyniku zostały skrócone ze względu na ich obszerność):</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>$ curl -X POST http://127.0.0.1:18081/get_transaction_pool -H 'Content-Type: application/json'
+
+{
+  "spent_key_images": [{
+    "id_hash": "1edb9ecc39602040282d326070ad22cb473c952c0d6280c9c4c3b853fb34f3bc",
+    "txs_hashes": ["409911b2be02e3f0e930b326c67ab9e74675885ce23d71bb3bd28b62bc3e7803"]
+  },{
+    "id_hash": "4adb4bb63b3397027340ca4e6c45f4ce2147dfb3a4e0fafdec18834ae594a05e",
+    "txs_hashes": ["946f1f4c52e3426a41959c93b60078f314813bc4bdebcf69b8ee11d593b2bd14"]
+  },
+  ...],
+  "status": "OK",
+  "transactions": [{
+    "blob_size": 25761,
+    "fee": 290000000000,
+    "id_hash": "11d4cff23e610fac6a2b89187ad61d429a5e226652693dcac5d83d506eb92b96",
+    "kept_by_block": false,
+    "last_failed_height": 0,
+    "last_failed_id_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "max_used_block_height": 954508,
+    "max_used_block_id_hash": "03f96b374778bc059e47b96e2beec2e6d4d9e0ad39afeabdbcd77e1bd5a62f81",
+    "receive_time": 1457676127,
+    "tx_json": "{\n  \"version\": 1, \n  \"unlock_time\": 0, \n  \"vin\": [ {\n      \"key\": {\n        \"amount\": 70000000000, \n        \"key_offsets\": [ 63408, 18978, 78357, 16560\n        ], \n        \"k_image\": \"7319134bfc50668251f5b899c66b005805ee255c136f0e1cecbb0f3a912e09d4\"\n      }\n    },  ...  ], \n  \"vout\": [ {\n      \"amount\": 80000000000, \n      \"target\": {\n        \"key\": \"094e6a1b187385533665f89db741149f42d95fdc50bdd2a2384bcd1dc5209c55\"\n      }\n    },  ...  ], \n  \"extra\": [ 2, 33, 0, 15, 56, 190, 21, 169, 77, 13, 182, 209, 51, 35, 54, 96, 89, 237, 96, 23, 24, 107, 240, 79, 40, 86, 64, 68, 45, 166, 119, 192, 17, 225, 23, 1, 31, 159, 145, 15, 173, 255, 165, 192, 55, 84, 127, 154, 163, 25, 85, 204, 212, 127, 147, 133, 118, 218, 166, 52, 78, 188, 131, 235, 9, 159, 105, 158\n  ], \n  \"signatures\": [ \"966e5a67fbdbf72d7dc0364b705121a58e0ced7e2ab45747b6b154c05a1afe04fac4aac7f64faa2dc6dd4d51b8277f11e2f2ec7729fac225088befe3b8399c0b71a4cb55b9d0e20f93d305c78cebceff1bcfcfaf225428dfcfaaec630c88720ab65bf5d3399dd1ac82ea0ecf308b3f80d9780af7742fb157692cd60515a7e2086878f082117fa80fff3d257de7d3a2e9cc8b3472ef4a5e545d90e1159523a60f38d16cece783579627124776813334bdb2a2df4171ef1fa12bf415da338ce5085c01e7a715638ef5505aebec06a0625aaa72d13839838f7d4f981673c8f05f08408e8b372f900af7227c49cfb1e1febab6c07dd42b7c26f921cf010832841205\",  ...  ]\n}"
+  },
+  ...]
+}
+</code></pre>
+</div>
+
+<h3 id="stop_daemon"><strong>/stop_daemon</strong></h3>
+
+<p>Wysyła polecenie do demona, aby bezpiecznie się rozłączyć i wyłączyć.</p>
+
+<p>Wejście: <em>brak</em>.</p>
+
+<p>Wynik:</p>
+
+<ul>
+  <li><em>status</em> - ciąg; kod generalnego błędu RPC. "OK" oznacza, że wszystko jest w porządku.</li>
+</ul>
+
+<p>Przykład:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>$ curl -X POST http://127.0.0.1:18081/stop_daemon -H 'Content-Type: application/json'
+
+{
+  "status": "OK"
+}
+</code></pre>
+</div>
+
+
+                    </div>
+                </div>
+        </section>
+    <!-- END FULL WIDTH BLOCK -->
+    </div>
+    <footer class="container-fluid">
+            <div class="container">
+                <div class="row around-xs footer-wrapper">
+                   
+                     <div class="col-sm-3 col-xs-6">
+                     <h3>Materiały</h3>
+                         <ul class="list-unstyled">
+                            
+                             
+                                <li><a class="white" href="/pl/resources/about/">O Monero</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/pl/resources/moneropedia/">Moneropedia</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/pl/resources/developer-guides/">Przewodniki dla deweloperów</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/pl/resources/user-guides/">Przewodniki dla użytkowników</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://getmonero.org/feed.xml">Kanał RSS</a></li>
+                              
+                            
+                         </ul>
+                     </div>
+                  
+                     <div class="col-sm-3 col-xs-6">
+                     <h3>Kanały IRC</h3>
+                         <ul class="list-unstyled">
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero">monero</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-dev">monero-dev</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-markets">monero-markets</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-pools">monero-pools</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-community">monero-community</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-translations">monero-translations</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-hardware">monero-hardware</a></li>
+                              
+                            
+                         </ul>
+                     </div>
+                  
+                     <div class="col-sm-3 col-xs-6">
+                     <h3>Społeczność</h3>
+                         <ul class="list-unstyled">
+                            
+                             
+                              <li><a class="white" href="https://reddit.com/r/monero">Reddit</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://monero.stackexchange.com/">Stack Exchange</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://bitcointalk.org/index.php?topic=583449.0">BitcoinTalk Thread</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://mattermost.getmonero.org/">Mattermost Chat</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://telegram.me/bitmonero">Telegram Chat</a></li>
+                              
+                            
+                         </ul>
+                     </div>
+                  
+                     <div class="col-sm-3 col-xs-6">
+                     <h3>Projekt Monero</h3>
+                         <ul class="list-unstyled">
+                            
+                             
+                              <li><a class="white" href="https://openalias.org/">Open Alias</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://getkovri.org/">Kovri</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/pl/resources/research-lab/">Laboratorium Badawcze Monero</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/pl/press-kit">Monero Press Kit</a></li>
+                              
+                            
+                         </ul>
+                     </div>
+                 
+                <div class="row center-xs">
+                    <div class="social-icons">
+                    </div>
+                    <div class="footer-links">
+                        <ul class="list-unstyled list-inline">
+                           
+                            
+                             <li><a href="/pl/legal" class="white footer-link">Informacje prawne</a></li>
+                           
+                           
+                            
+                             <li><a href="https://github.com/monero-project" class="white footer-link">Kod źródłowy</a></li>
+                            
+                           
+                            
+                             <li><a href="/pl/technical-specs/" class="white footer-link">Właściwości techniczne</a></li>
+                           
+                           
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
+</footer>
+<!-- Matomo -->
+<script type="text/javascript">
+    var _paq = _paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+        var u = "//analytics.getmonero.org/";
+        _paq.push(['setTrackerUrl', u + 'piwik.php']);
+        _paq.push(['setSiteId', '1']);
+        var d = document,
+            g = d.createElement('script'),
+            s = d.getElementsByTagName('script')[0];
+        g.type = 'text/javascript';
+        g.async = true;
+        g.defer = true;
+        g.src = u + 'piwik.js';
+        s.parentNode.insertBefore(g, s);
+    })();
+</script>
+<!-- End Matomo Code -->
+<!-- page served by server N -->
+    </div>
+  </body>
+</html>

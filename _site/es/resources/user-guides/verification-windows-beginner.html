@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>
+     Verify Binaries Windows (Beginner) | Monero - secure, private, untraceable
+    </title>
+	<meta name="description" content="Verify Binaries Windows (Beginner) [on the home of Monero, a digital currency that is secure, private, and untraceable]">
+	<meta name="keywords" content="monero, xmr, bitmonero, cryptocurrency">
+
+    <meta property="og:title" content="Monero: Verify Binaries Windows (Beginner)"/>
+    <meta property="og:description" content="Verify Binaries Windows (Beginner) [on the home of Monero, a digital currency that is secure, private, and untraceable]">
+    <meta property="og:image" content="http://static.getmonero.org/images/opengraph/logo.png">
+    <meta property="og:site_name" content="getmonero.org, The Monero Project">
+    <meta property="og:url" content="https://getmonero.org/resources/user-guides/verification-windows-beginner.html">
+    <meta property="og:type" content="website">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/meta/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/meta/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/meta/favicon-16x16.png">
+        <link rel="manifest" href="/meta/manifest.json">
+        <link rel="mask-icon" href="/meta/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="theme-color" content="#ffffff">
+
+    <link href="/css/custom.css" rel="stylesheet">
+
+    
+    <meta name="msapplication-config" content="/ietemplates/ieconfig.xml">
+
+  </head>
+
+
+  <body>
+    <div class="page-wrapper">
+          
+<div class="mob-nav">
+              <input class="burger-check" id="mobile-burger" type="checkbox"><label for="mobile-burger" class="burger"></label>
+           
+        <div class="slide-in-nav">
+             <div class="container slide-in">
+                     
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                            
+                            <label for="drop1">Inicio<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="drop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                              <a href="/es/get-started/what-is-monero">¿Qué es Monero?</a>
+                                  
+                              <a href="/es/get-started/using">Usar Monero</a>
+                                  
+                              <a href="/es/get-started/accepting">Aceptar Monero</a>
+                                  
+                              <a href="/es/get-started/contributing">Contribuir a Monero</a>
+                                  
+                              <a href="/es/get-started/mining">Minar Monero</a>
+                                  
+                              <a href="/es/get-started/faq">FAQ</a>
+                                  
+                            </div>
+                            
+                     </div>
+                 </div>
+                  
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                               <a href="/es/downloads">Descargas</a>
+                            
+                     </div>
+                 </div>
+                  
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                            
+                            <label for="drop2">Noticias<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="drop2" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                              <a href="/es/blog">Todas publicaciones</a>
+                                  
+                              <a href="/es/blog/tags/monero%20missives.html">Misivas</a>
+                                  
+                              <a href="/es/blog/tags/dev%20diaries.html">Transcripciones de reuniones</a>
+                                  
+                              <a href="/es/blog/tags/releases.html">Lanzamientos</a>
+                                  
+                            </div>
+                            
+                     </div>
+                 </div>
+                  
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                            
+                            <label for="drop3">Comunidad<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="drop3" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                              <a href="/es/community/team">Equipo</a>
+                                  
+                              <a href="/es/community/hangouts">Canales de comunicación</a>
+                                  
+                              <a href="/es/community/sponsorships">Patrocinios</a>
+                                  
+                              <a href="/es/community/merchants">Comerciantes</a>
+                                  
+                            </div>
+                            
+                     </div>
+                 </div>
+                  
+                 <div class="row">
+                     <div class="col-xs-12 dropdown text-center nav-item">
+                           
+                            
+                            <label for="drop4">Recursos<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="drop4" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                              <a href="/es/resources/about">Sobre Monero</a>
+                                  
+                              <a href="/es/resources/roadmap">Hoja de ruta</a>
+                                  
+                              <a href="/es/resources/research-lab">Laboratorio de investigación</a>
+                                  
+                              <a href="/es/resources/moneropedia">Moneropedia</a>
+                                  
+                              <a href="/es/resources/user-guides">Guías de usuario</a>
+                                  
+                              <a href="/es/resources/developer-guides">Guías de desarrolladores</a>
+                                  
+                              <a href="/es/technical-specs">Especificaciones técnicas</a>
+                                  
+                            </div>
+                            
+                     </div>
+                 </div>
+                 
+                 <div class="row">
+                     <div class="col-xs-12">
+                         <div class="text-center nav-item mob">
+                            <a href="https://forum.getmonero.org">Forum Funding System</a> 
+                         </div>
+                     </div>
+                 </div>
+                 <div class="row">
+                     <div class="col-xs-12">
+                         <div class="text-center nav-item mob">
+                            <a href="https://github.com/monero-project/meta/blob/master/VULNERABILITY_RESPONSE_PROCESS.md">Vulnerability Response</a>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="row">
+                     <div class="col-xs-12">
+                         <div class="text-center nav-item mob">
+                            <a href="/es/the-monero-project/">The Monero Project</a> 
+                         </div>
+                     </div>
+                 </div>            
+             </div>
+          
+        </div>
+       </div>
+       
+        <div class="desktop-nav">
+            <nav class="container">
+            <div class="topnav">
+              <div class="row middle-xs">
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <a href="
+                    
+                    /es
+                    
+                    "><img src="/img/monero-logo.png" alt="Monero Logo" class="monero-logo"></a>
+                  </div>
+                  <div class="col-lg-8 col-md-8 col-sm-8 topnav-list end-xs">
+                      <div class="row end-xs middle-xs">
+                         <div class="col-md-12">
+                          <a href="https://forum.getmonero.org" class="top-link">Forum Funding System</a>
+                          <a href="https://github.com/monero-project/meta/blob/master/VULNERABILITY_RESPONSE_PROCESS.md" class="top-link">Vulnerability Response</a>
+                          <a href="/es/the-monero-project/" class="top-link">The Monero Project</a>
+                          <div href="#" class="dropdown top-link language-change">
+                            <input class="burger-checkdropdown" id="langdrop" type="checkbox">
+                            <label for="langdrop">
+                            
+                                
+                            
+                            
+                            
+                                
+                            
+                                    Español
+                            
+                                
+                            
+                            
+                            
+                                
+                            
+                            
+                            
+                                
+                            
+                            
+                            
+                                
+                            
+                            <div class="arrow-down"></div></label>
+                            <div class="dropdown-content text-center">
+                                    
+                                
+                                  
+                                    <a href="/resources/user-guides/verification-windows-beginner.html" >English</a>
+                                  
+                                
+                              
+                                
+                              
+                                
+                                  
+                                    <a href="/it/resources/user-guides/verification-windows-beginner.html" >Italiano</a>
+                                  
+                                
+                              
+                                
+                                  
+                                    <a href="/pl/resources/user-guides/verification-windows-beginner.html" >Polski</a>
+                                  
+                                
+                              
+                                
+                                  
+                                    <a href="/fr/resources/user-guides/verification-windows-beginner.html" >Français</a>
+                                  
+                                
+                              
+                            </div>
+                          </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="botnav white-nav">
+                <input class="burger-check" id="burger-check" type="checkbox"><label for="burger-check" class="burger"></label>
+                <div class="row between-xs nav-items">
+                     
+                    <div class="col dropdown nav-item">
+                        
+                            <label for="desktopdrop1">Inicio<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="desktopdrop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                                  <a href="/es/get-started/what-is-monero">¿Qué es Monero?</a>
+                                
+                                  <a href="/es/get-started/using">Usar Monero</a>
+                                
+                                  <a href="/es/get-started/accepting">Aceptar Monero</a>
+                                
+                                  <a href="/es/get-started/contributing">Contribuir a Monero</a>
+                                
+                                  <a href="/es/get-started/mining">Minar Monero</a>
+                                
+                                  <a href="/es/get-started/faq">FAQ</a>
+                                
+                            </div>
+                            
+                    </div>
+                    
+                    <div class="col dropdown nav-item">
+                        
+                           <a href="/es/downloads">Descargas</a>
+                            
+                    </div>
+                    
+                    <div class="col dropdown nav-item">
+                        
+                            <label for="desktopdrop1">Noticias<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="desktopdrop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                                  <a href="/es/blog">Todas publicaciones</a>
+                                
+                                  <a href="/es/blog/tags/monero%20missives.html">Misivas</a>
+                                
+                                  <a href="/es/blog/tags/dev%20diaries.html">Transcripciones de reuniones</a>
+                                
+                                  <a href="/es/blog/tags/releases.html">Lanzamientos</a>
+                                
+                            </div>
+                            
+                    </div>
+                    
+                    <div class="col dropdown nav-item">
+                        
+                            <label for="desktopdrop1">Comunidad<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="desktopdrop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                                  <a href="/es/community/team">Equipo</a>
+                                
+                                  <a href="/es/community/hangouts">Canales de comunicación</a>
+                                
+                                  <a href="/es/community/sponsorships">Patrocinios</a>
+                                
+                                  <a href="/es/community/merchants">Comerciantes</a>
+                                
+                            </div>
+                            
+                    </div>
+                    
+                    <div class="col dropdown nav-item">
+                        
+                            <label for="desktopdrop1">Recursos<div class="arrow-down"></div></label>
+                            <input class="burger-checkdropdown" id="desktopdrop1" type="checkbox">
+                            <div class="dropdown-content">
+                                
+                                  <a href="/es/resources/about">Sobre Monero</a>
+                                
+                                  <a href="/es/resources/roadmap">Hoja de ruta</a>
+                                
+                                  <a href="/es/resources/research-lab">Laboratorio de investigación</a>
+                                
+                                  <a href="/es/resources/moneropedia">Moneropedia</a>
+                                
+                                  <a href="/es/resources/user-guides">Guías de usuario</a>
+                                
+                                  <a href="/es/resources/developer-guides">Guías de desarrolladores</a>
+                                
+                                  <a href="/es/technical-specs">Especificaciones técnicas</a>
+                                
+                            </div>
+                            
+                    </div>
+                    
+                  </div>
+            </div>
+        </nav>
+        </div>
+        <div class="mob bot-nav white-nav">
+            <div class="row center-xs middle-xs">
+                <div class="col-xs-6">
+                    <a href="
+                    
+                    /es
+                    
+                    "><img src="/img/monero-logo.png" alt="Monero Logo" class="monero-logo"></a>
+                </div>
+                <div class="dropdown col-xs-6 text-center mob-language-change">
+                <input class="burger-checkdropdown" id="moblangdrop" type="checkbox">
+                 <label for="moblangdrop"><img src="/img/language.png" alt="Lang" class="icon-language"/><div class="arrow-down"></div></label>
+                               <div class="mob dropdown-content text-center">
+                               <p class="mob-lang-change mob-lang-selected">
+                                   
+                              
+                                
+                              
+                                
+                                 Español
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                   
+                               </p>
+                               
+                                
+                                  
+                                    <a class="mob-lang-change" href="/resources/user-guides/verification-windows-beginner.html" >English</a>
+                                  
+                                
+                              
+                                
+                              
+                                
+                                  
+                                    <a class="mob-lang-change" href="/it/resources/user-guides/verification-windows-beginner.html" >Italiano</a>
+                                  
+                                
+                              
+                                
+                                  
+                                    <a class="mob-lang-change" href="/pl/resources/user-guides/verification-windows-beginner.html" >Polski</a>
+                                  
+                                
+                              
+                                
+                                  
+                                    <a class="mob-lang-change" href="/fr/resources/user-guides/verification-windows-beginner.html" >Français</a>
+                                  
+                                
+                              
+                            </div>
+                          </div>
+            </div>     
+        </div>    
+
+            <div class="site-wrap">
+    <!-- FULL WIDTH BLOCK -->
+        <section class="container full">
+                <div class="info-block text-adapt">
+                    <div>
+                        <div class="untranslated">
+    <p>Esta pagina is not yet translated. If you would like to help translate it, please see the <a class="untranslated-link" href="https://github.com/monero-project/monero-site/blob/master/README.md">README</a>.</p>
+</div>
+<h1 id="verify-binaries-windows-beginner">Verify Binaries: Windows (Beginner)</h1>
+
+<p>Verification of the Monero binary files should be done prior to extracting, installing, or using the Monero software. This is the only way to ensure that you are using the official Monero binary. If you receive a fake binary (eg. phishing, MITM, etc.), following this guide will protect you from being tricked into using it.</p>
+
+<p>To protect the integrity of the binaries the Monero team provides a cryptographically signed list of all the <a href="https://en.wikipedia.org/wiki/SHA-2">SHA256</a> hashes. If your downloaded binary has been tampered with it will be produce a <a href="https://en.wikipedia.org/wiki/File_verification">different hash</a> than the one in the file.</p>
+
+<p>This is a beginners guide for the Windows operating system and will make use of GUIs almost exclusively. It will walk you through the process of installing the required software, importing the signing key, downloading the necessary files, and finally verifying that your binary is authentic.</p>
+
+<h2 id="table-of-contents">Table of Contents</h2>
+
+<h3 id="1-gpg4win-installer"><a href="#1-using-gpg4win-installer">1. Gpg4win Installer</a></h3>
+<ul>
+  <li><a href="#11-getting-gpg4win-installer">1.1. Getting Gpg4win Installer</a>
+    <ul>
+      <li><a href="#111-download-gpg4win">1.1.1. Download Gpg4win</a></li>
+      <li><a href="#112-launch-gpg4win">1.1.2. Launch Gpg4win</a></li>
+    </ul>
+  </li>
+  <li><a href="#12-use-gpg4win-installer">1.2. Use Gpg4win Installer</a>
+    <h3 id="2-import-signing-key"><a href="#2-monero-signing-key">2. Import Signing Key</a></h3>
+  </li>
+  <li><a href="#21-download-signing-key">2.1. Download Signing Key</a></li>
+  <li><a href="#22-initialize-kleopatra">2.2. Initialize Kleopatra</a>
+    <ul>
+      <li><a href="#221-import-signing-key">2.2.1. Import Signing Key</a></li>
+      <li><a href="#222-create-key-pair">2.2.2. Create Key Pair</a></li>
+    </ul>
+  </li>
+  <li><a href="#23-verify-signing-key">2.3. Verify Signing Key</a>
+    <h3 id="3-verify-hash-file"><a href="#3-hash-file-verification">3. Verify Hash File</a></h3>
+  </li>
+  <li><a href="#31-download-hash-file">3.1. Download Hash File</a></li>
+  <li><a href="#32-verify-hash-file">3.2. Verify Hash File</a>
+    <h3 id="4-verify-binary-file"><a href="#4-binary-file-verification">4. Verify Binary File</a></h3>
+  </li>
+  <li><a href="#41-download-binary">4.1. Download Binary</a></li>
+  <li><a href="#42-verify-binary">4.2. Verify Binary</a></li>
+</ul>
+
+<h2 id="1-using-gpg4win-installer">1. Using Gpg4win Installer</h2>
+
+<p>This section will cover installing the cryptography software. Windows does not come with the tools required to verify your binary. To install these tools you can use the Gpg4win installer.</p>
+
+<h3 id="11-getting-gpg4win-installer">1.1. Getting Gpg4win Installer</h3>
+
+<h4 id="111-download-gpg4win">1.1.1. Download Gpg4win</h4>
+
+<p>In a web browser, go to <a href="https://gpg4win.org">gpg4win.org</a> and download the installer by clicking the green button.</p>
+
+<p><img src="png/verify_binary_windows_beginner/verify-win_gpg4win-site-downloadbutton.png" alt="gpg4win download button" /></p>
+
+<p>You will be taken to a donation page. If you do not wish to donate select <code class="highlighter-rouge">$0</code>, then you will be able to click <code class="highlighter-rouge">Download</code>.</p>
+
+<p><img src="png/verify_binary_windows_beginner/verify-win_gpg4win-site-donation.png" alt="gpg4win site donation" /></p>
+
+<p>Click <code class="highlighter-rouge">Save File</code>.</p>
+
+<p><img src="png/verify_binary_windows_beginner/verify-win_gpg4win-site-savefile.png" alt="gpg4win site save file" /></p>
+
+<p>Choose a download location, click <code class="highlighter-rouge">Save</code>.</p>
+
+<p><img src="png/verify_binary_windows_beginner/verify-win_gpg4win-site-savefile-location.png" alt="gpg4win site download location" /></p>
+
+<h4 id="112-launch-gpg4win">1.1.2. Launch Gpg4win</h4>
+
+<p>When the download is finished, open the containing folder.</p>
+
+<p><img src="png/verify_binary_windows_beginner/verify-win_gpg4win-site-savefile-openfolder.png" alt="gpg4win site open folder" /></p>
+
+<p>Double click the downloaded gpg4win executable to launch.</p>
+
+<p><img src="png/verify_binary_windows_beginner/verify-win_gpg4win-launch.png" alt="gpg4win launch" /></p>
+
+<h3 id="12-use-gpg4win-installer">1.2. Use Gpg4win Installer</h3>
+
+<p>You will be presented with a security verification screen, click <code class="highlighter-rouge">Run</code>.</p>
+
+<p><img src="png/verify_binary_windows_beginner/verify-win_gpg4win-install-security.png" alt="gpg4win installer security" /></p>
+
+<p>Select your language, click <code class="highlighter-rouge">OK</code>.</p>
+
+<p><img src="png/verify_binary_windows_beginner/verify-win_gpg4win-install-language.png" alt="gpg4win installer language" /></p>
+
+<p>A welcome screen will appear, click <code class="highlighter-rouge">Next</code>.</p>
+
+<p><img src="png/verify_binary_windows_beginner/verify-win_gpg4win-install-welcome.png" alt="gpg4win installer welcome" /></p>
+
+<p>Now you will see the component selection screen, you must at least leave <code class="highlighter-rouge">Kleopatra</code> checked for this guide. Make your selections, click <code class="highlighter-rouge">Next</code>.</p>
+
+<p><img src="png/verify_binary_windows_beginner/verify-win_gpg4win-components.png" alt="gpg4win installer components" /></p>
+
+<p>It is best to leave the default installation location unless you know what you are doing. Make your selections, click <code class="highlighter-rouge">Install</code>.</p>
+
+<p><img src="png/verify_binary_windows_beginner/verify-win_gpg4win-install.png" alt="gpg4win installer location" /></p>
+
+<p>Installation has completed, click <code class="highlighter-rouge">Next</code>.</p>
+
+<p><img src="png/verify_binary_windows_beginner/verify-win_gpg4win-install-complete.png" alt="gpg4win installer complete" /></p>
+
+<p>Click <code class="highlighter-rouge">Finish</code>.</p>
+
+<p><img src="png/verify_binary_windows_beginner/verify-win_gpg4win-install-finish.png" alt="gpg4win installer finish" /></p>
+
+<h2 id="2-monero-signing-key">2. Monero Signing Key</h2>
+
+<p>This section will cover downloading the Monero signing key, verifying that the key is correct, and then importing the key to your keyring. The hash file that will be used to verify your binary is cryptographically signed with the Monero signing key. In order to check the validity of this file you must have the public version of the signing key.</p>
+
+<h3 id="21-download-signing-key">2.1. Download Signing Key</h3>
+
+<p>In a web browser, go to <a href="https://raw.githubusercontent.com/monero-project/monero/master/utils/gpg_keys/fluffypony.asc">Fluffypony's GPG key</a>, which he uses for signing the Monero binaries. Right click on the page, choose <code class="highlighter-rouge">Save Page As</code>.</p>
+
+<p><img src="png/verify_binary_windows_beginner/verify-win_getkey-rightclick.png" alt="getkey right click" /></p>
+
+<p>Leave the default location, click <code class="highlighter-rouge">Save</code>.</p>
+
+<p><img src="png/verify_binary_windows_beginner/verify-win_getkey-savefilename.png" alt="getkey save file" /></p>
+
+<h3 id="22-initialize-kleopatra">2.2. Initialize Kleopatra</h3>
+
+<p>If this is your first time using Kleopatra you will have to create a key pair for yourself.</p>
+
+<p>Launch Kleopatra.</p>
+
+<p><img src="png/verify_binary_windows_beginner/verify-win_kleopatra-launch.png" alt="kleo launch" /></p>
+
+<h4 id="221-import-signing-key">2.2.1. Import Signing Key</h4>
+
+<p>Click <code class="highlighter-rouge">Import</code>.</p>
+
+<p><img src="png/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-importkey.png" alt="kleo firstrun import" /></p>
+
+<p>Enter the directory <code class="highlighter-rouge">Downloads</code>, select <code class="highlighter-rouge">fluffypony</code>, and click <code class="highlighter-rouge">Open</code>.</p>
+
+<p><img src="png/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-import-location.png" alt="kleo firstrun key location" /></p>
+
+<p>Start the process of certifying the key by clicking <code class="highlighter-rouge">Yes</code>.</p>
+
+<p><img src="png/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-startverifyprocess.png" alt="kleo firstrun start process" /></p>
+
+<h4 id="222-create-key-pair">2.2.2. Create Key Pair</h4>
+
+<p>Start the process of key creation by clicking <code class="highlighter-rouge">Yes</code>.</p>
+
+<p><img src="png/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-createkeysnow.png" alt="kleo firstrun start key create" /></p>
+
+<p>Fill in some details for <code class="highlighter-rouge">Name</code> and <code class="highlighter-rouge">Email</code>, click <code class="highlighter-rouge">Next</code>.</p>
+
+<p><img src="png/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-createkeydetails.png" alt="kleo firstrun key details" /></p>
+
+<p>Verify details, click <code class="highlighter-rouge">Create</code>.</p>
+
+<p><img src="png/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-verifykeydetails.png" alt="kleo firstrun verify key details" /></p>
+
+<p>Set a password, click <code class="highlighter-rouge">OK</code>.</p>
+
+<p><img src="png/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-createkeys-pinentry.png" alt="kleo firstrun set key pass" /></p>
+
+<p>Click <code class="highlighter-rouge">Finish</code>.</p>
+
+<p><img src="png/verify_binary_windows_beginner/verify-win_kleopatra-firstrun-keycreate-success.png" alt="kleo firstrun finish create key" /></p>
+
+<h3 id="23-verify-signing-key">2.3. Verify Signing Key</h3>
+
+<p>Visually check that the fingerprint of the key belonging to Riccardo Spagni is <code class="highlighter-rouge">BDA6BD7042B721C467A9759D7455C5E3C0CDCEB9</code>.</p>
+
+<p><img src="png/verify_binary_windows_beginner/verify-win_kleopatra-certify-fingerprint.png" alt="kleo certify fingerprint" /></p>
+
+<p>If the fingerprint <strong>DOES</strong> match, click <code class="highlighter-rouge">Next</code>.</p>
+
+<p>If the fingerprint of this key <strong>DOES NOT</strong> match, <strong>DO NOT CONTINUE</strong>. Instead delete the file <code class="highlighter-rouge">fluffypony</code> from the <code class="highlighter-rouge">Downloads</code> directory and go back to <a href="#21-download-signing-key">section 2.1</a>.</p>
+
+<p>Leave <code class="highlighter-rouge">Certify only for myself</code> selected, click <code class="highlighter-rouge">Certify</code>.</p>
+
+<p><img src="png/verify_binary_windows_beginner/verify-win_kleopatra-certify-forself.png" alt="kleo certify for self" /></p>
+
+<p>Enter your password, click <code class="highlighter-rouge">OK</code>.</p>
+
+<p><img src="png/verify_binary_windows_beginner/verify-win_kleopatra-certify-pinentry.png" alt="kleo certify pass" /></p>
+
+<p>Click <code class="highlighter-rouge">Finish</code>.</p>
+
+<p><img src="png/verify_binary_windows_beginner/verify-win_kleopatra-certify-finish.png" alt="kleo certify finish" /></p>
+
+<h2 id="3-hash-file-verification">3. Hash File Verification</h2>
+
+<p>This section will cover downloading the signed file of known good hashes and verifying its authenticity.</p>
+
+<h3 id="31-download-hash-file">3.1. Download Hash File</h3>
+
+<p>In a web browser, go to the <a href="https://getmonero.org/downloads/hashes.txt">getmonero.org hash page</a>. Right click the page, select <code class="highlighter-rouge">Save Page As</code>.</p>
+
+<p><img src="png/verify_binary_windows_beginner/verify-win_hashes-getmonero-rightclick.png" alt="hashes right click" /></p>
+
+<p>Leave the default location, click <code class="highlighter-rouge">Save</code>.</p>
+
+<p><img src="png/verify_binary_windows_beginner/verify-win_hashes-getmonero-savename.png" alt="hashes save file" /></p>
+
+<h3 id="32-verify-hash-file">3.2. Verify Hash File</h3>
+
+<p>In Kleopatra, click the <code class="highlighter-rouge">Decrypt/Verify</code> button.</p>
+
+<p><img src="png/verify_binary_windows_beginner/verify-win_hashes-kleo-verify-button.png" alt="hashes kleo verify button" /></p>
+
+<p>Navigate to <code class="highlighter-rouge">Downloads</code> directory. Select <code class="highlighter-rouge">hashes</code> file, click <code class="highlighter-rouge">Open</code>.</p>
+
+<p><img src="png/verify_binary_windows_beginner/verify-win_hashes-kleo-verify-button-filename.png" alt="hashes kleo open file" /></p>
+
+<p>Kleopatra will inform you if the files signature is valid.</p>
+
+<p>If the signature is <strong>VALID</strong> you will see this:</p>
+
+<p><img src="png/verify_binary_windows_beginner/verify-win_hashes-kleo-goodsig.png" alt="hashes kleo goodsig" /></p>
+
+<p>If the signature is <strong>INVALID</strong> you will see this:</p>
+
+<p><img src="png/verify_binary_windows_beginner/verify-win_hashes-kleo-badsig.png" alt="hashes kleo badsig" /></p>
+
+<p>If you receive a <strong>VALID</strong> signature, click <code class="highlighter-rouge">Discard</code> and move on.</p>
+
+<p>If you receive an <strong>INVALID</strong> signature, <strong>DO NOT CONTINUE.</strong> Instead delete the file <code class="highlighter-rouge">hashes</code> from the <code class="highlighter-rouge">Downloads</code> directory and go back to <a href="#31-download-hash-file">section 3.1</a>.</p>
+
+<h2 id="4-binary-file-verification">4. Binary File Verification</h2>
+
+<p>This section will cover downloading the Monero binary and verifying its authenticity.</p>
+
+<h3 id="41-download-binary">4.1. Download Binary</h3>
+
+<p>In a web browser, go to the <a href="https://getmonero.org/downloads/#windows">getmonero.org downloads page</a>. Select the correct binary for your system.</p>
+
+<p><img src="png/verify_binary_windows_beginner/verify-win_binary-getmonero-windowsfiles.png" alt="binary getmonero" /></p>
+
+<p>Leave <code class="highlighter-rouge">Save File</code> selected, click <code class="highlighter-rouge">OK</code>.</p>
+
+<p><img src="png/verify_binary_windows_beginner/verify-win_binary-getmonero-save-file.png" alt="binary getmonero save" /></p>
+
+<p>Leave the default location, click <code class="highlighter-rouge">Save</code>.</p>
+
+<p><img src="png/verify_binary_windows_beginner/verify-win_binary-getmonero-save-location.png" alt="binary getmonero save location" /></p>
+
+<h3 id="42-verify-binary">4.2. Verify Binary</h3>
+
+<p>In a file manager, navigate to <code class="highlighter-rouge">Downloads</code> directory. Open the file <code class="highlighter-rouge">hashes</code> with a word processor.</p>
+
+<p><img src="png/verify_binary_windows_beginner/verify-win_binary-word-hashfile.png" alt="binary open hashes.txt" /></p>
+
+<p>Open a terminal (<code class="highlighter-rouge">cmd.exe</code>).</p>
+
+<p><img src="png/verify_binary_windows_beginner/verify-win_binary-cmd-launch.png" alt="binary launch term" /></p>
+
+<p>Change to the <code class="highlighter-rouge">Downloads</code> directory with the command: <code class="highlighter-rouge">cd Downloads</code>.</p>
+
+<p><img src="png/verify_binary_windows_beginner/verify-win_binary-cmd-cd.png" alt="binary cmd cd" /></p>
+
+<p>Calculate the hash of the Monero binary with the command: <code class="highlighter-rouge">certUtil -hashfile monero-gui-win-x64-v0.11.1.0.zip SHA256</code> (if you downloaded a command-line only version, replace <code class="highlighter-rouge">monero-gui-win-x64-v0.11.1.0.zip</code> accordingly).</p>
+
+<p><img src="png/verify_binary_windows_beginner/verify-win_binary-cmd-certutil.png" alt="binary cmd certutil" /></p>
+
+<p>Compare the hash from the terminal with the one in the hash file. They should be the same (spaces can be ignored).</p>
+
+<p><img src="png/verify_binary_windows_beginner/verify-win_binary-word-cmd-compare.png" alt="binary compare hashes" /></p>
+
+<p>If your hash <strong>DOES</strong> match then you are finished with verification! You can be sure the Monero files you have are authentic. You may extract and install/use the files normally.</p>
+
+<p>If your hash <strong>DOES NOT</strong> match <strong>DO NOT CONTINUE.</strong> Instead delete the Monero binary from the <code class="highlighter-rouge">Downloads</code> directory and go back to <a href="#41-download-binary">section 4.1</a>.</p>
+
+
+                    </div>
+                </div>
+        </section>
+    <!-- END FULL WIDTH BLOCK -->
+    </div>
+    <footer class="container-fluid">
+            <div class="container">
+                <div class="row around-xs footer-wrapper">
+                   
+                     <div class="col-sm-3 col-xs-6">
+                     <h3>Recursos</h3>
+                         <ul class="list-unstyled">
+                            
+                             
+                                <li><a class="white" href="/es/resources/about/">Sobre Monero</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/es/resources/moneropedia/">Moneropedia</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/es/resources/developer-guides/">Guias de Desarrollo</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/es/resources/user-guides/">Guias de Usuario</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://getmonero.org/feed.xml">RSS Feed</a></li>
+                              
+                            
+                         </ul>
+                     </div>
+                  
+                     <div class="col-sm-3 col-xs-6">
+                     <h3>Canales IRC</h3>
+                         <ul class="list-unstyled">
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero">monero</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-dev">monero-dev</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-markets">monero-markets</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-pools">monero-pools</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-community">monero-community</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-translations">monero-translations</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="irc://chat.freenode.net/#monero-hardware">monero-hardware</a></li>
+                              
+                            
+                         </ul>
+                     </div>
+                  
+                     <div class="col-sm-3 col-xs-6">
+                     <h3>Comunidad</h3>
+                         <ul class="list-unstyled">
+                            
+                             
+                              <li><a class="white" href="https://reddit.com/r/monero">Reddit</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://monero.stackexchange.com/">Stack Exchange</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://bitcointalk.org/index.php?topic=583449.0">BitcoinTalk Thread</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://mattermost.getmonero.org/">Mattermost Chat</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://telegram.me/bitmonero">Telegram Chat</a></li>
+                              
+                            
+                         </ul>
+                     </div>
+                  
+                     <div class="col-sm-3 col-xs-6">
+                     <h3>El Proyecto Monero</h3>
+                         <ul class="list-unstyled">
+                            
+                             
+                              <li><a class="white" href="https://openalias.org/">Open Alias</a></li>
+                              
+                            
+                             
+                              <li><a class="white" href="https://getkovri.org/">Kovri</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/es/resources/research-lab/">Monero Research Lab</a></li>
+                              
+                            
+                             
+                                <li><a class="white" href="/es/press-kit">Kit de Prensa</a></li>
+                              
+                            
+                         </ul>
+                     </div>
+                 
+                <div class="row center-xs">
+                    <div class="social-icons">
+                    </div>
+                    <div class="footer-links">
+                        <ul class="list-unstyled list-inline">
+                           
+                            
+                             <li><a href="/es/legal" class="white footer-link">Aviso Legal</a></li>
+                           
+                           
+                            
+                             <li><a href="https://github.com/monero-project" class="white footer-link">Código Fuente</a></li>
+                            
+                           
+                            
+                             <li><a href="/es/technical-specs/" class="white footer-link">Especificaciones Técnicas</a></li>
+                           
+                           
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
+</footer>
+<!-- Matomo -->
+<script type="text/javascript">
+    var _paq = _paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+        var u = "//analytics.getmonero.org/";
+        _paq.push(['setTrackerUrl', u + 'piwik.php']);
+        _paq.push(['setSiteId', '1']);
+        var d = document,
+            g = d.createElement('script'),
+            s = d.getElementsByTagName('script')[0];
+        g.type = 'text/javascript';
+        g.async = true;
+        g.defer = true;
+        g.src = u + 'piwik.js';
+        s.parentNode.insertBefore(g, s);
+    })();
+</script>
+<!-- End Matomo Code -->
+<!-- page served by server N -->
+    </div>
+  </body>
+</html>
