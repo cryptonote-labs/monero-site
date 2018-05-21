@@ -55,7 +55,7 @@
                             <p>Sending and receiving addresses as well as transacted amounts are obfuscated by default. Transactions on the Electronero blockchain cannot be linked to a particular user or real-world identity.</p>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-4 col-xs-12 last-sm first-xs center-xs">
-                            <img src="/img/untraceable-monero.png" alt="Untraceable Electronero paths" class="main-icon">
+                            <img src="/img/untraceable-nero.png" alt="Untraceable Electronero paths" class="main-icon">
                         </div>
                     </div>
                     <div class="row middle-xs info-block-row">
