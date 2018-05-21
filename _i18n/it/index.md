@@ -36,12 +36,12 @@
                                 <p>Electronero è una criptovaluta decentralizzata, ovvero una valuta digitale sicura basata sulla crittografia, operata da una rete di utilizzatori. Le transazioni vengono confermate attraverso consenso distribuito ed immutabilmente registrate nella blockchain. Non devi fidarti di alcun servizio di terze parti per tenere i tuoi Electronero al sicuro. </p>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-4 col-xs-12 last-sm first-xs center-xs">
-                            <img src="/img/secure-monero.png" alt="Secure safe" class="main-icon">
+                            <img src="/img/secure-electronero.png" alt="Secure safe" class="main-icon">
                         </div>
                     </div>
                     <div class="row middle-xs info-block-row">
                         <div class="col-lg-6 col-md-6 col-sm-4 col-xs-12 center-xs">
-                            <img src="/img/private-monero.png" alt="No surveillance" class="main-icon">
+                            <img src="/img/private-electronero.png" alt="No surveillance" class="main-icon">
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12 why-text">
                             <h3>Electronero è privato</h3>
@@ -55,12 +55,12 @@
                             <p>Gli indirizzi di invio e ricezione, così come l'ammontare della transazione, sono offuscati di default. Le transazioni sulla blockchain di Electronero non possono essere collegate ad alcuna identità nel mondo reale.</p>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-4 col-xs-12 last-sm first-xs center-xs">
-                            <img src="/img/untraceable-monero.png" alt="Untraceable Electronero paths" class="main-icon">
+                            <img src="/img/untraceable-electronero.png" alt="Untraceable Electronero paths" class="main-icon">
                         </div>
                     </div>
                     <div class="row middle-xs info-block-row">
                         <div class="col-lg-6 col-md-6 col-sm-4 col-xs-12 center-xs">
-                            <img src="/img/fungible-monero.png" alt="Electronero gold" class="main-icon">
+                            <img src="/img/fungible-electronero.png" alt="Electronero gold" class="main-icon">
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12 why-text">
                             <h3>Electronero è fungibile</h3>
