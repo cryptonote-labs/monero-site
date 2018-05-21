@@ -6,16 +6,16 @@
                         <div class="monero-video">
                             <!--iframe width="560" height="315" src="https://www.youtube.com/embed/TZi9xx6aiuY" frameborder="0" allowfullscreen></iframe-->
                             <video controls poster="/img/monero-community.png" onclick="this.paused ? this.play() : this.pause();" preload="none">
-                                <source src="/media/Monero_Promo.m4v">
+                                <source src="/media/Electronero_Promo.m4v">
                             </video>
                         </div>
                         
                     </div>
                     <div class="col-lg-5 col-md-5 col-xs-12">
                         <div class="main-info">
-                            <h1 id="main-h1">Monero</h1>
+                            <h1 id="main-h1">Electronero</h1>
                             <h2 id="main-h2">Prywatna waluta cyfrowa</h2>
-                            <p id="main-text">Monero jest bezpieczną, prywatną i niewykrywalną kryptowalutą otwartego źródła, dostępną dla wszystkich. Z Monero sam jesteś swoim bankiem. Tylko ty kontrolujesz i jesteś odpowiedzialny za swoje fundusze. Twoje konto i wszystkie transakcje są utrzymywane w prywatności przed wścibskim okiem.</p>
+                            <p id="main-text">Electronero jest bezpieczną, prywatną i niewykrywalną kryptowalutą otwartego źródła, dostępną dla wszystkich. Z Electronero sam jesteś swoim bankiem. Tylko ty kontrolujesz i jesteś odpowiedzialny za swoje fundusze. Twoje konto i wszystkie transakcje są utrzymywane w prywatności przed wścibskim okiem.</p>
                             <p><a href="{{site.baseurl}}/get-started/using/" class="btn-link btn-auto btn-primary">Wstęp</a></p>
                         </div>
                     </div>
@@ -28,12 +28,12 @@
         <section class="container about-main full col-xs-12">
                 <div class="info-block">
                     <div class="row center-xs">
-                        <div class="col"><h2>Dlaczego Monero jest inne?</h2></div>
+                        <div class="col"><h2>Dlaczego Electronero jest inne?</h2></div>
                     </div>
                     <div class="row middle-xs info-block-row private">
                         <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12  why-text">
-                            <h3>Monero jest bezpieczne</h3>
-                                <p>Monero jest zdecentralizowaną kryptowalutą, co znacza, że jest bezpiecznym, cyfrowym pieniądzem operowanym przez sieć użytkowników. Płatności są potwierdzane za pomocą powszechnej zgody, a następnie zapisywane w łańcuchach bloków. Osoby trzecie nie muszą być zaangażowane, aby twoje Monero były bezpieczne.</p>
+                            <h3>Electronero jest bezpieczne</h3>
+                                <p>Electronero jest zdecentralizowaną kryptowalutą, co znacza, że jest bezpiecznym, cyfrowym pieniądzem operowanym przez sieć użytkowników. Płatności są potwierdzane za pomocą powszechnej zgody, a następnie zapisywane w łańcuchach bloków. Osoby trzecie nie muszą być zaangażowane, aby twoje Electronero były bezpieczne.</p>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-4 col-xs-12 last-sm first-xs center-xs">
                             <img src="/img/secure-monero.png" alt="Secure safe" class="main-icon">
@@ -44,27 +44,27 @@
                             <img src="/img/private-monero.png" alt="No surveillance" class="main-icon">
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12 why-text">
-                            <h3>Monero jest prywatne</h3>
-                            <p>Monero korzysta z podpisów pierścieniowych, poufnych transakcji pierścieniowych i jednorazowych adresów w celu zamaskowania pochodzenia, kwoty oraz odbiorcy wszystkich płatności. Monero dostarcza wszystkich zalet zdecentralizowanej kryptowaluty bez żadnego ustępstwa na rzecz prywatości.</p>
+                            <h3>Electronero jest prywatne</h3>
+                            <p>Electronero korzysta z podpisów pierścieniowych, poufnych transakcji pierścieniowych i jednorazowych adresów w celu zamaskowania pochodzenia, kwoty oraz odbiorcy wszystkich płatności. Electronero dostarcza wszystkich zalet zdecentralizowanej kryptowaluty bez żadnego ustępstwa na rzecz prywatości.</p>
                         </div>
                         
                     </div>
                     <div class="row middle-xs info-block-row">
                         <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12 why-text">
-                            <h3>Monero jest niewykrywalne</h3>
-                            <p>Wychodzące oraz przychodzące adresy oraz przesyłana kwota są odgórnie ukryte. Płatności w łańcuchu bloków Monero nie mogą zostać przypisane do danych pojedynczego użytkownika w realnym świecie.</p>
+                            <h3>Electronero jest niewykrywalne</h3>
+                            <p>Wychodzące oraz przychodzące adresy oraz przesyłana kwota są odgórnie ukryte. Płatności w łańcuchu bloków Electronero nie mogą zostać przypisane do danych pojedynczego użytkownika w realnym świecie.</p>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-4 col-xs-12 last-sm first-xs center-xs">
-                            <img src="/img/untraceable-monero.png" alt="Untraceable Monero paths" class="main-icon">
+                            <img src="/img/untraceable-monero.png" alt="Untraceable Electronero paths" class="main-icon">
                         </div>
                     </div>
                     <div class="row middle-xs info-block-row">
                         <div class="col-lg-6 col-md-6 col-sm-4 col-xs-12 center-xs">
-                            <img src="/img/fungible-monero.png" alt="Monero gold" class="main-icon">
+                            <img src="/img/fungible-monero.png" alt="Electronero gold" class="main-icon">
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12 why-text">
-                            <h3>Monero jest zamienialne</h3>
-                            <p> Monero jest <a href="{{site.baseurl}}/resources/moneropedia/fungibility.html">zamienialne</a>, ponieważ jest odgórnie prywatne. Jednostki Monero nie mogą zostać wyłączone z obiegu przez sprzedawców lub giełdę z powodu ich powiązania z poprzednimi transakcjami.</p>
+                            <h3>Electronero jest zamienialne</h3>
+                            <p> Electronero jest <a href="{{site.baseurl}}/resources/moneropedia/fungibility.html">zamienialne</a>, ponieważ jest odgórnie prywatne. Jednostki Electronero nie mogą zostać wyłączone z obiegu przez sprzedawców lub giełdę z powodu ich powiązania z poprzednimi transakcjami.</p>
                         </div>
                     </div>
                 </div>
@@ -86,15 +86,15 @@
                         </div>
                             <div class="row around-xs">
                                 <div class="col">
-                                    <p><a href="{{site.baseurl}}/downloads#windows" class="btn-link btn-fixed"><span class="icon-windows"></span>Monero na Windowsa</a></p>
+                                    <p><a href="{{site.baseurl}}/downloads#windows" class="btn-link btn-fixed"><span class="icon-windows"></span>Electronero na Windowsa</a></p>
                                 </div>
                                 <div class="col">
-                                    <p><a href="{{site.baseurl}}/downloads#mac" class="btn-link btn-fixed"><span class="icon-apple"></span>Monero na Mac</a></p>
+                                    <p><a href="{{site.baseurl}}/downloads#mac" class="btn-link btn-fixed"><span class="icon-apple"></span>Electronero na Mac</a></p>
                                 </div>
                             </div>
                             <div class="row around-xs">
                                 <div class="col">
-                                    <p><a href="{{site.baseurl}}/downloads#linux" class="btn-link btn-fixed"><span class="icon-linux"></span>Monero na Linuxa</a></p>
+                                    <p><a href="{{site.baseurl}}/downloads#linux" class="btn-link btn-fixed"><span class="icon-linux"></span>Electronero na Linuxa</a></p>
                                 </div>
                                 <div class="col">
                                     <p><a href="{{site.baseurl}}/downloads#source" class="btn-link btn-fixed"><span class="icon-blockchain"></span>Ostatni łańcuch</a></p>
@@ -147,9 +147,9 @@
                     <div class="info-block">
                         <div class="row center-xs">
                             <div class="col">
-                                <h2>Moneropedia</h2>
-                                <p class="main-resources">Chcesz sprawdzić znaczenie pojęć i konceptów używanych przy Monero? Tutaj znajdziesz alfabetyczny przewodnik do pojęć i ich znaczeń z projektu Monero oraz Kovri.</p>
-                                <p><a href="{{site.baseurl}}/resources/moneropedia/" class="btn-link btn-auto">Przejdź do Moneropedii</a></p>
+                                <h2>Electroneropedia</h2>
+                                <p class="main-resources">Chcesz sprawdzić znaczenie pojęć i konceptów używanych przy Electronero? Tutaj znajdziesz alfabetyczny przewodnik do pojęć i ich znaczeń z projektu Electronero oraz Kovri.</p>
+                                <p><a href="{{site.baseurl}}/resources/moneropedia/" class="btn-link btn-auto">Przejdź do Electroneropedii</a></p>
                             </div>
                         </div>
                     </div>
@@ -162,7 +162,7 @@
                         <div class="row center-xs">
                             <div class="col">
                                 <h2>Przewodnik</h2>
-                                <p class="main-resources">Przewodnik Monero dla użytkowników podzielony na kategorie. Zawiera wszystko, począwszy od zakładania portfela, do wspomagania sieci, a nawet do tego, jak edytować tę stronę.</p>
+                                <p class="main-resources">Przewodnik Electronero dla użytkowników podzielony na kategorie. Zawiera wszystko, począwszy od zakładania portfela, do wspomagania sieci, a nawet do tego, jak edytować tę stronę.</p>
                                 <p><a href="{{site.baseurl}}/resources/user-guides/" class="btn-link btn-auto">Przejdź do przewodnika</a></p>
                             </div>
                         </div>
