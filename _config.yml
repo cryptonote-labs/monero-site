@@ -1,9 +1,9 @@
 email: dev@getmonero.org
 name: Monero
-description: Monero is a digital currency that is secure, private, and untraceable.
-keywords: "monero, xmr, bitmonero, cryptocurrency"
+description: Electronero is a digital currency that is secure, private, and untraceable.
+keywords: "electronero, etnx, bitnero, cryptocurrency"
 baseurl: ""
-url: "https://getmonero.org"
+url: "https://wapp.electronero.org"
 
 markdown: kramdown
 
