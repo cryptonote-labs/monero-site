@@ -9,7 +9,7 @@
     </binding>
     <binding template="TileSquare310x310TextList02" branding="logo" fallback="TileWideText09">
       <text id="1">A Scheduled Network Upgrade is Planned for April 6</text>
-      <text id="2">First and foremost, the new bi...</text>
+      <text id="2">**First and foremost, the new ...</text>
       <text id="3">3-28-2018</text>
     </binding>
   </visual>

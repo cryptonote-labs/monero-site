@@ -9,9 +9,9 @@
     </binding>
     <binding template="TileSquare310x310TextList02" branding="logo" fallback="TileWideText09">
       <text id="1">Monero 0.12.0.0 "Lithium Luna" Release</text>
-      <text id="2">Overview
+      <text id="2">### Overview
 
-This is the v0.12.0....</text>
+This is the v0.1...</text>
       <text id="3">3-29-2018</text>
     </binding>
   </visual>
