@@ -6,7 +6,7 @@
                         <div class="monero-video">
                             <!--iframe width="560" height="315" src="https://www.youtube.com/embed/TZi9xx6aiuY" frameborder="0" allowfullscreen></iframe-->
                             <video controls poster="/img/monero-community.png" onclick="this.paused ? this.play() : this.pause();" preload="none">
-                                <source src="/media/Monero_Promo.m4v">
+                                <source src="/media/Electronero_Promo.m4v">
                             </video>
                         </div>
                         
