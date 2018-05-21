@@ -57,10 +57,10 @@ module Jekyll
         if content.include? '@neropedia'
           # Moneropedia index, replace with a list of entries
           cur_letter = 'A'
-          replace = "<div class='col-md-4 col-sm-6 col-xs-12 neropedia'>\n<h4 class='text-center'>A</h4>\n"
+          replace = "<div class='col-md-4 col-sm-6 col-xs-12 moneropedia'>\n<h4 class='text-center'>A</h4>\n"
           @@neropedia_ordered.sort.map do |entry, link|
             if cur_letter != entry[0]
-              replace += "</div>\n<div class='col-md-4 col-sm-6 col-xs-12 neropedia'>\n<h4 class='text-center'>" + entry[0] + "</h4>\n"
+              replace += "</div>\n<div class='col-md-4 col-sm-6 col-xs-12 moneropedia'>\n<h4 class='text-center'>" + entry[0] + "</h4>\n"
               cur_letter = entry[0]
             end
             replace += "<a href='/resources/neropedia/" + link + ".html'>" + entry + "</a><br>\n"
