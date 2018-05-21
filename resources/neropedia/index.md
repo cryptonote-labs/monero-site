@@ -1,12 +1,12 @@
 ---
 layout: full
-title: titles.neropedia
+title: titles.moneropedia
 ---
 
 
 <div class="row">
 
-@neropedia
+@moneropedia
 
 </div>
 
