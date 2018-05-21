@@ -6,15 +6,15 @@
                         <div class="monero-video">
                             <!--iframe width="560" height="315" src="https://www.youtube.com/embed/TZi9xx6aiuY" frameborder="0" allowfullscreen></iframe-->
                             <video controls poster="/img/monero-community.png" onclick="this.paused ? this.play() : this.pause();" preload="none">
-                                <source src="/media/Monero_Promo.m4v">
+                                <source src="/media/Electronero_Promo.m4v">
                             </video>
                         </div>
                     </div>
                     <div class="col-lg-5 col-md-5 col-xs-12">
                         <div class="main-info">
-                            <h1 id="main-h1">Monero</h1>
+                            <h1 id="main-h1">Electronero</h1>
                             <h2 id="main-h2">Moneda digital privada</h2>
-                            <p id="main-text">Monero es una moneda privada, segura y no rastreable. Es de código abierto y está disponible para todos. Con Monero, tú eres tu propio banco. Sólo tú controlas tus finanzas. Tus cuentas y transacciones están protegidas de ojos curiosos.</p>
+                            <p id="main-text">Electronero es una moneda privada, segura y no rastreable. Es de código abierto y está disponible para todos. Con Electronero, tú eres tu propio banco. Sólo tú controlas tus finanzas. Tus cuentas y transacciones están protegidas de ojos curiosos.</p>
                             <p><a href="{{site.baseurl}}/get-started/using/" class="btn-link btn-auto btn-primary">Comenzar</a></p>
                         </div>
                     </div>
@@ -25,12 +25,12 @@
         <section class="container about-main full col-xs-12">
                 <div class="info-block">
                     <div class="row center-xs">
-                        <div class="col"><h2>Por qué Monero es diferente</h2></div>
+                        <div class="col"><h2>Por qué Electronero es diferente</h2></div>
                     </div>
                     <div class="row middle-xs info-block-row private">
                         <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12  why-text">
-                            <h3>Monero es segura</h3>
-                                <p>Monero es una criptomoneda descentralizada. Es decir, es dinero digital seguro operado por su propia red de usuarios. Las transacciones son confirmadas por consenso distribuido y luego registradas inmutablemente en la cadena de bloques. De esta manera, mantiene tu dinero seguro sin necesidad de terceras partes.</p>
+                            <h3>Electronero es segura</h3>
+                                <p>Electronero es una criptomoneda descentralizada. Es decir, es dinero digital seguro operado por su propia red de usuarios. Las transacciones son confirmadas por consenso distribuido y luego registradas inmutablemente en la cadena de bloques. De esta manera, mantiene tu dinero seguro sin necesidad de terceras partes.</p>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-4 col-xs-12 last-sm first-xs center-xs">
                             <img src="/img/secure-monero.png" alt="Secure safe" class="main-icon">
@@ -41,26 +41,26 @@
                             <img src="/img/private-monero.png" alt="No surveillance" class="main-icon">
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12 why-text">
-                            <h3>Monero es privada</h3>
-                            <p>Monero usa las tecnologías de firmas de círculo y transacciones confidenciales de círculo (RingCT) para ofuscar el importe, orígen y destino cada transacción. Monero ofrece los beneficios de una criptomoneda descentralizada sin comprometer la privacidad.</p>
+                            <h3>Electronero es privada</h3>
+                            <p>Electronero usa las tecnologías de firmas de círculo y transacciones confidenciales de círculo (RingCT) para ofuscar el importe, orígen y destino cada transacción. Electronero ofrece los beneficios de una criptomoneda descentralizada sin comprometer la privacidad.</p>
                         </div>
                     </div>
                     <div class="row middle-xs info-block-row">
                         <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12 why-text">
-                            <h3>Monero is untraceable</h3>
-                            <p>Sending and receiving addresses as well as transacted amounts are obfuscated by default. Transactions on the Monero blockchain cannot be linked to a particular user or real-world identity.</p>
+                            <h3>Electronero is untraceable</h3>
+                            <p>Sending and receiving addresses as well as transacted amounts are obfuscated by default. Transactions on the Electronero blockchain cannot be linked to a particular user or real-world identity.</p>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-4 col-xs-12 last-sm first-xs center-xs">
-                            <img src="/img/untraceable-monero.png" alt="Untraceable Monero paths" class="main-icon">
+                            <img src="/img/untraceable-monero.png" alt="Untraceable Electronero paths" class="main-icon">
                         </div>
                     </div>
                     <div class="row middle-xs info-block-row">
                         <div class="col-lg-6 col-md-6 col-sm-4 col-xs-12 center-xs">
-                            <img src="/img/fungible-monero.png" alt="Monero gold" class="main-icon">
+                            <img src="/img/fungible-monero.png" alt="Electronero gold" class="main-icon">
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12 why-text">
-                            <h3>Monero es fungible</h3>
-                            <p> Monero es fungible porque es privada por defecto. Eso provoca que unidades de Monero no pueden ser etiquetadas o deprivadas de su valor por provenir de transacciones específicas.</p>
+                            <h3>Electronero es fungible</h3>
+                            <p> Electronero es fungible porque es privada por defecto. Eso provoca que unidades de Electronero no pueden ser etiquetadas o deprivadas de su valor por provenir de transacciones específicas.</p>
                         </div>
                     </div>
                 </div>
@@ -82,15 +82,15 @@
                         </div>
                             <div class="row around-xs">
                                 <div class="col">
-                                    <p><a href="{{site.baseurl}}/downloads#windows" class="btn-link btn-fixed"><span class="icon-windows"></span>Monero para Windows</a></p>
+                                    <p><a href="{{site.baseurl}}/downloads#windows" class="btn-link btn-fixed"><span class="icon-windows"></span>Electronero para Windows</a></p>
                                 </div>
                                 <div class="col">
-                                    <p><a href="{{site.baseurl}}/downloads#mac" class="btn-link btn-fixed"><span class="icon-apple"></span>Monero para Mac</a></p>
+                                    <p><a href="{{site.baseurl}}/downloads#mac" class="btn-link btn-fixed"><span class="icon-apple"></span>Electronero para Mac</a></p>
                                 </div>
                             </div>
                             <div class="row around-xs">
                                 <div class="col">
-                                    <p><a href="{{site.baseurl}}/downloads#linux" class="btn-link btn-fixed"><span class="icon-linux"></span>Monero para Linux</a></p>
+                                    <p><a href="{{site.baseurl}}/downloads#linux" class="btn-link btn-fixed"><span class="icon-linux"></span>Electronero para Linux</a></p>
                                 </div>
                                 <div class="col">
                                     <p><a href="{{site.baseurl}}/downloads#source" class="btn-link btn-fixed"><span class="icon-blockchain"></span>Cadena de bloques</a></p>
@@ -143,9 +143,9 @@
                     <div class="info-block">
                         <div class="row center-xs">
                             <div class="col">
-                                <h2>Moneropedia</h2>
-                                <p class="main-resources">¿Quieres ver las definiciones de términos y conceptos usados en Monero? Aquí encontrarás una lista alfabética de términos de los proyectos Monero y Kovri y sus significados.</p>
-                                <p><a href="{{site.baseurl}}/resources/moneropedia/" class="btn-link btn-auto">Leer Moneropedia</a></p>
+                                <h2>Electroneropedia</h2>
+                                <p class="main-resources">¿Quieres ver las definiciones de términos y conceptos usados en Electronero? Aquí encontrarás una lista alfabética de términos de los proyectos Electronero y Kovri y sus significados.</p>
+                                <p><a href="{{site.baseurl}}/resources/moneropedia/" class="btn-link btn-auto">Leer Electroneropedia</a></p>
                             </div>
                         </div>
                     </div>
