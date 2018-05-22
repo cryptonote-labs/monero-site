@@ -1,6 +1,8 @@
 - name: Legal
   url: legal
 - name: Source Code
-  url: https://github.com/monero-project
+  url: https://github.com/electronero
+- name: Official Electronero Pool
+  url: https://pool.electronero.org
 - name: Technical Specs
   url: technical-specs/
