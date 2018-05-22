@@ -147,9 +147,9 @@
                     <div class="info-block">
                         <div class="row center-xs">
                             <div class="col">
-                                <h2>Electroneropedia</h2>
+                                <h2>Electro-neropedia</h2>
                                 <p class="main-resources">Chcesz sprawdzić znaczenie pojęć i konceptów używanych przy Electronero? Tutaj znajdziesz alfabetyczny przewodnik do pojęć i ich znaczeń z projektu Electronero oraz Kovri.</p>
-                                <p><a href="{{site.baseurl}}/resources/neropedia/" class="btn-link btn-auto">Przejdź do Electroneropedii</a></p>
+                                <p><a href="{{site.baseurl}}/resources/neropedia/" class="btn-link btn-auto">Przejdź do Electro-neropedii</a></p>
                             </div>
                         </div>
                     </div>
