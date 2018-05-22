@@ -64,7 +64,7 @@
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12 why-text">
                             <h3>Electronero è fungibile</h3>
-                            <p> Electronero è <a href="{{site.baseurl}}/resources/moneropedia/fungibility.html">fungibile</a> poiché è privato di default. Nessuna unità monetaria può essere messa in una lista nera da venditori o exchange perché associata a transazioni precedenti.</p>
+                            <p> Electronero è <a href="{{site.baseurl}}/resources/neropedia/fungibility.html">fungibile</a> poiché è privato di default. Nessuna unità monetaria può essere messa in una lista nera da venditori o exchange perché associata a transazioni precedenti.</p>
                         </div>
                     </div>
                 </div>
@@ -147,9 +147,9 @@
                     <div class="info-block">
                         <div class="row center-xs">
                             <div class="col">
-                                <h2>Electroneropedia</h2>
+                                <h2>Electro-neropedia</h2>
                                 <p class="main-resources">Vorresti dare un'occhiata al significato dei termini e dei concetti usati in Electronero? Qui puoi trovare una guida indicizzata ai termini usati nei progetti Kovri e Electronero e al loro significato.</p>
-                                <p><a href="{{site.baseurl}}/resources/moneropedia/" class="btn-link btn-auto">Leggi la moneropedia</a></p>
+                                <p><a href="{{site.baseurl}}/resources/neropedia/" class="btn-link btn-auto">Leggi la Electro-neropedia</a></p>
                             </div>
                         </div>
                     </div>
