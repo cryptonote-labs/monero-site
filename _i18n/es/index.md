@@ -33,12 +33,12 @@
                                 <p>Electronero es una criptomoneda descentralizada. Es decir, es dinero digital seguro operado por su propia red de usuarios. Las transacciones son confirmadas por consenso distribuido y luego registradas inmutablemente en la cadena de bloques. De esta manera, mantiene tu dinero seguro sin necesidad de terceras partes.</p>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-4 col-xs-12 last-sm first-xs center-xs">
-                            <img src="/img/secure-monero.png" alt="Secure safe" class="main-icon">
+                            <img src="/img/secure-electronero.png" alt="Secure safe" class="main-icon">
                         </div>
                     </div>
                     <div class="row middle-xs info-block-row">
                         <div class="col-lg-6 col-md-6 col-sm-4 col-xs-12 center-xs">
-                            <img src="/img/private-monero.png" alt="No surveillance" class="main-icon">
+                            <img src="/img/private-electronero.png" alt="No surveillance" class="main-icon">
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12 why-text">
                             <h3>Electronero es privada</h3>
@@ -51,12 +51,12 @@
                             <p>Sending and receiving addresses as well as transacted amounts are obfuscated by default. Transactions on the Electronero blockchain cannot be linked to a particular user or real-world identity.</p>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-4 col-xs-12 last-sm first-xs center-xs">
-                            <img src="/img/untraceable-monero.png" alt="Untraceable Electronero paths" class="main-icon">
+                            <img src="/img/untraceable-electronero.png" alt="Untraceable Electronero paths" class="main-icon">
                         </div>
                     </div>
                     <div class="row middle-xs info-block-row">
                         <div class="col-lg-6 col-md-6 col-sm-4 col-xs-12 center-xs">
-                            <img src="/img/fungible-monero.png" alt="Electronero gold" class="main-icon">
+                            <img src="/img/fungible-electronero.png" alt="Electronero gold" class="main-icon">
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12 why-text">
                             <h3>Electronero es fungible</h3>
@@ -145,7 +145,7 @@
                             <div class="col">
                                 <h2>Electroneropedia</h2>
                                 <p class="main-resources">¿Quieres ver las definiciones de términos y conceptos usados en Electronero? Aquí encontrarás una lista alfabética de términos de los proyectos Electronero y Kovri y sus significados.</p>
-                                <p><a href="{{site.baseurl}}/resources/moneropedia/" class="btn-link btn-auto">Leer Electroneropedia</a></p>
+                                <p><a href="{{site.baseurl}}/resources/neropedia/" class="btn-link btn-auto">Leer Electroneropedia</a></p>
                             </div>
                         </div>
                     </div>
