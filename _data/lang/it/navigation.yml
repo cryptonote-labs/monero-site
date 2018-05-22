@@ -1,7 +1,7 @@
 - title: Inizia da Qui
   subfolderitems:
-  - page: cos'è Monero?
-    url: get-started/what-is-monero
+  - page: cos'è Electronero?
+    url: get-started/what-is-electronero
   - page: Utilizzo
     url: get-started/using
   - page: Adozione
@@ -18,8 +18,6 @@
   subfolderitems:
     - page: Tutti i Post
       url: blog
-    - page: Missive
-      url: blog/tags/monero%20missives.html
     - page: Logs dei Meetings
       url: blog/tags/dev%20diaries.html
     - page: Uscite
@@ -42,8 +40,8 @@
     url: resources/roadmap
   - page: Research Lab
     url: resources/research-lab
-  - page: Moneropedia
-    url: resources/moneropedia
+  - page: Electro-neropedia
+    url: resources/neropedia
   - page: Guide per Utenti
     url: resources/user-guides
   - page: Guide per sviluppatori
