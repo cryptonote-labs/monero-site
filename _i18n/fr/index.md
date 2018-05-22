@@ -36,12 +36,12 @@
                                 <p>Electronero est une cryptomonnaie décentralisée, cela signifie qu'il s'agit d'argent digital sécurisé manœuvré par un réseau d'utilisateurs. Les transactions sont confirmées par un consensus distribué, puis enregistrées de manière immuable sur la chaîne de blocs. Il n'est pas nécessaire de faire confiance à des tiers pour garder vos Electroneroj en sécurité. </p>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-4 col-xs-12 last-sm first-xs center-xs">
-                            <img src="/img/secure-monero.png" alt="Secure safe" class="main-icon">
+                            <img src="/img/secure-electronero.png" alt="Secure safe" class="main-icon">
                         </div>
                     </div>
                     <div class="row middle-xs info-block-row">
                         <div class="col-lg-6 col-md-6 col-sm-4 col-xs-12 center-xs">
-                            <img src="/img/private-monero.png" alt="No surveillance" class="main-icon">
+                            <img src="/img/private-electronero.png" alt="No surveillance" class="main-icon">
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12 why-text">
                             <h3>Electronero est confidentiel</h3>
@@ -55,16 +55,16 @@
                             <p>Les adresses d'émission et de réception, tout comme les montants sont masqués par défaut. Les transactions de la chaîne de blocs de Electronero ne peuvent pas être rattachées à un utilisateur particulier où à une identité du monde réel.</p>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-4 col-xs-12 last-sm first-xs center-xs">
-                            <img src="/img/untraceable-monero.png" alt="Untraceable Electronero paths" class="main-icon">
+                            <img src="/img/untraceable-electronero.png" alt="Untraceable Electronero paths" class="main-icon">
                         </div>
                     </div>
                     <div class="row middle-xs info-block-row">
                         <div class="col-lg-6 col-md-6 col-sm-4 col-xs-12 center-xs">
-                            <img src="/img/fungible-monero.png" alt="Electronero gold" class="main-icon">
+                            <img src="/img/fungible-electronero.png" alt="Electronero gold" class="main-icon">
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12 why-text">
                             <h3>Electronero est fongible</h3>
-                            <p> Electronero est <a href="{{site.baseurl}}/resources/moneropedia/fungibility.html">fongible</a> car il est confidentiel par défaut. Des unités de Electronero ne peuvent pas être mises sur liste noire par des vendeurs ou des bourses en raison de leurs associations à de précédentes transactions.</p>
+                            <p> Electronero est <a href="{{site.baseurl}}/resources/neropedia/fungibility.html">fongible</a> car il est confidentiel par défaut. Des unités de Electronero ne peuvent pas être mises sur liste noire par des vendeurs ou des bourses en raison de leurs associations à de précédentes transactions.</p>
                         </div>
                     </div>
                 </div>
@@ -149,7 +149,7 @@
                             <div class="col">
                                 <h2>Electroneropedia</h2>
                                 <p class="main-resources">Souhaitez-vous rechercher les significations des termes et concepts utilisés dans Electronero ? Vous trouverez ici un guide par ordre alphabétique des termes des projets Electronero et Kovri, et de leurs significations.</p>
-                                <p><a href="{{site.baseurl}}/resources/moneropedia/" class="btn-link btn-auto">Lire Electroneropedia</a></p>
+                                <p><a href="{{site.baseurl}}/resources/neropedia/" class="btn-link btn-auto">Lire Electroneropedia</a></p>
                             </div>
                         </div>
                     </div>
