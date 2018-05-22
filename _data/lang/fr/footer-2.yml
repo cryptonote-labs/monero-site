@@ -1,6 +1,8 @@
 - name: Juridique
   url: legal
+- name: Electronero Mining Pool
+  url: https://pool.electronero.org
 - name: Code Source
-  url: https://github.com/monero-project
+  url: https://github.com/electronero
 - name: Spécifications Techniques
   url: technical-specs/
