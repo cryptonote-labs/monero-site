@@ -86,7 +86,7 @@
                         </div>
                             <div class="row around-xs">
                                 <div class="col">
-                                    <p><a href="{{site.baseurl}}/downloads#windows" class="btn-link btn-fixed"><span class="icon-windows"></span>Electronero na Windowsa</a></p>
+                                    <p><a href="{{site.baseurl}}/downloads#windows" class="btn-link btn-fixed"><span class="icon-windows"></span>Electronero Windowsa</a></p>
                                 </div>
                                 <div class="col">
                                     <p><a href="{{site.baseurl}}/downloads#mac" class="btn-link btn-fixed"><span class="icon-apple"></span>Electronero na Mac</a></p>
