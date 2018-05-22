@@ -1,7 +1,7 @@
 - title: Wstęp
   subfolderitems:
-  - page: Czym jest Monero?
-    url: get-started/what-is-monero
+  - page: Czym jest Electronero?
+    url: get-started/what-is-electronero
   - page: Używanie
     url: get-started/using
   - page: Akceptowanie
@@ -18,8 +18,6 @@
   subfolderitems:
     - page: Wszystkie wpisy
       url: blog
-    - page: Postulaty
-      url: blog/tags/monero%20missives.html
     - page: Zapisy z czatów
       url: blog/tags/dev%20diaries.html
     - page: Aktualizacje
@@ -44,8 +42,8 @@
     url: resources/roadmap
   - page: Laboratorium badawcze
     url: resources/research-lab
-  - page: Moneropedia
-    url: resources/moneropedia
+  - page: Electro-neropedia
+    url: resources/neropedia
   - page: Przewodniki dla użytkowników
     url: resources/user-guides
   - page: Przewodniki dla deweloperów
