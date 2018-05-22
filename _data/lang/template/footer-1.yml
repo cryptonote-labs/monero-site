@@ -1,50 +1,50 @@
 - title: Resources
   subfolderitems:
-  - name: About Monero
+  - name: About Electronero
     url: resources/about/
-  - name: Moneropedia
-    url: resources/moneropedia/
+  - name: Electro-neropedia
+    url: resources/neropedia/
   - name: Developer Guides
     url: resources/developer-guides/
   - name: User Guides
     url: resources/user-guides/
   - name: RSS Feed
-    url: https://getmonero.org/feed.xml
+    url: https://wapp.electronero.org/feed.xml
 - title: IRC Channels
   subfolderitems:
-  - name: monero
-    url: irc://chat.freenode.net/#monero
-  - name: monero-dev
-    url: irc://chat.freenode.net/#monero-dev
-  - name: monero-markets
-    url: irc://chat.freenode.net/#monero-markets
-  - name: monero-pools
-    url: irc://chat.freenode.net/#monero-pools
-  - name: monero-community
-    url: irc://chat.freenode.net/#monero-community
-  - name: monero-translations
-    url: irc://chat.freenode.net/#monero-translations
-  - name: monero-hardware
-    url: irc://chat.freenode.net/#monero-hardware
+  - name: electronero
+    url: irc://chat.freenode.net/#electronero
+  - name: electronero-dev
+    url: irc://chat.freenode.net/#electronero-dev
+  - name: electronero-markets
+    url: irc://chat.freenode.net/#electronero-markets
+  - name: electronero-pools
+    url: irc://chat.freenode.net/#electronero-pools
+  - name: electronero-community
+    url: irc://chat.freenode.net/#electronero-community
+  - name: electronero-translations
+    url: irc://chat.freenode.net/#electronero-translations
+  - name: electronero-hardware
+    url: irc://chat.freenode.net/#electronero-hardware
 - title: Community
   subfolderitems:
   - name: Reddit
-    url: https://reddit.com/r/monero
+    url: https://reddit.com/r/Electronero_official
   - name: Stack Exchange
     url: https://monero.stackexchange.com/
   - name: BitcoinTalk Thread
-    url: https://bitcointalk.org/index.php?topic=583449.0
+    url: https://bitcointalk.org/index.php?topic=3373837
   - name: Mattermost Chat
-    url: https://mattermost.getmonero.org/
+    url: https://mattermost.electronero.org/
   - name: Telegram Chat
-    url: https://telegram.me/bitmonero
-- title: The Monero Project
+    url: https://telegram.me/electronero
+- title: The Electronero Project
   subfolderitems:
-  - name: Open Alias
+  - name: Monero Open Alias
     url: https://openalias.org/
-  - name: Kovri
+  - name: Monero Kovri
     url: https://getkovri.org/
   - name: Monero Research Lab
     url: resources/research-lab/
-  - name: Monero Press Kit
+  - name: Electronero Press Kit
     url: press-kit
