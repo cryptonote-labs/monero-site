@@ -37,12 +37,12 @@
                                 <p>Electronero is a decentralized cryptocurrency, meaning it is secure digital cash operated by a network of users. Transactions are confirmed by distributed consensus and then immutably recorded on the blockchain. Third-parties do not need to be trusted to keep your Electronero safe. </p>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-4 col-xs-12 last-sm first-xs center-xs">
-                            <img src="/img/secure-monero.png" alt="Secure safe" class="main-icon">
+                            <img src="/img/secure-electronero.png" alt="Secure safe" class="main-icon">
                         </div>
                     </div>
                     <div class="row middle-xs info-block-row">
                         <div class="col-lg-6 col-md-6 col-sm-4 col-xs-12 center-xs">
-                            <img src="/img/private-monero.png" alt="No surveillance" class="main-icon">
+                            <img src="/img/private-electronero.png" alt="No surveillance" class="main-icon">
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12 why-text">
                             <h3>Electronero is private</h3>
@@ -56,16 +56,16 @@
                             <p>Sending and receiving addresses as well as transacted amounts are obfuscated by default. Transactions on the Electronero blockchain cannot be linked to a particular user or real-world identity.</p>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-4 col-xs-12 last-sm first-xs center-xs">
-                            <img src="/img/untraceable-monero.png" alt="Untraceable Electronero paths" class="main-icon">
+                            <img src="/img/untraceable-electronero.png" alt="Untraceable Electronero paths" class="main-icon">
                         </div>
                     </div>
                     <div class="row middle-xs info-block-row">
                         <div class="col-lg-6 col-md-6 col-sm-4 col-xs-12 center-xs">
-                            <img src="/img/fungible-monero.png" alt="Electronero gold" class="main-icon">
+                            <img src="/img/fungible-electronero.png" alt="Electronero gold" class="main-icon">
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12 why-text">
                             <h3>Electronero is fungible</h3>
-                            <p> Electronero is <a href="{{site.baseurl}}/resources/moneropedia/fungibility.html">fungible</a> because it is private by default. Units of Electronero cannot be blacklisted by vendors or exchanges due to their association in previous transactions.</p>
+                            <p> Electronero is <a href="{{site.baseurl}}/resources/neropedia/fungibility.html">fungible</a> because it is private by default. Units of Electronero cannot be blacklisted by vendors or exchanges due to their association in previous transactions.</p>
                         </div>
                     </div>
                 </div>
@@ -148,9 +148,9 @@
                     <div class="info-block">
                         <div class="row center-xs">
                             <div class="col">
-                                <h2>Electroneropedia</h2>
-                                <p class="main-resources">Would you like to look up the meanings of the terms and concepts used in Electronero? Here you will find an alphabetical guide to terms and their meanings from both the Electronero and Kovri projects.</p>
-                                <p><a href="{{site.baseurl}}/resources/moneropedia/" class="btn-link btn-auto">Read Electroneropedia</a></p>
+                                <h2>Electro-neropedia</h2>
+                                <p class="main-resources">Would you like to look up the meanings of the terms and concepts used in Electronero? Here you will find an alphabetical guide to terms and their meanings from both the Electronero and Monero Kovri projects.</p>
+                                <p><a href="{{site.baseurl}}/resources/neropedia/" class="btn-link btn-auto">Read Electro-neropedia</a></p>
                             </div>
                         </div>
                     </div>
