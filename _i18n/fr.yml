@@ -11,7 +11,7 @@ global:
   getting_started: Commencer
   copyright: Droits d'auteurs
   monero_project: Le Projet Electronero
-  sitename: getmonero.org, Le Projet Electronero
+  sitename: electronero.org, Le Projet Electronero
   wiki: Electroneropedia
   tags: Articles Par Tag
   wikimeta: Electroneropedia, l'encyclopédie libre des connaissances Electronero
@@ -24,7 +24,8 @@ global:
   untranslated: Cette page n'a pas encore été traduite. Si vous voulez aider à la traduire, voyez le
 titles:
   index: Accueil
-  whatismonero: Qu'est-ce que Electronero ?
+  whatismonero: Qu'est-ce que Electronero (ETNX)? 
+  whatiselectronero: Qu'est-ce que Electronero (ETNX)? 
   using: Utiliser Electronero
   accepting: Accepter Electronero
   contributing: Améliorer Electronero
