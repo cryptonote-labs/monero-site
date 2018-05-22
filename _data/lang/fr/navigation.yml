@@ -1,7 +1,7 @@
 - title: Commencer
   subfolderitems:
-  - page: Qu'est-ce que Monero ?
-    url: get-started/what-is-monero
+  - page: Qu'est-ce que Electronero ?
+    url: get-started/what-is-electronero
   - page: Utiliser
     url: get-started/using
   - page: Accepter
@@ -18,8 +18,6 @@
   subfolderitems:
     - page: Toutes
       url: blog
-    - page: Missives
-      url: blog/tags/monero%20missives.html
     - page: Comptes-rendus de Réunions
       url: blog/tags/dev%20diaries.html
     - page: Versions
@@ -42,8 +40,8 @@
     url: resources/roadmap
   - page: Laboratoire de Recherche
     url: resources/research-lab
-  - page: Moneropedia
-    url: resources/moneropedia
+  - page: Electro-neropedia
+    url: resources/neropedia
   - page: Guides Utilisateur
     url: resources/user-guides
   - page: Guides du Dévelopeur
