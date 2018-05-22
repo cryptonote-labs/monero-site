@@ -1,14 +1,14 @@
 - title: Inicio
   subfolderitems:
-  - page: ¿Qué es Monero?
-    url: get-started/what-is-monero
-  - page: Usar Monero
+  - page: ¿Qué es Electronero?
+    url: get-started/what-is-electronero
+  - page: Usar Electronero
     url: get-started/using
-  - page: Aceptar Monero
+  - page: Aceptar Electronero
     url: get-started/accepting
-  - page: Contribuir a Monero
+  - page: Contribuir a Electronero
     url: get-started/contributing
-  - page: Minar Monero
+  - page: Minar Electronero
     url: get-started/mining
   - page: FAQ
     url: get-started/faq
@@ -18,8 +18,6 @@
   subfolderitems:
     - page: Todas publicaciones
       url: blog
-    - page: Misivas
-      url: blog/tags/monero%20missives.html
     - page: Transcripciones de reuniones
       url: blog/tags/dev%20diaries.html
     - page: Lanzamientos
@@ -36,14 +34,14 @@
     url: community/merchants
 - title: Recursos
   subfolderitems:
-  - page: Sobre Monero
+  - page: Sobre Electronero
     url: resources/about
   - page: Hoja de ruta
     url: resources/roadmap
   - page: Laboratorio de investigación
     url: resources/research-lab
-  - page: Moneropedia
-    url: resources/moneropedia
+  - page: Electroneropedia
+    url: resources/electroneropedia
   - page: Guías de usuario
     url: resources/user-guides
   - page: Guías de desarrolladores
