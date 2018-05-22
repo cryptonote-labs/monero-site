@@ -11,7 +11,7 @@ global:
   getting_started: Inizia da qui
   copyright: Copyright
   monero_project: Il progetto Electronero
-  sitename: getmonero.org, The Electronero Project
+  sitename: electronero.org, The Electronero Project
   wiki: Electroneropedia
   tags: Articoli per Tag
   wikimeta: su Electroneropedia, l'enciclopedia libera su Electronero
@@ -24,7 +24,8 @@ global:
   untranslated: Questa pagina non è ancora stata tradotta. Se vuoi aiutare a tradurla vedi il
 titles:
   index: Home
-  whatismonero: Cos'è Electronero (XMR)?
+  whatismonero: Cos'è Electronero (ETNX)? 
+  whatiselectronero: Cos'è Electronero (ETNX)? 
   using: Usare Electronero
   accepting: Accettare Electronero
   contributing: Migliorare Electronero
