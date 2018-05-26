@@ -819,6 +819,10 @@
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
     </url>
     <url>
+        <loc>http://localhost:4000/resources/neropedia/00-base-00</loc>
+        <lastmod>2018-05-21T00:42:29+00:00</lastmod>
+    </url>
+    <url>
         <loc>http://localhost:4000/resources/moneropedia/00-base-00</loc>
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
     </url>
@@ -829,6 +833,10 @@
     <url>
         <loc>http://localhost:4000/resources/user-guides/Offline_Backup.html</loc>
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost:4000/resources/neropedia/account.html</loc>
+        <lastmod>2018-05-21T00:31:03+00:00</lastmod>
     </url>
     <url>
         <loc>http://localhost:4000/resources/moneropedia/account.html</loc>
@@ -843,32 +851,64 @@
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
     </url>
     <url>
+        <loc>http://localhost:4000/resources/neropedia/address-book.html</loc>
+        <lastmod>2018-05-21T00:31:03+00:00</lastmod>
+    </url>
+    <url>
         <loc>http://localhost:4000/resources/moneropedia/address-book.html</loc>
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost:4000/resources/neropedia/address.html</loc>
+        <lastmod>2018-05-21T00:31:03+00:00</lastmod>
     </url>
     <url>
         <loc>http://localhost:4000/resources/moneropedia/address.html</loc>
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
     </url>
     <url>
+        <loc>http://localhost:4000/resources/neropedia/airgap.html</loc>
+        <lastmod>2018-05-21T00:31:03+00:00</lastmod>
+    </url>
+    <url>
         <loc>http://localhost:4000/resources/moneropedia/airgap.html</loc>
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost:4000/resources/neropedia/atomic-units.html</loc>
+        <lastmod>2018-05-21T00:31:03+00:00</lastmod>
     </url>
     <url>
         <loc>http://localhost:4000/resources/moneropedia/atomic-units.html</loc>
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
     </url>
     <url>
+        <loc>http://localhost:4000/resources/neropedia/base32-address.html</loc>
+        <lastmod>2018-05-21T00:31:03+00:00</lastmod>
+    </url>
+    <url>
         <loc>http://localhost:4000/resources/moneropedia/base32-address.html</loc>
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost:4000/resources/neropedia/base64-address.html</loc>
+        <lastmod>2018-05-21T00:31:03+00:00</lastmod>
     </url>
     <url>
         <loc>http://localhost:4000/resources/moneropedia/base64-address.html</loc>
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
     </url>
     <url>
+        <loc>http://localhost:4000/resources/neropedia/block.html</loc>
+        <lastmod>2018-05-21T00:31:03+00:00</lastmod>
+    </url>
+    <url>
         <loc>http://localhost:4000/resources/moneropedia/block.html</loc>
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost:4000/resources/neropedia/blockchain.html</loc>
+        <lastmod>2018-05-21T00:31:03+00:00</lastmod>
     </url>
     <url>
         <loc>http://localhost:4000/resources/moneropedia/blockchain.html</loc>
@@ -879,6 +919,10 @@
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
     </url>
     <url>
+        <loc>http://localhost:4000/resources/neropedia/bootstrap-node.html</loc>
+        <lastmod>2018-05-21T00:31:03+00:00</lastmod>
+    </url>
+    <url>
         <loc>http://localhost:4000/resources/moneropedia/bootstrap-node.html</loc>
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
     </url>
@@ -887,12 +931,24 @@
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
     </url>
     <url>
+        <loc>http://localhost:4000/resources/neropedia/canonically-unique-host.html</loc>
+        <lastmod>2018-05-21T00:31:03+00:00</lastmod>
+    </url>
+    <url>
         <loc>http://localhost:4000/resources/moneropedia/canonically-unique-host.html</loc>
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
     </url>
     <url>
+        <loc>http://localhost:4000/resources/neropedia/change.html</loc>
+        <lastmod>2018-05-21T00:31:03+00:00</lastmod>
+    </url>
+    <url>
         <loc>http://localhost:4000/resources/moneropedia/change.html</loc>
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost:4000/resources/neropedia/clearnet.html</loc>
+        <lastmod>2018-05-21T00:31:03+00:00</lastmod>
     </url>
     <url>
         <loc>http://localhost:4000/resources/moneropedia/clearnet.html</loc>
@@ -905,6 +961,10 @@
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
     </url>
     <url>
+        <loc>http://localhost:4000/resources/neropedia/coinbase.html</loc>
+        <lastmod>2018-05-21T00:31:03+00:00</lastmod>
+    </url>
+    <url>
         <loc>http://localhost:4000/resources/moneropedia/coinbase.html</loc>
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
     </url>
@@ -915,6 +975,10 @@
     <url>
         <loc>http://localhost:4000/blog/tags/conferences.html</loc>
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost:4000/resources/neropedia/consensus.html</loc>
+        <lastmod>2018-05-21T00:31:03+00:00</lastmod>
     </url>
     <url>
         <loc>http://localhost:4000/resources/moneropedia/consensus.html</loc>
@@ -933,6 +997,10 @@
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
     </url>
     <url>
+        <loc>http://localhost:4000/resources/neropedia/cryptocurrency.html</loc>
+        <lastmod>2018-05-21T00:31:03+00:00</lastmod>
+    </url>
+    <url>
         <loc>http://localhost:4000/resources/moneropedia/cryptocurrency.html</loc>
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
     </url>
@@ -941,12 +1009,24 @@
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
     </url>
     <url>
+        <loc>http://localhost:4000/resources/neropedia/data-directory.html</loc>
+        <lastmod>2018-05-21T00:31:03+00:00</lastmod>
+    </url>
+    <url>
         <loc>http://localhost:4000/resources/moneropedia/data-directory.html</loc>
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
     </url>
     <url>
+        <loc>http://localhost:4000/resources/neropedia/denominations.html</loc>
+        <lastmod>2018-05-21T00:31:03+00:00</lastmod>
+    </url>
+    <url>
         <loc>http://localhost:4000/resources/moneropedia/denominations.html</loc>
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost:4000/resources/neropedia/destination.html</loc>
+        <lastmod>2018-05-21T00:31:03+00:00</lastmod>
     </url>
     <url>
         <loc>http://localhost:4000/resources/moneropedia/destination.html</loc>
@@ -969,6 +1049,10 @@
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
     </url>
     <url>
+        <loc>http://localhost:4000/resources/neropedia/eepsite.html</loc>
+        <lastmod>2018-05-21T00:31:03+00:00</lastmod>
+    </url>
+    <url>
         <loc>http://localhost:4000/resources/moneropedia/eepsite.html</loc>
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
     </url>
@@ -976,7 +1060,11 @@
         <loc>
             http://localhost:4000/forum-funding-system/proposals/electronero-bounty-hackerone.html
         </loc>
-        <lastmod>2018-05-21T00:05:22+00:00</lastmod>
+        <lastmod>2018-05-21T23:30:19+00:00</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost:4000/resources/neropedia/encryption.html</loc>
+        <lastmod>2018-05-21T00:31:03+00:00</lastmod>
     </url>
     <url>
         <loc>http://localhost:4000/resources/moneropedia/encryption.html</loc>
@@ -991,8 +1079,16 @@
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
     </url>
     <url>
+        <loc>http://localhost:4000/resources/neropedia/floodfill.html</loc>
+        <lastmod>2018-05-21T00:31:03+00:00</lastmod>
+    </url>
+    <url>
         <loc>http://localhost:4000/resources/moneropedia/floodfill.html</loc>
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost:4000/resources/neropedia/fluffyblocks.html</loc>
+        <lastmod>2018-05-21T00:31:03+00:00</lastmod>
     </url>
     <url>
         <loc>http://localhost:4000/resources/moneropedia/fluffyblocks.html</loc>
@@ -1011,12 +1107,24 @@
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
     </url>
     <url>
+        <loc>http://localhost:4000/resources/neropedia/fungibility.html</loc>
+        <lastmod>2018-05-21T00:31:03+00:00</lastmod>
+    </url>
+    <url>
         <loc>http://localhost:4000/resources/moneropedia/fungibility.html</loc>
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
     </url>
     <url>
+        <loc>http://localhost:4000/resources/neropedia/garlic-encryption.html</loc>
+        <lastmod>2018-05-21T00:31:03+00:00</lastmod>
+    </url>
+    <url>
         <loc>http://localhost:4000/resources/moneropedia/garlic-encryption.html</loc>
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost:4000/resources/neropedia/garlic-routing.html</loc>
+        <lastmod>2018-05-21T00:31:03+00:00</lastmod>
     </url>
     <url>
         <loc>http://localhost:4000/resources/moneropedia/garlic-routing.html</loc>
@@ -1035,6 +1143,10 @@
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
     </url>
     <url>
+        <loc>http://localhost:4000/resources/neropedia/i2np.html</loc>
+        <lastmod>2018-05-21T00:31:03+00:00</lastmod>
+    </url>
+    <url>
         <loc>http://localhost:4000/resources/moneropedia/i2np.html</loc>
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
     </url>
@@ -1043,8 +1155,16 @@
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
     </url>
     <url>
+        <loc>http://localhost:4000/resources/neropedia/i2p.html</loc>
+        <lastmod>2018-05-21T00:31:03+00:00</lastmod>
+    </url>
+    <url>
         <loc>http://localhost:4000/resources/moneropedia/i2p.html</loc>
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost:4000/resources/neropedia/i2pcontrol.html</loc>
+        <lastmod>2018-05-21T00:31:03+00:00</lastmod>
     </url>
     <url>
         <loc>http://localhost:4000/resources/moneropedia/i2pcontrol.html</loc>
@@ -1063,6 +1183,10 @@
             http://localhost:4000/forum-funding-system/proposals/improve-devguides-simplewallet.html
         </loc>
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost:4000/resources/neropedia/in-net.html</loc>
+        <lastmod>2018-05-21T00:31:03+00:00</lastmod>
     </url>
     <url>
         <loc>http://localhost:4000/resources/moneropedia/in-net.html</loc>
@@ -1117,8 +1241,12 @@
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
     </url>
     <url>
+        <loc>http://localhost:4000/the-electronero-project/</loc>
+        <lastmod>2018-05-26T22:34:10+00:00</lastmod>
+    </url>
+    <url>
         <loc>http://localhost:4000/forum-funding-system/</loc>
-        <lastmod>2018-05-20T23:15:21+00:00</lastmod>
+        <lastmod>2018-05-21T23:30:19+00:00</lastmod>
     </url>
     <url>
         <loc>http://localhost:4000/resources/user-guides/</loc>
@@ -1129,8 +1257,12 @@
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
     </url>
     <url>
+        <loc>http://localhost:4000/resources/neropedia/</loc>
+        <lastmod>2018-05-21T00:43:50+00:00</lastmod>
+    </url>
+    <url>
         <loc>http://localhost:4000/resources/moneropedia/</loc>
-        <lastmod>2018-05-20T23:15:21+00:00</lastmod>
+        <lastmod>2018-05-21T00:31:41+00:00</lastmod>
     </url>
     <url>
         <loc>http://localhost:4000/resources/about/</loc>
@@ -1165,6 +1297,10 @@
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
     </url>
     <url>
+        <loc>http://localhost:4000/get-started/what-is-electronero/</loc>
+        <lastmod>2018-05-22T00:53:09+00:00</lastmod>
+    </url>
+    <url>
         <loc>http://localhost:4000/get-started/mining/</loc>
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
     </url>
@@ -1189,8 +1325,16 @@
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
     </url>
     <url>
+        <loc>http://localhost:4000/resources/neropedia/java-i2p.html</loc>
+        <lastmod>2018-05-21T00:31:03+00:00</lastmod>
+    </url>
+    <url>
         <loc>http://localhost:4000/resources/moneropedia/java-i2p.html</loc>
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost:4000/resources/neropedia/jump-service.html</loc>
+        <lastmod>2018-05-21T00:31:03+00:00</lastmod>
     </url>
     <url>
         <loc>http://localhost:4000/resources/moneropedia/jump-service.html</loc>
@@ -1213,20 +1357,40 @@
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
     </url>
     <url>
+        <loc>http://localhost:4000/resources/neropedia/kovri.html</loc>
+        <lastmod>2018-05-21T00:31:03+00:00</lastmod>
+    </url>
+    <url>
         <loc>http://localhost:4000/resources/moneropedia/kovri.html</loc>
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost:4000/resources/neropedia/lease-set.html</loc>
+        <lastmod>2018-05-21T00:31:03+00:00</lastmod>
     </url>
     <url>
         <loc>http://localhost:4000/resources/moneropedia/lease-set.html</loc>
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
     </url>
     <url>
+        <loc>http://localhost:4000/resources/neropedia/lease.html</loc>
+        <lastmod>2018-05-21T00:31:03+00:00</lastmod>
+    </url>
+    <url>
         <loc>http://localhost:4000/resources/moneropedia/lease.html</loc>
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
     </url>
     <url>
+        <loc>http://localhost:4000/resources/neropedia/locally-unique-host.html</loc>
+        <lastmod>2018-05-21T00:31:03+00:00</lastmod>
+    </url>
+    <url>
         <loc>http://localhost:4000/resources/moneropedia/locally-unique-host.html</loc>
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost:4000/resources/neropedia/message.html</loc>
+        <lastmod>2018-05-21T00:31:03+00:00</lastmod>
     </url>
     <url>
         <loc>http://localhost:4000/resources/moneropedia/message.html</loc>
@@ -1241,12 +1405,20 @@
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
     </url>
     <url>
+        <loc>http://localhost:4000/resources/neropedia/mining.html</loc>
+        <lastmod>2018-05-21T00:31:03+00:00</lastmod>
+    </url>
+    <url>
         <loc>http://localhost:4000/resources/moneropedia/mining.html</loc>
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
     </url>
     <url>
         <loc>http://localhost:4000/resources/user-guides/mining_with_xmrig_and_docker.html</loc>
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost:4000/resources/neropedia/mnemonicseed.html</loc>
+        <lastmod>2018-05-21T00:31:03+00:00</lastmod>
     </url>
     <url>
         <loc>http://localhost:4000/resources/moneropedia/mnemonicseed.html</loc>
@@ -1295,12 +1467,24 @@
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
     </url>
     <url>
+        <loc>http://localhost:4000/resources/neropedia/network-database.html</loc>
+        <lastmod>2018-05-21T00:31:03+00:00</lastmod>
+    </url>
+    <url>
         <loc>http://localhost:4000/resources/moneropedia/network-database.html</loc>
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
     </url>
     <url>
+        <loc>http://localhost:4000/resources/neropedia/node.html</loc>
+        <lastmod>2018-05-21T00:31:03+00:00</lastmod>
+    </url>
+    <url>
         <loc>http://localhost:4000/resources/moneropedia/node.html</loc>
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost:4000/resources/neropedia/ntcp.html</loc>
+        <lastmod>2018-05-21T00:31:03+00:00</lastmod>
     </url>
     <url>
         <loc>http://localhost:4000/resources/moneropedia/ntcp.html</loc>
@@ -1311,16 +1495,32 @@
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
     </url>
     <url>
+        <loc>http://localhost:4000/resources/neropedia/openalias.html</loc>
+        <lastmod>2018-05-21T00:31:03+00:00</lastmod>
+    </url>
+    <url>
         <loc>http://localhost:4000/resources/moneropedia/openalias.html</loc>
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost:4000/resources/neropedia/paperwallet.html</loc>
+        <lastmod>2018-05-21T00:31:03+00:00</lastmod>
     </url>
     <url>
         <loc>http://localhost:4000/resources/moneropedia/paperwallet.html</loc>
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
     </url>
     <url>
+        <loc>http://localhost:4000/resources/neropedia/paymentid.html</loc>
+        <lastmod>2018-05-21T00:31:03+00:00</lastmod>
+    </url>
+    <url>
         <loc>http://localhost:4000/resources/moneropedia/paymentid.html</loc>
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost:4000/resources/neropedia/pedersen-commitment.html</loc>
+        <lastmod>2018-05-21T00:31:03+00:00</lastmod>
     </url>
     <url>
         <loc>http://localhost:4000/resources/moneropedia/pedersen-commitment.html</loc>
@@ -1355,6 +1555,10 @@
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
     </url>
     <url>
+        <loc>http://localhost:4000/resources/neropedia/reseed.html</loc>
+        <lastmod>2018-05-21T00:31:03+00:00</lastmod>
+    </url>
+    <url>
         <loc>http://localhost:4000/resources/moneropedia/reseed.html</loc>
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
     </url>
@@ -1367,16 +1571,32 @@
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
     </url>
     <url>
+        <loc>http://localhost:4000/resources/neropedia/ring-size.html</loc>
+        <lastmod>2018-05-21T00:31:03+00:00</lastmod>
+    </url>
+    <url>
         <loc>http://localhost:4000/resources/moneropedia/ring-size.html</loc>
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost:4000/resources/neropedia/ringCT.html</loc>
+        <lastmod>2018-05-21T00:31:03+00:00</lastmod>
     </url>
     <url>
         <loc>http://localhost:4000/resources/moneropedia/ringCT.html</loc>
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
     </url>
     <url>
+        <loc>http://localhost:4000/resources/neropedia/ringsignatures.html</loc>
+        <lastmod>2018-05-21T00:31:03+00:00</lastmod>
+    </url>
+    <url>
         <loc>http://localhost:4000/resources/moneropedia/ringsignatures.html</loc>
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost:4000/resources/neropedia/router-info.html</loc>
+        <lastmod>2018-05-21T00:31:03+00:00</lastmod>
     </url>
     <url>
         <loc>http://localhost:4000/resources/moneropedia/router-info.html</loc>
@@ -1387,6 +1607,10 @@
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
     </url>
     <url>
+        <loc>http://localhost:4000/resources/neropedia/scalability.html</loc>
+        <lastmod>2018-05-21T00:31:03+00:00</lastmod>
+    </url>
+    <url>
         <loc>http://localhost:4000/resources/moneropedia/scalability.html</loc>
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
     </url>
@@ -1395,8 +1619,16 @@
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
     </url>
     <url>
+        <loc>http://localhost:4000/resources/neropedia/signature.html</loc>
+        <lastmod>2018-05-21T00:31:03+00:00</lastmod>
+    </url>
+    <url>
         <loc>http://localhost:4000/resources/moneropedia/signature.html</loc>
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost:4000/resources/neropedia/smartmining.html</loc>
+        <lastmod>2018-05-21T00:31:03+00:00</lastmod>
     </url>
     <url>
         <loc>http://localhost:4000/resources/moneropedia/smartmining.html</loc>
@@ -1407,36 +1639,72 @@
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
     </url>
     <url>
+        <loc>http://localhost:4000/resources/neropedia/spendkey.html</loc>
+        <lastmod>2018-05-21T00:31:03+00:00</lastmod>
+    </url>
+    <url>
         <loc>http://localhost:4000/resources/moneropedia/spendkey.html</loc>
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost:4000/resources/neropedia/ssu.html</loc>
+        <lastmod>2018-05-21T00:31:03+00:00</lastmod>
     </url>
     <url>
         <loc>http://localhost:4000/resources/moneropedia/ssu.html</loc>
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
     </url>
     <url>
+        <loc>http://localhost:4000/resources/neropedia/stealthaddress.html</loc>
+        <lastmod>2018-05-21T00:31:03+00:00</lastmod>
+    </url>
+    <url>
         <loc>http://localhost:4000/resources/moneropedia/stealthaddress.html</loc>
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost:4000/resources/neropedia/subscription.html</loc>
+        <lastmod>2018-05-21T00:31:03+00:00</lastmod>
     </url>
     <url>
         <loc>http://localhost:4000/resources/moneropedia/subscription.html</loc>
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
     </url>
     <url>
+        <loc>http://localhost:4000/resources/neropedia/tail-emission.html</loc>
+        <lastmod>2018-05-21T00:31:03+00:00</lastmod>
+    </url>
+    <url>
         <loc>http://localhost:4000/resources/moneropedia/tail-emission.html</loc>
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost:4000/resources/neropedia/transaction.html</loc>
+        <lastmod>2018-05-21T00:31:03+00:00</lastmod>
     </url>
     <url>
         <loc>http://localhost:4000/resources/moneropedia/transaction.html</loc>
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
     </url>
     <url>
+        <loc>http://localhost:4000/resources/neropedia/transports.html</loc>
+        <lastmod>2018-05-21T00:31:03+00:00</lastmod>
+    </url>
+    <url>
         <loc>http://localhost:4000/resources/moneropedia/transports.html</loc>
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
     </url>
     <url>
+        <loc>http://localhost:4000/resources/neropedia/tunnel.html</loc>
+        <lastmod>2018-05-21T00:31:03+00:00</lastmod>
+    </url>
+    <url>
         <loc>http://localhost:4000/resources/moneropedia/tunnel.html</loc>
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost:4000/resources/neropedia/unlocktime.html</loc>
+        <lastmod>2018-05-21T00:31:03+00:00</lastmod>
     </url>
     <url>
         <loc>http://localhost:4000/resources/moneropedia/unlocktime.html</loc>
@@ -1455,6 +1723,10 @@
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
     </url>
     <url>
+        <loc>http://localhost:4000/resources/neropedia/viewkey.html</loc>
+        <lastmod>2018-05-21T00:31:03+00:00</lastmod>
+    </url>
+    <url>
         <loc>http://localhost:4000/resources/moneropedia/viewkey.html</loc>
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
     </url>
@@ -1465,6 +1737,10 @@
     <url>
         <loc>http://localhost:4000/resources/developer-guides/wallet-rpc.html</loc>
         <lastmod>2018-05-20T23:15:21+00:00</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost:4000/resources/neropedia/wallet.html</loc>
+        <lastmod>2018-05-21T00:31:03+00:00</lastmod>
     </url>
     <url>
         <loc>http://localhost:4000/resources/moneropedia/wallet.html</loc>

@@ -9,9 +9,9 @@
     </binding>
     <binding template="TileSquare310x310TextList02" branding="logo" fallback="TileWideText09">
       <text id="1">Response to "An Empirical Analysis of Traceability in the Monero Blockchain", Version 2</text>
-      <text id="2">### Preface
+      <text id="2">Preface
 
-On March 17, 2018...</text>
+On March 17, 2018, se...</text>
       <text id="3">3-29-2018</text>
     </binding>
   </visual>

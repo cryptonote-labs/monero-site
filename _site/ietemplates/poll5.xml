@@ -9,9 +9,9 @@
     </binding>
     <binding template="TileSquare310x310TextList02" branding="logo" fallback="TileWideText09">
       <text id="1">Logs for the Monero Research Lab Meeting Held on 2018-02-19</text>
-      <text id="2"># Logs  
+      <text id="2">Logs
 
-**\** allrighty, how...</text>
+&amp;lt;suraeNoether&amp;gt; all...</text>
       <text id="3">2-19-2018</text>
     </binding>
   </visual>
