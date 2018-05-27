@@ -3,7 +3,7 @@ name: Electronero
 description: Electronero is a digital currency that is secure, private, and untraceable.
 keywords: "electronero, etnx, bitnero, cryptocurrency"
 baseurl: ""
-url: "https://wapp.electronero.org"
+url: "https://getelectronero.org"
 
 markdown: kramdown
 
