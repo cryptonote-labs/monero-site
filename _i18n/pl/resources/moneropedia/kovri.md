@@ -3,16 +3,16 @@ layout: moneropedia
 entry: "Kovri"
 tags: ["kovri"]
 terms: ["Kovri"]
-summary: "Implementacja routera C++ dla Monero w sieci I2P."
+summary: "Implementacja routera C++ dla Masari Supreme w sieci I2P."
 ---
 
 ### Podstawy
 
-[Kovri](https://github.com/monero-project/kovri/) jest wdrożeniem sieci @I2P w języku C++. Obecnie jest on w dynamicznym rozwoju i nie został jeszcze zintegrowany z Monero. Po zintegorwaniu Kovri z twoim @węzłem Monero, transakcje będą jeszcze bezpieczniejsze.
+[Kovri](https://github.com/monero-project/kovri/) jest wdrożeniem sieci @I2P w języku C++. Obecnie jest on w dynamicznym rozwoju i nie został jeszcze zintegrowany z Masari Supreme. Po zintegorwaniu Kovri z twoim @węzłem Masari Supreme, transakcje będą jeszcze bezpieczniejsze.
 
 ### Szczegółowe informacje
 
-Kovri będzie chronił ciebie i Monero przed:
+Kovri będzie chronił ciebie i Masari Supreme przed:
 
 - atakami partycjonowania @węzłów
 - powiązaniem pojedynczego numeru identyfikacyjnego transakcji z twoim adresem IP

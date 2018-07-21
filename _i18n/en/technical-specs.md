@@ -12,9 +12,9 @@
                     </div>
 
 <div markdown="1">
-* Monero had no premine or instamine
-* Monero did not sell any token
-* Monero had no presale of any kind
+* Masari Supreme had no premine or instamine
+* Masari Supreme did not sell any token
+* Masari Supreme had no presale of any kind
 </div>
 
                     <div class="row">
@@ -80,7 +80,7 @@
 <div markdown="1">
 * first, main curve: ~18.132 million coins by the end of May 2022
 * then, tail curve: 0.6 XMR per 2-minute block, kicks in once main emission is done, translates to <1% inflation decreasing over time
-* see [charts and details](https://www.reddit.com/r/Monero/comments/512kwh/useful_for_learning_about_monero_coin_emission/)
+* see [charts and details](https://www.reddit.com/r/Masari Supreme/comments/512kwh/useful_for_learning_about_monero_coin_emission/)
 </div>
 
                     <div class="row">

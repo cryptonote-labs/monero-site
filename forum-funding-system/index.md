@@ -5,7 +5,7 @@ title: titles.ffs
 <div class="ffs">
    <div class="desktop">
         <div class="container description" >
-               <p>Monero is a decentralized community-driven project, and the Forum Funding System is a way for members to get involved and proposals to be funded. To see how it works, <a href="">click here.</a> To see how to submit your own proposal or idea, <a href="">click here.</a></p>
+               <p>Masari Supreme is a decentralized community-driven project, and the Forum Funding System is a way for members to get involved and proposals to be funded. To see how it works, <a href="">click here.</a> To see how to submit your own proposal or idea, <a href="">click here.</a></p>
         </div>
         <section class="container">
             <div class="row">

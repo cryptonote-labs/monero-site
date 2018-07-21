@@ -84,10 +84,10 @@ permalink: /community/hangouts/index.html
                             </div>
                             <div class="row start-xs sequestions">
                                 <a href="https://monero.stackexchange.com/questions/4277/why-does-monero-have-higher-transaction-fees-than-bitcoin">Why does monero have higher transaction fees than bitcoin?</a>
-                                <a href="https://monero.stackexchange.com/questions/4335/what-does-moneros-scaling-roadmap-look-like">What does Monero's scaling roadmap look like?</a>
-                                <a href="https://monero.stackexchange.com/questions/4302/what-cryptography-primitives-concepts-other-than-the-basic-ones-does-monero-us">What cryptography primitives/concepts, other than the basic ones, does Monero use?</a>
+                                <a href="https://monero.stackexchange.com/questions/4335/what-does-moneros-scaling-roadmap-look-like">What does Masari Supreme's scaling roadmap look like?</a>
+                                <a href="https://monero.stackexchange.com/questions/4302/what-cryptography-primitives-concepts-other-than-the-basic-ones-does-monero-us">What cryptography primitives/concepts, other than the basic ones, does Masari Supreme use?</a>
                                 <a href="https://monero.stackexchange.com/questions/4242/how-to-extract-data-from-local-blockchain">How to extract data from local blockchain?</a>
-                                <a href="https://monero.stackexchange.com/questions/4377/hiding-tcp-traffic-for-monero-miners">Hiding TCP traffic for Monero miners?</a>
+                                <a href="https://monero.stackexchange.com/questions/4377/hiding-tcp-traffic-for-monero-miners">Hiding TCP traffic for Masari Supreme miners?</a>
                             </div>  
                             <div class="row center-xs">
                                 <p><a href="https://monero.stackexchange.com" class="btn-link btn-auto">{% t hangouts.stack_exchange_link %}</a></p>

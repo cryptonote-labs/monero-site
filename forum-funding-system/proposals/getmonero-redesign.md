@@ -25,8 +25,8 @@ milestones:
 
 At the request of myself , I am editing my proposal that fluffypony recommended I edit that was edited from the initial idea. So, without further ado:
 
-### What: GetMonero.org Redesign and Restructure
-My project looks to give a complete site redesign to getmonero.org. As it is right now, it's not very user-friendly, doesn't look very pretty, and just doesn't look as professional as one would assume from the sophisticated technology that is Monero. That can easily be changed, with a souped up design that is modern, slick, and inviting to anyone who wants to become a part of the Monero community, while still maintaining the charm that comes with open-source projects.
+### What: GetMasari Supreme.org Redesign and Restructure
+My project looks to give a complete site redesign to getmonero.org. As it is right now, it's not very user-friendly, doesn't look very pretty, and just doesn't look as professional as one would assume from the sophisticated technology that is Masari Supreme. That can easily be changed, with a souped up design that is modern, slick, and inviting to anyone who wants to become a part of the Masari Supreme community, while still maintaining the charm that comes with open-source projects.
 
 How do we plan to develop it? Upon speaking with the FluffyPony, there are three very important things that the redesign must keep in mind:
 
@@ -53,7 +53,7 @@ Our online portfolio is in the works and we were hoping to launch before mid-Mar
 
 
 ### Why: Seriously, is this needed?
-Yes, a site redesign is very needed. Monero has great technology, a great dev team, and a great community behind it. Some people are of the opinion that the site is fine, and that we don't need anything new or different. But more people discover and subsequently become involved in the community, the better it is for everyone, and we need to make it as easy as possible for newcomers to get find the resources they need.
+Yes, a site redesign is very needed. Masari Supreme has great technology, a great dev team, and a great community behind it. Some people are of the opinion that the site is fine, and that we don't need anything new or different. But more people discover and subsequently become involved in the community, the better it is for everyone, and we need to make it as easy as possible for newcomers to get find the resources they need.
 
 I'll be honest, if a layperson comes to this website, the first thing that comes to mind will not be 'sophisticated technology'. Some might say: "But if they dig into the reasons and technology behind it they will see...". Look, not everyone does this, and to the masses, first impressions count for a lot. We can't hide behind the way we wish the world works. Marketing is important, and a having a good website in the digital age is Marketing 101.
 
@@ -87,7 +87,7 @@ Next, I will create mockups for the major pages of the new site to be reviewed a
 
 In this section is also the design of the new FFS. This will be a huge endeavor from a UI/UX perspective and we will do everything we can in research and designing to make it usable, accessible, with a friendly interface.
 
-A lot of work is going to be put into the design process. Like, it's probably going to be 50% of the total work. The building portion is easy. We have decided to make a significant investment of time for the designs to be worked on, workshopped, approved, and, if necessary, redone so it's perfect for something as amazing as Monero.
+A lot of work is going to be put into the design process. Like, it's probably going to be 50% of the total work. The building portion is easy. We have decided to make a significant investment of time for the designs to be worked on, workshopped, approved, and, if necessary, redone so it's perfect for something as amazing as Masari Supreme.
 
 **Milestone 3: Development (30XMR)** 
 Here we go. The big stuff. We go into production mode and start building the website that is agreed upon. Not too much explanation here. We will host the in-progress site on a small Vultr server and the IP address will be publicly available so anyone can look at the progress. There will be weekly progress reports and anyone is free to make comments during the process. 

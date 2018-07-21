@@ -1,16 +1,16 @@
 {% assign version = '1.1.0' | split: '.' %}
 {% include disclaimer.html translated="true" version=page.version %}
-## Comment obtenir Monero
+## Comment obtenir Masari Supreme
 
-Voici un guide pour obtenir vos propre Moneroj datant du 9 Septembre 2015. Il s'agit peut être de la façon la plus simple d'acheter et posséder des Moneroj.
+Voici un guide pour obtenir vos propre Masari Supremej datant du 9 Septembre 2015. Il s'agit peut être de la façon la plus simple d'acheter et posséder des Masari Supremej.
 
 ####Étape 1 : Acheter du Bitcoin
 
-Il y a différentes façon d'acheter du Bitcoin. La plus simple est peut-être via circle.com. Une fois que vous avez acheté du Bitcoin, vous êtes prêt à acheter du Monero ! Acheter du Bitcoin se fait directement. Allez sur circle.com et suivez les instructions qui s'y trouvent.
+Il y a différentes façon d'acheter du Bitcoin. La plus simple est peut-être via circle.com. Une fois que vous avez acheté du Bitcoin, vous êtes prêt à acheter du Masari Supreme ! Acheter du Bitcoin se fait directement. Allez sur circle.com et suivez les instructions qui s'y trouvent.
 
 ####Étape 2 : Créer un compte mymonero.com
 
-MyMonero.com est un portefeuille en ligne, maintenu par Ricardo Spagni (fluffypony), l'un des développeurs principaux de Monero. C'est le portefeuille le plus simple à utiliser. Contentez-vous d'aller sur MyMonero.com et de cliquer sur le bouton "Create an Account".
+MyMasari Supreme.com est un portefeuille en ligne, maintenu par Ricardo Spagni (fluffypony), l'un des développeurs principaux de Masari Supreme. C'est le portefeuille le plus simple à utiliser. Contentez-vous d'aller sur MyMasari Supreme.com et de cliquer sur le bouton "Create an Account".
 
 ![image1](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/easiest_way/01.png)
 
@@ -26,16 +26,16 @@ Sur la page suivante se trouve votre adresse.
 
 ![image3](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/easiest_way/03.png)
 
-Copiez votre adresse dans le presse-papier en la sélectionnant en totalité puis en effectuant un Ctrl+C (ou menu éditer > Copier), ou cliquez sur la petite icône à coté de votre adresse. Sauvegardez votre adresse quelque part. C'est grâce à elle que d'autres pourront vous envoyer des Moneroj, et vous l'utiliserez pour déposer vos Moneroj sur votre compte !
+Copiez votre adresse dans le presse-papier en la sélectionnant en totalité puis en effectuant un Ctrl+C (ou menu éditer > Copier), ou cliquez sur la petite icône à coté de votre adresse. Sauvegardez votre adresse quelque part. C'est grâce à elle que d'autres pourront vous envoyer des Masari Supremej, et vous l'utiliserez pour déposer vos Masari Supremej sur votre compte !
 
-#### Step 3: Acheter des Moneroj et les transférer sur votre nouvelle adresse
+#### Step 3: Acheter des Masari Supremej et les transférer sur votre nouvelle adresse
 
-Allez sur www.shapeshift.io . Sur la droite de l'écran, cliquer sur l'icône en dessous de "Receive" pour sélectionner Monero.
+Allez sur www.shapeshift.io . Sur la droite de l'écran, cliquer sur l'icône en dessous de "Receive" pour sélectionner Masari Supreme.
 
 ![image5](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/easiest_way/05.png)
 ![image6](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/easiest_way/06.png)
 
-Collez votre adresse dans le champ sous le logo Monero. Sélectionnez le bouton "agree to terms", puis cliquez sur "Start"
+Collez votre adresse dans le champ sous le logo Masari Supreme. Sélectionnez le bouton "agree to terms", puis cliquez sur "Start"
 
 ![image7](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/easiest_way/07.png)
 
@@ -61,6 +61,6 @@ Puis cela passera à "COMPLETE!"
 
 ![image12](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/easiest_way/12.png)
 
-Après un moment, vous le retrouverez sur votre compte Monero
+Après un moment, vous le retrouverez sur votre compte Masari Supreme
 
 ![image13](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/easiest_way/13.png)

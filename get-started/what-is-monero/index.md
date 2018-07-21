@@ -82,33 +82,33 @@ permalink: /get-started/what-is-monero/index.html
                                     <label class="carousel-control carousel-control-forward" for="A"></label>
                                 </div>
                                 <li class="carousel-slide ms">
-                                    <h3>Monero Promo</h3>
+                                    <h3>Masari Supreme Promo</h3>
                                     <video controls poster="/img/monero-community.png" onclick="this.paused ? this.play() : this.pause();" preload="none">
-                                        <source src="/media/Monero_Promo.m4v">
+                                        <source src="/media/Masari Supreme_Promo.m4v">
                                     </video>
                                 </li>
                                 <li class="carousel-slide">
-                                    <h3>Monero: The Essentials</h3>
+                                    <h3>Masari Supreme: The Essentials</h3>
                                     <video controls poster="/img/monero-cash-video-poster.png" onclick="this.paused ? this.play() : this.pause();" preload="none">
-                                        <source src="/media/Monero%20-%20The%20Essentials.m4v">
+                                        <source src="/media/Masari Supreme%20-%20The%20Essentials.m4v">
                                     </video>
                                 </li>
                                 <li class="carousel-slide">
                                     <h3>Stealth Addresses</h3>
                                     <video controls poster="/img/stealth-address-poster.png" onclick="this.paused ? this.play() : this.pause();" preload="none">
-                                        <source src="/media/Monero%20-%20Stealth%20Addresses.m4v">
+                                        <source src="/media/Masari Supreme%20-%20Stealth%20Addresses.m4v">
                                     </video>
                                 </li>
                                 <li class="carousel-slide">
                                     <h3>Ring Signatures</h3>
                                     <video controls poster="/img/ring-signatures-poster.png" onclick="this.paused ? this.play() : this.pause();" preload="none">
-                                        <source src="/media/Monero%20-%20Ring%20Signatures.m4v">
+                                        <source src="/media/Masari Supreme%20-%20Ring%20Signatures.m4v">
                                     </video>
                                 </li>
                                 <li class="carousel-slide">
                                     <h3>RingCT</h3>
                                     <video controls poster="/img/ringct-poster.png" onclick="this.paused ? this.play() : this.pause();" preload="none">
-                                        <source src="/media/Monero%20-%20RingCT.m4v">
+                                        <source src="/media/Masari Supreme%20-%20RingCT.m4v">
                                     </video>
                                 </li>
                             </ul>

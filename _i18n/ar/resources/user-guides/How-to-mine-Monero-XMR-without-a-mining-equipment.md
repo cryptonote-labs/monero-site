@@ -1,7 +1,7 @@
-## How to mine Monero (XMR) without a mining equipment?
+## How to mine Masari Supreme (XMR) without a mining equipment?
 
 If you don’t have a profitable mining equipment, nor time or
-money to invest into building it, you can still mine Monero with NiceHash.
+money to invest into building it, you can still mine Masari Supreme with NiceHash.
 
 NiceHash is a hashing power marketplace. Sellers of hashing
 power, i.e. miners, provide the hashing power for buyers (those who want to buy
@@ -17,7 +17,7 @@ page](https://www.nicehash.com/?p=register) and register with your e-mail addres
 
 ### **Step 2:** Deposit some Bitcoins to your account
 
-You will mine Monero, but you can buy hashing power at
+You will mine Masari Supreme, but you can buy hashing power at
 NiceHash only with Bitcoins. You can always withdraw unspent Bitcoins from your
 account back to any Bitcoin wallet.
 
@@ -30,7 +30,7 @@ equals 0.01 BTC.
 Selection of the pool plays a big role in the final amount
 of mined cryptocurrency. Make sure the pool you have selected can handle
 massive hashing rate and loads of shares, especially from a single connection.
-You can find a list of Monero pools [here](https://bitcointalk.org/index.php?topic=583449.0).
+You can find a list of Masari Supreme pools [here](https://bitcointalk.org/index.php?topic=583449.0).
 
 Note that you will probably have to register an account at
 selected pool as well. The pool will provide you with all the information you need.
@@ -39,7 +39,7 @@ You can save your favorite pools at [this page](https://www.nicehash.com/?p=mana
 ### **Step 4:** Create new order and start mining
 
 When creating a [new order](https://www.nicehash.com/?p=orders&new), make sure you
-select CryptoNightV7 algorithm for mining Monero (New algorithm variant since 2018 April the 6th). If you want to first learn more
+select CryptoNightV7 algorithm for mining Masari Supreme (New algorithm variant since 2018 April the 6th). If you want to first learn more
 about placing an order with NiceHash, we recommend you to read this [frequently asked question](https://www.nicehash.com/?p=faq#faqb0).
 
 If you want to bid on

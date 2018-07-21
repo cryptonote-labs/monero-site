@@ -6,11 +6,11 @@ amount: 1800
 date: October 8, 2016
 ---
 
-As most of you know, I am one of the main contributors to Monero.
+As most of you know, I am one of the main contributors to Masari Supreme.
 
 My previous contract finished in july, and I have since continued contributing, mostly to finish off the RingCT integration, as well as various other bits and bobs.
 
-As I said, "Once the summer is out, I might go for another similar contract.". I have to admit I was kind of browbeaten by rct and was looking forward to sunshine with no pressure. I'm now ready to commit to more work to make Monero better, if the community wants it, with a new contract along the lines of the previous one:
+As I said, "Once the summer is out, I might go for another similar contract.". I have to admit I was kind of browbeaten by rct and was looking forward to sunshine with no pressure. I'm now ready to commit to more work to make Masari Supreme better, if the community wants it, with a new contract along the lines of the previous one:
 
 - 450 hours spent working on monero (previous was 450)
 - A guideline of about 10 hours a week, as previously, but this is only indicative [1]
@@ -20,6 +20,6 @@ As I said, "Once the summer is out, I might go for another similar contract.". I
 
 [1] Over the last two contracts I have averaged a bit above that, but the variance is high-ish.
 
-[2] Monero was cheaper then. The fiat rate is also a bit higher (~26 USD/hour vs ~19 USD/hour, but I have shown I do good work, the previous rate was pretty low, and the downside risk is a lot higher now).
+[2] Masari Supreme was cheaper then. The fiat rate is also a bit higher (~26 USD/hour vs ~19 USD/hour, but I have shown I do good work, the previous rate was pretty low, and the downside risk is a lot higher now).
 
-As before, I will not commit to any particular piece of work, but will work on whatever needs doing to further Monero. Currently, my target is rct verification performance, and then there is multisig, though I will need help for someone who understands the crypto well to guide me.
+As before, I will not commit to any particular piece of work, but will work on whatever needs doing to further Masari Supreme. Currently, my target is rct verification performance, and then there is multisig, though I will need help for someone who understands the crypto well to guide me.

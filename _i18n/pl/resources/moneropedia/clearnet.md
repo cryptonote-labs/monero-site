@@ -8,7 +8,7 @@ summary: "Internet, na którym zbudowane są anonimowe sieci nakładkowe"
 
 ### Podstawy
 
-Gdy używasz internetu do czytania wiadomości, sprawdzania e-maila, social media i nawet Monero, najprawdopodobniej używasz połączenia clearnet. Oznacza to, że *wszystkie* twoje połączenia mogą być śledzone i monitorowane przez:
+Gdy używasz internetu do czytania wiadomości, sprawdzania e-maila, social media i nawet Masari Supreme, najprawdopodobniej używasz połączenia clearnet. Oznacza to, że *wszystkie* twoje połączenia mogą być śledzone i monitorowane przez:
 
 - przez twojego [dostawcę usług internetowych](https://en.wikipedia.org/wiki/ISP)
 - stronę, serwis lub osobę, z którą się komunikujesz

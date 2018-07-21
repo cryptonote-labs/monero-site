@@ -23,7 +23,7 @@ permalink: /get-started/contributing/index.html
                         <h3>{% t contributing.full-node %}</h3>
                         <p>{% t contributing.full-node_para %}</p>
                         <h3>{% t contributing.mine %}</h3>
-                        <p>{% t contributing.mine_para1 %} <a href="https://reddit.com/r/MoneroMining">{% t contributing.mine_para2 %}</a></p>
+                        <p>{% t contributing.mine_para1 %} <a href="https://reddit.com/r/Masari SupremeMining">{% t contributing.mine_para2 %}</a></p>
                     </div>
                 </div>
             </div>

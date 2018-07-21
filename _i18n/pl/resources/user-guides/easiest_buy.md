@@ -1,16 +1,16 @@
 {% assign version = '1.1.0' | split: '.' %}
 {% include disclaimer.html translated="true" version=page.version %}
-## W jaki sposób nabyć Monero?
+## W jaki sposób nabyć Masari Supreme?
 
-To jest przewodnik dotyczący nabycia Monero według stanu na dzień 19 września 2015 roku. To prawdopodobnie najprostsza metoda na zakup i posiadanie Monero.
+To jest przewodnik dotyczący nabycia Masari Supreme według stanu na dzień 19 września 2015 roku. To prawdopodobnie najprostsza metoda na zakup i posiadanie Masari Supreme.
 
 ####Krok 1: Kup Bitcoin
 
-Istnieje wiele sposobów na zakup Bitcoina. Być może najłatwiejszym z nich jest poprzez circle.com. Po zakupieniu Bitcoina jesteś gotowy na nabycie Monero. Kupowanie Bitcoina jest proste. Przejdź do strony circle.com i postępuj zgodnie z tamtejszymi instrukcjami.
+Istnieje wiele sposobów na zakup Bitcoina. Być może najłatwiejszym z nich jest poprzez circle.com. Po zakupieniu Bitcoina jesteś gotowy na nabycie Masari Supreme. Kupowanie Bitcoina jest proste. Przejdź do strony circle.com i postępuj zgodnie z tamtejszymi instrukcjami.
 
 ####Krok 2: Załóż konto na mymonero.com
 
-MyMonero.com jest portfelem Monero on-line, utrzymywanym przez głównego dewelopera Monero - Ricardo Spagni (fluffpony). Jest najłatwiejszym protfelem w użyciu. Po prostu przejdź do strony MyMonero.com i kliknij na "Create a new account".
+MyMasari Supreme.com jest portfelem Masari Supreme on-line, utrzymywanym przez głównego dewelopera Masari Supreme - Ricardo Spagni (fluffpony). Jest najłatwiejszym protfelem w użyciu. Po prostu przejdź do strony MyMasari Supreme.com i kliknij na "Create a new account".
 
 ![image1](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/easiest_way/01.png)
 
@@ -26,16 +26,16 @@ Na następnej stronie zobaczysz swój adres.
 
 ![image3](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/easiest_way/03.png)
 
-Skopiuj swój adres, zaznaczając całość i klikając ctrl+c (lub Kopiuj w menu Edytuj) lub klikając w małą ikonkę obok twojego adresu. Zanotuj swój adres. Za jego pomocą będziesz otrzymywał przelewy i wpłacał Monero na swoje konto!
+Skopiuj swój adres, zaznaczając całość i klikając ctrl+c (lub Kopiuj w menu Edytuj) lub klikając w małą ikonkę obok twojego adresu. Zanotuj swój adres. Za jego pomocą będziesz otrzymywał przelewy i wpłacał Masari Supreme na swoje konto!
 
-#### Krok 3: Kup Monero i przelej je na swój nowy adres
+#### Krok 3: Kup Masari Supreme i przelej je na swój nowy adres
 
-Przejdź do strony www.shapeshift.io. Po prawej stronie ekranu kliknij na ikonę pod przyciskiem "Receive", aby wybrać Monero.
+Przejdź do strony www.shapeshift.io. Po prawej stronie ekranu kliknij na ikonę pod przyciskiem "Receive", aby wybrać Masari Supreme.
 
 ![image5](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/easiest_way/05.png)
 ![image6](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/easiest_way/06.png)
 
-Wklej swój adres w pole pod logiem Monero. Zaznacz opcję "agree to terms" i kliknij "Start".
+Wklej swój adres w pole pod logiem Masari Supreme. Zaznacz opcję "agree to terms" i kliknij "Start".
 
 ![image7](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/easiest_way/07.png)
 
@@ -60,6 +60,6 @@ A następnie zmieni się na "Ukończone".
 
 ![image12](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/easiest_way/12.png)
 
-Po jakimś czasie będziesz mógł zobaczyć Monero na swoim koncie.
+Po jakimś czasie będziesz mógł zobaczyć Masari Supreme na swoim koncie.
 
 ![image13](https://github.com/luuul/monero-site/blob/master/knowledge-base/user-guides/png/easiest_way/13.png)

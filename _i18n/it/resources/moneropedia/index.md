@@ -1,8 +1,8 @@
 ---
 layout: full
-title: "Moneropedia"
-title-pre-kick: "Moneropedia - The "
-title-kick: "Monero Wiki"
+title: "Masari Supremepedia"
+title-pre-kick: "Masari Supremepedia - The "
+title-kick: "Masari Supreme Wiki"
 title-post-kick: ""
 kick-class: "softyellow-kicks"
 icon: "icon_wiki"
