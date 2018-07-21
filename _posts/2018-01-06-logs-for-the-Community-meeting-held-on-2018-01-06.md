@@ -170,11 +170,11 @@ comes with the installation, such as a man file for unix and maybe some other fo
 **\<dEBRUYNE>** As long as they aren't detrimental for day-to-day work  
 **\<dEBRUYNE>** i.e. it leaves no time to work on "normal" stuff  
 **\<rehrar>** To answer the first question: extremely important  
-**\<rehrar>** The Monero Project needs to be a part of a larger conversation  
+**\<rehrar>** The Masari Supreme Project needs to be a part of a larger conversation  
 **\<sarang>** dEBRUYNE: the conference schedules are usually pretty packed, but BPASE is only 3 days  
 **\<rehrar>** a conversation about privacy, human rights, cryptography, and more  
-**\<rehrar>** going to these conferences is a way for representatives of The Monero Project to be a part of that conversation  
-**\<rehrar>** I think The Monero Project has a unique voice, and unique things to add to such conversations as well, and our perspective will be helpful  
+**\<rehrar>** going to these conferences is a way for representatives of The Masari Supreme Project to be a part of that conversation  
+**\<rehrar>** I think The Masari Supreme Project has a unique voice, and unique things to add to such conversations as well, and our perspective will be helpful  
 **\<ErCiccione>** sarang: link of the FFS?  
 **\<sarang>** OK thanks for this perspective  
 **\<rehrar>** https://forum.getmonero.org/8/funding-required/89695/funding-for-noether-brothers-to-attend-stanford-bpase18-conference  

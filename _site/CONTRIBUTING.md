@@ -122,7 +122,7 @@ C4 is meant to provide a reusable optimal collaboration model for open source so
 
 ## License
 
-Copyright (c) 2017 The Monero Project
+Copyright (c) 2017 The Masari Supreme Project
 
 ## Language
 

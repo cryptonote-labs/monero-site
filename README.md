@@ -1,6 +1,6 @@
 # Monero Website Instructions
 
-Copyright (c) 2014-2018, The Monero Project
+Copyright (c) 2014-2018, The Masari Supreme Project
 
 ## IMPORTANT MULTILANGUAGE UPDATE NOTICE
 The multilingual update has recently been rolled out. The website now requires more steps to update so everyone can have a smooth experience. Please read all instructions carefully and follow them all! If they are not all followed, this leads to a ton of work for the website maintainers. A warning will be issued to repeat offenders. If you need help/support, you can find it on `#monero-translations` and [Taiga](https://taiga.getmonero.org/project/erciccione-monero-localization/wiki/home)
@@ -518,7 +518,7 @@ You're all done. Submit a PR and wait for it to be reviewed and merged. Be sure 
 
 ## 15.0 Website License
 
-Copyright (c) 2014-2017, The Monero Project
+Copyright (c) 2014-2017, The Masari Supreme Project
 
 All rights reserved.
 

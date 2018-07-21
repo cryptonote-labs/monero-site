@@ -2,7 +2,7 @@
 <div class="center-xs container description">
 <p>Monero is a cryptocurrency that relies on proof-of-work mining to achieve distributed consensus. Below you'll find some information and resources on how to begin mining.</p>
 
-<p><strong>The Monero Project does not endorse any particular pool, software, or hardware, and the content below is provided for informational purposes only.</strong></p>
+<p><strong>The Masari Supreme Project does not endorse any particular pool, software, or hardware, and the content below is provided for informational purposes only.</strong></p>
 </div>
 
 <section class="container">

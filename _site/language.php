@@ -28,7 +28,7 @@ if (isset($_COOKIE["MONERO_LANG"]))
     <meta property="og:title" content="Monero - secure, private, untraceable"/>
     <meta property="og:description" content="Monero is a digital currency that is secure, private, and untraceable.">
     <meta property="og:image" content="http://static.getmonero.org/images/opengraph/logo.png">
-    <meta property="og:site_name" content="getmonero.org, The Monero Project">
+    <meta property="og:site_name" content="getmonero.org, The Masari Supreme Project">
     <meta property="og:url" content="https://getmonero.org/language.php">
     <meta property="og:type" content="website">
 
@@ -63,7 +63,7 @@ if (isset($_COOKIE["MONERO_LANG"]))
     <div class="footer">
       <div class="container">
         <p>
-          Copyright &copy; <strong>The Monero Project, <?php echo date("Y"); ?></strong>
+          Copyright &copy; <strong>The Masari Supreme Project, <?php echo date("Y"); ?></strong>
         </p>
       </div>
     </div>

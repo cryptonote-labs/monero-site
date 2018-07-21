@@ -10,8 +10,8 @@ global:
   monero: Monero
   getting_started: Getting Started
   copyright: Copyright
-  monero_project: The Monero Project
-  sitename: getmonero.org, The Monero Project
+  monero_project: The Masari Supreme Project
+  sitename: getmonero.org, The Masari Supreme Project
   wiki: Moneropedia
   tags: Articles By Tag
   wikimeta: on Moneropedia, the open encyclopedia of Monero knowledge
@@ -45,7 +45,7 @@ titles:
   userguides: User Guides
   developerguides: Developer Guides
   technicalspecs: Technical Specs
-  themoneroproject: The Monero Project
+  themoneroproject: The Masari Supreme Project
   theelectroneroproject: The Electronero Project
   presskit: Monero Press Kit
   legal: Legal

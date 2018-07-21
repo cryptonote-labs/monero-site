@@ -158,7 +158,7 @@ author: dEBRUYNE / fluffypony
 **\<msvb-mob>** Any other hardware team questions?  
 **\<ArticMine>** Yes this avoids proprietary attacks  
 **\<sgp>** Thanks @msvb-mob for your update  
-**\<msvb-mob>** ArticMine: Documents state 'copyright The Monero Project.'  
+**\<msvb-mob>** ArticMine: Documents state 'copyright The Masari Supreme Project.'  
 **\<msvb-mob>** sgp: You're welcome.  
 **\<ArticMine>** You need a copyright which is then linked to a FLOSS or certain CC license  
 **\<msvb-mob>** Yes, the CERN Opensource Hardware (OSH) license.  

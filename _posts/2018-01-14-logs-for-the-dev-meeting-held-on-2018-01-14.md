@@ -308,11 +308,11 @@ author: dEBRUYNE / fluffypony
 **\<DaveyJones>** rbunner i don't think so ... most people arn't even schooled on default vs 0.25x fee  
 **\<sarang>** hyc: line 5, I'd say "are confident" instead of "are pretty confident"  
 **\<hyc>** sarang: ok  
-**\<endogenic>** hyc: maybe capitalize 'Java' and add a 'Therefore, ' before "The Monero Project"  
+**\<endogenic>** hyc: maybe capitalize 'Java' and add a 'Therefore, ' before "The Masari Supreme Project"  
 **\<rbrunner>** Yes, how will they understand how that works if it get more complicated?  
 **\<rbrunner>** That's my fear, basically  
 **\<endogenic>** oops  
-**\<endogenic>** "mainnet. The Monero Project"  
+**\<endogenic>** "mainnet. The Masari Supreme Project"  
 **\<rehrar>** I'm torn tbh. I see both sides.  
 **\<pebx>** @ArticMine what bitcoin does is one of the major reasons, why people are looking into Monero... fees are one thing the average bitcoin user is always confused about  
 **\<DaveyJones>** basically they don't need to understand most of people moaning about tax fee's are people just count the $ value of the fee... not how it was achieved  

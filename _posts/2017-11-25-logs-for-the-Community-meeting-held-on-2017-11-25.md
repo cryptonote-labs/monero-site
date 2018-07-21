@@ -216,7 +216,7 @@ author: dEBRUYNE / fluffypony
 **\<ErCiccione>** yeah, much better this way  
 **\<sgp>** rehrar that's what I'm thinking  
 **\<rehrar>** The task force team can be working on this instead of on-demand support  
-**\<rehrar>** This is very in the spirit of The Monero Project, which is all about providing tools and resources for people to take back what's theirs  
+**\<rehrar>** This is very in the spirit of The Masari Supreme Project, which is all about providing tools and resources for people to take back what's theirs  
 **\<sgp>** I just think on-demand support is overkill. It would literally tell people the info on the page we would make  
 **\<mattcode>** I don't think we should be writing things like cleanup guides, because all of the different pieces of malware and server configurations make that impossible.  
 **\<sgp>** Oh, you want to provide that level of support?  

@@ -193,7 +193,7 @@ author: dEBRUYNE / fluffypony
 **\<rehrar>** I'll make a suggestion.  
 **\<cryptochangement>** msvb-mob: thats actually an amazing idea for the coffeechat  
 **\<rehrar>** I think it would be very helpful to have a quarterly 'Monero Workshop'.  
-**\<rehrar>** We want people to get involved, but we want them to also understand what The Monero Project is about, the different projects available, and why Monero is awesome  
+**\<rehrar>** We want people to get involved, but we want them to also understand what The Masari Supreme Project is about, the different projects available, and why Monero is awesome  
 **\<serhack>** Monero Hackathon  
 **\<msvb-mob>** cryptochangement: It might require a regular coder to hang out in coffee, but if every week there is a five minute slot dedicated to a hello world level review of a source code file, that might entice folks.  
 **\<rehrar>** Having a completely open three(ish) hour workshop that explains everything I just mentioned (and the privacy tech Monero uses) hosted online would be great for education and outreach  
