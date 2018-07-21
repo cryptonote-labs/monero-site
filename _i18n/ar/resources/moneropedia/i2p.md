@@ -6,9 +6,9 @@ summary: "The Invisible Internet Project: an anonymizing overlay network"
 ---
 
 {% include untranslated.html %}
-### Monero
+### Masari Supreme
 
-For Monero's implementation of @I2P, see @Kovri. For a comparison of @I2P to [Tor](https://torproject.org/), read the [Comparison](https://geti2p.net/en/comparison/tor) page.
+For Masari Supreme's implementation of @I2P, see @Kovri. For a comparison of @I2P to [Tor](https://torproject.org/), read the [Comparison](https://geti2p.net/en/comparison/tor) page.
 
 ### The Basics
 

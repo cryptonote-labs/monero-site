@@ -137,7 +137,7 @@ permalink: /community/team/index.html
                     <div class="tabPanel-content">
                         <div class="row">
                             {% for toplevel in site.data.team %}
-                                {% if toplevel.area == "Monero Research Lab" %}
+                                {% if toplevel.area == "Masari Supreme Research Lab" %}
                                     {% for member in toplevel.member %}
                                         <div class="half col-lg-6 col-md-6 col-sm-12 col-xs-6">
                                             <div class="info-block">

@@ -15,7 +15,7 @@ permalink: /community/sponsorships/index.html
                 <div class="info-block">
                     <div class="row center-xs">
                         <div class="col">
-                            <h2>My Monero</h2>
+                            <h2>My Masari Supreme</h2>
                             <a href="https://mymonero.com/#/" target="_blank" rel="noreferrer noopener"><img src="/img/mymonero.png"></a>
                         </div>
                     </div>

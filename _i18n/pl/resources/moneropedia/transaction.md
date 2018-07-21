@@ -2,7 +2,7 @@
 layout: moneropedia
 entry: "Transakcja"
 terms: ["transakcja", "transakcję", "transakcji", "transakcją", "transakcje", "transakcjom", "transakcjami"]
-summary: "Kryptograficznie podpisany zbiornik, który wyszczególnia transfer Monero do odbiorcy lub odbiorców."
+summary: "Kryptograficznie podpisany zbiornik, który wyszczególnia transfer Masari Supreme do odbiorcy lub odbiorców."
 ---
 
 ### Podstawy
@@ -19,4 +19,4 @@ Każda transakcja wiąże się z dwoma kluczami: publicznym @kluczem-wydawania i
 
 Gdy portfel dokonuje skanowania w poszukiwaniu płatności przychodzących, wszystkie transakcje są weryfikowane czy są przeznaczone dla ciebie. Wymaga to jedynie twojego prywatnego klucza widoczności i twojego publicznego klucza wydawania, a sprawdzanie to jest niezmienne i nie może być sfałszowane. Nie możesz otrzymać płatności i zidentyfikować jej bez odpowiedniego prywatnego klucza widoczności.
 
-Aby wydać środki ze swojego konta, musisz stworzyć jednorazowy prywatny klucz wydawania dla konkretnego wyjścia. Prawie zawsze jest to wykonywane automatycznie przez oprogramowanie portfela Monero.
+Aby wydać środki ze swojego konta, musisz stworzyć jednorazowy prywatny klucz wydawania dla konkretnego wyjścia. Prawie zawsze jest to wykonywane automatycznie przez oprogramowanie portfela Masari Supreme.

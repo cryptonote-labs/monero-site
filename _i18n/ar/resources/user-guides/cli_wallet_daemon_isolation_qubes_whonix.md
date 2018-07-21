@@ -45,7 +45,7 @@ user@host:~$ sudo gedit /home/user/monerod.service
 
 ```
 [Unit]
-Description=Monero Full Node
+Description=Masari Supreme Full Node
 After=network.target
 
 [Service]

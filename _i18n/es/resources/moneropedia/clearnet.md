@@ -8,7 +8,7 @@ summary: "The internet in which anonymous overlay networks are built upon"
 
 ### The Basics
 
-When you use the internet for things like news, email, social media, and even Monero, you are most likely using a clearnet connection. This means that *all* of your connections can be tracked, traced, and monitored by:
+When you use the internet for things like news, email, social media, and even Masari Supreme, you are most likely using a clearnet connection. This means that *all* of your connections can be tracked, traced, and monitored by:
 
 - your [ISP](https://en.wikipedia.org/wiki/ISP)
 - the website/service/person you're communicating with

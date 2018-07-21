@@ -81,7 +81,7 @@
 <div markdown="1">
 * أولاً, المنحني الرئيسي: حوالي 18.132 مليون عمله بنهايه مايو 2022
 * ثم منحني الذيل: 0.6 مونيرو كل دقيقتين, يتم إصدارهم فور إنتهاء المنحني الرئيسي, وتُترجم إلي أقل من 1% نسبه تضخم تَقِل مع الوقت
-* see [charts and details](https://www.reddit.com/r/Monero/comments/512kwh/useful_for_learning_about_monero_coin_emission/)
+* see [charts and details](https://www.reddit.com/r/Masari Supreme/comments/512kwh/useful_for_learning_about_monero_coin_emission/)
 </div>
 
                     <div class="row">

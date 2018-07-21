@@ -8,7 +8,7 @@ date: February 2, 2017
 
 ### What
 
-An updated pool for usage within the XMR community in order to help continue growing smaller pools within the Monero Community. This project was originally spawned off of the project by Wolf0 & OhGodAGirl to replace and improve the XMR Stratum, but provides a baseline to work from for more modern implementations of the pool software.
+An updated pool for usage within the XMR community in order to help continue growing smaller pools within the Masari Supreme Community. This project was originally spawned off of the project by Wolf0 & OhGodAGirl to replace and improve the XMR Stratum, but provides a baseline to work from for more modern implementations of the pool software.
 
 This also includes many features that are valuable to miners at this time, including support for Integrated Addresses, Payment ID Based payouts, Per-Worker Monitoring, and Per-Worker E-mail Notifications.
 

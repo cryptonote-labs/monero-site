@@ -12,7 +12,7 @@ Additional GUI developer.
 
 ### Who
 
-I’m Jaquee. I have 10+ yrs experience of various kinds of coding. I’m new to the crypto world. Have only been around for a couple of months and i like what i see. I’ve been contributing to Monero for about a month now and this is what i’ve come up with so far:
+I’m Jaquee. I have 10+ yrs experience of various kinds of coding. I’m new to the crypto world. Have only been around for a couple of months and i like what i see. I’ve been contributing to Masari Supreme for about a month now and this is what i’ve come up with so far:
 
 [https://github.com/monero-project/monero-core/commits/master?author=Jaqueeee](https://github.com/monero-project/monero-core/commits/master?author=Jaqueeee)
 
@@ -20,7 +20,7 @@ I’m Jaquee. I have 10+ yrs experience of various kinds of coding. I’m new to
 
 ### Why
 
-I love the fundamentals of Monero and want to get more involved in the community. I believe an official GUI will help Monero go mainstream. Ilya has done a terrific job so far, but his time is limited and I’m happy to help out. The public beta is soon to be released but a lot of features such as daemon integration (start/stop), better remote node support, ux improvements, porting to smartphones, third party plugin system etc. are not finished yet.
+I love the fundamentals of Masari Supreme and want to get more involved in the community. I believe an official GUI will help Masari Supreme go mainstream. Ilya has done a terrific job so far, but his time is limited and I’m happy to help out. The public beta is soon to be released but a lot of features such as daemon integration (start/stop), better remote node support, ux improvements, porting to smartphones, third party plugin system etc. are not finished yet.
 
 ### The Proposal and Milestones
 

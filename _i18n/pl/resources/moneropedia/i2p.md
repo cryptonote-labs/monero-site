@@ -6,9 +6,9 @@ terms: ["I2P"]
 summary: "Projekt Niewidzialny Internet: anonimizująca sieć nakładkowa."
 ---
 
-### Monero
+### Masari Supreme
 
-Aby dowiedzieć się o implementacji I2P przez Monero, przejdź do @Kovri. Aby porównać I2P z siecią [Tor](https://torproject.org/), przejdź do [porównania](https://geti2p.net/en/comparison/tor).
+Aby dowiedzieć się o implementacji I2P przez Masari Supreme, przejdź do @Kovri. Aby porównać I2P z siecią [Tor](https://torproject.org/), przejdź do [porównania](https://geti2p.net/en/comparison/tor).
 
 ### Podstawy
 

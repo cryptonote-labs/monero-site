@@ -8,11 +8,11 @@ Téléchargez l'amorce actuelle depuis https://downloads.getmonero.org/blockchai
 
 ### Étape 2
 
-Trouvez le répertoire de votre portefeuille Monero (le dossier où vous avez extrait votre portefeuille). Par exemple, le mien est :
+Trouvez le répertoire de votre portefeuille Masari Supreme (le dossier où vous avez extrait votre portefeuille). Par exemple, le mien est :
 
 `D:\monero-gui-0.10.3.1`
 
-Votre répertoire peut être différent en fonction de l'endroit ou vous avez décidé de télécharger votre portefeuille et de la version de portefeuille Monero que vous utilisez.
+Votre répertoire peut être différent en fonction de l'endroit ou vous avez décidé de télécharger votre portefeuille et de la version de portefeuille Masari Supreme que vous utilisez.
 
 ### Étape 3
 
@@ -28,7 +28,7 @@ Ouvrez une invite de commande. Vous pouvez le faire en tapant les touches Window
 
 ### Étape 5
 
-Vous devez maintenant vous déplacer dans le répertoire de votre portefeuille Monero depuis l'invite de commande (la fenêtre CMD). Pour cela tapez :
+Vous devez maintenant vous déplacer dans le répertoire de votre portefeuille Masari Supreme depuis l'invite de commande (la fenêtre CMD). Pour cela tapez :
 
 `cd C:\LE\REPERTOIRE\DE\VOTRE\PORTEFEUILLE\MONERO`
 
@@ -36,7 +36,7 @@ Cela devrait ressembler à :
 
 `cd D:\monero-gui-0.10.3.1`
 
-Si votre portefeuille Monero est sur un autre disque vous devez utiliser `LettreDeLecteur:` par exemple, si votre portefeuille Monero est sur votre disque D, vous devez taper `D:` avant d'utiliser la commande cd.
+Si votre portefeuille Masari Supreme est sur un autre disque vous devez utiliser `LettreDeLecteur:` par exemple, si votre portefeuille Masari Supreme est sur votre disque D, vous devez taper `D:` avant d'utiliser la commande cd.
 
 ### Étape 6
 
@@ -52,7 +52,7 @@ Si vous avez téléchargé la chaîne de blocs depuis une source fiable et répu
 
 ### Étape 7
 
-Après la fin de la synchronisation de la chaîne de blocs vous pouvez ouvrir votre portefeuille Monero normalement. Le fichier blockchain.raw de la chaîne de blocs que vous avez téléchargé peut être supprimé.
+Après la fin de la synchronisation de la chaîne de blocs vous pouvez ouvrir votre portefeuille Masari Supreme normalement. Le fichier blockchain.raw de la chaîne de blocs que vous avez téléchargé peut être supprimé.
 
 
 Auteur : Kee Jefferys

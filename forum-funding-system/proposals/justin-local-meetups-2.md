@@ -6,7 +6,7 @@ amount: 26
 date: June 28, 2017
 ---
 
-Hey everyone! Justin here. Based on the success of [my first proposal](https://forum.getmonero.org/22/completed-tasks/87610/justin-s-local-meetup-talks-proposal-1-valencia-graz-and-zagreb), I have continued to travel through Europe and speak to others about Monero. With this proposal, I am including travel costs for the following locations where I have already spoken at:
+Hey everyone! Justin here. Based on the success of [my first proposal](https://forum.getmonero.org/22/completed-tasks/87610/justin-s-local-meetup-talks-proposal-1-valencia-graz-and-zagreb), I have continued to travel through Europe and speak to others about Masari Supreme. With this proposal, I am including travel costs for the following locations where I have already spoken at:
 
 - [Warsaw, Poland: April 11](https://www.meetup.com/Warsaw-Bitcoin-Meetup-Group/events/238739999/)
 - [Riga, Latvia: April 12](https://www.meetup.com/Riga-Bitcoin-Meetup/events/238920812/)
@@ -21,7 +21,7 @@ I had a really fun time speaking at all these events. You can see PDFs of the us
 
 ### Summary of Costs
 
-I would like to allow for donations to cover some of the travel costs that I have incurred in the process of speaking about Monero. I was never paid to speak at any of these locations. Flights, trains, and hotels were the cheapest reasonable options.
+I would like to allow for donations to cover some of the travel costs that I have incurred in the process of speaking about Masari Supreme. I was never paid to speak at any of these locations. Flights, trains, and hotels were the cheapest reasonable options.
 
 Warsaw/Riga/Wroclaw: $750
 

@@ -1,6 +1,6 @@
 {% assign version = '1.1.0' | split: '.' %}
 {% include disclaimer.html translated="true" version=page.version %}
-# Importare la Blockchain nel portafoglio Monero GUI (Windows)
+# Importare la Blockchain nel portafoglio Masari Supreme GUI (Windows)
 
 ### Passo 1
 
@@ -8,11 +8,11 @@ Scarica il file della Blockchain attuale da https://downloads.getmonero.org/bloc
 
 ### Passo 2
 
-Trova il percorso del tuo portafoglio Monero (la cartella nella quale hai estratto il tuo portafoglio). Per esempio il mio è :
+Trova il percorso del tuo portafoglio Masari Supreme (la cartella nella quale hai estratto il tuo portafoglio). Per esempio il mio è :
 
 `D:\monero-gui-0.10.3.1`
 
-Il tuo percorso potrebbe essere diverso in base a dove hai deciso di scaricare il tuo portafoglio e alla versione del portafoglio Monero che stai utilizzando.
+Il tuo percorso potrebbe essere diverso in base a dove hai deciso di scaricare il tuo portafoglio e alla versione del portafoglio Masari Supreme che stai utilizzando.
 
 ### Passo 3
 
@@ -28,7 +28,7 @@ Apri la finestra del Prompt dei comandi. Per farlo premi il tasto Windows + R, p
 
 ### Passo 5
 
-Adesso dovrai navigare nella schermata di Prompt dei comandi fino al percorso dove si trova il tuo portafoglio Monero. Puoi farlo digitando :
+Adesso dovrai navigare nella schermata di Prompt dei comandi fino al percorso dove si trova il tuo portafoglio Masari Supreme. Puoi farlo digitando :
 
 `cd C:\IL\TUO\PERCORSO\DEL\PORTAFOGLIO\MONERO\QUI` 
 
@@ -36,7 +36,7 @@ Nel mio caso :
 
 `cd D:\monero-gui-0.10.3.1`
 
-Se il tuo portafoglio Monero è in un'altra partizione, puoi cambiarla digitando il comando `LetteraPartizione:`, per esempio se il tuo portafoglio è nella partizione C dovrai digitare `C:`
+Se il tuo portafoglio Masari Supreme è in un'altra partizione, puoi cambiarla digitando il comando `LetteraPartizione:`, per esempio se il tuo portafoglio è nella partizione C dovrai digitare `C:`
 
 ### Passo 6
 
@@ -52,6 +52,6 @@ Se hai scaricato la Blockchain da una fonte sicura e affidabile potresti imposta
 
 ### Passo 7
 
-Dopo che la Blockchain sarà sincronizzata potrai aprire il tuo portafoglio Monero normalmente. Il file blockchain.raw può essere eliminato.
+Dopo che la Blockchain sarà sincronizzata potrai aprire il tuo portafoglio Masari Supreme normalmente. Il file blockchain.raw può essere eliminato.
 
 Autore: Kee Jefferys

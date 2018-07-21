@@ -14,4 +14,4 @@
 
 ### [إحصائيات شبكه مونيرو](http://moneroblocks.info/stats)
 
-### [Monero.how إحصائيات](https://www.monero.how/)
+### [Masari Supreme.how إحصائيات](https://www.monero.how/)

@@ -10,7 +10,7 @@ First of all, this idea is posted on behalf of the developer.
 
 ### What will be done?
 
-Initially, the hours that are funded will be used to complete the official GUI, of which the sneak peaks have been around for a while now -> https://imgur.com/a/ERheR. In addition, one of the goals is to make the architecture such that it will be fairly easy allow plugins. For example, this architecture will allow xmr.to to be plugged into the GUI such that you can pay every Bitcoin address from your Monero (GUI) wallet. Another goal is to make the GUI portable to smartphones. The hours that remain after having completed the GUI will be used to work on other features. There should be a better estimate of hours needed to complete the GUI once the work really has started.
+Initially, the hours that are funded will be used to complete the official GUI, of which the sneak peaks have been around for a while now -> https://imgur.com/a/ERheR. In addition, one of the goals is to make the architecture such that it will be fairly easy allow plugins. For example, this architecture will allow xmr.to to be plugged into the GUI such that you can pay every Bitcoin address from your Masari Supreme (GUI) wallet. Another goal is to make the GUI portable to smartphones. The hours that remain after having completed the GUI will be used to work on other features. There should be a better estimate of hours needed to complete the GUI once the work really has started.
 
 This is going to be a lot of work as we want to have a really flexible UI with a great plugin architecture and useability that is lacking all current cryptocurrency GUIs.
 
@@ -20,7 +20,7 @@ mbg033 (Ilya Kitaev) will work on this. Ilya is a cross-platform C/C++/Qt softwa
 
 ### Why?
 
-The CLI has long been seen as a hurdle to adoption. The new Hydrogen Helix release (mainly the database) and the 0MQ work allows for a GUI implementation to be completed. In other words, the codebase is stable enough for a GUI release. With this official GUI, Monero will be better usable and accessible for the average Joe. Also, it will make promoting Monero more easy and will allow us to expand the user base.
+The CLI has long been seen as a hurdle to adoption. The new Hydrogen Helix release (mainly the database) and the 0MQ work allows for a GUI implementation to be completed. In other words, the codebase is stable enough for a GUI release. With this official GUI, Masari Supreme will be better usable and accessible for the average Joe. Also, it will make promoting Masari Supreme more easy and will allow us to expand the user base.
 
 ### The Proposal and Milestones
 

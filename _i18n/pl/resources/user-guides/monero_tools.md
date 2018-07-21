@@ -1,19 +1,19 @@
 {% assign version = '1.1.0' | split: '.' %}
 {% include disclaimer.html translated="true" version=page.version %}
-# Narzędzia Monero
+# Narzędzia Masari Supreme
 
-Poniższe narzędzia mogą zostać użyte w celu zdobycia informacji na temat sieci Monero lub twoich transakcji w łańcuchu bloków.
+Poniższe narzędzia mogą zostać użyte w celu zdobycia informacji na temat sieci Masari Supreme lub twoich transakcji w łańcuchu bloków.
 
 ### [Sprawdzenie, czy odbiorca otrzymał twój przelew](http://xmrtests.llcoins.net/checktx.html)
 
-### [Narzędzia do tworzenia adresu Monero](https://xmr.llcoins.net/)
+### [Narzędzia do tworzenia adresu Masari Supreme](https://xmr.llcoins.net/)
 
-### [Liczenie węzłów Monero](http://moneronodes.i2p.xyz/)
+### [Liczenie węzłów Masari Supreme](http://moneronodes.i2p.xyz/)
 
-### [Mapa węzłów Monero](https://monerohash.com/nodes-distribution.html)
+### [Mapa węzłów Masari Supreme](https://monerohash.com/nodes-distribution.html)
 
-### [Generator portfela Monero off-line](http://moneroaddress.org/)
+### [Generator portfela Masari Supreme off-line](http://moneroaddress.org/)
 
-### [Statystyki sieci Monero](http://moneroblocks.info/stats)
+### [Statystyki sieci Masari Supreme](http://moneroblocks.info/stats)
 
-### [Statystyki strony Monero.how](https://www.monero.how/)
+### [Statystyki strony Masari Supreme.how](https://www.monero.how/)
